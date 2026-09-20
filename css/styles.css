@@ -1644,3 +1644,62 @@ select {
 .project-read-unit {
   display: none;
 }
+
+
+/* Refined Project Read skill presentation */
+.project-read-skill-box {
+  display: block;
+  padding: 16px 20px 18px;
+  border-radius: 16px;
+  background: var(--secondary-soft);
+  color: var(--ink);
+}
+
+.project-read-skill-label {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 9px;
+  font-size: clamp(1.16rem, 1.3vw, 1.35rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.project-read-skill-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 74px;
+  height: 7px;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      90deg,
+      #8f7bc8 0 26%,
+      #b7a8e5 26% 58%,
+      #6f5db1 58% 100%
+    );
+  transform: skewX(-18deg);
+  opacity: .95;
+}
+
+.project-read-skill-value {
+  margin-top: 10px;
+  font-size: clamp(1.15rem, 1.35vw, 1.42rem);
+  line-height: 1.45;
+  letter-spacing: .01em;
+}
+
+@media (max-width: 700px) {
+  .project-read-skill-box {
+    padding: 14px 16px 16px;
+  }
+
+  .project-read-skill-label {
+    font-size: 1.12rem;
+  }
+
+  .project-read-skill-value {
+    font-size: 1.14rem;
+  }
+}
