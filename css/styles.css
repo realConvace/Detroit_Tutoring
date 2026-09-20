@@ -1960,3 +1960,48 @@ select {
     gap: 7px;
   }
 }
+
+
+/* Box each individual Project Read word */
+.word-list-grid {
+  max-width: 100%;
+  gap: 12px;
+}
+
+.word-list-grid > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 14px;
+  padding: 4px 0;
+  border-bottom: 0;
+}
+
+.word-list-grid > div span {
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+  padding: 12px 16px;
+  border: 1px solid #cdd9e8;
+  border-radius: 12px;
+  background: rgba(255,255,255,.78);
+  box-shadow: 0 2px 7px rgba(46, 73, 107, .05);
+}
+
+.word-list-grid > div span:empty {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 700px) {
+  .word-list-grid > div {
+    gap: 10px;
+  }
+
+  .word-list-grid > div span {
+    min-height: 52px;
+    padding: 10px 12px;
+  }
+}
