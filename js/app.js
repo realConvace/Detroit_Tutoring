@@ -332,11 +332,10 @@
   };
 
   const projectReadLibrary = () => `
-    <div class="page-heading">
+    <div class="page-heading project-read-library-heading">
       <div>
-        <p class="eyebrow" style="color:var(--secondary)">Project Read</p>
-        <h1>Choose a Project Read lesson</h1>
-        <p>Lessons 1–14 are available in the source set, with Lesson 13 divided into A, B, and C.</p>
+        <h1>Choose a Project Read Lesson</h1>
+        <div class="project-read-library-line" aria-hidden="true"></div>
       </div>
     </div>
 
