@@ -2838,3 +2838,42 @@ select {
     grid-template-columns: repeat(var(--pr-word-cols), minmax(110px, 1fr));
   }
 }
+
+
+/* Uniform Project Read lesson structure */
+.project-read-teaching .project-read-source-line {
+  font-weight: 400;
+}
+
+.project-read-inline-label {
+  font-weight: 900 !important;
+  color: #102f3a !important;
+}
+
+.project-read-new-red-words {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 5px 11px;
+  border: 2px solid #d96a78 !important;
+  border-radius: 10px;
+  background: #fff0f2 !important;
+  color: #b2273c !important;
+  font-weight: 900 !important;
+  line-height: 1.25;
+}
+
+.project-read-red-note {
+  margin-top: 2px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.72);
+  color: #5f4a3a;
+  font-size: clamp(1.08rem, 1.18vw, 1.2rem);
+  line-height: 1.5;
+}
+
+/* Ensure word-list entries never inherit bold from older source styles. */
+.project-read-word-list .project-read-word-item,
+.project-read-word-list .project-read-word-item strong {
+  font-weight: 400 !important;
+}
