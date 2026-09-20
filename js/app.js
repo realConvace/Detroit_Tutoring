@@ -250,8 +250,11 @@
 
     return `
       <div class="lesson-hero fast-start">
-        <h1>Fast Start for Early Readers</h1>
-        <p class="fast-start-hero-subheader">#${n} ${escapeHtml(title)}</p>
+        <div class="fast-start-hero-copy">
+          <h1>Fast Start for Early Readers</h1>
+          <p class="fast-start-hero-subheader">#${n} ${escapeHtml(title)}</p>
+        </div>
+        <button class="btn fast-start-finish-button" data-action="finish-fast-start">✓ Finish Poem</button>
       </div>
 
       <div class="fast-start-workspace">
@@ -309,8 +312,6 @@
           ? `<a class="btn btn-muted" href="#fast-start/${previousFastStart}">← Previous Fast Start</a>`
           : `<a class="btn btn-muted" href="#session">Back to session</a>`
         }
-
-        <button class="btn btn-success" data-action="finish-fast-start">✓ Finish Fast Start</button>
 
         ${nextFastStart
           ? `<a class="btn btn-primary" href="#fast-start/${nextFastStart}">Next Fast Start →</a>`
