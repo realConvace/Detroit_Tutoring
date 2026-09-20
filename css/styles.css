@@ -2541,3 +2541,15 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Give Fast Start poem titles more breathing room below the section label */
+.poem-section-label {
+  margin-bottom: 34px;
+}
+
+@media (max-width: 560px) {
+  .poem-section-label {
+    margin-bottom: 30px;
+  }
+}
