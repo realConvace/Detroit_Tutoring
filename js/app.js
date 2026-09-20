@@ -139,8 +139,8 @@
             <article class="session-step ${state.completed.book ? "is-complete" : ""}">
               <div class="step-number">${state.completed.book ? "✓" : "1"}</div>
               <div>
-                <h3>Read an IRL Book</h3>
-                <p>Read a physical book together for about 5 minutes. No timer is used on the website.</p>
+                <h3>Book Reading</h3>
+                <p>Spend the first five minutes reading a children's book to students.</p>
               </div>
               <div class="step-action">
                 <button class="btn ${state.completed.book ? "btn-success" : "btn-primary"}" data-action="toggle-step" data-step="book">
@@ -152,8 +152,8 @@
             <article class="session-step ${state.completed.fastStart ? "is-complete" : ""}">
               <div class="step-number">${state.completed.fastStart ? "✓" : "2"}</div>
               <div>
-                <h3>Fast Start #${state.fastStartNumber}: ${escapeHtml(fastStartTitle())}</h3>
-                <p>Read the poem, then complete Looking at Words and Letters, Playing With Sounds, and Beginning to Read.</p>
+                <h3>Fast Start for Early Readers</h3>
+                <p>Let students read a poem and complete the subsequent three activities.</p>
               </div>
               <div class="step-action">
                 <a class="btn btn-secondary" href="#fast-start/${state.fastStartNumber}">Open Fast Start</a>
@@ -163,8 +163,8 @@
             <article class="session-step ${state.completed.projectRead ? "is-complete" : ""}">
               <div class="step-number">${state.completed.projectRead ? "✓" : "3"}</div>
               <div>
-                <h3>Project Read: ${escapeHtml(projectReadLesson().label)}</h3>
-                <p>Continue with the Project Read lesson selected for today's session.</p>
+                <h3>Project Read</h3>
+                <p>Engage students with a unit lesson to develop new skills.</p>
               </div>
               <div class="step-action">
                 <a class="btn btn-secondary" href="#project-read/${encodeURIComponent(state.projectReadId)}">Open Project Read</a>
