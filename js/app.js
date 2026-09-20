@@ -382,26 +382,29 @@
         <button class="btn project-read-finish-button" data-action="finish-project-read">✓ Finish Unit</button>
       </div>
 
-      <div class="section-list">
-        <section class="curriculum-section">
-          <header>
-            <span class="section-index">PR</span>
-            <h2>${escapeHtml(lesson.label)} curriculum</h2>
-          </header>
-          ${detail
-            ? `<div class="source-content project-read-content">
-                <div class="project-read-meta">
-                  <div class="project-read-unit">${escapeHtml(detail.unit)}</div>
-                  <div><strong>SKILL:</strong>&nbsp;&nbsp;${escapeHtml(detail.skill)}</div>
-                </div>
+      <div class="section-list project-read-section-list">
+        ${detail
+          ? `
+            <div class="project-read-skill-box">
+              <strong>Skill:</strong>
+              <span>${escapeHtml(detail.skill)}</span>
+            </div>
+
+            <section class="curriculum-section project-read-main-content">
+              <div class="source-content project-read-content">
                 ${detail.bodyHtml}
-              </div>`
-            : `<div class="curriculum-placeholder">
+              </div>
+            </section>
+          `
+          : `
+            <section class="curriculum-section project-read-main-content">
+              <div class="curriculum-placeholder">
                 The exact lesson content will be imported from the original Project Read file. Short-vowel symbols
                 such as ă, ĭ, ŏ, ĕ, and ŭ will be preserved exactly.
-              </div>`
-          }
-        </section>
+              </div>
+            </section>
+          `
+        }
       </div>
 
       <div class="button-row project-read-navigation">
