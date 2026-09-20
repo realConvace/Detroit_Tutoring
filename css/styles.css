@@ -2164,3 +2164,34 @@ select {
     border-radius: 16px;
   }
 }
+
+
+/* Homepage hero refinement */
+.home-hero h1 {
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(2.8rem, 5.2vw, 5.35rem);
+}
+
+.home-hero .home-hero-subheader {
+  max-width: none;
+  margin-top: 18px;
+  font-size: clamp(1.35rem, 1.8vw, 1.8rem);
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .home-hero h1 {
+    font-size: clamp(2.35rem, 5vw, 4rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .home-hero h1 {
+    white-space: normal;
+  }
+
+  .home-hero .home-hero-subheader {
+    font-size: clamp(1.2rem, 2.7vw, 1.5rem);
+  }
+}
