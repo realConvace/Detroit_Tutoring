@@ -1102,3 +1102,96 @@ select {
     width: 42%;
   }
 }
+
+
+/* Refine Fast Start poem proportions */
+.fast-start-workspace {
+  width: min(100%, 1360px);
+  margin: 24px auto;
+  grid-template-columns: minmax(0, 1.45fr) minmax(320px, .62fr);
+  align-items: start;
+}
+
+.fast-start-poem {
+  width: 100%;
+  min-height: 0;
+  justify-self: center;
+}
+
+.poem-book-frame {
+  width: min(100%, 820px);
+  min-height: 0;
+  margin: 0 auto;
+  padding: 72px clamp(38px, 4vw, 58px) 24px;
+}
+
+.poem-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.poem-lines {
+  width: min(100%, 690px);
+  margin: 0 auto;
+}
+
+.poem-clipart-wrap {
+  padding-top: 14px;
+  padding-bottom: 2px;
+}
+
+.poem-clipart {
+  width: min(235px, 36%);
+}
+
+.fast-start-activities {
+  width: 100%;
+  max-width: 430px;
+  justify-self: center;
+}
+
+@media (max-width: 1280px) {
+  .fast-start-workspace {
+    width: min(100%, 1160px);
+    grid-template-columns: minmax(0, 1.35fr) minmax(315px, .7fr);
+  }
+
+  .poem-book-frame {
+    width: min(100%, 760px);
+  }
+
+  .fast-start-activities {
+    max-width: 390px;
+  }
+}
+
+@media (max-width: 900px) {
+  .fast-start-workspace {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .poem-book-frame {
+    width: min(100%, 760px);
+  }
+
+  .fast-start-activities {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 560px) {
+  .poem-book-frame {
+    width: 100%;
+    padding: 58px 20px 20px;
+  }
+
+  .poem-lines {
+    width: 100%;
+  }
+
+  .poem-clipart {
+    width: min(205px, 48%);
+  }
+}
