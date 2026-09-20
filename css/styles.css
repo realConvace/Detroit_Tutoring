@@ -3072,3 +3072,130 @@ select {
     padding: 20px;
   }
 }
+
+
+/* Project Read Word List family ordering + shuffle controls */
+.project-read-word-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.project-read-word-list-header h3 {
+  margin: 0;
+}
+
+.project-read-word-list-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.project-read-word-action {
+  appearance: none;
+  border: 0;
+  border-radius: 12px;
+  min-height: 42px;
+  padding: 8px 14px;
+  font: inherit;
+  font-size: .98rem;
+  font-weight: 850;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    transform .16s ease,
+    box-shadow .16s ease,
+    background .16s ease;
+}
+
+.project-read-word-action:hover {
+  transform: translateY(-1px);
+}
+
+.project-read-word-action:active {
+  transform: translateY(0) scale(.98);
+}
+
+.project-read-word-action--shuffle {
+  background: #6f5db1;
+  color: #fff;
+  box-shadow: 0 5px 13px rgba(111, 93, 177, .2);
+}
+
+.project-read-word-action--shuffle:hover {
+  background: #614fa5;
+}
+
+.project-read-word-action--reset {
+  border: 1.5px solid #b9c9df;
+  background: #f4f8fd;
+  color: #34506d;
+}
+
+.project-read-word-action--reset:hover {
+  background: #eaf2fb;
+}
+
+.project-read-word-table {
+  grid-template-columns: repeat(var(--pr-word-cols), minmax(125px, 1fr));
+}
+
+.project-read-word-slot {
+  position: relative;
+  display: flex;
+  min-height: 58px;
+  min-width: 0;
+}
+
+.project-read-word-slot--empty {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.project-read-word-slot .project-read-word-item {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  will-change: transform;
+  transform-origin: center;
+}
+
+.project-read-word-table--moving .project-read-word-item {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-read-word-action {
+    transition: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-read-word-list-header {
+    align-items: flex-start;
+  }
+
+  .project-read-word-list-actions {
+    justify-content: flex-end;
+  }
+
+  .project-read-word-action {
+    min-height: 40px;
+    padding: 8px 11px;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .project-read-word-list-header {
+    flex-direction: column;
+  }
+
+  .project-read-word-list-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
