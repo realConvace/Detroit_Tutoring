@@ -1523,3 +1523,87 @@ select {
 .fast-start-finish-button:active {
   background: #ffdfae;
 }
+
+
+/* Project Read hero and navigation */
+.lesson-hero.project-read-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.project-read-hero-copy {
+  min-width: 0;
+}
+
+.lesson-hero.project-read-hero .project-read-hero-subheader {
+  margin: 12px 0 0;
+  max-width: none;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: rgba(255,255,255,.95);
+}
+
+.project-read-finish-button {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  padding: 12px 18px;
+  background: #f0ebff;
+  color: #4e3b8d;
+  border: 1px solid rgba(78, 59, 141, .18);
+  box-shadow: 0 5px 14px rgba(62, 45, 120, .16);
+  white-space: nowrap;
+}
+
+.project-read-finish-button:hover {
+  background: #e5ddff;
+  color: #44327d;
+  border-color: rgba(68, 50, 125, .24);
+}
+
+.project-read-finish-button:active {
+  background: #d9ceff;
+}
+
+.project-read-navigation {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-read-nav-left,
+.project-read-nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.project-read-nav-right {
+  margin-left: auto;
+}
+
+@media (max-width: 720px) {
+  .lesson-hero.project-read-hero {
+    flex-direction: column;
+  }
+
+  .project-read-finish-button {
+    align-self: stretch;
+    width: 100%;
+  }
+
+  .project-read-navigation {
+    gap: 12px;
+  }
+
+  .project-read-nav-left,
+  .project-read-nav-right {
+    width: 100%;
+  }
+
+  .project-read-nav-left .btn,
+  .project-read-nav-right .btn {
+    width: 100%;
+  }
+}
