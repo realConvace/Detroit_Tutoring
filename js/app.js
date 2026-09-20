@@ -243,6 +243,7 @@
     const nextFastStart = n < content.fastStart.length ? n + 1 : null;
     const poemSection = content.fastStartSections[0];
     const activitySections = content.fastStartSections.slice(1);
+    const detail = content.fastStartDetails?.[String(n)] || null;
 
     return `
       <div class="lesson-hero fast-start">
@@ -257,10 +258,13 @@
             <span class="section-index">1</span>
             <h2>${escapeHtml(poemSection)}</h2>
           </header>
-          <div class="curriculum-placeholder poem-placeholder">
-            Exact source wording for Fast Start #${n}, ${escapeHtml(poemSection)}, will be inserted here from the provided PDF.
-            The interface will not paraphrase or rewrite it.
-          </div>
+          ${detail?.poemHtml
+            ? `<div class="source-content poem-content">${detail.poemHtml}</div>`
+            : `<div class="curriculum-placeholder poem-placeholder">
+                Exact source wording for Fast Start #${n}, ${escapeHtml(poemSection)}, will be inserted here from the provided PDF.
+                The interface will not paraphrase or rewrite it.
+              </div>`
+          }
         </section>
 
         <div class="fast-start-activities">
@@ -272,10 +276,13 @@
                     <span class="section-index">${index + 2}</span>
                     <h2>${escapeHtml(section)}</h2>
                   </header>
-                  <div class="curriculum-placeholder">
-                    Exact source wording for Fast Start #${n}, ${escapeHtml(section)}, will be inserted here from the provided PDF.
-                    The interface will not paraphrase or rewrite it.
-                  </div>
+                  ${detail?.sections?.[section]
+                    ? `<div class="source-content">${detail.sections[section]}</div>`
+                    : `<div class="curriculum-placeholder">
+                        Exact source wording for Fast Start #${n}, ${escapeHtml(section)}, will be inserted here from the provided PDF.
+                        The interface will not paraphrase or rewrite it.
+                      </div>`
+                  }
                 </section>
               `
             )
@@ -333,6 +340,7 @@
     const previousLesson = lessonIndex > 0 ? content.projectRead[lessonIndex - 1] : null;
     const nextLesson =
       lessonIndex < content.projectRead.length - 1 ? content.projectRead[lessonIndex + 1] : null;
+    const detail = content.projectReadDetails?.[lesson.id] || null;
 
     if (state.projectReadId !== lesson.id) {
       state.completed.projectRead = false;
@@ -345,9 +353,7 @@
       <div class="lesson-hero">
         <span class="lesson-number">Project Read</span>
         <h1>${escapeHtml(lesson.label)}</h1>
-        <p>
-          This page is reserved for the exact instructional content from the provided Project Read source document.
-        </p>
+        <p>${detail ? `${escapeHtml(detail.unit)} · SKILL: ${escapeHtml(detail.skill)}` : "Exact instructional content from the provided Project Read source document."}</p>
       </div>
 
       <div class="section-list">
@@ -356,10 +362,19 @@
             <span class="section-index">PR</span>
             <h2>${escapeHtml(lesson.label)} curriculum</h2>
           </header>
-          <div class="curriculum-placeholder">
-            The exact lesson content will be imported from the original Project Read file. Short-vowel symbols
-            such as ă, ĭ, ŏ, ĕ, and ŭ will be preserved exactly.
-          </div>
+          ${detail
+            ? `<div class="source-content project-read-content">
+                <div class="project-read-meta">
+                  <div class="project-read-unit">${escapeHtml(detail.unit)}</div>
+                  <div><strong>SKILL:</strong>&nbsp;&nbsp;${escapeHtml(detail.skill)}</div>
+                </div>
+                ${detail.bodyHtml}
+              </div>`
+            : `<div class="curriculum-placeholder">
+                The exact lesson content will be imported from the original Project Read file. Short-vowel symbols
+                such as ă, ĭ, ŏ, ĕ, and ŭ will be preserved exactly.
+              </div>`
+          }
         </section>
       </div>
 
