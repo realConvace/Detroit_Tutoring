@@ -1810,6 +1810,495 @@ window.TUTORING_CONTENT = {
         "Beginning to Read": `<ol class="instruction-list"><li>Say, <em>Find words that are opposites. You tell them to me, and I’ll write them on index cards or little slips of paper.</em> Play Go Fish or Concentration with the opposites. (A match will be the word and its opposite.)</li><li>Say, <em>I’ll say some more words. You tell me the opposite: up, under, in, early, morning.</em></li><li>Write <em>night</em> and <em>small</em> on a sheet of paper. Point out the <em>-ight</em> and <em>-all</em> word families. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li><li>With your child, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li></ol>`
       }
     }
+,
+    "51": {
+      displayTitle: "Listen!",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Listen poem">
+          <div>The rain</div>
+          <div>Hits the puddles</div>
+          <div>Pop-pop-plop</div>
+          <div>Pings the roof</div>
+          <div>Spat-a-tat-tat</div>
+          <div>Zaps the sidewalks</div>
+          <div>Sizzily-pizzily</div>
+          <div>Slaps the ground</div>
+          <div>Woppity-thud</div>
+          <div>Smoozily-oozily</div>
+          <div>Squooshes to mud.</div>
+          <div class="poem-author">—Jacqueline Sweeney</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child to count the words in the first line of the poem and then to count the words in the last line of the poem.</li>
+            <li>Ask your child to find and underline the uppercase S’s and the lowercase s’s.</li>
+            <li>Show your child the word <em>the</em>. Say, <em>Find and draw circles around the word the in other places in the poem.</em></li>
+            <li>Say, <em>Point to the first line in the poem. Point to the last line. Point to the first word in the poem. Point to the last word. Point to the first word in the last line of the poem.</em></li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>I will say a word from the poem. You say one that rhymes. I say, “ground.” You say ______.</em> Repeat with <em>mud, slop,</em> and <em>ping</em>.</li>
+            <li>Ask, <em>How many syllables (or beats) are in the last stanza of the poem? In the second-to-last stanza?</em></li>
+            <li>Say, <em>Answer these riddles with words that rhyme with rain. I go on tracks.</em> (train) <em>You think with me.</em> (brain) <em>I am another name for a necklace.</em> (chain) <em>If you ______ your ankle, you will be in pain.</em> (sprain)</li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Say, <em>Write the word rain. Now drop a letter to fill in this blank: Today I run, but yesterday I ______.</em> (ran) <em>Now change the last letter to make another word for angry.</em> (mad) <em>Now change the middle letter to make what becomes dirt when it rains.</em> (mud)</li>
+            <li>Ask your child to illustrate this poem and then to write a sentence to describe it.</li>
+            <li>Ask, <em>Which four words describe what the rain did? Think of a word that rhymes with each one.</em></li>
+            <li>Write <em>rain</em> and <em>mud</em> on a sheet of paper. Point out the <em>-ain</em> and <em>-ud</em> word families. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "52": {
+      displayTitle: "My Dog",
+      poemHtml: `
+        <div class="poem-lines" aria-label="My Dog poem">
+          <div>His feet are big,</div>
+          <div>His ears are floppy.</div>
+          <div>When he eats</div>
+          <div>He’s very sloppy.</div>
+          <div>He can’t do tricks,</div>
+          <div>Jump over sticks</div>
+          <div>Or anything that’s clever.</div>
+          <div>But he’s my own,</div>
+          <div>My very own,</div>
+          <div>And I’ll love him</div>
+          <div>Forever!</div>
+          <div class="poem-author">—Helen Lorraine</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child how many lines in the poem begin with capital H.</li>
+            <li>Say, <em>How many words are in the first line of the poem? How many words are in the second line of the poem?</em></li>
+            <li>Ask, <em>Where is the shortest line in the poem? How many words are in this line?</em></li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>I’ll stretch some words. You tell me what they are.</em>
+              <div class="sound-lines">
+                <div>fl...opp...y (floppy)</div>
+                <div>sl...opp...y (sloppy)</div>
+                <div>tr...ick...s (tricks)</div>
+                <div>st...ick...s (sticks)</div>
+              </div>
+            </li>
+            <li>Ask your child to illustrate the poem and tell you about what he or she has drawn.</li>
+            <li>Say, <em>Answer the riddles with a word that rhymes with flop. If you do this, a glass will break.</em> (drop) <em>You can use me to clean the floor.</em> (mop) <em>You do this at a grocery store.</em> (shop) <em>If you jump on one foot, you do this.</em> (hop)</li>
+            <li>Ask, <em>What words will you make if you take the last sound off of the words floppy, tricks, and own?</em> (flop, trick, owe)</li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Ask your child to illustrate the poem and tell you about what he or she has drawn.</li>
+            <li>Put these words on little slips of paper: <em>he’s, he is, can’t, cannot, that’s, that is, I’ll, I will</em>. Play Go Fish or Concentration with the slips of paper. The object is to match a contraction with its longer form (for instance, <em>he’s</em> with <em>he is</em>).</li>
+            <li>Ask your child to find the words in the poem that end with <em>y</em> or <em>s</em> and to say each one without the ending.</li>
+            <li>Write <em>clever</em> and <em>stick</em> on a sheet of paper. Point out the word families <em>-ever</em> and <em>-ick</em> to your child. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice the words on the word wall daily. Or, add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "53": {
+      displayTitle: "Circle of We",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Circle of We poem">
+          <div class="poem-note">(sing to “Goodnight Irene”)</div>
+          <div>You are you. I am me.</div>
+          <div>He is he and she is she.</div>
+          <div>All together, that makes we.</div>
+          <div>He is he and she is she.</div>
+          <div>All together that makes we.</div>
+          <div>It’s the nicest way to be.</div>
+          <div>You and me. You and me.</div>
+          <div>Oh, how happy we’ll be.</div>
+          <div>Let’s join hands</div>
+          <div>You and me</div>
+          <div>In the circle</div>
+          <div>of “we.”</div>
+          <div class="poem-author">—Teddy Slater</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child to circle all the words in the poem that begin with the letter A.</li>
+            <li>Show your child the word <em>me</em>. Say, <em>Find and underline the word me in other places in the poem.</em></li>
+            <li>Say, <em>Find a very short word that starts with T. Find a long word that starts with T.</em></li>
+            <li>Say, <em>Point to the last word in the first line of the poem. Point to the last word in the second line of the poem. Point to the first word in the last line of the poem.</em></li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Ask, <em>How many syllables (beats) are there in the first line of the poem?</em> (six) <em>in the second line?</em> (seven)</li>
+            <li>Say, <em>We’ll start with me. What is the word if we change the beginning sounds to “f,” “fl,” “fr,” “s,” “sh,” “t,” “tr”?</em></li>
+            <li>Say, <em>Clap your hands if the words start the same:</em>
+              <div class="example-row four-up">
+                <strong>me, makes</strong><strong>how, happy</strong><strong>we, way</strong><strong>we’ll, all</strong>
+              </div>
+            </li>
+            <li>Ask your child to stretch out these words into their sounds: <em>makes, she, happy, hands</em>.</li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Ask your child to circle all the words that refer to people and to put them on slips of paper.</li>
+            <li>Say, <em>I will say some people. You tell me which word could mean the same thing. (you, she, he, me, we) Here’s one to begin: My mother.</em> (she) <em>My father.</em> (he) <em>My sister.</em> (she) <em>My brother.</em> (he) <em>Your teacher.</em> (she or he) <em>All of us.</em> (we)</li>
+            <li>Ask your child to find the words in the poem that have the long “e” vowel sound.</li>
+            <li>Write <em>me</em> and <em>hand</em> on a sheet of paper. Point out the <em>-e</em> and <em>-and</em> word families. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "54": {
+      displayTitle: "One Magical Midnight",
+      poemHtml: `
+        <div class="poem-lines" aria-label="One Magical Midnight poem">
+          <div class="poem-note">(sing to “On Top of Old Smokey”)</div>
+          <div>One magical midnight,</div>
+          <div>the moon turned to gold,</div>
+          <div>an old man grew young and</div>
+          <div>a shy boy grew bold.</div>
+          <div>The North Pole got hot and</div>
+          <div>the South Seas got cold.</div>
+          <div>Such things sometimes happen...</div>
+          <div>or so I’ve been told.</div>
+          <div class="poem-author">—Teddy Slater</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child to count and number the lines in the poem.</li>
+            <li>Say, <em>Circle each word in the first line of the poem. Now circle each word in the last line of the poem.</em></li>
+            <li>Ask your child to find and draw boxes around three words that begin with uppercase S.</li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>Listen while I stretch out these -old words. You tell me what the word is:</em>
+              <div class="sound-lines">
+                <div>c...ol...d (cold)</div>
+                <div>b...ol...d (bold)</div>
+                <div>f...ol...d (fold)</div>
+                <div>g...ol...d (gold)</div>
+              </div>
+            </li>
+            <li>Say, <em>Now you try. Stretch out bold, cold, gold, fold.</em></li>
+            <li>Say, <em>Raise your hand if these words start the same:</em>
+              <div class="example-row four-up">
+                <strong>boy, bold</strong><strong>south, such</strong><strong>north, south</strong><strong>cold, bold</strong>
+              </div>
+            </li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Ask your child to find two compound words from the poem and to tell you the word parts for each.</li>
+            <li>Ask, <em>Do you think the story told in this poem could really be true? Why?</em></li>
+            <li>Write <em>gold</em> and <em>midnight</em> on a sheet of paper. Point out the word families <em>-old</em> and <em>-ight</em>. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li>
+            <li>Together choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "55": {
+      displayTitle: "Watering a Rose",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Watering a Rose poem">
+          <div class="poem-note">(sing to “If You’re Happy and You Know It”)</div>
+          <div>If you’re watering a rose,</div>
+          <div>turn on the hose.</div>
+          <div>If your picture’s being taken,</div>
+          <div>strike a pose.</div>
+          <div>If a skunk is coming near,</div>
+          <div>hold your nose, then disappear.</div>
+          <div>’Cause it’s no fun to get a whiff</div>
+          <div>of one of those.</div>
+          <div class="poem-author">—Teddy Slater</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Say, <em>Point to the shortest line in the poem. How many words are in the shortest line?</em></li>
+            <li>Ask your child to count and draw lines between all the words in the first line of the poem.</li>
+            <li>Ask your child to circle all the words with the letter f.</li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>Clap your hands if these words rhyme:</em>
+              <div class="example-row four-up">
+                <strong>rose, pose</strong><strong>near, nose</strong><strong>skunk, trunk</strong><strong>hose, hold</strong>
+              </div>
+            </li>
+            <li>Ask your child to find five words in the poem that have one syllable and then to find three words that have two syllables.</li>
+            <li>Say, <em>I’ll say a word. You say one that rhymes. I say, “rose.” You say ______.</em> Repeat with <em>turn, near, fun, those</em>.</li>
+            <li>Say, <em>Let’s change some words. You tell me what the new word is. We’ll begin with hose. Add a t to the end. What’s the word?</em> (host) <em>Now change the first sound to “r.” What’s the word?</em> (roast) <em>Now change the last sound to “r.” What’s the word?</em> (roar) <em>Now change the last sound to “z.” What’s the word?</em> (rose)</li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Ask, <em>Which words in the poem have two syllables?</em> (picture, being, taken, coming)</li>
+            <li>Ask, <em>What is the vowel sound (short or long) in the first syllable of each of the above words?</em> (short, long, long, short)</li>
+            <li>Write <em>hose</em> and <em>disappear</em> on a sheet of paper. Point out the word families <em>-ose</em> and <em>-ear</em>. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on index cards, one word per card).</li>
+            <li>Ask your child to find and circle these words: <em>picture, whiff, disappear, skunk</em>.</li>
+          </ol>
+        `
+      }
+    },
+    "56": {
+      displayTitle: "Best Deal in Town",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Best Deal in Town poem">
+          <div>I go to the library after school</div>
+          <div>And find myself a book that’s cool.</div>
+          <div>There is no charge,</div>
+          <div>The books are free.</div>
+          <div>Just how much better could it be?</div>
+          <div class="poem-author">—Betsy Franco</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child to count and number the lines in the poem.</li>
+            <li>Say, <em>Count and circle each word in the first line of the poem.</em></li>
+            <li>Say, <em>Find a word that begins with L and two words that end with l.</em></li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>I’ll say a word. You say one that rhymes. I say, “go.” You say ______.</em> Repeat with <em>find, book, cool, free</em>.</li>
+            <li>Ask, <em>How many syllables (beats) are there in the fourth line of the poem?</em> (4) <em>in the last line of the poem?</em> (8)</li>
+            <li>Say, <em>We’ll start with cool. What word would we have if we changed the beginning sound to “f,” “p,” “r,” “t,” “sk”?</em></li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Ask your child to illustrate the poem and write a sentence about it.</li>
+            <li>Say, <em>Write the word read. Now drop a letter to make a color.</em> (red) <em>Now change the first letter to make a place for sleeping.</em> (bed) <em>Now change the middle letter to make the opposite of good.</em> (bad) <em>Now change the ending to make the opposite of front.</em> (back) <em>Now change the middle two letters to make something we can read.</em> (book)</li>
+            <li>Ask your child to find two words with two letters and long vowel sounds. (go, no, be) Then ask your child to find two words with four letters and long vowel sounds. (find, free)</li>
+            <li>Write <em>school, be,</em> and <em>free</em> on a sheet of paper. Point out the <em>-ool, -e,</em> and <em>-ee</em> word families. Together, brainstorm, write, and read other words that rhyme and belong to the word families. Help your child see that the <em>-e</em> and <em>-ee</em> word families make the same sounds. Help your child remember words that are spelled with each word family.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "57": {
+      displayTitle: "Jump or Jiggle",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Jump or Jiggle poem">
+          <div>Frogs jump</div>
+          <div>Caterpillars hump</div>
+          <div>Worms wiggle</div>
+          <div>Bugs jiggle</div>
+          <div>Rabbits hop</div>
+          <div>Horses clop</div>
+          <div>Snakes slide</div>
+          <div>Seagulls glide</div>
+          <div>Mice creep</div>
+          <div>Deer leap</div>
+          <div>Puppies bounce</div>
+          <div>Kittens pounce</div>
+          <div>Lions stalk,</div>
+          <div>But</div>
+          <div>I walk!</div>
+          <div class="poem-author">—Evelyn Beyer</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Say, <em>I will point to some words in the poem. You tell me what letter they start with: Mice, Deer, Snakes, Seagulls, Frogs.</em></li>
+            <li>Ask your child to find and underline two words that end in <em>-op</em>.</li>
+            <li>Ask your child to find and circle two words that end in <em>-alk</em>.</li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>Clap your hands if the words start the same:</em>
+              <div class="example-row four-up">
+                <strong>puppies, pounce</strong><strong>hump, horses</strong><strong>hop, clop</strong><strong>walk, worms</strong>
+              </div>
+            </li>
+            <li>Ask, <em>What is a grown up puppy called? Does it start with the same sound? What is a grown up kitten called? Does it start with the same sound? What is a baby horse called? Does it start with the same sound?</em></li>
+            <li>Say, <em>We’ll start with slide. What if we changed the beginning sounds to “d,” “fr,” “gl,” “h,” “l,” “str”?</em></li>
+            <li>Say, <em>Stretch out these words into their sounds: slide, creep, pounce, stalk.</em></li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Write the animal names on index cards or little slips of paper. Then ask your child to sort them: live outside, live inside, or both; have four legs or don’t have four legs; can walk or cannot walk.</li>
+            <li>Make a duplicate set of the animal cards. Play Go Fish or Concentration with them.</li>
+            <li>Ask your child to sort the animal words in these ways: have long vowel sounds or don’t have long vowel sounds; have one syllable (or beat) or have more than one syllable (or beat); have a blend (for instance, snake, frog, worm) or don’t have a blend.</li>
+            <li>Write <em>glide</em> and <em>hump</em> on a sheet of paper. Point out the word families <em>-ide</em> and <em>-ump</em>. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "58": {
+      displayTitle: "Maytime Magic",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Maytime Magic poem">
+          <div>A little seed</div>
+          <div>For me to sow . . .</div>
+          <div>A little earth</div>
+          <div>To make it grow . . .</div>
+          <div>A little hole,</div>
+          <div>A little pat . . .</div>
+          <div>A little wish,</div>
+          <div>And that is that.</div>
+          <div>A little sun,</div>
+          <div>A little shower . . .</div>
+          <div>A little while,</div>
+          <div>And then, a flower!</div>
+          <div class="poem-author">—Mabel Watts</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child to number all the lines that begin with A. Ask, <em>How many lines did you find?</em></li>
+            <li>Ask your child to find two lines that have four words and to circle each word in the two lines.</li>
+            <li>Show your child the word <em>little</em>. Say, <em>Find and underline each little.</em></li>
+            <li>Say, <em>Point to the first line in the poem. Point to the last line in the poem. Point to the longest line in the poem. Point to the shortest line in the poem.</em></li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>Answer the riddles with words that rhyme with wish. I am a plate.</em> (dish) <em>I live in water.</em> (fish) <em>I go with splash.</em> (splish)</li>
+            <li>Say, <em>Let’s start with shower. What if we changed the first sound to “t”? to “p”? to “fl”?</em></li>
+            <li>Say, <em>Let’s clap the beats while we read the middle stanza of the poem. How many syllables (or beats) are in each line?</em> (4)</li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Say, <em>Write the word seed. Now change the first letter to make what we do for a baby at lunchtime.</em> (feed) <em>Now change the middle letters to make a word that means “things you can eat.”</em> (food) <em>Now add a letter near the beginning to make what happens to a river after it rains a lot.</em> (flood) <em>Now change the last letters and add -er to make what a seed can become.</em> (flower)</li>
+            <li>Ask your child to circle five words that have long vowel sounds. (seed, sow, make, grow, hole, while)</li>
+            <li>Write <em>that</em> and <em>wish</em> on a sheet of paper. Point out the <em>-at</em> and <em>-ish</em> word families. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on index cards, one word per card).</li>
+            <li>Write the word <em>flower</em>. Together, write other words that rhyme with <em>flower</em> and have the same spelling pattern. (lower, power)</li>
+          </ol>
+        `
+      }
+    },
+    "59": {
+      displayTitle: "My Neighborhood",
+      poemHtml: `
+        <div class="poem-lines" aria-label="My Neighborhood poem">
+          <div>People move in,</div>
+          <div>People move out,</div>
+          <div>Little children play and shout.</div>
+          <div>Old people, young people,</div>
+          <div>In-between,</div>
+          <div>Make a lively neighborhood scene.</div>
+          <div class="poem-author">—Betsy Franco</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask, <em>How many words are in the first line of the poem? How many words are in the second line of the poem?</em></li>
+            <li>Say, <em>Look at the first and second lines of the poem again. Do you see two words that are the same? Draw a box around these words.</em> Repeat.</li>
+            <li>Ask your child to find and circle one word that starts with uppercase M and two words that start with lowercase m.</li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>I’ll stretch these words. You tell me what the words are:</em>
+              <div class="sound-lines">
+                <div>pee...p...ull (people)</div>
+                <div>mm...ooo...ve (move)</div>
+                <div>pp...l...ay (play)</div>
+                <div>sh...ow...tt (shout)</div>
+              </div>
+            </li>
+            <li>Say, <em>Now you stretch out these words: old, young, make.</em></li>
+            <li>Say, <em>Let’s clap the syllables or beats while we read the poem.</em></li>
+            <li>Say, <em>I will say a word. You say its opposite: in, little, old, play.</em></li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Say, <em>I’ll say a word from the poem. You tell me if the word has a long vowel sound. People</em> (yes), <em>little</em> (no), <em>play</em> (yes), <em>between</em> (yes), <em>lovely</em> (yes).</li>
+            <li>Ask your child to illustrate the poem, write a sentence about it, and read it to you.</li>
+            <li>Say, <em>I’ll say a word from the poem. You tell me how many syllables (or beats) it has. People</em> (2), <em>move</em> (1), <em>children</em> (2), <em>young</em> (1), <em>neighborhood</em> (3), <em>scene</em> (1).</li>
+            <li>Write <em>shout</em> and <em>make</em> on a sheet of paper. Point out the word families <em>-out</em> and <em>-ake</em>. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "60": {
+      displayTitle: "Wait for Me",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Wait for Me poem">
+          <div>Wait for me</div>
+          <div>And I’ll be there</div>
+          <div>And we’ll walk home together,</div>
+          <div>If it’s raining puddle pails</div>
+          <div>Or if it’s sunny weather.</div>
+          <div class="poem-stanza-gap"></div>
+          <div>Wait for me</div>
+          <div>And I’ll be there</div>
+          <div>And we’ll walk home together.</div>
+          <div>You wear red</div>
+          <div>And I’ll wear blue</div>
+          <div>And we’ll be friends forever.</div>
+          <div class="poem-author">—Sarah Wilson</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask, <em>How many words in the poem end in the letter e?</em></li>
+            <li>Show your child the word <em>and</em>. Say, <em>Find and circle all the and’s.</em></li>
+            <li>Say, <em>Find two lines in the poem that start with And. Count and circle the words in each line.</em></li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>I’ll stretch some words. You tell me what they are:</em>
+              <div class="sound-lines">
+                <div>wh...aay...te (wait)</div>
+                <div>wh...eee...ll (we’ll)</div>
+                <div>w...al...k (walk)</div>
+                <div>wh...eh...er (weather)</div>
+              </div>
+            </li>
+            <li>Say, <em>Clap your hands if these words start the same:</em>
+              <div class="example-row four-up">
+                <strong>wait, weather</strong><strong>puddle, pails</strong><strong>for, forever</strong><strong>together, weather</strong>
+              </div>
+            </li>
+            <li>Ask, <em>What word do you make when you take the last sound off the words home, wait, pails?</em></li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Ask, <em>What are the two most important words in the poem? Why do you think they’re the most important?</em></li>
+            <li>Make word cards for <em>I’ll, we’ll, it’s, I will, we will,</em> and <em>it is</em>. Play Concentration together. The object is to match the contraction with its longer form (for instance, <em>I’ll</em> with <em>I will</em>).</li>
+            <li>Say, <em>Circle all the words that have the long “a” sound. Be careful! Some are not spelled with just an a.</em> (wait, raining, pails, wear)</li>
+            <li>Write <em>nail</em> and <em>and</em> on a sheet of paper. Point out the <em>-ail</em> and <em>-and</em> word families. Together, brainstorm, write, and read other words that rhyme and belong to the word families.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily.</li>
+          </ol>
+        `
+      }
+    }
 
   },
 
