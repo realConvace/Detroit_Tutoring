@@ -71,6 +71,9 @@ window.TUTORING_CONTENT = {
 
   fastStartDetails: {
     "1": {
+      displayTitle: "Pat-a-Cake",
+      clipartPath: "assets/clipart/pat-a-cake-bread.svg",
+      clipartAlt: "Child-friendly line drawing of a steaming baked bun.",
       poemHtml: `
         <div class="poem-lines" aria-label="Pat-a-Cake poem">
           <div>Pat-a-cake, pat-a-cake,</div>
