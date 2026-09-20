@@ -1504,3 +1504,22 @@ select {
     width: 100%;
   }
 }
+
+
+/* Refine Fast Start hero finish button to match orange banner */
+.fast-start-finish-button {
+  background: #fff3df;
+  color: #8b4a16;
+  border: 1px solid rgba(139, 74, 22, .18);
+  box-shadow: 0 5px 14px rgba(111, 59, 19, .16);
+}
+
+.fast-start-finish-button:hover {
+  background: #ffe8c6;
+  color: #773d10;
+  border-color: rgba(119, 61, 16, .24);
+}
+
+.fast-start-finish-button:active {
+  background: #ffdfae;
+}
