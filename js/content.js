@@ -411,7 +411,7 @@ window.TUTORING_CONTENT = {
     ,
     "7": {
       displayTitle: "Humpty Dumpty",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="Humpty Dumpty poem">
           <div>Humpty Dumpty sat on a wall,</div>
           <div>Humpty Dumpty had a great fall.</div>
@@ -419,16 +419,16 @@ window.TUTORING_CONTENT = {
           <div>And all the king’s men</div>
           <div>Couldn’t put Humpty together again!</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Ask, <em>Which lines have the most words? How many words do they each have?</em></li>
             <li>Ask, <em>Which line has the fewest words? How many words does it have?</em></li>
             <li>Ask your child to circle the words that have two l’s in a row. (wall, fall, all)</li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>
               Say, <em>I’ll say two words. Clap your hands if they rhyme:</em>
@@ -448,8 +448,8 @@ window.TUTORING_CONTENT = {
               </div>
             </li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>Ask your child to circle the words that name living things.</li>
             <li>Say, <em>We’ll start with all. What’s the word if we put “b” in the beginning?</em> (ball) Repeat with “f,” “sm,” “h,” “m,” “t,” “w.”</li>
@@ -457,12 +457,12 @@ window.TUTORING_CONTENT = {
             <li>Write <em>wall</em> on a sheet of paper. Point out the <em>-all</em> word family. Together, brainstorm, write, and read other words that rhyme and belong to the word family.</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     },
     "8": {
       displayTitle: "Little Bo Peep",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="Little Bo Peep poem">
           <div>Little Bo Peep</div>
           <div>Has lost her sheep,</div>
@@ -471,9 +471,9 @@ window.TUTORING_CONTENT = {
           <div>And they’ll come home,</div>
           <div>Wagging their tails behind them.</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Ask your child to find and circle the t’s.</li>
             <li>Ask your child to find and circle the two lines in the poem that have only three words.</li>
@@ -488,8 +488,8 @@ window.TUTORING_CONTENT = {
             <li>Ask your child to count all the words in the poem.</li>
             <li>Ask your child to point to the top, then the bottom, of the poem.</li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>Say, <em>Listen while I clap (or tap) the beats of the poem. Now let’s clap (or tap) the beats of the poem together.</em></li>
             <li>Ask your child how many beats are in these words: little (2), lost (1), leave (1), wagging (2).</li>
@@ -502,8 +502,8 @@ window.TUTORING_CONTENT = {
               </div>
             </li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>Ask your child to find and circle words with a long “o.” (Bo, know, alone, home)</li>
             <li>Say, <em>I’ll say a word. You tell me the last sound in it:</em> peep, lost, them, tails.</li>
@@ -511,12 +511,12 @@ window.TUTORING_CONTENT = {
             <li>Write <em>sheep</em> on a sheet of paper. Point out the <em>-eep</em> word family. Together, brainstorm, write, and read other words that rhyme and belong to the word family.</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     },
     "9": {
       displayTitle: "Little Miss Muffet",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="Little Miss Muffet poem">
           <div>Little Miss Muffet</div>
           <div>Sat on a tuffet</div>
@@ -525,24 +525,24 @@ window.TUTORING_CONTENT = {
           <div>And sat down beside her</div>
           <div>And frightened Miss Muffet away!</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Ask your child to find and circle three uppercase A’s and three lowercase a’s.</li>
             <li>Ask, <em>How many words are in the first line of the poem? How about the last line? Which line has more words?</em></li>
             <li>Have your child point to the first line of the poem, then underline the first word and last word. Repeat with the last line.</li>
             <li>Ask your child to point to the first word in the poem and then to the last word.</li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>Say, <em>Let’s say words that rhyme with sat. I’ll say the first sound; you tell me the word:</em> “b,” “f,” “m,” “p,” “th.” (bat, fat, mat, pat, that)</li>
             <li>Ask your child why these words belong together: Muffet, tuffet (they rhyme); curds, came (they start the same); Miss, Muffet (they start the same and they are both part of the girl’s name).</li>
             <li>Take turns stretching out words and guessing what they are: sat, and, miss, beside, spider, eating.</li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>Ask your child to circle the words with one syllable or beat. (Miss, sat, on, a, her, curds, and, whey, came, a, and, sat, down, her, and, Miss)</li>
             <li>Ask your child to underline the words in the poem with two syllables or beats. (Little, Muffet, tuffet, eating, along, spider, beside, frightened, Muffet, away)</li>
@@ -550,12 +550,12 @@ window.TUTORING_CONTENT = {
             <li>Ask your child to find and underline the words little, sat, tuffet, and spider.</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     },
     "10": {
       displayTitle: "I’m Me!",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="I’m Me poem">
           <div>In the mirror</div>
           <div>What do I see?</div>
@@ -568,16 +568,16 @@ window.TUTORING_CONTENT = {
           <div>Just like those!</div>
           <div class="poem-author">—Meish Goldish</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Ask your child to count the lines in the poem.</li>
             <li>Say, <em>Underline the first word in the poem. Now underline the last word in the poem.</em></li>
             <li>Ask your child to find and circle the words that start with M, m. Have him or her practice writing the letter M, m.</li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>
               Say, <em>I’ll say two words. Clap your hands if they rhyme:</em>
@@ -596,8 +596,8 @@ window.TUTORING_CONTENT = {
             </li>
             <li>Say, <em>Let’s take the “s” off the word see. What if it started with “b”? What is the new word?</em> (be or bee) Repeat with “fr,” “m,” and “sh.”</li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>Ask your child to underline words that name body parts.</li>
             <li>Invite your child to draw a picture of him- or herself and label eyes, ears, lips, and nose, as in the poem.</li>
@@ -605,12 +605,12 @@ window.TUTORING_CONTENT = {
             <li>Write <em>see</em> and <em>me</em> on a sheet of paper. Point out the word endings <em>-ee</em> and <em>-e</em>. Together, brainstorm, write, and read other words that rhyme and belong to those word families.</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     },
     "11": {
       displayTitle: "What Do You Need?",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="What Do You Need poem">
           <div>To build a house</div>
           <div>You need a block.</div>
@@ -628,16 +628,16 @@ window.TUTORING_CONTENT = {
           <div>Sock!</div>
           <div class="poem-author">—Helen O’Reilly</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Ask your child to count the words in the first and last lines. Say, <em>Which line has more words, the first or the last?</em></li>
             <li>Ask your child to underline the lines with four words.</li>
             <li>Point to the word <em>to</em> in the poem. Say, <em>Circle the word to in other places in the poem.</em></li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>Say, <em>Tell me if these words rhyme with block:</em> house, clock, time, door, knock.</li>
             <li>
@@ -662,8 +662,8 @@ window.TUTORING_CONTENT = {
               <div style="margin-top:8px">Now I’ll say the same pairs of words again. Raise your hand if they rhyme.</div>
             </li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>Ask your child to circle the words in the poem that are things you can touch.</li>
             <li>Make two word cards for each of these words and play Concentration: block, clock, knock, sock, dock.</li>
@@ -671,12 +671,12 @@ window.TUTORING_CONTENT = {
             <li>Say, <em>Let’s start with tick. Change the beginning to “st.” What’s the word?</em> (stick) <em>Now change the beginning to “s.” What’s the word?</em> (sick) <em>Now change the middle to short “o.” What’s the word?</em> (sock) <em>Now change the beginning to “t.” What’s the word?</em> (tock)</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     },
     "12": {
       displayTitle: "This Little Piggy",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="This Little Piggy poem">
           <div>This little piggy went to market,</div>
           <div>This little piggy stayed home.</div>
@@ -686,16 +686,16 @@ window.TUTORING_CONTENT = {
           <div>“Wee, wee, wee!”</div>
           <div>All the way home.</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Ask your child how many words are in the first line of the poem. How about the second line?</li>
             <li>Ask your child to find and circle the uppercase T’s. Repeat with the lowercase t’s.</li>
             <li>Show your child the word <em>little</em> in the title. Say, <em>Look for this word in the poem and underline it. How many can you find?</em></li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>Say, <em>Let’s clap the syllables or beats as we read the poem.</em></li>
             <li>Say, <em>How many syllables or beats do you hear in these words?</em> this (1), little (2), piggy (2), market (2)</li>
@@ -709,8 +709,8 @@ window.TUTORING_CONTENT = {
               </div>
             </li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>Ask your child to find the words with two syllables, or beats, and to draw boxes around them. (little, piggy, market)</li>
             <li>Ask your child to circle the words that are places.</li>
@@ -718,12 +718,12 @@ window.TUTORING_CONTENT = {
             <li>Ask your child to find these words and put a box around them: this, piggy, market, way.</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     },
     "13": {
       displayTitle: "The Lesson",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="The Lesson poem">
           <div>I splash, I flop,</div>
           <div>I tread, I hop,</div>
@@ -732,16 +732,16 @@ window.TUTORING_CONTENT = {
           <div>Then, suddenly! I swim.</div>
           <div class="poem-author">—Jane W. Krows</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Ask your child to find the uppercase I’s. Then ask your child to find lowercase i’s.</li>
             <li>Say, <em>Two lines start with I. How many words are in each of those lines?</em></li>
             <li>Say, <em>Two lines start with My. How many words are in each of those lines?</em></li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>Say, <em>Let’s think of words that rhyme with hop. You tell them to me, and I’ll write them down.</em></li>
             <li>
@@ -765,20 +765,20 @@ window.TUTORING_CONTENT = {
               </div>
             </li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>Ask your child to illustrate the poem and tell you about his or her picture.</li>
             <li>Say, <em>Let’s start with hop. Change the first sound to “s.” What’s the word? Now change the first sound to “t.” What’s the word? Now change the first sound to “fl.” What’s the word?</em></li>
             <li>Write <em>hop</em> on a sheet of paper. Point out the <em>-op</em> word family. Together, brainstorm, write, and read other words that rhyme and belong to the word family.</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     },
     "14": {
       displayTitle: "Apples Three",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="Apples Three poem">
           <div>Fresh picked apples</div>
           <div>From a tree</div>
@@ -790,16 +790,16 @@ window.TUTORING_CONTENT = {
           <div>From an apple tree</div>
           <div class="poem-author">—Monica Kulling</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Ask your child to circle all the uppercase A’s, then the lowercase a’s. Invite him or her to practice writing the letter A, a.</li>
             <li>Ask your child to find and underline all the lines with three words.</li>
             <li>Say, <em>Draw boxes around words that end in -ee. Now draw boxes around words that end in e. Say the words for your child. Say, Listen to the words. Do they sound the same?</em></li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>
               Say, <em>I will stretch out some words. You tell me what they are.</em>
@@ -819,8 +819,8 @@ window.TUTORING_CONTENT = {
               </div>
             </li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>
               Say, <em>Why do these words belong together?</em>
@@ -835,12 +835,12 @@ window.TUTORING_CONTENT = {
             <li>Write <em>tree</em> and <em>me</em> on a sheet of paper. Point out the <em>-ee</em> and <em>-e</em> word families. Together, brainstorm, write, and read other words that rhyme and belong to these word families.</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     },
     "15": {
       displayTitle: "Old Mother Hubbard",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="Old Mother Hubbard poem">
           <div>Old Mother Hubbard went to the cupboard,</div>
           <div>To give her poor dog a bone.</div>
@@ -853,17 +853,17 @@ window.TUTORING_CONTENT = {
           <div>And when she came back . . .</div>
           <div>He was feeding the cat!</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Ask your child to underline words that begin with “b.” Invite him or her to practice writing the letter B, b.</li>
             <li>Ask your child to circle words that end with “d.” Invite him or her to practice writing the letter D, d.</li>
             <li>Show your child the word <em>dog</em> in the poem. Say, <em>Can you find this word in other places in the poem?</em></li>
             <li>Ask your child to count the words in the first and last lines.</li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>
               Say, <em>I will stretch some words out. You tell me what they are:</em>
@@ -876,8 +876,8 @@ window.TUTORING_CONTENT = {
             <li>Say, <em>Guess the answers. They will rhyme with back. Trains go on me.</em> (track) <em>I am another word for bag.</em> (sack or pack)</li>
             <li>Say, <em>Help me decide if these words rhyme with old:</em> gold, poor, bold, dog, told.</li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>Ask your child to circle the words that name living things.</li>
             <li>
@@ -892,12 +892,12 @@ window.TUTORING_CONTENT = {
             <li>Write <em>bread</em> and <em>fed</em> on a sheet of paper. Point out the word families <em>-ead</em> (head, dead) and <em>-ed</em> (bed, red, Ted, wed). Together, brainstorm, write, and read other words that rhyme and belong to the word families. Help your child remember the spellings for the various words you make.</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     },
     "16": {
       displayTitle: "The Old Woman Who Lived in a Shoe",
-      poemHtml: \`
+      poemHtml: `
         <div class="poem-lines" aria-label="The Old Woman Who Lived in a Shoe poem">
           <div>There was an old woman</div>
           <div>Who lived in a shoe.</div>
@@ -909,16 +909,16 @@ window.TUTORING_CONTENT = {
           <div>Then hugged them all soundly</div>
           <div>And sent them to bed.</div>
         </div>
-      \`,
+      `,
       sections: {
-        "Looking at Words and Letters": \`
+        "Looking at Words and Letters": `
           <ol class="instruction-list">
             <li>Say, <em>I will point to three words. You tell me what letter each one starts with:</em> woman, was, many.</li>
             <li>Ask your child to count the words in the first line of the poem. Then ask your child to circle the first word and the last word.</li>
             <li>Ask your child to find the last line of the poem and to underline the second word in that line.</li>
           </ol>
-        \`,
-        "Playing With Sounds": \`
+        `,
+        "Playing With Sounds": `
           <ol class="instruction-list">
             <li>
               Say, <em>Clap your hands if these words rhyme:</em>
@@ -938,8 +938,8 @@ window.TUTORING_CONTENT = {
             </li>
             <li>Say, <em>Now you try it. Stretch these words:</em> shoe, she.</li>
           </ol>
-        \`,
-        "Beginning to Read": \`
+        `,
+        "Beginning to Read": `
           <ol class="instruction-list">
             <li>Ask your child to draw the poem and to tell you about the picture.</li>
             <li>Ask your child to circle words that name living things. Ask your child to make squares around words that are things but not alive.</li>
@@ -947,7 +947,7 @@ window.TUTORING_CONTENT = {
             <li>Write <em>sent</em> on a sheet of paper. Point out the <em>-ent</em> word family. Together, brainstorm, write, and read other words that rhyme and belong to the word family. (bent, cent, dent, lent, rent, tent, went) Help your child remember the spellings for the various words you make.</li>
             <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
           </ol>
-        \`
+        `
       }
     }
   },
