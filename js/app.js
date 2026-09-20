@@ -46,6 +46,15 @@
 
   const completedCount = () => Object.values(state.completed).filter(Boolean).length;
 
+  const formatProjectReadUnit = (id) => {
+    const match = String(id).match(/^(\d+)([A-Za-z]*)$/);
+    if (!match) return String(id);
+
+    const [, number, suffix] = match;
+    const paddedNumber = number.length === 1 ? number.padStart(2, "0") : number;
+    return `${paddedNumber}${suffix.toUpperCase()}`;
+  };
+
   const setCurrentNav = (route) => {
     document.querySelectorAll("[data-nav]").forEach((link) => {
       const active = link.dataset.nav === route;
@@ -365,10 +374,12 @@
     saveState();
 
     return `
-      <div class="lesson-hero">
-        <span class="lesson-number">Project Read</span>
-        <h1>${escapeHtml(lesson.label)}</h1>
-        <p>${detail ? `${escapeHtml(detail.unit)} · SKILL: ${escapeHtml(detail.skill)}` : "Exact instructional content from the provided Project Read source document."}</p>
+      <div class="lesson-hero project-read-hero">
+        <div class="project-read-hero-copy">
+          <h1>Project Read</h1>
+          <p class="project-read-hero-subheader">Unit ${escapeHtml(formatProjectReadUnit(lesson.id))}</p>
+        </div>
+        <button class="btn project-read-finish-button" data-action="finish-project-read">✓ Finish Unit</button>
       </div>
 
       <div class="section-list">
@@ -393,18 +404,20 @@
         </section>
       </div>
 
-      <div class="button-row">
-        ${previousLesson
-          ? `<a class="btn btn-muted" href="#project-read/${encodeURIComponent(previousLesson.id)}">← Previous Project Read</a>`
-          : `<a class="btn btn-muted" href="#session">Back to session</a>`
-        }
+      <div class="button-row project-read-navigation">
+        <div class="project-read-nav-left">
+          ${previousLesson
+            ? `<a class="btn btn-muted" href="#project-read/${encodeURIComponent(previousLesson.id)}">← Previous Unit</a>`
+            : `<a class="btn btn-muted" href="#session">Back to session</a>`
+          }
+        </div>
 
-        <button class="btn btn-success" data-action="finish-project-read">✓ Finish Project Read</button>
-
-        ${nextLesson
-          ? `<a class="btn btn-primary" href="#project-read/${encodeURIComponent(nextLesson.id)}">Next Project Read →</a>`
-          : ""
-        }
+        <div class="project-read-nav-right">
+          ${nextLesson
+            ? `<a class="btn btn-primary" href="#project-read/${encodeURIComponent(nextLesson.id)}">Next Unit →</a>`
+            : ""
+          }
+        </div>
       </div>
     `;
   };
