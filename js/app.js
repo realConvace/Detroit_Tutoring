@@ -212,9 +212,10 @@
   };
 
   const fastStartLibrary = () => `
-    <div class="page-heading">
+    <div class="page-heading fast-start-library-heading">
       <div>
         <h1>Choose a Fast Start for Early Readers</h1>
+        <div class="fast-start-library-line" aria-hidden="true"></div>
       </div>
     </div>
 
