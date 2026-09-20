@@ -1720,3 +1720,86 @@ select {
   transform: none;
   opacity: 1;
 }
+
+
+/* Improve Project Read readability without changing banners or buttons */
+.project-read-skill-label {
+  font-size: clamp(1.35rem, 1.55vw, 1.55rem);
+}
+
+.project-read-skill-value {
+  font-size: clamp(1.35rem, 1.6vw, 1.6rem);
+  line-height: 1.5;
+}
+
+.project-read-main-content .source-content,
+.project-read-content {
+  font-size: clamp(1.2rem, 1.35vw, 1.4rem);
+  line-height: 1.7;
+}
+
+.project-read-intro p {
+  font-size: clamp(1.22rem, 1.4vw, 1.45rem);
+  line-height: 1.65;
+}
+
+.consonant-list {
+  gap: 12px;
+}
+
+.consonant-list > div {
+  padding: 13px 16px;
+  font-size: clamp(1.18rem, 1.3vw, 1.34rem);
+  line-height: 1.55;
+}
+
+.project-read-block h3 {
+  font-size: clamp(1.35rem, 1.5vw, 1.55rem);
+  line-height: 1.3;
+}
+
+.word-list-grid {
+  max-width: 920px;
+  gap: 10px;
+}
+
+.word-list-grid > div {
+  gap: 20px;
+  padding: 11px 14px;
+  font-size: clamp(1.28rem, 1.45vw, 1.5rem);
+  line-height: 1.45;
+}
+
+.sentence-list {
+  gap: 14px;
+  font-size: clamp(1.4rem, 1.65vw, 1.72rem);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .project-read-skill-label {
+    font-size: 1.3rem;
+  }
+
+  .project-read-skill-value {
+    font-size: 1.3rem;
+  }
+
+  .project-read-main-content .source-content,
+  .project-read-content {
+    font-size: 1.16rem;
+  }
+
+  .project-read-intro p,
+  .consonant-list > div {
+    font-size: 1.16rem;
+  }
+
+  .word-list-grid > div {
+    font-size: 1.22rem;
+  }
+
+  .sentence-list {
+    font-size: 1.35rem;
+  }
+}
