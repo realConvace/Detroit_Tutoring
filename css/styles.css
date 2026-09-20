@@ -2786,3 +2786,55 @@ select {
     min-width: calc(var(--pr-teaching-group-count) * 115px);
   }
 }
+
+
+/* Project Read: preserve exact source row/column ordering */
+.project-read-word-table {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  min-width: calc(var(--pr-word-cols) * 150px);
+}
+
+.project-read-word-row {
+  display: grid;
+  grid-template-columns: repeat(var(--pr-word-cols), minmax(125px, 1fr));
+  gap: 12px;
+}
+
+.project-read-word-item {
+  font-weight: 400;
+}
+
+.project-read-word-empty {
+  display: block;
+  min-height: 58px;
+}
+
+/* Review / Introduce formatting */
+.project-read-inline-label {
+  font-weight: 900;
+  color: inherit;
+}
+
+.project-read-new-red-words {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 4px 10px;
+  border: 1px solid #c8b6ea;
+  border-radius: 10px;
+  background: #f0eaff;
+  color: #62409a;
+  font-weight: 700;
+}
+
+/* Keep source groupings intact on narrow screens instead of reordering them. */
+@media (max-width: 700px) {
+  .project-read-word-table {
+    min-width: calc(var(--pr-word-cols) * 135px);
+  }
+
+  .project-read-word-row {
+    grid-template-columns: repeat(var(--pr-word-cols), minmax(110px, 1fr));
+  }
+}
