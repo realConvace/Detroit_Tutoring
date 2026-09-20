@@ -386,8 +386,8 @@
         ${detail
           ? `
             <div class="project-read-skill-box">
-              <strong>Skill:</strong>
-              <span>${escapeHtml(detail.skill)}</span>
+              <div class="project-read-skill-label">Skill:</div>
+              <div class="project-read-skill-value">${escapeHtml(detail.skill)}</div>
             </div>
 
             <section class="curriculum-section project-read-main-content">
