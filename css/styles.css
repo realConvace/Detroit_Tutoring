@@ -2291,3 +2291,23 @@ select {
   border-radius: 999px;
   background: linear-gradient(90deg, var(--primary), rgba(31,111,120,.2));
 }
+
+
+/* Make reset session action stand out */
+.reset-session-button {
+  background: #fff0ee;
+  color: #a23d32;
+  border: 2px solid #e5a59d;
+  box-shadow: 0 6px 16px rgba(162, 61, 50, .12);
+  font-weight: 900;
+}
+
+.reset-session-button:hover {
+  background: #ffe3df;
+  color: #8f3027;
+  border-color: #d9877d;
+}
+
+.reset-session-button:active {
+  background: #ffd8d2;
+}
