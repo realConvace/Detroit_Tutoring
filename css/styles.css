@@ -2877,3 +2877,198 @@ select {
 .project-read-word-list .project-read-word-item strong {
   font-weight: 400 !important;
 }
+
+
+/* Project Read: larger Skill / Review / Introduce / Red Words presentation */
+.project-read-skill-box {
+  padding: 22px 26px 24px;
+}
+
+.project-read-skill-label {
+  font-size: clamp(1.62rem, 1.9vw, 1.9rem) !important;
+  padding-bottom: 9px;
+}
+
+.project-read-skill-label::after {
+  width: 66px;
+  height: 3px;
+}
+
+.project-read-skill-value {
+  margin-top: 14px;
+  font-size: clamp(1.6rem, 1.9vw, 1.92rem) !important;
+  line-height: 1.5;
+}
+
+.project-read-teaching {
+  display: grid;
+  gap: 20px;
+  padding: 24px 26px;
+}
+
+.project-read-teaching-preface {
+  padding: 14px 17px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.72);
+  font-size: clamp(1.3rem, 1.48vw, 1.52rem);
+  line-height: 1.55;
+}
+
+.project-read-teaching-subsection {
+  display: block;
+}
+
+.project-read-subsection-heading {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  color: #102f3a;
+  font-size: clamp(1.5rem, 1.72vw, 1.72rem);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.project-read-subsection-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: calc(100% + 12px);
+  height: 3px;
+  border-radius: 999px;
+  background: #2b7c87;
+}
+
+.project-read-introduce-subsection .project-read-subsection-heading::after {
+  background: #6f5db1;
+}
+
+.project-read-teaching-value {
+  margin-top: 14px;
+  font-size: clamp(1.5rem, 1.78vw, 1.82rem);
+  line-height: 1.5;
+  letter-spacing: .015em;
+}
+
+.project-read-intro-note {
+  margin-top: 15px;
+  font-size: clamp(1.25rem, 1.42vw, 1.46rem);
+  line-height: 1.55;
+}
+
+.project-read-introduce-details {
+  display: grid;
+  gap: 11px;
+  margin-top: 20px;
+}
+
+.project-read-teaching .project-read-cue {
+  padding: 14px 17px;
+  font-size: clamp(1.3rem, 1.5vw, 1.52rem);
+  line-height: 1.5;
+}
+
+.project-read-teaching-groups {
+  margin-top: 0;
+  max-width: 900px;
+}
+
+.project-read-teaching-chip {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 11px 16px;
+  font-size: clamp(1.3rem, 1.48vw, 1.5rem);
+}
+
+/* Red Words: reviewed words = blue chips, newly introduced = red chips */
+.project-read-red-words {
+  padding: 24px 26px;
+}
+
+.project-read-red-words h3 {
+  margin-bottom: 20px;
+  font-size: clamp(1.5rem, 1.75vw, 1.78rem);
+}
+
+.project-read-red-group + .project-read-red-group {
+  margin-top: 22px;
+}
+
+.project-read-red-words .project-read-subsection-heading {
+  font-size: clamp(1.42rem, 1.62vw, 1.62rem);
+}
+
+.project-read-red-words .project-read-subsection-heading::after {
+  background: #b9783b;
+}
+
+.project-read-red-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.project-read-red-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 8px 15px;
+  border-radius: 12px;
+  font-size: clamp(1.25rem, 1.45vw, 1.48rem);
+  line-height: 1.2;
+}
+
+.project-read-red-chip--review {
+  border: 2px solid #7daedb;
+  background: #e9f4ff;
+  color: #165b92;
+  font-weight: 800;
+}
+
+.project-read-red-chip--new,
+.project-read-red-words .project-read-red-chip--new {
+  border: 2px solid #d85a6d !important;
+  background: #fff0f2 !important;
+  color: #a81731 !important;
+  font-weight: 900 !important;
+}
+
+.project-read-red-note {
+  margin-top: 18px;
+  padding: 13px 16px;
+  font-size: clamp(1.22rem, 1.4vw, 1.42rem);
+  line-height: 1.55;
+}
+
+.project-read-red-word-inline {
+  color: #a81731 !important;
+  font-weight: 900;
+}
+
+/* Override older inline red-word styling now that chip markup is used. */
+.project-read-new-red-words {
+  margin-left: 0;
+}
+
+@media (max-width: 700px) {
+  .project-read-skill-label {
+    font-size: 1.48rem !important;
+  }
+
+  .project-read-skill-value,
+  .project-read-teaching-value {
+    font-size: 1.42rem !important;
+  }
+
+  .project-read-subsection-heading {
+    font-size: 1.38rem;
+  }
+
+  .project-read-teaching,
+  .project-read-red-words {
+    padding: 20px;
+  }
+}
