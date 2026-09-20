@@ -1268,3 +1268,60 @@ select {
     max-width: none;
   }
 }
+
+
+/* Improve Fast Start activity readability */
+.fast-start-activities .curriculum-section h2 {
+  font-size: clamp(1.15rem, 1.25vw, 1.35rem);
+  line-height: 1.25;
+}
+
+.fast-start-activities .source-content,
+.fast-start-activities .curriculum-placeholder {
+  font-size: clamp(1rem, 1.05vw, 1.12rem);
+  line-height: 1.58;
+}
+
+.fast-start-activities .instruction-list {
+  padding-left: 1.45rem;
+}
+
+.fast-start-activities .instruction-list > li {
+  margin-bottom: .95rem;
+}
+
+.fast-start-activities .example-row {
+  font-size: 1.02em;
+}
+
+.fast-start-activities .sound-lines {
+  font-size: .98em;
+  line-height: 1.65;
+}
+
+.fast-start-activities .word-sort-grid > div {
+  font-size: .98em;
+  line-height: 1.45;
+}
+
+@media (max-width: 1180px) {
+  .fast-start-activities .curriculum-section h2 {
+    font-size: 1.14rem;
+  }
+
+  .fast-start-activities .source-content,
+  .fast-start-activities .curriculum-placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .fast-start-activities .curriculum-section h2 {
+    font-size: 1.22rem;
+  }
+
+  .fast-start-activities .source-content,
+  .fast-start-activities .curriculum-placeholder {
+    font-size: 1.06rem;
+  }
+}
