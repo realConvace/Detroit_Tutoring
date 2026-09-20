@@ -2063,3 +2063,38 @@ select {
     border-radius: 5px;
   }
 }
+
+
+/* Final Project Read Word List styling */
+.project-read-word-list {
+  background: #eaf1fb !important;
+  border: 1px solid #d4e0f2 !important;
+}
+
+.project-read-word-list h3 {
+  color: #355b88;
+}
+
+/* Bubble-style individual word items */
+.word-list-grid > div span {
+  min-height: 58px;
+  padding: 12px 18px;
+  border: 2px solid #b8cbe3;
+  border-radius: 18px;
+  background: #dfeafb;
+  box-shadow: none;
+}
+
+.word-list-grid > div span:empty {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 700px) {
+  .word-list-grid > div span {
+    border-radius: 15px;
+  }
+}
