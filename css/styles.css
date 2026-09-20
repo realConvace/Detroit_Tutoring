@@ -2592,3 +2592,115 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Full Project Read curriculum import */
+.project-read-sheet {
+  gap: 14px;
+}
+
+.project-read-source-block {
+  margin: 0;
+  padding: 22px 24px;
+  border-radius: 18px;
+  border: 1px solid transparent;
+}
+
+.project-read-source-block h3 {
+  margin: 0 0 16px;
+  font-size: clamp(1.35rem, 1.5vw, 1.55rem);
+  line-height: 1.25;
+  letter-spacing: .035em;
+}
+
+.project-read-teaching {
+  background: #e7f4f5;
+  border-color: #cfe6e8;
+}
+
+.project-read-red-words {
+  background: #fff1e6;
+  border-color: #f1d7bc;
+}
+
+.project-read-red-words h3 {
+  color: #9a5722;
+}
+
+.project-read-source-lines {
+  display: grid;
+  gap: 10px;
+}
+
+.project-read-source-line,
+.project-read-cue {
+  white-space: pre-wrap;
+  font-size: clamp(1.18rem, 1.3vw, 1.34rem);
+  line-height: 1.55;
+}
+
+.project-read-cue {
+  padding: 11px 14px;
+  border-left: 4px solid #55a7ad;
+  border-radius: 0 12px 12px 0;
+  background: rgba(255,255,255,.68);
+}
+
+.project-read-red-words .project-read-source-line {
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.62);
+}
+
+.project-read-word-cloud {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 12px;
+}
+
+.project-read-word-cloud > span {
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+  padding: 12px 18px;
+  border: 2px solid #b7cae5;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+  box-shadow:
+    0 3px 8px rgba(69, 96, 133, .08),
+    inset 0 1px 0 rgba(255,255,255,.9);
+  font-size: clamp(1.25rem, 1.4vw, 1.46rem);
+  line-height: 1.35;
+}
+
+.project-read-sentences .sentence-list > div {
+  min-height: 62px;
+  padding: 13px 18px;
+  border: 2px solid #b8d9c4;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f8fff9 0%, #eef9f1 100%);
+  box-shadow:
+    0 3px 8px rgba(63, 110, 79, .08),
+    inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+@media (max-width: 700px) {
+  .project-read-source-block {
+    padding: 18px;
+  }
+
+  .project-read-word-cloud {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-read-source-line,
+  .project-read-cue {
+    font-size: 1.12rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-read-word-cloud {
+    grid-template-columns: 1fr;
+  }
+}
