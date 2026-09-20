@@ -890,3 +890,215 @@ select {
     gap: 8px;
   }
 }
+
+
+/* Fast Start reading-first layout */
+.fast-start-workspace {
+  grid-template-columns: minmax(600px, 1.6fr) minmax(360px, .78fr);
+  gap: clamp(18px, 1.8vw, 28px);
+}
+
+.fast-start-poem {
+  position: sticky;
+  top: 14px;
+  min-height: 720px;
+  padding: 18px;
+  background: #f8f4e9;
+  border-color: #dfd5bf;
+}
+
+.poem-section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px 4px;
+  font-size: .92rem;
+  font-weight: 850;
+  color: #675b4b;
+}
+
+.poem-book-frame {
+  position: relative;
+  min-height: 655px;
+  padding: clamp(62px, 5.2vw, 86px) clamp(30px, 4vw, 62px) 28px;
+  border: 6px dotted #51483f;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.82), transparent 19rem),
+    #fbf8ef;
+  box-shadow: inset 0 0 0 2px rgba(81,72,63,.08);
+}
+
+.poem-title-bubble {
+  position: absolute;
+  top: -31px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - 56px);
+  padding: 10px 30px 12px;
+  border: 4px solid #51483f;
+  border-radius: 28px;
+  background: #fffdf7;
+  color: #181512;
+  font-size: clamp(2rem, 3vw, 3.15rem);
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: -.035em;
+  text-align: center;
+  box-shadow: 0 3px 0 rgba(81,72,63,.10);
+}
+
+.poem-content {
+  min-height: 0;
+  margin-top: 0;
+  display: block;
+}
+
+.poem-lines {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: clamp(1.8rem, 2.45vw, 2.65rem);
+  font-weight: 900;
+  line-height: 1.48;
+  letter-spacing: -.025em;
+}
+
+.poem-lines > div {
+  margin-bottom: .08em;
+}
+
+.poem-clipart-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.poem-clipart {
+  width: min(205px, 37%);
+  height: auto;
+  display: block;
+  opacity: .96;
+}
+
+.fast-start-activities {
+  gap: 13px;
+}
+
+.fast-start-activities .curriculum-section {
+  padding: 16px 18px;
+  border-radius: 16px;
+}
+
+.fast-start-activities .curriculum-section header {
+  gap: 9px;
+}
+
+.fast-start-activities .curriculum-section .section-index {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  font-size: .86rem;
+}
+
+.fast-start-activities .curriculum-section h2 {
+  font-size: clamp(.98rem, 1.05vw, 1.12rem);
+}
+
+.fast-start-activities .source-content,
+.fast-start-activities .curriculum-placeholder {
+  margin-top: 11px;
+  font-size: clamp(.86rem, .92vw, .96rem);
+  line-height: 1.46;
+}
+
+.fast-start-activities .instruction-list {
+  padding-left: 1.25rem;
+}
+
+.fast-start-activities .instruction-list > li {
+  margin-bottom: .72rem;
+}
+
+.fast-start-activities .example-row {
+  gap: 7px;
+  margin-top: 8px;
+}
+
+.fast-start-activities .sound-lines {
+  margin-left: .5rem;
+  font-size: .9em;
+}
+
+.fast-start-activities .word-sort-grid {
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.fast-start-activities .word-sort-grid > div {
+  padding: 8px 9px;
+  font-size: .92em;
+}
+
+@media (max-width: 1280px) {
+  .fast-start-workspace {
+    grid-template-columns: minmax(500px, 1.45fr) minmax(330px, .82fr);
+  }
+
+  .poem-lines {
+    font-size: clamp(1.65rem, 2.2vw, 2.2rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .fast-start-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .fast-start-poem {
+    position: static;
+    min-height: 0;
+  }
+
+  .poem-book-frame {
+    min-height: 0;
+  }
+
+  .poem-lines {
+    font-size: clamp(1.7rem, 4.3vw, 2.25rem);
+  }
+
+  .poem-clipart {
+    width: min(185px, 34%);
+  }
+}
+
+@media (max-width: 560px) {
+  .fast-start-poem {
+    padding: 12px;
+  }
+
+  .poem-book-frame {
+    padding: 55px 20px 22px;
+    border-width: 5px;
+    border-radius: 26px;
+  }
+
+  .poem-title-bubble {
+    top: -27px;
+    padding: 9px 20px 10px;
+    border-width: 3px;
+    font-size: 1.9rem;
+  }
+
+  .poem-lines {
+    font-size: 1.48rem;
+    line-height: 1.5;
+  }
+
+  .poem-clipart {
+    width: 42%;
+  }
+}
