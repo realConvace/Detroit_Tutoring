@@ -130,7 +130,7 @@
           <h1>Today's Tutoring Session</h1>
           <div class="session-heading-line" aria-hidden="true"></div>
         </div>
-        <button class="btn btn-muted" data-action="reset-session">Reset session</button>
+        <button class="btn reset-session-button" data-action="reset-session">Reset session</button>
       </div>
 
       <div class="dashboard-grid">
@@ -185,7 +185,7 @@
 
         <aside class="card setup-panel">
           <h2>Today's setup</h2>
-          <p>Choose the Fast Start number and Project Read lesson before beginning.</p>
+          <p>Choose the Fast Start for Early Readers chapter and Project Reason lesson before beginning.</p>
 
           <div class="field">
             <label for="session-fast-start">Fast Start for Early Readers</label>
