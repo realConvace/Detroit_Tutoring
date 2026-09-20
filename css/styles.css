@@ -727,3 +727,166 @@ select {
     width: 100%;
   }
 }
+
+
+/* Exact curriculum content */
+.source-content {
+  margin-top: 18px;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.15vw, 1.16rem);
+  line-height: 1.65;
+}
+
+.poem-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 455px;
+}
+
+.poem-lines {
+  width: 100%;
+  padding: clamp(18px, 2.4vw, 34px);
+  border-radius: 16px;
+  background: #fffaf2;
+  border: 1px solid #efdcc7;
+  font-size: clamp(1.28rem, 1.75vw, 1.78rem);
+  font-weight: 800;
+  line-height: 1.75;
+}
+
+.instruction-list {
+  margin: 0;
+  padding-left: 1.55rem;
+}
+
+.instruction-list > li {
+  padding-left: .3rem;
+  margin-bottom: 1.05rem;
+}
+
+.instruction-list > li:last-child {
+  margin-bottom: 0;
+}
+
+.example-row {
+  display: grid;
+  gap: 12px;
+  margin: 12px 0 2px;
+  text-align: center;
+}
+
+.example-row.three-up {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sound-lines {
+  margin: 10px 0 2px 1.2rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  line-height: 1.7;
+}
+
+.word-sort-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.word-sort-grid > div {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f7faf9;
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.project-read-content {
+  margin-top: 0;
+}
+
+.project-read-meta {
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: var(--secondary-soft);
+}
+
+.project-read-unit {
+  margin-bottom: 7px;
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.project-read-intro p {
+  margin: 0 0 14px;
+}
+
+.consonant-list {
+  display: grid;
+  gap: 8px;
+  margin: 22px 0 30px;
+}
+
+.consonant-list > div {
+  padding: 10px 14px;
+  border-left: 4px solid var(--secondary);
+  background: #faf9ff;
+  border-radius: 0 10px 10px 0;
+}
+
+.project-read-block {
+  margin-top: 28px;
+}
+
+.project-read-block h3 {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  letter-spacing: .04em;
+}
+
+.word-list-grid {
+  display: grid;
+  gap: 8px;
+  max-width: 760px;
+}
+
+.word-list-grid > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(90px, 1fr));
+  gap: 16px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.sentence-list {
+  display: grid;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .poem-content {
+    min-height: 0;
+  }
+
+  .word-sort-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .example-row.three-up {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .poem-lines {
+    font-size: 1.2rem;
+  }
+
+  .word-list-grid > div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+}
