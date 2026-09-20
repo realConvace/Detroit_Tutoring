@@ -510,11 +510,124 @@
     render();
   });
 
+
+  const projectReadWordContext = (button) => {
+    const section = button.closest(".project-read-word-list");
+    const table = section?.querySelector(".project-read-word-table");
+    if (!section || !table) return null;
+
+    const slots = [...table.querySelectorAll(".project-read-word-slot:not(.project-read-word-slot--empty)")];
+    const items = slots
+      .map(slot => slot.querySelector(".project-read-word-item"))
+      .filter(Boolean);
+
+    return { section, table, slots, items };
+  };
+
+  const animateProjectReadWordMove = (table, items, moveItems) => {
+    const firstRects = new Map(
+      items.map(item => [item, item.getBoundingClientRect()])
+    );
+
+    moveItems();
+
+    table.classList.remove("project-read-word-table--moving");
+    void table.offsetWidth;
+    table.classList.add("project-read-word-table--moving");
+
+    items.forEach((item) => {
+      const first = firstRects.get(item);
+      const last = item.getBoundingClientRect();
+      if (!first || !last) return;
+
+      const dx = first.left - last.left;
+      const dy = first.top - last.top;
+
+      if (Math.abs(dx) < 1 && Math.abs(dy) < 1) return;
+
+      if (typeof item.animate === "function") {
+        item.animate(
+          [
+            {
+              transform: `translate(${dx}px, ${dy}px) scale(.96)`,
+              boxShadow: "0 10px 24px rgba(68, 78, 112, .20)",
+              zIndex: 3
+            },
+            {
+              transform: "translate(0, 0) scale(1)",
+              boxShadow: "0 3px 8px rgba(69, 96, 133, .08)",
+              zIndex: 1
+            }
+          ],
+          {
+            duration: 390,
+            easing: "cubic-bezier(.2,.82,.24,1)"
+          }
+        );
+      }
+    });
+
+    window.setTimeout(() => {
+      table.classList.remove("project-read-word-table--moving");
+    }, 420);
+  };
+
+  const shuffleProjectReadWords = (button) => {
+    const context = projectReadWordContext(button);
+    if (!context || context.items.length < 2) return;
+
+    const { table, slots, items } = context;
+    const shuffled = [...items];
+
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    const unchanged = shuffled.every((item,index) => item === items[index]);
+    if (unchanged && shuffled.length > 1) {
+      [shuffled[0], shuffled[1]] = [shuffled[1], shuffled[0]];
+    }
+
+    animateProjectReadWordMove(table, items, () => {
+      shuffled.forEach((item,index) => slots[index].appendChild(item));
+    });
+  };
+
+  const resetProjectReadWords = (button) => {
+    const context = projectReadWordContext(button);
+    if (!context) return;
+
+    const { table, items } = context;
+    const allSlots = [...table.querySelectorAll(".project-read-word-slot")];
+    const slotByIndex = new Map(
+      allSlots.map(slot => [Number(slot.dataset.wordSlot), slot])
+    );
+
+    animateProjectReadWordMove(table, items, () => {
+      items.forEach((item) => {
+        const defaultSlot = Number(item.dataset.defaultSlot);
+        const target = slotByIndex.get(defaultSlot);
+        if (target) target.appendChild(item);
+      });
+    });
+  };
+
   document.addEventListener("click", (event) => {
     const button = event.target.closest("[data-action]");
     if (!button) return;
 
     const action = button.dataset.action;
+
+    if (action === "shuffle-word-list") {
+      shuffleProjectReadWords(button);
+      return;
+    }
+
+    if (action === "reset-word-list") {
+      resetProjectReadWords(button);
+      return;
+    }
 
     if (action === "toggle-step") {
       const step = button.dataset.step;
