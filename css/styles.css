@@ -1703,3 +1703,20 @@ select {
     font-size: 1.14rem;
   }
 }
+
+
+/* Simplify Project Read skill underline */
+.project-read-skill-label {
+  padding-bottom: 6px;
+}
+
+.project-read-skill-label::after {
+  left: 0;
+  bottom: 0;
+  width: 58px;
+  height: 2px;
+  border-radius: 999px;
+  background: #6f5db1;
+  transform: none;
+  opacity: 1;
+}
