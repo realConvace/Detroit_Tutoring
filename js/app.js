@@ -214,9 +214,7 @@
   const fastStartLibrary = () => `
     <div class="page-heading">
       <div>
-        <p class="eyebrow" style="color:var(--accent)">Fast Start for Early Readers</p>
-        <h1>Choose a Fast Start</h1>
-        <p>The provided PDF contains 60 numbered poem-and-activity lessons.</p>
+        <h1>Choose a Fast Start for Early Readers</h1>
       </div>
     </div>
 
