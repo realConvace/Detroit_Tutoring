@@ -166,21 +166,23 @@ window.TUTORING_CONTENT = {
       skill: "ă, t, s, m, b, c, f",
       bodyHtml: `
         <div class="project-read-sheet">
-          <div class="project-read-intro">
-            <p><strong>Introduce:</strong>&nbsp;&nbsp;/ă/</p>
-            <p><strong>Introduce consonants:</strong>&nbsp;&nbsp;t. s. m. b. c. f</p>
-          </div>
+          <section class="project-read-sound-group">
+            <div class="project-read-intro">
+              <p><strong>Introduce:</strong>&nbsp;&nbsp;/ă/</p>
+              <p><strong>Introduce consonants:</strong>&nbsp;&nbsp;t. s. m. b. c. f</p>
+            </div>
 
-          <div class="consonant-list">
-            <div><strong>t</strong> – tongue bounces</div>
-            <div><strong>s</strong> – teeth together, snake</div>
-            <div><strong>m</strong> – mouth closed</div>
-            <div><strong>b</strong> – lips together, slight explosion</div>
-            <div><strong>c</strong> – candy caught in throat</div>
-            <div><strong>f</strong> – opening pop bottle, fizz</div>
-          </div>
+            <div class="consonant-list">
+              <div><strong>t</strong> – tongue bounces</div>
+              <div><strong>s</strong> – teeth together, snake</div>
+              <div><strong>m</strong> – mouth closed</div>
+              <div><strong>b</strong> – lips together, slight explosion</div>
+              <div><strong>c</strong> – candy caught in throat</div>
+              <div><strong>f</strong> – opening pop bottle, fizz</div>
+            </div>
+          </section>
 
-          <section class="project-read-block">
+          <section class="project-read-block project-read-word-list">
             <h3>WORD LIST</h3>
             <div class="word-list-grid" aria-label="Word list">
               <div><span>at</span><span>am</span><span>tab</span></div>
@@ -192,7 +194,7 @@ window.TUTORING_CONTENT = {
             </div>
           </section>
 
-          <section class="project-read-block">
+          <section class="project-read-block project-read-sentences">
             <h3>SENTENCES</h3>
             <div class="sentence-list">
               <div>Sam sat.</div>
