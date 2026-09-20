@@ -1886,3 +1886,77 @@ select {
     padding: 16px;
   }
 }
+
+
+/* Group Project Read introduction and consonant cues together */
+.project-read-sheet {
+  display: grid;
+  gap: 8px;
+}
+
+.project-read-sound-group {
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: #e7f4f5;
+  border: 1px solid #cfe6e8;
+}
+
+.project-read-sound-group .project-read-intro {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.project-read-sound-group .consonant-list {
+  margin-top: 14px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.project-read-sound-group .consonant-list > div {
+  background: rgba(255,255,255,.68);
+  border-left-color: #55a7ad;
+}
+
+/* Keep a small visible separation between the major Project Read boxes. */
+.project-read-word-list,
+.project-read-sentences {
+  margin: 0;
+}
+
+.project-read-word-list {
+  background: #eaf1fb;
+  border: 1px solid #d4e0f2;
+}
+
+.project-read-word-list h3 {
+  color: #355b88;
+}
+
+.project-read-sentences {
+  background: #eaf7ee;
+  border: 1px solid #d0e9d8;
+}
+
+.project-read-sentences h3 {
+  color: #2d6c49;
+}
+
+/* Override earlier positional card selectors now that the intro is grouped. */
+.project-read-block:nth-of-type(1),
+.project-read-block:nth-of-type(2) {
+  background: inherit;
+}
+
+@media (max-width: 700px) {
+  .project-read-sound-group {
+    padding: 16px;
+  }
+
+  .project-read-sheet {
+    gap: 7px;
+  }
+}
