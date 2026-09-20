@@ -2255,3 +2255,23 @@ select {
   width: calc(100% + 24px);
   max-width: calc(100vw - 72px);
 }
+
+
+/* Project Read library heading accent */
+.project-read-library-heading {
+  margin-bottom: 18px;
+}
+
+.project-read-library-heading > div {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.project-read-library-line {
+  width: calc(100% + 24px);
+  max-width: calc(100vw - 72px);
+  height: 3px;
+  margin-top: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--secondary), rgba(105,86,168,.2));
+}
