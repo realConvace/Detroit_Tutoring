@@ -2454,3 +2454,90 @@ select {
     padding: 22px;
   }
 }
+
+
+/* Fast Start source-style sound and word examples */
+.fast-start-activities .example-row {
+  display: grid;
+  width: 100%;
+  margin: 12px 0 4px;
+  gap: 12px;
+  text-align: center;
+  align-items: stretch;
+}
+
+.fast-start-activities .example-row.three-up {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.fast-start-activities .example-row.four-up {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.fast-start-activities .example-row.five-up {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.fast-start-activities .example-row > strong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 8px 10px;
+  border: 1.5px solid #c9dddd;
+  border-radius: 12px;
+  background: #f3f9f9;
+  line-height: 1.3;
+}
+
+/* Center the stretched-sound group while keeping each source line left-to-right. */
+.fast-start-activities .sound-lines {
+  display: grid;
+  gap: 8px;
+  width: min(100%, 560px);
+  margin: 12px auto 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  line-height: 1.45;
+}
+
+.fast-start-activities .sound-lines > div {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 8px 14px;
+  border: 1.5px solid #c9dddd;
+  border-radius: 12px;
+  background: #f3f9f9;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 1180px) and (min-width: 901px) {
+  .fast-start-activities .example-row.five-up {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .fast-start-activities .example-row.five-up > strong:nth-child(n+4) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .fast-start-activities .example-row.three-up,
+  .fast-start-activities .example-row.four-up,
+  .fast-start-activities .example-row.five-up {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    text-align: center;
+  }
+
+  .fast-start-activities .sound-lines {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .fast-start-activities .example-row.three-up,
+  .fast-start-activities .example-row.four-up,
+  .fast-start-activities .example-row.five-up {
+    grid-template-columns: 1fr;
+  }
+}
