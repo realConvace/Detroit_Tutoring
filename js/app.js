@@ -94,6 +94,11 @@
       </div>
     </section>
 
+    <div class="agenda-heading">
+      <h2>Agenda</h2>
+      <div class="agenda-line" aria-hidden="true"></div>
+    </div>
+
     <section class="home-grid" aria-label="Tutoring routine">
       <article class="card">
         <div class="icon-chip">1</div>
