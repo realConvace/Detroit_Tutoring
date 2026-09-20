@@ -84,10 +84,9 @@
       .join("");
 
   const home = () => `
-    <section class="hero">
-      <p class="eyebrow">Reading tutoring</p>
+    <section class="hero home-hero">
       <h1>Detroit Fellows Tutoring Project</h1>
-      <p>
+      <p class="home-hero-subheader">
         Serving first to third grade students with reading literacy.
       </p>
       <div class="hero-actions">
