@@ -314,7 +314,7 @@
         }
 
         ${nextFastStart
-          ? `<a class="btn btn-primary" href="#fast-start/${nextFastStart}">Next Fast Start →</a>`
+          ? `<a class="btn btn-primary" href="#fast-start/${nextFastStart}">Next Poem →</a>`
           : ""
         }
       </div>
