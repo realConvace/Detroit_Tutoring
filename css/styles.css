@@ -2216,3 +2216,10 @@ select {
   border-radius: 999px;
   background: linear-gradient(90deg, var(--primary), rgba(31,111,120,.18));
 }
+
+
+/* Short Agenda underline */
+.agenda-line {
+  width: 118px;
+  max-width: none;
+}
