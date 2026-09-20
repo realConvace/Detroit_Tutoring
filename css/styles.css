@@ -2223,3 +2223,9 @@ select {
   width: 118px;
   max-width: none;
 }
+
+
+/* Slightly longer Agenda underline */
+.agenda-line {
+  width: 145px;
+}
