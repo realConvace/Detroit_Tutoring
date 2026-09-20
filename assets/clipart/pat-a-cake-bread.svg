@@ -1,21 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="260" viewBox="0 0 320 260" role="img" aria-labelledby="title desc">
-  <title id="title">Steaming baked bun</title>
-  <desc id="desc">Child-friendly line drawing of a baked bun on a cloth with steam rising above it.</desc>
-  <g fill="none" stroke="#4a3c33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M132 78 C118 54, 122 34, 140 18" />
-    <path d="M158 82 C144 56, 150 34, 169 12" />
-    <path d="M186 82 C175 60, 179 38, 198 20" />
-    <path d="M92 196 C101 183, 111 176, 124 170 C139 163, 154 159, 167 159 C181 159, 197 163, 211 171 C223 178, 232 187, 240 198" />
-    <path d="M98 201 C96 181, 101 159, 112 142 C125 121, 145 110, 166 110 C188 110, 207 121, 220 142 C232 161, 237 183, 234 202" />
-    <path d="M146 129 C152 124, 159 122, 166 122 C174 122, 181 124, 187 129" />
-    <path d="M150 140 C155 136, 160 134, 166 134 C172 134, 178 136, 183 140" />
-    <path d="M154 152 C158 149, 162 147, 166 147 C171 147, 175 149, 179 152" />
-    <path d="M70 196 C56 180, 44 177, 28 176 C40 188, 43 204, 56 214 C71 226, 93 227, 107 214" />
-    <path d="M250 196 C264 180, 276 177, 292 176 C280 188, 277 204, 264 214 C249 226, 227 227, 213 214" />
-    <path d="M79 202 C91 220, 118 233, 166 236 C217 239, 244 222, 255 202" />
-    <path d="M91 209 C109 194, 129 191, 144 195" />
-    <path d="M186 196 C203 190, 223 193, 242 209" />
-    <circle cx="166" cy="178" r="2.5" fill="#4a3c33" />
-    <circle cx="166" cy="188" r="2.5" fill="#4a3c33" />
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="280" viewBox="0 0 360 280" role="img" aria-labelledby="title desc">
+  <title id="title">Colorful baked cake</title>
+  <desc id="desc">Child-friendly illustration of a warm golden cake with pink frosting on a blue plate, with steam and small baking decorations.</desc>
+
+  <defs>
+    <linearGradient id="cake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6C56D"/>
+      <stop offset="100%" stop-color="#D9903D"/>
+    </linearGradient>
+    <linearGradient id="frosting" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFB8C8"/>
+      <stop offset="100%" stop-color="#F07FA2"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ED5E4"/>
+      <stop offset="100%" stop-color="#4AA7C2"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke="#5A4032" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M138 70 C124 49, 128 31, 143 16" fill="none"/>
+    <path d="M180 68 C165 45, 172 27, 187 12" fill="none"/>
+    <path d="M222 70 C208 49, 214 31, 229 16" fill="none"/>
+
+    <ellipse cx="180" cy="226" rx="108" ry="25" fill="url(#plate)"/>
+    <ellipse cx="180" cy="219" rx="82" ry="13" fill="#D9F2F7"/>
+
+    <path d="M108 182
+             C112 140, 134 112, 180 112
+             C226 112, 248 140, 252 182
+             L244 213
+             C224 224, 207 230, 180 230
+             C153 230, 136 224, 116 213 Z"
+          fill="url(#cake)"/>
+
+    <path d="M112 151
+             C128 129, 149 118, 180 118
+             C211 118, 232 129, 248 151
+             C235 154, 231 166, 217 165
+             C203 164, 200 153, 188 155
+             C176 157, 175 170, 160 168
+             C145 166, 144 154, 132 155
+             C123 156, 119 153, 112 151 Z"
+          fill="url(#frosting)"/>
+
+    <path d="M137 175 C149 166, 160 168, 171 176" fill="none"/>
+    <path d="M190 176 C202 167, 213 168, 225 176" fill="none"/>
+
+    <circle cx="151" cy="143" r="6" fill="#FFD45E"/>
+    <circle cx="180" cy="135" r="6" fill="#7CCB6F"/>
+    <circle cx="211" cy="144" r="6" fill="#8E7CDD"/>
+
+    <path d="M81 211 C64 197, 54 195, 40 196 C50 209, 58 223, 76 230" fill="#F4A261"/>
+    <path d="M279 211 C296 197, 306 195, 320 196 C310 209, 302 223, 284 230" fill="#F4A261"/>
+
+    <path d="M82 226 C100 242, 129 250, 180 251 C231 250, 260 242, 278 226" fill="#FFF4DE"/>
+
+    <path d="M82 103 l8 -16 l8 16 l16 8 l-16 8 l-8 16 l-8 -16 l-16 -8 Z" fill="#FFD45E" stroke-width="3"/>
+    <path d="M278 112 l6 -12 l6 12 l12 6 l-12 6 l-6 12 l-6 -12 l-12 -6 Z" fill="#8ED5E4" stroke-width="3"/>
   </g>
 </svg>
