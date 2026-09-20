@@ -4,6 +4,7 @@
 
   const defaultState = {
     fastStartNumber: 1,
+    fastStartSection: 0,
     projectReadId: "1",
     completed: {
       book: false,
@@ -145,7 +146,7 @@
                 <p>Read the poem, then complete Looking at Words and Letters, Playing With Sounds, and Beginning to Read.</p>
               </div>
               <div class="step-action">
-                <a class="btn btn-secondary" href="#fast-start/${state.fastStartNumber}">Open Fast Start</a>
+                <a class="btn btn-secondary" href="#fast-start/${state.fastStartNumber}/0">Open Fast Start</a>
               </div>
             </article>
 
@@ -212,7 +213,7 @@
       ${content.fastStart
         .map(
           (title, index) => `
-            <a class="lesson-card" href="#fast-start/${index + 1}">
+            <a class="lesson-card" href="#fast-start/${index + 1}/0">
               <small>Fast Start #${index + 1}</small>
               <h3>${escapeHtml(title)}</h3>
             </a>
@@ -222,46 +223,72 @@
     </div>
   `;
 
-  const fastStartDetail = (number) => {
+  const fastStartDetail = (number, sectionParam = "0") => {
     const n = Number(number);
-    if (!Number.isInteger(n) || n < 1 || n > content.fastStart.length) return fastStartLibrary();
+    const sectionIndex = Number(sectionParam);
+
+    if (!Number.isInteger(n) || n < 1 || n > content.fastStart.length) {
+      return fastStartLibrary();
+    }
+
+    if (
+      !Number.isInteger(sectionIndex) ||
+      sectionIndex < 0 ||
+      sectionIndex >= content.fastStartSections.length
+    ) {
+      return fastStartDetail(n, 0);
+    }
+
+    if (state.fastStartNumber !== n) {
+      state.completed.fastStart = false;
+    }
 
     state.fastStartNumber = n;
+    state.fastStartSection = sectionIndex;
     saveState();
+
     const title = content.fastStart[n - 1];
+    const section = content.fastStartSections[sectionIndex];
+    const isFirstSection = sectionIndex === 0;
+    const isLastSection = sectionIndex === content.fastStartSections.length - 1;
+    const hasNextFastStart = n < content.fastStart.length;
 
     return `
       <div class="lesson-hero fast-start">
-        <span class="lesson-number">Fast Start #${n}</span>
+        <span class="lesson-number">Fast Start #${n} · Part ${sectionIndex + 1} of ${content.fastStartSections.length}</span>
         <h1>${escapeHtml(title)}</h1>
-        <p>
-          Complete this Fast Start in order: read the poem, then work through the three instructional sections.
-        </p>
+        <p>${escapeHtml(section)}</p>
       </div>
 
       <div class="section-list">
-        ${content.fastStartSections
-          .map(
-            (section, index) => `
-              <section class="curriculum-section">
-                <header>
-                  <span class="section-index">${index + 1}</span>
-                  <h2>${escapeHtml(section)}</h2>
-                </header>
-                <div class="curriculum-placeholder">
-                  Exact source wording for Fast Start #${n} will be inserted here from the provided PDF.
-                  The interface will not paraphrase or rewrite it.
-                </div>
-              </section>
-            `
-          )
-          .join("")}
+        <section class="curriculum-section">
+          <header>
+            <span class="section-index">${sectionIndex + 1}</span>
+            <h2>${escapeHtml(section)}</h2>
+          </header>
+          <div class="curriculum-placeholder">
+            Exact source wording for Fast Start #${n}, ${escapeHtml(section)}, will be inserted here from the provided PDF.
+            The interface will not paraphrase or rewrite it.
+          </div>
+        </section>
       </div>
 
       <div class="button-row">
-        <button class="btn btn-success" data-action="finish-fast-start">✓ Finish Fast Start</button>
-        <a class="btn btn-muted" href="#session">Back to session</a>
-        ${n < content.fastStart.length ? `<a class="btn btn-secondary" href="#fast-start/${n + 1}">Next Fast Start</a>` : ""}
+        ${!isFirstSection
+          ? `<a class="btn btn-muted" href="#fast-start/${n}/${sectionIndex - 1}">← Previous Section</a>`
+          : `<a class="btn btn-muted" href="#session">Back to session</a>`
+        }
+
+        ${!isLastSection
+          ? `<a class="btn btn-primary" href="#fast-start/${n}/${sectionIndex + 1}">Next Section →</a>`
+          : `
+            <button class="btn btn-success" data-action="finish-fast-start">✓ Finish Fast Start</button>
+            ${hasNextFastStart
+              ? `<a class="btn btn-secondary" href="#fast-start/${n + 1}/0">Next Fast Start →</a>`
+              : ""
+            }
+          `
+        }
       </div>
     `;
   };
@@ -290,8 +317,20 @@
   `;
 
   const projectReadDetail = (id) => {
-    const lesson = content.projectRead.find((item) => item.id.toLowerCase() === String(id).toLowerCase());
-    if (!lesson) return projectReadLibrary();
+    const lessonIndex = content.projectRead.findIndex(
+      (item) => item.id.toLowerCase() === String(id).toLowerCase()
+    );
+
+    if (lessonIndex === -1) return projectReadLibrary();
+
+    const lesson = content.projectRead[lessonIndex];
+    const previousLesson = lessonIndex > 0 ? content.projectRead[lessonIndex - 1] : null;
+    const nextLesson =
+      lessonIndex < content.projectRead.length - 1 ? content.projectRead[lessonIndex + 1] : null;
+
+    if (state.projectReadId !== lesson.id) {
+      state.completed.projectRead = false;
+    }
 
     state.projectReadId = lesson.id;
     saveState();
@@ -319,15 +358,24 @@
       </div>
 
       <div class="button-row">
+        ${previousLesson
+          ? `<a class="btn btn-muted" href="#project-read/${encodeURIComponent(previousLesson.id)}">← Previous Project Read</a>`
+          : `<a class="btn btn-muted" href="#session">Back to session</a>`
+        }
+
         <button class="btn btn-success" data-action="finish-project-read">✓ Finish Project Read</button>
-        <a class="btn btn-muted" href="#session">Back to session</a>
+
+        ${nextLesson
+          ? `<a class="btn btn-primary" href="#project-read/${encodeURIComponent(nextLesson.id)}">Next Project Read →</a>`
+          : ""
+        }
       </div>
     `;
   };
 
   const render = () => {
     const raw = location.hash.replace(/^#/, "") || "home";
-    const [route, param] = raw.split("/");
+    const [route, param, subparam] = raw.split("/");
 
     setCurrentNav(route);
 
@@ -336,7 +384,7 @@
         app.innerHTML = session();
         break;
       case "fast-start":
-        app.innerHTML = param ? fastStartDetail(param) : fastStartLibrary();
+        app.innerHTML = param ? fastStartDetail(param, subparam || "0") : fastStartLibrary();
         break;
       case "project-read":
         app.innerHTML = param ? projectReadDetail(decodeURIComponent(param)) : projectReadLibrary();
@@ -358,6 +406,7 @@
 
     if (setting === "fastStartNumber") {
       state.fastStartNumber = Number(event.target.value);
+      state.fastStartSection = 0;
       state.completed.fastStart = false;
     }
 
@@ -397,6 +446,7 @@
 
     if (action === "reset-session") {
       state.completed = { book: false, fastStart: false, projectRead: false };
+      state.fastStartSection = 0;
       saveState();
       render();
     }
