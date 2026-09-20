@@ -1607,3 +1607,40 @@ select {
     width: 100%;
   }
 }
+
+
+/* Simplified Project Read skill header */
+.project-read-section-list {
+  gap: 16px;
+}
+
+.project-read-skill-box {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 24px;
+  border-radius: 18px;
+  background: var(--secondary-soft);
+  color: var(--ink);
+  font-size: clamp(1.2rem, 1.45vw, 1.5rem);
+  line-height: 1.45;
+}
+
+.project-read-skill-box strong {
+  font-weight: 900;
+}
+
+.project-read-main-content {
+  padding-top: 24px;
+}
+
+.project-read-main-content .project-read-content {
+  margin-top: 0;
+}
+
+/* Old metadata is no longer rendered; keep it harmless if referenced elsewhere. */
+.project-read-meta,
+.project-read-unit {
+  display: none;
+}
