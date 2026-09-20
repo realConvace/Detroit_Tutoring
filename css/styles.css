@@ -606,3 +606,124 @@ select {
     white-space: nowrap;
   }
 }
+
+
+/* Wide reading layout for desktop and iPad */
+.site-shell {
+  width: min(1680px, calc(100% - 48px));
+}
+
+.hero h1 {
+  max-width: 980px;
+}
+
+.hero p {
+  max-width: 900px;
+}
+
+.dashboard-grid {
+  grid-template-columns: minmax(0, 2fr) minmax(320px, .72fr);
+}
+
+.library-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.curriculum-section {
+  padding: clamp(22px, 2vw, 32px);
+}
+
+.curriculum-section h2 {
+  font-size: clamp(1.15rem, 1.4vw, 1.4rem);
+}
+
+.curriculum-placeholder {
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.fast-start-workspace {
+  display: grid;
+  grid-template-columns: minmax(360px, .88fr) minmax(560px, 1.55fr);
+  gap: clamp(18px, 2vw, 30px);
+  align-items: start;
+  margin: 24px 0;
+}
+
+.fast-start-poem {
+  position: sticky;
+  top: 18px;
+  min-height: 560px;
+}
+
+.poem-placeholder {
+  min-height: 455px;
+}
+
+.fast-start-activities {
+  display: grid;
+  gap: 18px;
+}
+
+.fast-start-navigation {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 1280px) {
+  .site-shell {
+    width: min(100% - 32px, 1500px);
+  }
+
+  .library-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .fast-start-workspace {
+    grid-template-columns: minmax(320px, .9fr) minmax(0, 1.35fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .site-shell {
+    width: min(100% - 24px, 1000px);
+  }
+
+  .fast-start-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .fast-start-poem {
+    position: static;
+    min-height: 0;
+  }
+
+  .poem-placeholder {
+    min-height: 300px;
+  }
+
+  .fast-start-navigation {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 820px) {
+  .library-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .site-shell {
+    width: min(100% - 16px, 1000px);
+  }
+
+  .library-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fast-start-navigation .btn {
+    width: 100%;
+  }
+}
