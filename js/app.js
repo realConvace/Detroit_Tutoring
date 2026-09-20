@@ -244,6 +244,9 @@
     const poemSection = content.fastStartSections[0];
     const activitySections = content.fastStartSections.slice(1);
     const detail = content.fastStartDetails?.[String(n)] || null;
+    const poemTitle = detail?.displayTitle || title;
+    const clipartPath = detail?.clipartPath || null;
+    const clipartAlt = detail?.clipartAlt || "";
 
     return `
       <div class="lesson-hero fast-start">
@@ -254,17 +257,29 @@
 
       <div class="fast-start-workspace">
         <section class="curriculum-section fast-start-poem">
-          <header>
+          <div class="poem-section-label">
             <span class="section-index">1</span>
-            <h2>${escapeHtml(poemSection)}</h2>
-          </header>
-          ${detail?.poemHtml
-            ? `<div class="source-content poem-content">${detail.poemHtml}</div>`
-            : `<div class="curriculum-placeholder poem-placeholder">
-                Exact source wording for Fast Start #${n}, ${escapeHtml(poemSection)}, will be inserted here from the provided PDF.
-                The interface will not paraphrase or rewrite it.
-              </div>`
-          }
+            <span>${escapeHtml(poemSection)}</span>
+          </div>
+
+          <div class="poem-book-frame">
+            <div class="poem-title-bubble">${escapeHtml(poemTitle)}</div>
+
+            ${detail?.poemHtml
+              ? `<div class="source-content poem-content">${detail.poemHtml}</div>`
+              : `<div class="curriculum-placeholder poem-placeholder">
+                  Exact source wording for Fast Start #${n}, ${escapeHtml(poemSection)}, will be inserted here from the provided PDF.
+                  The interface will not paraphrase or rewrite it.
+                </div>`
+            }
+
+            ${clipartPath
+              ? `<div class="poem-clipart-wrap">
+                  <img class="poem-clipart" src="${escapeHtml(clipartPath)}" alt="${escapeHtml(clipartAlt)}">
+                </div>`
+              : ""
+            }
+          </div>
         </section>
 
         <div class="fast-start-activities">
