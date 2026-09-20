@@ -86,14 +86,12 @@
   const home = () => `
     <section class="hero">
       <p class="eyebrow">Reading tutoring</p>
-      <h1>One simple flow for each tutoring session.</h1>
+      <h1>Detroit Fellows Tutoring Project</h1>
       <p>
-        Start with an in-person book, continue with one Fast Start for Early Readers section,
-        then move into the selected Project Read lesson.
+        Serving first to third grade students with reading literacy.
       </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#session">Start today's session</a>
-        <a class="btn btn-ghost" href="#fast-start">Browse Fast Start</a>
+        <a class="btn btn-primary" href="#session">START TODAY'S SESSION</a>
       </div>
     </section>
 
