@@ -2328,16 +2328,20 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "ă, t, s, m, b, c, f",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Introduce:</strong>  /ă/</div>
-<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce consonants:</strong>  t. s. m. b. c. f</div>
-<div class="project-read-cue">t – tongue bounces</div>
-<div class="project-read-cue">s – teeth together, snake</div>
-<div class="project-read-cue">m – mouth closed</div>
-<div class="project-read-cue">b – lips together, slight explosion</div>
-<div class="project-read-cue">c – candy caught in throat</div>
-<div class="project-read-cue">f – opening pop bottle, fizz</div></div>
-  </section>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Introduce:</strong> /ă/</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> t, s, m, b, c, f</div>
+    <div class="project-read-cue">t – tongue bounces</div>
+    <div class="project-read-cue">s – teeth together, snake</div>
+    <div class="project-read-cue">m – mouth closed</div>
+    <div class="project-read-cue">b – lips together, slight explosion</div>
+    <div class="project-read-cue">c – candy caught in throat</div>
+    <div class="project-read-cue">f – opening pop bottle, fizz</div>
+  </div>
+</section>
+
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
@@ -2360,7 +2364,7 @@ window.TUTORING_CONTENT = {
 <div>A fat cat sat.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "2": {
       unit: "UNIT 2",
@@ -2368,21 +2372,24 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "r, h, j, n, p, l",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, t, s, m, b, c, f</div>
-<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce consonants:</strong></div>
-<div class="project-read-cue">h – just air</div>
-<div class="project-read-cue">j - /j/ clipped</div>
-<div class="project-read-cue">n – tongue on roof of mouth</div>
-<div class="project-read-cue">p – popping lips open</div>
-<div class="project-read-cue">l – tongue on roof of mouth</div>
-<div class="project-read-cue"> r - /ruh/ - said very clipped</div></div>
-  </section>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, t, s, m, b, c, f</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> h, j, n, p, l, r</div>
+    <div class="project-read-cue">h – just air</div>
+    <div class="project-read-cue">j – /j/ clipped</div>
+    <div class="project-read-cue">n – tongue on roof of mouth</div>
+    <div class="project-read-cue">p – popping lips open</div>
+    <div class="project-read-cue">l – tongue on roof of mouth</div>
+    <div class="project-read-cue">r – /ruh/ – said very clipped</div>
+  </div>
+</section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the</div>
-<div class="project-read-source-line"><strong>The</strong> is a phonetically irregular word.  These words are called red words (stop words) because they do not have direct sound-symbol relationship.</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">the</span></div>
+      <div class="project-read-red-note">The is a phonetically irregular word. These words are called red words (stop words) because they do not have direct sound-symbol relationship.</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
@@ -2407,7 +2414,7 @@ window.TUTORING_CONTENT = {
 <div>5. The fat cat has the jam.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "3": {
       unit: "UNIT 3",
@@ -2415,18 +2422,21 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "g (hard) d, v",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> a, b, c, f, m, s, t, h, j, n, p, l, r</div>
-<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce consonants:</strong></div>
-<div class="project-read-cue">d – tongue bounces on roof of mouth, lips open</div>
-<div class="project-read-cue">v – hang onto some air</div>
-<div class="project-read-cue">g – (hard sound) the child can feel the bounce in his throat.</div></div>
-  </section>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, b, c, f, m, s, t, h, j, n, p, l, r</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> d, v, g</div>
+    <div class="project-read-cue">d – tongue bounces on roof of mouth, lips open</div>
+    <div class="project-read-cue">v – hang onto some air</div>
+    <div class="project-read-cue">g – (hard sound) the child can feel the bounce in his throat.</div>
+  </div>
+</section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  to</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> the</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">to</span></div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
@@ -2449,7 +2459,7 @@ window.TUTORING_CONTENT = {
 <div>4. The cat ran to Pam.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "4": {
       unit: "UNIT 4",
@@ -2457,17 +2467,20 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "ĭ,  w",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, s, f, m, t, c, h, j, n, p, l, r, g, v</div>
-<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong>  ĭ, w</div>
-<div class="project-read-cue">i – igloo, it (put thumb under the chin and feel the bounce.)</div>
-<div class="project-read-cue">w – no air is felt if hand is held in front of the mouth.</div></div>
-  </section>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, s, f, m, t, c, h, j, n, p, l, r, g, v</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> ĭ, w</div>
+    <div class="project-read-cue">ĭ – i as in igloo, it (put thumb under the chin and feel the bounce.)</div>
+    <div class="project-read-cue">w – no air is felt if hand is held in front of the mouth.</div>
+  </div>
+</section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the, to</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>have</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> the, to</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">have</span></div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
@@ -2493,7 +2506,7 @@ window.TUTORING_CONTENT = {
 <div>5. I have a big bag.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "5": {
       unit: "UNIT 5",
@@ -2501,17 +2514,20 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "k, -ck for decoding",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong>   ă, ĭ, and consonants</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong></div>
-<div class="project-read-cue"><span class="project-read-tab-gap" aria-hidden="true"></span><span class="project-read-tab-gap" aria-hidden="true"></span>k – same sound as c</div>
-<div class="project-read-cue"><span class="project-read-tab-gap" aria-hidden="true"></span><span class="project-read-tab-gap" aria-hidden="true"></span>-ck – same sound as c and k</div></div>
-  </section>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, and consonants</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> k, -ck</div>
+    <div class="project-read-cue">k – same sound as c</div>
+    <div class="project-read-cue">-ck – same sound as c and k</div>
+  </div>
+</section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the, to, have</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> the, to, have</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">said</span></div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
@@ -2537,7 +2553,7 @@ window.TUTORING_CONTENT = {
 <div>5. The cap has a rip.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "6": {
       unit: "UNIT 6",
@@ -2545,9 +2561,20 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "-ck for decoding",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong>   ă, ĭ, and consonants</div>
-<div class="project-read-source-line">2. Formulate the <strong>–ck rule</strong>:  use –ck at the end of a one vowel sound word and after a short vowel sound.</div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, and consonants</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> -ck</div>
+    <div class="project-read-cue"><strong>–ck rule</strong> – use –ck at the end of a one vowel sound word and after a short vowel sound.</div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> the, to, have, said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">of</span></div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD BUILDING</h3>
@@ -2560,14 +2587,8 @@ window.TUTORING_CONTENT = {
       </div>
     </div>
   </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the, to, have, said</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>of</div>
-    </div>
-  </section>
-  </div>`
+
+</div>`
     },
     "7": {
       unit: "UNIT 7",
@@ -2575,18 +2596,21 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "qu, x, y, z",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, consonants and /ck/ for encoding</div>
-<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong>  qu, /kw/, y, z, x /ks/</div>
-<div class="project-read-cue">qu - /kw/</div>
-<div class="project-read-cue">x - /ks/</div>
-<div class="project-read-cue">y – yellow</div>
-<div class="project-read-cue">z - zipper</div></div>
-  </section>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, consonants and /ck/ for encoding</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> qu, /kw/, y, z, x, /ks/</div>
+    <div class="project-read-cue">qu – /kw/</div>
+    <div class="project-read-cue">x – /ks/</div>
+    <div class="project-read-cue">y – yellow</div>
+    <div class="project-read-cue">z – zipper</div>
+  </div>
+</section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>of, the, have, to said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> of, the, have, to, said</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
@@ -2613,7 +2637,7 @@ window.TUTORING_CONTENT = {
 <div>6. Will Dan quit?</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "8": {
       unit: "UNIT  8",
@@ -2621,9 +2645,20 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "ŏ",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, and consonants</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>ŏ as in octopus</div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, and consonants</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> ŏ</div>
+    <div class="project-read-cue">ŏ – o as in octopus</div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> of, the, have, to, said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">was</span></div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
@@ -2645,13 +2680,6 @@ window.TUTORING_CONTENT = {
       </div>
     </div>
   </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  of, the, have, to, said</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  was</div>
-    </div>
-  </section>
 <section class="project-read-source-block project-read-sentences">
     <h3>SENTENCES</h3>
     <div class="sentence-list">
@@ -2666,7 +2694,7 @@ window.TUTORING_CONTENT = {
 <div>9. It was not hot.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "9": {
       unit: "UNIT  9",
@@ -2674,11 +2702,21 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "ss, ll. ff. zz  (place value for encoding)",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ and consonants</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce</strong> spelling generalization.</div>
-<div class="project-read-source-line">Double s,,l, f, z in <strong>most</strong> one vowel sound words after a short vowel.</div>
-<div class="project-read-source-line">Common exceptions:  as, is, has, gas, if</div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, ŏ and consonants</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> ss, ll, ff, zz</div>
+    <div class="project-read-cue">Spelling generalization – Double s, l, f, z in <strong>most</strong> one vowel sound words after a short vowel.</div>
+    <div class="project-read-cue">Common exceptions – as, is, has, gas, if</div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> was, of, the, have, to, said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">you</span></div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
@@ -2698,13 +2736,6 @@ window.TUTORING_CONTENT = {
       </div>
     </div>
   </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS:</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  was, of, the have, to said</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  you</div>
-    </div>
-  </section>
 <section class="project-read-source-block project-read-sentences">
     <h3>SENTENCES</h3>
     <div class="sentence-list">
@@ -2718,7 +2749,7 @@ window.TUTORING_CONTENT = {
 <div>8. The sick dog got a pill.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "10": {
       unit: "UNIT  10",
@@ -2726,11 +2757,21 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "-ng, -nk",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ and consonants</div>
-<div class="project-read-cue">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>/-ng/, /-nk/</div>
-<div class="project-read-source-line">Always attach to a vowel.</div>
-<div class="project-read-cue">-ang, -ing, -ong, -ank, -ink, -onk</div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, ŏ and consonants</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> /-ng/, /-nk/</div>
+    <div class="project-read-cue">/-ng/, /-nk/ – Always attach to a vowel.</div>
+    <div class="project-read-cue">-ang, -ing, -ong, -ank, -ink, -onk</div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> was, of, the, have, to, said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">what</span></div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
@@ -2743,13 +2784,6 @@ window.TUTORING_CONTENT = {
         <div class="project-read-word-row"><span class="project-read-word-item">bank</span><span class="project-read-word-item">bang</span><span class="project-read-word-item">sink</span><span class="project-read-word-item">king</span></div>
         <div class="project-read-word-row"><span class="project-read-word-item">tank</span><span class="project-read-word-item">gang</span><span class="project-read-word-item">rank</span><span class="project-read-word-item">wing</span></div>
       </div>
-    </div>
-  </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  was, of, the, have, to, said</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  what</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -2769,7 +2803,7 @@ window.TUTORING_CONTENT = {
 <div>12. Pam has long pink socks.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "11": {
       unit: "UNIT  11",
@@ -2777,14 +2811,25 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "Digraphs wh, ch, th, and sh",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">A digraph is a consonant sound which cannot be represented by any single letter in our alphabet.</div>
-<div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ and consonants</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce</strong> digraphs through use of H brothers story.</div>
-<div class="project-read-cue">A. ch brother – Thinks he’s a train and says /ch/.</div>
-<div class="project-read-cue">B. wh brother – Tries to learn to whistle but only blows out air saying /wh/.</div>
-<div class="project-read-cue">C. th brother – The naughty brother who sticks out his tongue as he says /th/.</div>
-<div class="project-read-cue">D. sh brother – The brother who tries to quiet the others by saying /sh/.</div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">A digraph is a consonant sound which cannot be represented by any single letter in our alphabet.</div>
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, ŏ and consonants</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> ch, wh, th, sh</div>
+    <div class="project-read-source-line">Introduce digraphs through use of H brothers story.</div>
+    <div class="project-read-cue">A. ch brother – Thinks he’s a train and says /ch/.</div>
+    <div class="project-read-cue">B. wh brother – Tries to learn to whistle but only blows out air saying /wh/.</div>
+    <div class="project-read-cue">C. th brother – The naughty brother who sticks out his tongue as he says /th/.</div>
+    <div class="project-read-cue">D. sh brother – The brother who tries to quiet the others by saying /sh/.</div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> what, you, was, of, the, have, to, said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">are, put</span></div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
@@ -2804,13 +2849,6 @@ window.TUTORING_CONTENT = {
       </div>
     </div>
   </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  what, you, was, of, the, have, to, said</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  are, put</div>
-    </div>
-  </section>
 <section class="project-read-source-block project-read-sentences">
     <h3>SENTENCES</h3>
     <div class="sentence-list">
@@ -2825,7 +2863,7 @@ window.TUTORING_CONTENT = {
 <div>9. I wish I had a cat.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "12": {
       unit: "UNIT  12",
@@ -2833,11 +2871,21 @@ window.TUTORING_CONTENT = {
       metaLabel: "Skill:",
       skill: "short ĕ",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ</div>
-<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong>  ĕ</div>
-<div class="project-read-source-line">Key word: Mr.  Ed.</div>
-<div class="project-read-source-line">Pull the corners of mouth with two forefingers like the rein of a bridle on a horse.</div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, ŏ</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> ĕ</div>
+    <div class="project-read-cue">ĕ – Key word: Mr. Ed.</div>
+    <div class="project-read-cue">Pull the corners of mouth with two forefingers like the rein of a bridle on a horse.</div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> put, are, what, you, was, of, the, have, to, said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">should, could, would</span></div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
@@ -2854,13 +2902,6 @@ window.TUTORING_CONTENT = {
       </div>
     </div>
   </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  put, are, what, you, was, of, the, have, to, said</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  should, could, would</div>
-    </div>
-  </section>
 <section class="project-read-source-block project-read-sentences">
     <h3>SENTENCES</h3>
     <div class="sentence-list">
@@ -2875,7 +2916,7 @@ window.TUTORING_CONTENT = {
 <div>9. Would you tell Beth?</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "13A": {
       unit: "UNIT  13 - A",
@@ -2883,13 +2924,24 @@ window.TUTORING_CONTENT = {
       metaLabel: "Concept:",
       skill: "A blend is a consonant combination representing two combined consonant sounds.",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ, ĕ  and consonants</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>blends</div>
-<div class="project-read-source-line">Teach in groups:</div>
-<div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
-    <div class="project-read-teaching-group"><div class="project-read-teaching-chip">bl</div><div class="project-read-teaching-chip">pl</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">gl</div><div class="project-read-teaching-chip">fl</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">cl</div><div class="project-read-teaching-chip">sl</div></div>
-  </div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, ŏ, ĕ and consonants</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> bl, gl, cl, pl, fl, sl</div>
+    <div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
+      <div class="project-read-teaching-group"><div class="project-read-teaching-chip">bl</div><div class="project-read-teaching-chip">pl</div></div>
+      <div class="project-read-teaching-group"><div class="project-read-teaching-chip">gl</div><div class="project-read-teaching-chip">fl</div></div>
+      <div class="project-read-teaching-group"><div class="project-read-teaching-chip">cl</div><div class="project-read-teaching-chip">sl</div></div>
+    </div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> could, should, would</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">they</span></div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
@@ -2908,13 +2960,6 @@ window.TUTORING_CONTENT = {
       </div>
     </div>
   </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  could, should, would</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  they</div>
-    </div>
-  </section>
 <section class="project-read-source-block project-read-sentences">
     <h3>SENTENCES</h3>
     <div class="sentence-list">
@@ -2926,7 +2971,7 @@ window.TUTORING_CONTENT = {
 <div>6. I am glad you are with us.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "13B": {
       unit: "UNIT  13 - B",
@@ -2934,12 +2979,24 @@ window.TUTORING_CONTENT = {
       metaLabel: "Concept:",
       skill: "Initial blends.",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> a, i, o, e</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce</strong> blends:</div>
-<div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
-    <div class="project-read-teaching-group"><div class="project-read-teaching-chip">br</div><div class="project-read-teaching-chip">shr</div><div class="project-read-teaching-chip">cr</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">pr</div><div class="project-read-teaching-chip">tr</div><div class="project-read-teaching-chip">dr</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">fr</div><div class="project-read-teaching-chip">thr</div><div class="project-read-teaching-chip">gr</div></div>
-  </div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, ŏ, ĕ</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> br, pr, fr, shr, tr, thr, cr, dr, gr</div>
+    <div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
+      <div class="project-read-teaching-group"><div class="project-read-teaching-chip">br</div><div class="project-read-teaching-chip">shr</div><div class="project-read-teaching-chip">cr</div></div>
+      <div class="project-read-teaching-group"><div class="project-read-teaching-chip">pr</div><div class="project-read-teaching-chip">tr</div><div class="project-read-teaching-chip">dr</div></div>
+      <div class="project-read-teaching-group"><div class="project-read-teaching-chip">fr</div><div class="project-read-teaching-chip">thr</div><div class="project-read-teaching-chip">gr</div></div>
+    </div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> could, should, would, they</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">your</span></div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
@@ -2966,13 +3023,6 @@ window.TUTORING_CONTENT = {
       </div>
     </div>
   </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  could, should, would, they</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  your</div>
-    </div>
-  </section>
 <section class="project-read-source-block project-read-sentences">
     <h3>SENTENCES</h3>
     <div class="sentence-list">
@@ -2983,7 +3033,7 @@ window.TUTORING_CONTENT = {
 <div>5. They went on a trip.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "13C": {
       unit: "UNIT  13 - C",
@@ -2991,13 +3041,24 @@ window.TUTORING_CONTENT = {
       metaLabel: "Concept:",
       skill: "A blend is a consonant combination representing two combined consonant sounds.",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ, ĕ  and consonants</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>blends</div>
-<div class="project-read-source-line">Teach in groups:</div>
-<div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
-    <div class="project-read-teaching-group"><div class="project-read-teaching-chip">sc</div><div class="project-read-teaching-chip">dw</div><div class="project-read-teaching-chip">sk</div><div class="project-read-teaching-chip">tw</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">sp</div><div class="project-read-teaching-chip">sm</div><div class="project-read-teaching-chip">sn</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">squ</div><div class="project-read-teaching-chip">sw</div><div class="project-read-teaching-chip">st</div></div>
-  </div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, ŏ, ĕ and consonants</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> sc, sp, squ, dw, sm, sw, sk, sn, st, tw</div>
+    <div class="project-read-teaching-groups" style="--pr-teaching-group-count:4">
+      <div class="project-read-teaching-group"><div class="project-read-teaching-chip">sc</div><div class="project-read-teaching-chip">dw</div><div class="project-read-teaching-chip">sk</div><div class="project-read-teaching-chip">tw</div></div>
+      <div class="project-read-teaching-group"><div class="project-read-teaching-chip">sp</div><div class="project-read-teaching-chip">sm</div><div class="project-read-teaching-chip">sn</div></div>
+      <div class="project-read-teaching-group"><div class="project-read-teaching-chip">squ</div><div class="project-read-teaching-chip">sw</div><div class="project-read-teaching-chip">st</div></div>
+      <div class="project-read-teaching-group"></div>
+    </div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> they, your</div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
@@ -3016,12 +3077,6 @@ window.TUTORING_CONTENT = {
       </div>
     </div>
   </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  they,  your</div>
-    </div>
-  </section>
 <section class="project-read-source-block project-read-sentences">
     <h3>SENTENCES</h3>
     <div class="sentence-list">
@@ -3034,7 +3089,7 @@ window.TUTORING_CONTENT = {
 <div>7. Stan and Fran are twins.</div>
     </div>
   </section>
-  </div>`
+</div>`
     },
     "14": {
       unit: "UNIT  14",
@@ -3042,11 +3097,21 @@ window.TUTORING_CONTENT = {
       metaLabel: "Concept:",
       skill: "Vowels have significant value.",
       bodyHtml: `<div class="project-read-sheet">
-    <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1.  <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ, ĕ  consonants , digraphs, initial blends.</div>
-<div class="project-read-source-line">2.  Technique for introducing /ŭ/</div>
-<div class="project-read-source-line">A. Key word:  up</div>
-<div class="project-read-source-line">B. Use the motion of opening an umbrella.</div></div>
+
+<section class="project-read-source-block project-read-teaching">
+  <div class="project-read-source-lines">
+    <div class="project-read-source-line">1. <strong class="project-read-inline-label">Review:</strong> ă, ĭ, ŏ, ĕ, consonants, digraphs, initial blends</div>
+    <div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong> ŭ</div>
+    <div class="project-read-cue">ŭ – u as in up</div>
+    <div class="project-read-cue">Use the motion of opening an umbrella.</div>
+  </div>
+</section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong> they, your</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong> <span class="project-read-new-red-words">Mr., Mrs.</span></div>
+    </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
@@ -3059,13 +3124,6 @@ window.TUTORING_CONTENT = {
         <div class="project-read-word-row"><span class="project-read-word-item">much</span><span class="project-read-word-item">fun</span><span class="project-read-word-item">skull</span><span class="project-read-word-item">pluck</span></div>
         <div class="project-read-word-row"><span class="project-read-word-item">crush</span><span class="project-read-word-item">bunk</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
-    </div>
-  </section>
-<section class="project-read-source-block project-read-red-words">
-    <h3>RED WORDS</h3>
-    <div class="project-read-source-lines">
-      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  they,  your</div>
-<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  Mr.  Mrs.</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -3084,7 +3142,7 @@ window.TUTORING_CONTENT = {
 <div>11. I can, but you cannot.</div>
     </div>
   </section>
-  </div>`
+</div>`
     }
   }
 };
