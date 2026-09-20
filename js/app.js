@@ -282,7 +282,7 @@
           </div>
         </section>
 
-        <div class="fast-start-activities">
+        <div class="fast-start-activities" tabindex="0" role="region" aria-label="Fast Start activity sections. Scroll this panel to view all three sections.">
           ${activitySections
             .map(
               (section, index) => `
@@ -409,6 +409,43 @@
     `;
   };
 
+  let fastStartResizeObserver = null;
+
+  const syncFastStartActivityHeight = () => {
+    if (fastStartResizeObserver) {
+      fastStartResizeObserver.disconnect();
+      fastStartResizeObserver = null;
+    }
+
+    const poemPanel = app.querySelector(".fast-start-poem");
+    const activityPanel = app.querySelector(".fast-start-activities");
+
+    if (!poemPanel || !activityPanel) return;
+
+    const applyHeight = () => {
+      const stackedLayout = window.matchMedia("(max-width: 900px)").matches;
+
+      if (stackedLayout) {
+        activityPanel.style.height = "";
+        activityPanel.style.maxHeight = "";
+        return;
+      }
+
+      const poemHeight = Math.ceil(poemPanel.getBoundingClientRect().height);
+      if (poemHeight > 0) {
+        activityPanel.style.height = `${poemHeight}px`;
+        activityPanel.style.maxHeight = `${poemHeight}px`;
+      }
+    };
+
+    applyHeight();
+
+    if ("ResizeObserver" in window) {
+      fastStartResizeObserver = new ResizeObserver(applyHeight);
+      fastStartResizeObserver.observe(poemPanel);
+    }
+  };
+
   const render = () => {
     const raw = location.hash.replace(/^#/, "") || "home";
     const [route, param, subparam] = raw.split("/");
@@ -434,6 +471,7 @@
 
     app.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: "instant" });
+    requestAnimationFrame(syncFastStartActivityHeight);
   };
 
   document.addEventListener("change", (event) => {
@@ -489,5 +527,6 @@
   });
 
   window.addEventListener("hashchange", render);
+  window.addEventListener("resize", syncFastStartActivityHeight);
   render();
 })();
