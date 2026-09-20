@@ -2348,15 +2348,33 @@ window.TUTORING_CONTENT = {
   </section>
 
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">at</span><span class="project-read-word-item">am</span><span class="project-read-word-item">tab</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">sat</span><span class="project-read-word-item">tam</span><span class="project-read-word-item">cab</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">fat</span><span class="project-read-word-item">Sam</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">bat</span><span class="project-read-word-item">bam</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">cat</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">mat</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-0-0" data-ending="at">at</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-0-1" data-ending="am">am</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-0-2" data-ending="ab">tab</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-0-3" data-ending="at">sat</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-0-4" data-ending="am">tam</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-0-5" data-ending="ab">cab</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-0-6" data-ending="at">fat</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-0-7" data-ending="am">Sam</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="8" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-0-8" data-ending="at">bat</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-0-9" data-ending="am">bam</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="11" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-0-10" data-ending="at">cat</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="13" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="14" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-0-11" data-ending="at">mat</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="16" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="17" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -2410,14 +2428,40 @@ window.TUTORING_CONTENT = {
     <div class="project-read-red-note"><span class="project-read-red-word-inline">The</span> is a phonetically irregular word. These words are called red words (stop words) because they do not have direct sound-symbol relationship.</div>
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:5" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">hat</span><span class="project-read-word-item">fan</span><span class="project-read-word-item">rat</span><span class="project-read-word-item">pal</span><span class="project-read-word-item">has</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">pat</span><span class="project-read-word-item">man</span><span class="project-read-word-item">sap</span><span class="project-read-word-item">ham</span><span class="project-read-word-item">as</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">lap</span><span class="project-read-word-item">tan</span><span class="project-read-word-item">nap</span><span class="project-read-word-item">jam</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">jab</span><span class="project-read-word-item">can</span><span class="project-read-word-item">rap</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">tab</span><span class="project-read-word-item">ran</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-1-0" data-ending="an">fan</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-1-1" data-ending="am">ham</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-1-2" data-ending="ap">sap</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-1-3" data-ending="at">hat</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-1-4" data-ending="as">has</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-1-5" data-ending="an">man</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-1-6" data-ending="am">jam</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-1-7" data-ending="ap">lap</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-1-8" data-ending="at">rat</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-1-9" data-ending="as">as</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-1-10" data-ending="an">tan</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-1-11" data-ending="ab">jab</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-1-12" data-ending="ap">nap</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-1-13" data-ending="at">pat</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="14" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-1-14" data-ending="an">can</span></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-1-15" data-ending="ab">tab</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-1-16" data-ending="ap">rap</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="18" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="19" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-1-17" data-ending="an">ran</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-1-18" data-ending="al">pal</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="22" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="23" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="24" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -2474,13 +2518,31 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">lad</span><span class="project-read-word-item">bag</span><span class="project-read-word-item">vat</span><span class="project-read-word-item">dad</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">sad</span><span class="project-read-word-item">lag</span><span class="project-read-word-item">van</span><span class="project-read-word-item">gas</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">tag</span><span class="project-read-word-item">bad</span><span class="project-read-word-item">mad</span><span class="project-read-word-item">sag</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">pad</span><span class="project-read-word-item">had</span><span class="project-read-word-item">rag</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-2-0" data-ending="ad">lad</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-2-1" data-ending="ag">bag</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-2-2" data-ending="ag">rag</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-2-3" data-ending="ad">mad</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-2-4" data-ending="ad">dad</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-2-5" data-ending="ag">lag</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-2-6" data-ending="at">vat</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-2-7" data-ending="ad">pad</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-2-8" data-ending="ad">sad</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-2-9" data-ending="ag">tag</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-2-10" data-ending="an">van</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-2-11" data-ending="ad">had</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-2-12" data-ending="ad">bad</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-2-13" data-ending="ag">sag</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-2-14" data-ending="as">gas</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="15" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -2535,15 +2597,39 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">hit</span><span class="project-read-word-item">kid</span><span class="project-read-word-item">pig</span><span class="project-read-word-item">is</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">wit</span><span class="project-read-word-item">did</span><span class="project-read-word-item">big</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">mit</span><span class="project-read-word-item">lid</span><span class="project-read-word-item">rig</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">bit</span><span class="project-read-word-item">tin</span><span class="project-read-word-item">rim</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">sit</span><span class="project-read-word-item">fin</span><span class="project-read-word-item">him</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">it</span><span class="project-read-word-item">win</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-3-0" data-ending="it">hit</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-3-1" data-ending="ig">pig</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-3-2" data-ending="id">kid</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-3-3" data-ending="is">is</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-3-4" data-ending="it">wit</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-3-5" data-ending="ig">big</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-3-6" data-ending="id">did</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="7" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-3-7" data-ending="it">mit</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-3-8" data-ending="ig">rig</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-3-9" data-ending="id">lid</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="11" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-3-10" data-ending="it">bit</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-3-11" data-ending="in">tin</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-3-12" data-ending="im">rim</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="15" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-3-13" data-ending="it">sit</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-3-14" data-ending="in">fin</span></div>
+        <div class="project-read-word-slot" data-word-slot="18"><span class="project-read-word-item" data-default-slot="18" data-word-id="prw-3-15" data-ending="im">him</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="19" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-3-16" data-ending="it">it</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-3-17" data-ending="in">win</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="22" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="23" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -2599,15 +2685,33 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">cap</span><span class="project-read-word-item">kick</span><span class="project-read-word-item">sick</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">cab</span><span class="project-read-word-item">pack</span><span class="project-read-word-item">sack</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">can</span><span class="project-read-word-item">tack</span><span class="project-read-word-item">pick</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">kin</span><span class="project-read-word-item">rack</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">kid</span><span class="project-read-word-item">tick</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">kit</span><span class="project-read-word-item">back</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-4-0" data-ending="ack">pack</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-4-1" data-ending="ick">kick</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-4-2" data-ending="in">kin</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-4-3" data-ending="ack">sack</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-4-4" data-ending="ick">sick</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-4-5" data-ending="id">kid</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-4-6" data-ending="ack">tack</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-4-7" data-ending="ick">pick</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-4-8" data-ending="it">kit</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-4-9" data-ending="ack">rack</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-4-10" data-ending="ick">tick</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="11" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-4-11" data-ending="ack">back</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-4-12" data-ending="ab">cab</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="14" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-4-13" data-ending="ap">cap</span></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-4-14" data-ending="an">can</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="17" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -2662,13 +2766,27 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD BUILDING</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD BUILDING</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD BUILDING">
-        <div class="project-read-word-row"><span class="project-read-word-item">cab</span><span class="project-read-word-item">pack</span><span class="project-read-word-item">pick</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">cap</span><span class="project-read-word-item">kick</span><span class="project-read-word-item">lack</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">kit</span><span class="project-read-word-item">tick</span><span class="project-read-word-item">back</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">kid</span><span class="project-read-word-item">tack</span><span class="project-read-word-item">sack</span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-5-0" data-ending="ack">pack</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-5-1" data-ending="ack">sack</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-5-2" data-ending="ab">cab</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-5-3" data-ending="ack">lack</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-5-4" data-ending="ick">pick</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-5-5" data-ending="ap">cap</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-5-6" data-ending="ack">back</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-5-7" data-ending="ick">kick</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-5-8" data-ending="it">kit</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-5-9" data-ending="ack">tack</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-5-10" data-ending="ick">tick</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-5-11" data-ending="id">kid</span></div>
       </div>
     </div>
   </section>
@@ -2712,15 +2830,39 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">quack</span><span class="project-read-word-item">tax</span><span class="project-read-word-item">yap</span><span class="project-read-word-item">will</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">quick</span><span class="project-read-word-item">fix</span><span class="project-read-word-item">yip</span><span class="project-read-word-item">can</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">quit</span><span class="project-read-word-item">mix</span><span class="project-read-word-item">zap</span><span class="project-read-word-item">is</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">ax</span><span class="project-read-word-item">six</span><span class="project-read-word-item">zip</span><span class="project-read-word-item">am</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">sax</span><span class="project-read-word-item">Max</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">zig-zag</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">wax</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-6-0" data-ending="ick">quick</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-6-1" data-ending="ax">tax</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-6-2" data-ending="ix">fix</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-6-3" data-ending="ap">yap</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-6-4" data-ending="an">can</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-6-5" data-ending="ax">ax</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-6-6" data-ending="ix">mix</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-6-7" data-ending="ap">zap</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-6-8" data-ending="it">quit</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-6-9" data-ending="ax">sax</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-6-10" data-ending="ix">six</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-6-11" data-ending="ip">yip</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-6-12" data-ending="is">is</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-6-13" data-ending="ax">Max</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-6-14" data-ending="ack">quack</span></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-6-15" data-ending="ip">zip</span></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-6-16" data-ending="am">am</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-6-17" data-ending="ax">wax</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="18" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="19"><span class="project-read-word-item" data-default-slot="19" data-word-id="prw-6-18" data-ending="ill">will</span></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-6-19" data-ending="ag">zig-zag</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="21" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="22" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="23" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -2776,22 +2918,54 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">dot</span><span class="project-read-word-item">Bob</span><span class="project-read-word-item">lock</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">got</span><span class="project-read-word-item">rob</span><span class="project-read-word-item">dock</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">hot</span><span class="project-read-word-item">job</span><span class="project-read-word-item">rock</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">lot</span><span class="project-read-word-item">mob</span><span class="project-read-word-item">sock</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">cot</span><span class="project-read-word-item">sob</span><span class="project-read-word-item">Tom</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">pot</span><span class="project-read-word-item">nod</span><span class="project-read-word-item">dog</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">not</span><span class="project-read-word-item">pod</span><span class="project-read-word-item">log</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">rot</span><span class="project-read-word-item">rod</span><span class="project-read-word-item">job</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">tot</span><span class="project-read-word-item">sod</span><span class="project-read-word-item">on</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">hop</span><span class="project-read-word-item">ox</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">mop</span><span class="project-read-word-item">fox</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">pop</span><span class="project-read-word-item">box</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">top</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-7-0" data-ending="od">nod</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-7-1" data-ending="ob">Bob</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-7-2" data-ending="ot">dot</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-7-3" data-ending="od">pod</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-7-4" data-ending="ob">rob</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-7-5" data-ending="ot">got</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-7-6" data-ending="od">rod</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-7-7" data-ending="ob">job</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-7-8" data-ending="ot">hot</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-7-9" data-ending="od">sod</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-7-10" data-ending="ob">mob</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-7-11" data-ending="ot">lot</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-7-12" data-ending="op">hop</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-7-13" data-ending="ob">sob</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-7-14" data-ending="ot">cot</span></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-7-15" data-ending="op">mop</span></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-7-16" data-ending="ob">job</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-7-17" data-ending="ot">pot</span></div>
+        <div class="project-read-word-slot" data-word-slot="18"><span class="project-read-word-item" data-default-slot="18" data-word-id="prw-7-18" data-ending="op">pop</span></div>
+        <div class="project-read-word-slot" data-word-slot="19"><span class="project-read-word-item" data-default-slot="19" data-word-id="prw-7-19" data-ending="ock">lock</span></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-7-20" data-ending="ot">not</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-7-21" data-ending="op">top</span></div>
+        <div class="project-read-word-slot" data-word-slot="22"><span class="project-read-word-item" data-default-slot="22" data-word-id="prw-7-22" data-ending="ock">dock</span></div>
+        <div class="project-read-word-slot" data-word-slot="23"><span class="project-read-word-item" data-default-slot="23" data-word-id="prw-7-23" data-ending="ot">rot</span></div>
+        <div class="project-read-word-slot" data-word-slot="24"><span class="project-read-word-item" data-default-slot="24" data-word-id="prw-7-24" data-ending="ox">ox</span></div>
+        <div class="project-read-word-slot" data-word-slot="25"><span class="project-read-word-item" data-default-slot="25" data-word-id="prw-7-25" data-ending="ock">rock</span></div>
+        <div class="project-read-word-slot" data-word-slot="26"><span class="project-read-word-item" data-default-slot="26" data-word-id="prw-7-26" data-ending="ot">tot</span></div>
+        <div class="project-read-word-slot" data-word-slot="27"><span class="project-read-word-item" data-default-slot="27" data-word-id="prw-7-27" data-ending="ox">fox</span></div>
+        <div class="project-read-word-slot" data-word-slot="28"><span class="project-read-word-item" data-default-slot="28" data-word-id="prw-7-28" data-ending="ock">sock</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="29" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="30"><span class="project-read-word-item" data-default-slot="30" data-word-id="prw-7-29" data-ending="ox">box</span></div>
+        <div class="project-read-word-slot" data-word-slot="31"><span class="project-read-word-item" data-default-slot="31" data-word-id="prw-7-30" data-ending="om">Tom</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="32" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="33"><span class="project-read-word-item" data-default-slot="33" data-word-id="prw-7-31" data-ending="og">dog</span></div>
+        <div class="project-read-word-slot" data-word-slot="34"><span class="project-read-word-item" data-default-slot="34" data-word-id="prw-7-32" data-ending="on">on</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="35" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="36"><span class="project-read-word-item" data-default-slot="36" data-word-id="prw-7-33" data-ending="og">log</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="37" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="38" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -2851,20 +3025,48 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">kill</span><span class="project-read-word-item">miss</span><span class="project-read-word-item">jazz</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">pill</span><span class="project-read-word-item">kiss</span><span class="project-read-word-item">fizz</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">bill</span><span class="project-read-word-item">hiss</span><span class="project-read-word-item">doll</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">quill</span><span class="project-read-word-item">pass</span><span class="project-read-word-item">mill</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">fill</span><span class="project-read-word-item">bass</span><span class="project-read-word-item">off</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">Jill</span><span class="project-read-word-item">mass</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">gill</span><span class="project-read-word-item">stiff</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">sill</span><span class="project-read-word-item">muff</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">till</span><span class="project-read-word-item">whiff</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">will</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">hill</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-8-0" data-ending="ill">kill</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-8-1" data-ending="ass">pass</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-8-2" data-ending="ill">hill</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-8-3" data-ending="ill">pill</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-8-4" data-ending="ass">bass</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-8-5" data-ending="iss">miss</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-8-6" data-ending="ill">bill</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-8-7" data-ending="ass">mass</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-8-8" data-ending="iss">kiss</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-8-9" data-ending="ill">quill</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-8-10" data-ending="iff">stiff</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-8-11" data-ending="iss">hiss</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-8-12" data-ending="ill">mill</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-8-13" data-ending="iff">whiff</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-8-14" data-ending="azz">jazz</span></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-8-15" data-ending="ill">fill</span></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-8-16" data-ending="izz">fizz</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="17" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="18"><span class="project-read-word-item" data-default-slot="18" data-word-id="prw-8-17" data-ending="ill">Jill</span></div>
+        <div class="project-read-word-slot" data-word-slot="19"><span class="project-read-word-item" data-default-slot="19" data-word-id="prw-8-18" data-ending="oll">doll</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="20" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-8-19" data-ending="ill">gill</span></div>
+        <div class="project-read-word-slot" data-word-slot="22"><span class="project-read-word-item" data-default-slot="22" data-word-id="prw-8-20" data-ending="off">off</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="23" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="24"><span class="project-read-word-item" data-default-slot="24" data-word-id="prw-8-21" data-ending="ill">sill</span></div>
+        <div class="project-read-word-slot" data-word-slot="25"><span class="project-read-word-item" data-default-slot="25" data-word-id="prw-8-22" data-ending="uff">muff</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="26" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="27"><span class="project-read-word-item" data-default-slot="27" data-word-id="prw-8-23" data-ending="ill">till</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="28" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="29" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="30"><span class="project-read-word-item" data-default-slot="30" data-word-id="prw-8-24" data-ending="ill">will</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="31" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="32" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -2923,15 +3125,39 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">sing</span><span class="project-read-word-item">song</span><span class="project-read-word-item">bank</span><span class="project-read-word-item">long</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">ring</span><span class="project-read-word-item">long</span><span class="project-read-word-item">pink</span><span class="project-read-word-item">song</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">honk</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">yank</span><span class="project-read-word-item">rang</span><span class="project-read-word-item">rink</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">bank</span><span class="project-read-word-item">bang</span><span class="project-read-word-item">sink</span><span class="project-read-word-item">king</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">tank</span><span class="project-read-word-item">gang</span><span class="project-read-word-item">rank</span><span class="project-read-word-item">wing</span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-9-0" data-ending="ank">bank</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-9-1" data-ending="ing">sing</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-9-2" data-ending="ong">song</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-9-3" data-ending="ink">pink</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-9-4" data-ending="ank">yank</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-9-5" data-ending="ing">ring</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-9-6" data-ending="ong">long</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-9-7" data-ending="ink">rink</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="8" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="9" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="10" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-9-8" data-ending="ink">sink</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-9-9" data-ending="ank">bank</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-9-10" data-ending="ing">king</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-9-11" data-ending="ong">long</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="15" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-9-12" data-ending="ank">tank</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-9-13" data-ending="ing">wing</span></div>
+        <div class="project-read-word-slot" data-word-slot="18"><span class="project-read-word-item" data-default-slot="18" data-word-id="prw-9-14" data-ending="ong">song</span></div>
+        <div class="project-read-word-slot" data-word-slot="19"><span class="project-read-word-item" data-default-slot="19" data-word-id="prw-9-15" data-ending="ang">rang</span></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-9-16" data-ending="ank">rank</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-9-17" data-ending="ang">gang</span></div>
+        <div class="project-read-word-slot" data-word-slot="22"><span class="project-read-word-item" data-default-slot="22" data-word-id="prw-9-18" data-ending="onk">honk</span></div>
+        <div class="project-read-word-slot" data-word-slot="23"><span class="project-read-word-item" data-default-slot="23" data-word-id="prw-9-19" data-ending="ang">bang</span></div>
       </div>
     </div>
   </section>
@@ -2996,20 +3222,59 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">chill</span><span class="project-read-word-item">thin</span><span class="project-read-word-item">ship</span><span class="project-read-word-item">whip</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">chip</span><span class="project-read-word-item">thick</span><span class="project-read-word-item">shot</span><span class="project-read-word-item">whiff</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">chap</span><span class="project-read-word-item">think</span><span class="project-read-word-item">shop</span><span class="project-read-word-item">which</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">chin</span><span class="project-read-word-item">thing</span><span class="project-read-word-item">wish</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">chat</span><span class="project-read-word-item">thank</span><span class="project-read-word-item">fish</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">inch</span><span class="project-read-word-item">than</span><span class="project-read-word-item">cash</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">pinch</span><span class="project-read-word-item">that</span><span class="project-read-word-item">lash</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">rich</span><span class="project-read-word-item">this</span><span class="project-read-word-item">dish</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">with</span><span class="project-read-word-item">dash</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">bath</span><span class="project-read-word-item">shock</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">math</span><span class="project-read-word-item">shall</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-10-0" data-ending="ish">wish</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-10-1" data-ending="ich">which</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-10-2" data-ending="iff">whiff</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-10-3" data-ending="ip">ship</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-10-4" data-ending="ish">fish</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-10-5" data-ending="ich">rich</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-10-6" data-ending="ap">chap</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-10-7" data-ending="ip">whip</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-10-8" data-ending="ish">dish</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-10-9" data-ending="at">chat</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-10-10" data-ending="ink">think</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-10-11" data-ending="ip">chip</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-10-12" data-ending="ash">cash</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-10-13" data-ending="at">that</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-10-14" data-ending="op">shop</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="15" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-10-15" data-ending="ash">lash</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-10-16" data-ending="inch">inch</span></div>
+        <div class="project-read-word-slot" data-word-slot="18"><span class="project-read-word-item" data-default-slot="18" data-word-id="prw-10-17" data-ending="ing">thing</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="19" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-10-18" data-ending="ash">dash</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-10-19" data-ending="inch">pinch</span></div>
+        <div class="project-read-word-slot" data-word-slot="22"><span class="project-read-word-item" data-default-slot="22" data-word-id="prw-10-20" data-ending="ank">thank</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="23" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="24"><span class="project-read-word-item" data-default-slot="24" data-word-id="prw-10-21" data-ending="in">thin</span></div>
+        <div class="project-read-word-slot" data-word-slot="25"><span class="project-read-word-item" data-default-slot="25" data-word-id="prw-10-22" data-ending="ath">bath</span></div>
+        <div class="project-read-word-slot" data-word-slot="26"><span class="project-read-word-item" data-default-slot="26" data-word-id="prw-10-23" data-ending="an">than</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="27" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="28"><span class="project-read-word-item" data-default-slot="28" data-word-id="prw-10-24" data-ending="in">chin</span></div>
+        <div class="project-read-word-slot" data-word-slot="29"><span class="project-read-word-item" data-default-slot="29" data-word-id="prw-10-25" data-ending="ath">math</span></div>
+        <div class="project-read-word-slot" data-word-slot="30"><span class="project-read-word-item" data-default-slot="30" data-word-id="prw-10-26" data-ending="is">this</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="31" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="32" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="33"><span class="project-read-word-item" data-default-slot="33" data-word-id="prw-10-27" data-ending="ill">chill</span></div>
+        <div class="project-read-word-slot" data-word-slot="34"><span class="project-read-word-item" data-default-slot="34" data-word-id="prw-10-28" data-ending="ith">with</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="35" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="36" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="37"><span class="project-read-word-item" data-default-slot="37" data-word-id="prw-10-29" data-ending="ick">thick</span></div>
+        <div class="project-read-word-slot" data-word-slot="38"><span class="project-read-word-item" data-default-slot="38" data-word-id="prw-10-30" data-ending="ock">shock</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="39" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="40" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="41"><span class="project-read-word-item" data-default-slot="41" data-word-id="prw-10-31" data-ending="ot">shot</span></div>
+        <div class="project-read-word-slot" data-word-slot="42"><span class="project-read-word-item" data-default-slot="42" data-word-id="prw-10-32" data-ending="all">shall</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="43" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -3069,17 +3334,55 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:5" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">get</span><span class="project-read-word-item">red</span><span class="project-read-word-item">shell</span><span class="project-read-word-item">chess</span><span class="project-read-word-item">them</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">yet</span><span class="project-read-word-item">led</span><span class="project-read-word-item">bell</span><span class="project-read-word-item">mess</span><span class="project-read-word-item">then</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">wet</span><span class="project-read-word-item">fed</span><span class="project-read-word-item">fell</span><span class="project-read-word-item">less</span><span class="project-read-word-item">when</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">let</span><span class="project-read-word-item">bed</span><span class="project-read-word-item">well</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">pet</span><span class="project-read-word-item">beg</span><span class="project-read-word-item">yell</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">men</span><span class="project-read-word-item">yes</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">hen</span><span class="project-read-word-item">web</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">ten</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-11-0" data-ending="en">then</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-11-1" data-ending="ell">shell</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-11-2" data-ending="et">get</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-11-3" data-ending="ess">chess</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-11-4" data-ending="eg">beg</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-11-5" data-ending="en">when</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-11-6" data-ending="ell">bell</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-11-7" data-ending="et">yet</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-11-8" data-ending="ess">mess</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-11-9" data-ending="es">yes</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-11-10" data-ending="en">men</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-11-11" data-ending="ell">fell</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-11-12" data-ending="et">wet</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-11-13" data-ending="ess">less</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-11-14" data-ending="eb">web</span></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-11-15" data-ending="en">hen</span></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-11-16" data-ending="ell">well</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-11-17" data-ending="et">let</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="18" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="19" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-11-18" data-ending="en">ten</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-11-19" data-ending="ell">yell</span></div>
+        <div class="project-read-word-slot" data-word-slot="22"><span class="project-read-word-item" data-default-slot="22" data-word-id="prw-11-20" data-ending="et">pet</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="23" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="24" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="25"><span class="project-read-word-item" data-default-slot="25" data-word-id="prw-11-21" data-ending="ed">red</span></div>
+        <div class="project-read-word-slot" data-word-slot="26"><span class="project-read-word-item" data-default-slot="26" data-word-id="prw-11-22" data-ending="ed">bed</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="27" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="28" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="29" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="30"><span class="project-read-word-item" data-default-slot="30" data-word-id="prw-11-23" data-ending="ed">led</span></div>
+        <div class="project-read-word-slot" data-word-slot="31"><span class="project-read-word-item" data-default-slot="31" data-word-id="prw-11-24" data-ending="em">them</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="32" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="33" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="34" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="35"><span class="project-read-word-item" data-default-slot="35" data-word-id="prw-11-25" data-ending="ed">fed</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="36" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="37" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="38" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="39" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -3140,19 +3443,45 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">black</span><span class="project-read-word-item">flag</span><span class="project-read-word-item">plan</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">block</span><span class="project-read-word-item">flat</span><span class="project-read-word-item">plot</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">bless</span><span class="project-read-word-item">flock</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">bled</span><span class="project-read-word-item">flap</span><span class="project-read-word-item">class</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">flash</span><span class="project-read-word-item">clip</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">sled</span><span class="project-read-word-item">fled</span><span class="project-read-word-item">click</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">slack</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">clock</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">slab</span><span class="project-read-word-item">glad</span><span class="project-read-word-item">clam</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">slip</span><span class="project-read-word-item">glass</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">slim</span><span class="project-read-word-item">glob</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-12-0" data-ending="ack">black</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-12-1" data-ending="ess">bless</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-12-2" data-ending="ock">block</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-12-3" data-ending="ack">slack</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-12-4" data-ending="ap">flap</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-12-5" data-ending="ock">flock</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-12-6" data-ending="ass">class</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-12-7" data-ending="ash">flash</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="8" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-12-8" data-ending="ass">glass</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-12-9" data-ending="ick">click</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-12-10" data-ending="ock">clock</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="12" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-12-11" data-ending="ab">slab</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-12-12" data-ending="ed">bled</span></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-12-13" data-ending="ip">clip</span></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-12-14" data-ending="ad">glad</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-12-15" data-ending="ed">sled</span></div>
+        <div class="project-read-word-slot" data-word-slot="18"><span class="project-read-word-item" data-default-slot="18" data-word-id="prw-12-16" data-ending="ip">slip</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="19" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-12-17" data-ending="ed">fled</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-12-18" data-ending="an">plan</span></div>
+        <div class="project-read-word-slot" data-word-slot="22"><span class="project-read-word-item" data-default-slot="22" data-word-id="prw-12-19" data-ending="am">clam</span></div>
+        <div class="project-read-word-slot" data-word-slot="23"><span class="project-read-word-item" data-default-slot="23" data-word-id="prw-12-20" data-ending="ag">flag</span></div>
+        <div class="project-read-word-slot" data-word-slot="24"><span class="project-read-word-item" data-default-slot="24" data-word-id="prw-12-21" data-ending="at">flat</span></div>
+        <div class="project-read-word-slot" data-word-slot="25"><span class="project-read-word-item" data-default-slot="25" data-word-id="prw-12-22" data-ending="im">slim</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="26" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="27"><span class="project-read-word-item" data-default-slot="27" data-word-id="prw-12-23" data-ending="ot">plot</span></div>
+        <div class="project-read-word-slot" data-word-slot="28"><span class="project-read-word-item" data-default-slot="28" data-word-id="prw-12-24" data-ending="ob">glob</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="29" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -3210,27 +3539,69 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">bring</span><span class="project-read-word-item">fresh</span><span class="project-read-word-item">trip</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">brag</span><span class="project-read-word-item">frog</span><span class="project-read-word-item">track</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">brick</span><span class="project-read-word-item">frock</span><span class="project-read-word-item">trash</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">brisk</span><span class="project-read-word-item">frisk</span><span class="project-read-word-item">trick</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">bran</span><span class="project-read-word-item">frill</span><span class="project-read-word-item">trim</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">brim</span><span class="project-read-word-item">fret</span><span class="project-read-word-item">trot</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">trap</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">crack</span><span class="project-read-word-item">dress</span><span class="project-read-word-item">trod</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">crab</span><span class="project-read-word-item">drink</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">crop</span><span class="project-read-word-item">drill</span><span class="project-read-word-item">grass</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">cross</span><span class="project-read-word-item">drip</span><span class="project-read-word-item">grab</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">crash</span><span class="project-read-word-item">drag</span><span class="project-read-word-item">trill</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">grit</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">prod</span><span class="project-read-word-item">shrill</span><span class="project-read-word-item">grip</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">prim</span><span class="project-read-word-item">shrank</span><span class="project-read-word-item">grin</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">prop</span><span class="project-read-word-item">shrink</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">press</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">thrill</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">throb</span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-13-0" data-ending="ack">track</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-13-1" data-ending="ill">frill</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-13-2" data-ending="ink">drink</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-13-3" data-ending="ack">crack</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-13-4" data-ending="ill">drill</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-13-5" data-ending="ink">shrink</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-13-6" data-ending="ick">brick</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-13-7" data-ending="ill">trill</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-13-8" data-ending="op">crop</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-13-9" data-ending="ick">trick</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-13-10" data-ending="ill">shrill</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-13-11" data-ending="op">prop</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-13-12" data-ending="ash">trash</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-13-13" data-ending="ill">thrill</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-13-14" data-ending="og">frog</span></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-13-15" data-ending="ash">crash</span></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-13-16" data-ending="ip">trip</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-13-17" data-ending="ock">frock</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="18" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="19" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-13-18" data-ending="an">bran</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-13-19" data-ending="isk">brisk</span></div>
+        <div class="project-read-word-slot" data-word-slot="22"><span class="project-read-word-item" data-default-slot="22" data-word-id="prw-13-20" data-ending="ip">drip</span></div>
+        <div class="project-read-word-slot" data-word-slot="23"><span class="project-read-word-item" data-default-slot="23" data-word-id="prw-13-21" data-ending="et">fret</span></div>
+        <div class="project-read-word-slot" data-word-slot="24"><span class="project-read-word-item" data-default-slot="24" data-word-id="prw-13-22" data-ending="isk">frisk</span></div>
+        <div class="project-read-word-slot" data-word-slot="25"><span class="project-read-word-item" data-default-slot="25" data-word-id="prw-13-23" data-ending="ip">grip</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="26" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="27"><span class="project-read-word-item" data-default-slot="27" data-word-id="prw-13-24" data-ending="ess">dress</span></div>
+        <div class="project-read-word-slot" data-word-slot="28"><span class="project-read-word-item" data-default-slot="28" data-word-id="prw-13-25" data-ending="im">trim</span></div>
+        <div class="project-read-word-slot" data-word-slot="29"><span class="project-read-word-item" data-default-slot="29" data-word-id="prw-13-26" data-ending="ot">trot</span></div>
+        <div class="project-read-word-slot" data-word-slot="30"><span class="project-read-word-item" data-default-slot="30" data-word-id="prw-13-27" data-ending="ess">press</span></div>
+        <div class="project-read-word-slot" data-word-slot="31"><span class="project-read-word-item" data-default-slot="31" data-word-id="prw-13-28" data-ending="im">brim</span></div>
+        <div class="project-read-word-slot" data-word-slot="32"><span class="project-read-word-item" data-default-slot="32" data-word-id="prw-13-29" data-ending="ap">trap</span></div>
+        <div class="project-read-word-slot" data-word-slot="33"><span class="project-read-word-item" data-default-slot="33" data-word-id="prw-13-30" data-ending="od">trod</span></div>
+        <div class="project-read-word-slot" data-word-slot="34"><span class="project-read-word-item" data-default-slot="34" data-word-id="prw-13-31" data-ending="im">prim</span></div>
+        <div class="project-read-word-slot" data-word-slot="35"><span class="project-read-word-item" data-default-slot="35" data-word-id="prw-13-32" data-ending="ass">grass</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="36" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="37" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="38"><span class="project-read-word-item" data-default-slot="38" data-word-id="prw-13-33" data-ending="oss">cross</span></div>
+        <div class="project-read-word-slot" data-word-slot="39"><span class="project-read-word-item" data-default-slot="39" data-word-id="prw-13-34" data-ending="od">prod</span></div>
+        <div class="project-read-word-slot" data-word-slot="40"><span class="project-read-word-item" data-default-slot="40" data-word-id="prw-13-35" data-ending="ag">brag</span></div>
+        <div class="project-read-word-slot" data-word-slot="41"><span class="project-read-word-item" data-default-slot="41" data-word-id="prw-13-36" data-ending="it">grit</span></div>
+        <div class="project-read-word-slot" data-word-slot="42"><span class="project-read-word-item" data-default-slot="42" data-word-id="prw-13-37" data-ending="ab">crab</span></div>
+        <div class="project-read-word-slot" data-word-slot="43"><span class="project-read-word-item" data-default-slot="43" data-word-id="prw-13-38" data-ending="ag">drag</span></div>
+        <div class="project-read-word-slot" data-word-slot="44"><span class="project-read-word-item" data-default-slot="44" data-word-id="prw-13-39" data-ending="ank">shrank</span></div>
+        <div class="project-read-word-slot" data-word-slot="45"><span class="project-read-word-item" data-default-slot="45" data-word-id="prw-13-40" data-ending="ab">grab</span></div>
+        <div class="project-read-word-slot" data-word-slot="46"><span class="project-read-word-item" data-default-slot="46" data-word-id="prw-13-41" data-ending="esh">fresh</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="47" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="48"><span class="project-read-word-item" data-default-slot="48" data-word-id="prw-13-42" data-ending="ing">bring</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="49" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="50"><span class="project-read-word-item" data-default-slot="50" data-word-id="prw-13-43" data-ending="in">grin</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="51" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="52" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="53"><span class="project-read-word-item" data-default-slot="53" data-word-id="prw-13-44" data-ending="ob">throb</span></div>
       </div>
     </div>
   </section>
@@ -3282,19 +3653,55 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">scat</span><span class="project-read-word-item">skip</span><span class="project-read-word-item">spill</span><span class="project-read-word-item">smash</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">skill</span><span class="project-read-word-item">spin</span><span class="project-read-word-item">smell</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">stop</span><span class="project-read-word-item">skim</span><span class="project-read-word-item">spot</span><span class="project-read-word-item">smack</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">still</span><span class="project-read-word-item">skin</span><span class="project-read-word-item">spell</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">stiff</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">twin</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">step</span><span class="project-read-word-item">snack</span><span class="project-read-word-item">swell</span><span class="project-read-word-item">twig</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">stern</span><span class="project-read-word-item">snip</span><span class="project-read-word-item">swim</span><span class="project-read-word-item">twill</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">stick</span><span class="project-read-word-item">snag</span><span class="project-read-word-item">swing</span><span class="project-read-word-item">twit</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">stack</span><span class="project-read-word-item">sniff</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">stab</span><span class="project-read-word-item">snap</span><span class="project-read-word-item">dwell</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-14-0" data-ending="ip">skip</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-14-1" data-ending="ep">step</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-14-2" data-ending="ell">smell</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-14-3" data-ending="ill">spill</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="4" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-14-4" data-ending="ig">twig</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-14-5" data-ending="ell">spell</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-14-6" data-ending="ill">skill</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-14-7" data-ending="ip">snip</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-14-8" data-ending="ern">stern</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-14-9" data-ending="ell">swell</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-14-10" data-ending="ill">still</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-14-11" data-ending="im">skim</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-14-12" data-ending="ick">stick</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-14-13" data-ending="ell">dwell</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="15" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-14-14" data-ending="im">swim</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="17" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="18" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="19"><span class="project-read-word-item" data-default-slot="19" data-word-id="prw-14-15" data-ending="ill">twill</span></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-14-16" data-ending="iff">stiff</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-14-17" data-ending="ag">snag</span></div>
+        <div class="project-read-word-slot" data-word-slot="22"><span class="project-read-word-item" data-default-slot="22" data-word-id="prw-14-18" data-ending="ack">smack</span></div>
+        <div class="project-read-word-slot" data-word-slot="23"><span class="project-read-word-item" data-default-slot="23" data-word-id="prw-14-19" data-ending="in">spin</span></div>
+        <div class="project-read-word-slot" data-word-slot="24"><span class="project-read-word-item" data-default-slot="24" data-word-id="prw-14-20" data-ending="iff">sniff</span></div>
+        <div class="project-read-word-slot" data-word-slot="25"><span class="project-read-word-item" data-default-slot="25" data-word-id="prw-14-21" data-ending="ing">swing</span></div>
+        <div class="project-read-word-slot" data-word-slot="26"><span class="project-read-word-item" data-default-slot="26" data-word-id="prw-14-22" data-ending="ack">snack</span></div>
+        <div class="project-read-word-slot" data-word-slot="27"><span class="project-read-word-item" data-default-slot="27" data-word-id="prw-14-23" data-ending="in">skin</span></div>
+        <div class="project-read-word-slot" data-word-slot="28"><span class="project-read-word-item" data-default-slot="28" data-word-id="prw-14-24" data-ending="ash">smash</span></div>
+        <div class="project-read-word-slot" data-word-slot="29"><span class="project-read-word-item" data-default-slot="29" data-word-id="prw-14-25" data-ending="it">twit</span></div>
+        <div class="project-read-word-slot" data-word-slot="30"><span class="project-read-word-item" data-default-slot="30" data-word-id="prw-14-26" data-ending="ack">stack</span></div>
+        <div class="project-read-word-slot" data-word-slot="31"><span class="project-read-word-item" data-default-slot="31" data-word-id="prw-14-27" data-ending="in">twin</span></div>
+        <div class="project-read-word-slot" data-word-slot="32"><span class="project-read-word-item" data-default-slot="32" data-word-id="prw-14-28" data-ending="op">stop</span></div>
+        <div class="project-read-word-slot" data-word-slot="33"><span class="project-read-word-item" data-default-slot="33" data-word-id="prw-14-29" data-ending="ab">stab</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="34" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="35" aria-hidden="true"></div>
+        <div class="project-read-word-slot" data-word-slot="36"><span class="project-read-word-item" data-default-slot="36" data-word-id="prw-14-30" data-ending="ot">spot</span></div>
+        <div class="project-read-word-slot" data-word-slot="37"><span class="project-read-word-item" data-default-slot="37" data-word-id="prw-14-31" data-ending="ap">snap</span></div>
+        <div class="project-read-word-slot" data-word-slot="38"><span class="project-read-word-item" data-default-slot="38" data-word-id="prw-14-32" data-ending="at">scat</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="39" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -3352,15 +3759,39 @@ window.TUTORING_CONTENT = {
     
   </section>
 <section class="project-read-source-block project-read-word-list">
-    <h3>WORD LIST</h3>
+    <div class="project-read-word-list-header">
+      <h3>WORD LIST</h3>
+      <div class="project-read-word-list-actions">
+        <button class="project-read-word-action project-read-word-action--shuffle" type="button" data-action="shuffle-word-list">Shuffle</button>
+        <button class="project-read-word-action project-read-word-action--reset" type="button" data-action="reset-word-list">Reset Order</button>
+      </div>
+    </div>
     <div class="project-read-word-scroll">
       <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
-        <div class="project-read-word-row"><span class="project-read-word-item">up</span><span class="project-read-word-item">dull</span><span class="project-read-word-item">us</span><span class="project-read-word-item">swung</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">but</span><span class="project-read-word-item">puff</span><span class="project-read-word-item">such</span><span class="project-read-word-item">stung</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">bus</span><span class="project-read-word-item">brush</span><span class="project-read-word-item">shrub</span><span class="project-read-word-item">chunk</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">truck</span><span class="project-read-word-item">run</span><span class="project-read-word-item">blush</span><span class="project-read-word-item">flung</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">much</span><span class="project-read-word-item">fun</span><span class="project-read-word-item">skull</span><span class="project-read-word-item">pluck</span></div>
-        <div class="project-read-word-row"><span class="project-read-word-item">crush</span><span class="project-read-word-item">bunk</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-slot" data-word-slot="0"><span class="project-read-word-item" data-default-slot="0" data-word-id="prw-15-0" data-ending="uch">such</span></div>
+        <div class="project-read-word-slot" data-word-slot="1"><span class="project-read-word-item" data-default-slot="1" data-word-id="prw-15-1" data-ending="un">run</span></div>
+        <div class="project-read-word-slot" data-word-slot="2"><span class="project-read-word-item" data-default-slot="2" data-word-id="prw-15-2" data-ending="ung">swung</span></div>
+        <div class="project-read-word-slot" data-word-slot="3"><span class="project-read-word-item" data-default-slot="3" data-word-id="prw-15-3" data-ending="ush">brush</span></div>
+        <div class="project-read-word-slot" data-word-slot="4"><span class="project-read-word-item" data-default-slot="4" data-word-id="prw-15-4" data-ending="uch">much</span></div>
+        <div class="project-read-word-slot" data-word-slot="5"><span class="project-read-word-item" data-default-slot="5" data-word-id="prw-15-5" data-ending="un">fun</span></div>
+        <div class="project-read-word-slot" data-word-slot="6"><span class="project-read-word-item" data-default-slot="6" data-word-id="prw-15-6" data-ending="ung">stung</span></div>
+        <div class="project-read-word-slot" data-word-slot="7"><span class="project-read-word-item" data-default-slot="7" data-word-id="prw-15-7" data-ending="ush">blush</span></div>
+        <div class="project-read-word-slot" data-word-slot="8"><span class="project-read-word-item" data-default-slot="8" data-word-id="prw-15-8" data-ending="unk">chunk</span></div>
+        <div class="project-read-word-slot" data-word-slot="9"><span class="project-read-word-item" data-default-slot="9" data-word-id="prw-15-9" data-ending="up">up</span></div>
+        <div class="project-read-word-slot" data-word-slot="10"><span class="project-read-word-item" data-default-slot="10" data-word-id="prw-15-10" data-ending="ung">flung</span></div>
+        <div class="project-read-word-slot" data-word-slot="11"><span class="project-read-word-item" data-default-slot="11" data-word-id="prw-15-11" data-ending="ush">crush</span></div>
+        <div class="project-read-word-slot" data-word-slot="12"><span class="project-read-word-item" data-default-slot="12" data-word-id="prw-15-12" data-ending="unk">bunk</span></div>
+        <div class="project-read-word-slot" data-word-slot="13"><span class="project-read-word-item" data-default-slot="13" data-word-id="prw-15-13" data-ending="ut">but</span></div>
+        <div class="project-read-word-slot" data-word-slot="14"><span class="project-read-word-item" data-default-slot="14" data-word-id="prw-15-14" data-ending="ull">dull</span></div>
+        <div class="project-read-word-slot" data-word-slot="15"><span class="project-read-word-item" data-default-slot="15" data-word-id="prw-15-15" data-ending="us">us</span></div>
+        <div class="project-read-word-slot" data-word-slot="16"><span class="project-read-word-item" data-default-slot="16" data-word-id="prw-15-16" data-ending="uck">truck</span></div>
+        <div class="project-read-word-slot" data-word-slot="17"><span class="project-read-word-item" data-default-slot="17" data-word-id="prw-15-17" data-ending="uff">puff</span></div>
+        <div class="project-read-word-slot" data-word-slot="18"><span class="project-read-word-item" data-default-slot="18" data-word-id="prw-15-18" data-ending="ull">skull</span></div>
+        <div class="project-read-word-slot" data-word-slot="19"><span class="project-read-word-item" data-default-slot="19" data-word-id="prw-15-19" data-ending="us">bus</span></div>
+        <div class="project-read-word-slot" data-word-slot="20"><span class="project-read-word-item" data-default-slot="20" data-word-id="prw-15-20" data-ending="uck">pluck</span></div>
+        <div class="project-read-word-slot" data-word-slot="21"><span class="project-read-word-item" data-default-slot="21" data-word-id="prw-15-21" data-ending="ub">shrub</span></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="22" aria-hidden="true"></div>
+        <div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="23" aria-hidden="true"></div>
       </div>
     </div>
   </section>
