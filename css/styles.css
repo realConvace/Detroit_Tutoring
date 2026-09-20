@@ -2098,3 +2098,69 @@ select {
     border-radius: 15px;
   }
 }
+
+
+/* Polished bubble cards for Project Read words and sentences */
+.word-list-grid > div span {
+  min-height: 58px;
+  padding: 12px 18px;
+  border: 2px solid #b7cae5;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+  box-shadow:
+    0 3px 8px rgba(69, 96, 133, .08),
+    inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+.word-list-grid > div span:empty {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.sentence-list > div {
+  min-height: 62px;
+  padding: 13px 18px;
+  border: 2px solid #b8d9c4;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f8fff9 0%, #eef9f1 100%);
+  box-shadow:
+    0 3px 8px rgba(63, 110, 79, .08),
+    inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+.word-list-grid > div span:hover,
+.sentence-list > div:hover {
+  transform: translateY(-1px);
+}
+
+.word-list-grid > div span,
+.sentence-list > div {
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease,
+    border-color .15s ease;
+}
+
+.word-list-grid > div span:hover {
+  border-color: #9fb9dc;
+  box-shadow:
+    0 5px 12px rgba(69, 96, 133, .11),
+    inset 0 1px 0 rgba(255,255,255,.95);
+}
+
+.sentence-list > div:hover {
+  border-color: #9fcaae;
+  box-shadow:
+    0 5px 12px rgba(63, 110, 79, .11),
+    inset 0 1px 0 rgba(255,255,255,.95);
+}
+
+@media (max-width: 700px) {
+  .word-list-grid > div span,
+  .sentence-list > div {
+    border-radius: 16px;
+  }
+}
