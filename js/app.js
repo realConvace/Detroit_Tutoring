@@ -443,9 +443,15 @@
       }
 
       const poemHeight = Math.ceil(poemPanel.getBoundingClientRect().height);
-      if (poemHeight > 0) {
-        activityPanel.style.height = `${poemHeight}px`;
-        activityPanel.style.maxHeight = `${poemHeight}px`;
+
+      // Keep the tutor activity panel from shrinking below the established
+      // Pat-a-Cake desktop size, even when a later rhyme is shorter.
+      const patACakeMinimumHeight = 805;
+      const activityHeight = Math.max(poemHeight, patACakeMinimumHeight);
+
+      if (activityHeight > 0) {
+        activityPanel.style.height = `${activityHeight}px`;
+        activityPanel.style.maxHeight = `${activityHeight}px`;
       }
     };
 
