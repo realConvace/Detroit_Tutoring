@@ -1803,3 +1803,86 @@ select {
     font-size: 1.35rem;
   }
 }
+
+
+/* Project Read content cards */
+.project-read-main-content {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.project-read-main-content .project-read-content {
+  display: grid;
+  gap: 16px;
+}
+
+/* Introduce section */
+.project-read-intro {
+  margin: 0;
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: #e7f4f5;
+  border: 1px solid #cfe6e8;
+}
+
+.project-read-intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* Consonant cue section */
+.consonant-list {
+  margin: 0;
+  padding: 18px;
+  border-radius: 16px;
+  background: #fff1e3;
+  border: 1px solid #f0ddc8;
+}
+
+.consonant-list > div {
+  background: rgba(255,255,255,.62);
+  border-left-color: #d98c3f;
+}
+
+/* Word List section */
+.project-read-block {
+  margin-top: 0;
+  padding: 20px 22px;
+  border-radius: 16px;
+}
+
+.project-read-block:nth-of-type(1) {
+  background: #eaf1fb;
+  border: 1px solid #d4e0f2;
+}
+
+.project-read-block:nth-of-type(1) h3 {
+  color: #355b88;
+}
+
+/* Sentences section */
+.project-read-block:nth-of-type(2) {
+  background: #eaf7ee;
+  border: 1px solid #d0e9d8;
+}
+
+.project-read-block:nth-of-type(2) h3 {
+  color: #2d6c49;
+}
+
+.word-list-grid {
+  max-width: 100%;
+}
+
+.word-list-grid > div {
+  border-bottom-color: rgba(60, 88, 122, .14);
+}
+
+@media (max-width: 700px) {
+  .project-read-intro,
+  .consonant-list,
+  .project-read-block {
+    padding: 16px;
+  }
+}
