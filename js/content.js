@@ -138,6 +138,275 @@ window.TUTORING_CONTENT = {
           </ol>
         `
       }
+    },
+    "2": {
+      displayTitle: "Itsy Bitsy Spider",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Itsy Bitsy Spider poem">
+          <div>The itsy bitsy spider</div>
+          <div>Climbed up the water spout.</div>
+          <div>Down came the rain</div>
+          <div>And washed the spider out.</div>
+          <div>Out came the sun</div>
+          <div>And dried up all the rain.</div>
+          <div>And the itsy bitsy spider</div>
+          <div>Climbed up the spout again.</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child to find the shortest line in the poem and then count the words in that line.</li>
+            <li>Ask your child to find and underline each “s” in the poem.</li>
+            <li>Ask, <em>What is this poem about?</em></li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>Let’s change the word rain. What if we added “t” to the beginning? What word would that be?</em> (train) <em>What if the word started with “p”?</em> (pain) <em>What if it started with “spr”?</em> (sprain)</li>
+            <li>Say, <em>I will stretch out some words. You tell me what they are:</em>
+              <div class="sound-lines">
+                <div>rrr...aaay...nnn (rain)</div>
+                <div>c...aaay...mmm (came)</div>
+              </div>
+            </li>
+            <li>Say, <em>Now you try it. Stretch these words out:</em> sun, spider.</li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Ask your child to name some words that rhyme with <em>sun</em>. Write them as your child says them. To start off, offer some beginning sounds: “b,” “f.”</li>
+            <li>Say, <em>Do these words end with the same sound?</em>
+              <div class="example-row four-up">
+                <strong>itsy, bitsy</strong>
+                <strong>down, came</strong>
+                <strong>and, rain</strong>
+                <strong>spout, out</strong>
+              </div>
+            </li>
+            <li>Ask your child to draw a picture of the poem, then tell you what it is about.</li>
+            <li>Write <em>spout</em> on a sheet of paper. Point out the letters <em>-out</em>. Brainstorm, write, and read other words that rhyme and explain that all these words belong to the <em>-out</em> word family.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "3": {
+      displayTitle: "Mary Had a Little Lamb",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Mary Had a Little Lamb poem">
+          <div>Mary had a little lamb,</div>
+          <div>Its fleece was white as snow.</div>
+          <div>And everywhere that Mary went,</div>
+          <div>The lamb was sure to go.</div>
+          <div class="poem-stanza-gap"></div>
+          <div>It followed her to school one day,</div>
+          <div>Which was against the rules.</div>
+          <div>It made the children laugh and play</div>
+          <div>To see a lamb at school.</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child to count the words in the first line. Then ask your child to circle each word.</li>
+            <li>Say, <em>Circle the first word in line two; now circle the last word in line two.</em> Repeat for line three.</li>
+            <li>Say, <em>Look at these words. What letter starts them?</em> (point to <em>little, lamb, laugh</em>). Have your child practice writing lowercase l and uppercase L.</li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>I’ll say two words. Clap your hands if they rhyme:</em>
+              <div class="example-row three-up">
+                <strong>day, play</strong>
+                <strong>see, school</strong>
+                <strong>snow, go</strong>
+              </div>
+            </li>
+            <li>Say, <em>Think about the word day. What other words rhyme with it? You say them, and I’ll write them down.</em> (bay, hay, jay, lay, pay, ray, say, stay, tray, way)</li>
+            <li>Say, <em>I’ll stretch some words. You tell me what the word is:</em>
+              <div class="sound-lines">
+                <div>l...a...m (lamb)</div>
+                <div>r...oo...l...s (rules)</div>
+                <div>sch...oo...l (school)</div>
+              </div>
+            </li>
+            <li>Ask your child to find and circle the word <em>Mary</em> each time it is used in the poem.</li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Say, <em>I’ll say a word. You say one that rhymes. I say, white. You say...</em> (bright, night, bite, and so on). Repeat with <em>snow, play, see</em>.</li>
+            <li>Write these words on slips of paper: <em>snow, go, to, one</em>. Ask your child to pick out the two words with a long “o.” (snow, go)</li>
+            <li>Tap or clap the beats in the poem. Then ask your child to join you. Finally, ask your child, “How many beats are in the word <em>snow</em>? (1) <em>children</em>? (2) <em>laugh</em>? (1) <em>everywhere</em>? (3)”</li>
+            <li>Write <em>day</em> on a sheet of paper. Point out the letters <em>-ay</em>. Together, brainstorm, write, and read other words that rhyme and list them on a sheet of paper.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "4": {
+      displayTitle: "Miss Mary Mack",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Miss Mary Mack poem">
+          <div>Miss Mary Mack</div>
+          <div>All dressed in black,</div>
+          <div>With a big red bow</div>
+          <div>In the middle of the back.</div>
+          <div>She carried her lunch</div>
+          <div>In a purple pack,</div>
+          <div>And her high-heeled shoes</div>
+          <div>Went clickety-clack.</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child to circle the words that start with “b.”</li>
+            <li>Say, <em>I will say two words. Clap your hands if they rhyme:</em>
+              <div class="example-row three-up">
+                <strong>big, bow</strong>
+                <strong>back, sack</strong>
+                <strong>black, sack</strong>
+              </div>
+            </li>
+            <li>Ask your child to find a line in the poem that has two “m” words and then circle them. Repeat with “p” words.</li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say the word <em>Mack</em>. Ask your child to name some words that rhyme with it (back, clack, pack, sack, track). On blank paper, list the words.</li>
+            <li>Say, <em>I’ll stretch some words out. You tell me which word I’m saying:</em>
+              <div class="sound-lines">
+                <div>s...a...k (sack)</div>
+                <div>cl...a...k (clack)</div>
+                <div>b...a...k (back)</div>
+              </div>
+            </li>
+            <li>Say, <em>I’ll say two words. Raise your hand if they start the same:</em>
+              <div class="example-row three-up">
+                <strong>Mary, middle</strong>
+                <strong>clack, back</strong>
+                <strong>clickety, clack</strong>
+              </div>
+            </li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Write these words on index cards or little slips of paper: <em>pat, cake, man, bake, rain, lamb, made, Mack, black, pack</em>. Ask your child to sort the words into two categories: long “a” (cake, bake, rain, made) and short “a” (pat, man, lamb, Mack, black, pack).</li>
+            <li>Using the same word cards, ask your child to group rhyming words together. Then ask your child to add words to each group.</li>
+            <li>Ask your child to find and circle the color words in the poem.</li>
+            <li>Write <em>back</em> on a sheet of paper. Point out the <em>-ack</em> word family. Together, brainstorm, write, and read other words that belong to the <em>-ack</em> word family (black, pack, sack).</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "5": {
+      displayTitle: "Hickory Dickory Dock",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Hickory Dickory Dock poem">
+          <div>Hickory, dickory, dock,</div>
+          <div>The mouse ran up the clock.</div>
+          <div>The clock struck one,</div>
+          <div>The mouse ran down,</div>
+          <div>Hickory, dickory, dock!</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child how many words are in the first line. Ask your child to point to each word. Repeat with line two.</li>
+            <li>Ask your child to find and underline each “k” in the poem.</li>
+            <li>Say, <em>The word mouse is in the poem twice. Can you find and circle mouse?</em></li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>I will say two words. Clap your hands if they rhyme:</em>
+              <div class="example-row three-up">
+                <strong>one, down</strong>
+                <strong>dock, clock</strong>
+                <strong>hickory, dickory</strong>
+              </div>
+            </li>
+            <li>Say, <em>I’m thinking of a word that rhymes with dock and tells us the time</em> (clock). <em>We use a key to do this to a door</em> (lock). <em>This is a big group of birds in the sky</em> (flock).</li>
+            <li>Ask your child to stretch out the words <em>clock, block, flock</em>.</li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Ask your child to circle the short “o” words in the poem. (dock, clock)</li>
+            <li>Have your child illustrate the poem and describe to you what he or she has drawn.</li>
+            <li>Say, <em>Change the first sound of dock to “l.” What’s the word?</em> (lock). <em>Now change the first sound to “bl”</em> (block). <em>Now to “fl”</em> (flock).</li>
+            <li>Write <em>dock</em> on a sheet of paper. Point out the <em>-ock</em> word family. Together, brainstorm, write, and read words that rhyme with <em>dock</em>. (block, shock, knock)</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
+    },
+    "6": {
+      displayTitle: "Fingerplay",
+      poemHtml: `
+        <div class="poem-lines" aria-label="Fingerplay poem">
+          <div>Ten fingers,</div>
+          <div>Ten toes,</div>
+          <div>Two eyes, two ears, two lips,</div>
+          <div>One nose!</div>
+          <div class="poem-stanza-gap"></div>
+          <div>Fingers tickle,</div>
+          <div>Toes can wiggle,</div>
+          <div>Eyes can twinkle,</div>
+          <div>Nose can wrinkle.</div>
+          <div class="poem-stanza-gap"></div>
+          <div>Ten fingers,</div>
+          <div>Ten toes,</div>
+          <div>Two eyes, two ears, two lips,</div>
+          <div>One nose!</div>
+          <div class="poem-author">—Helen H. Moore</div>
+        </div>
+      `,
+      sections: {
+        "Looking at Words and Letters": `
+          <ol class="instruction-list">
+            <li>Ask your child to find and circle two lines that are exactly the same, then find and underline two more lines that are not exactly the same.</li>
+            <li>Ask, <em>What is the longest line in the poem? How many words does it have?</em></li>
+            <li>Ask your child to circle all the uppercase T’s, then draw boxes around the lowercase t’s.</li>
+          </ol>
+        `,
+        "Playing With Sounds": `
+          <ol class="instruction-list">
+            <li>Say, <em>Let’s clap or tap the beats in the poem together.</em> Then ask, <em>How many beats do you hear in ten? in tickle? in fingers? in toes?</em></li>
+            <li>Say, <em>I will stretch out some words. You tell me the words:</em>
+              <div class="sound-lines">
+                <div>n...oh...zuh (nose)</div>
+                <div>l...ih...ps (lips)</div>
+                <div>wh...ig...ell (wiggle)</div>
+              </div>
+            </li>
+            <li>Say these words in pairs. Ask your child to raise a hand if they start the same:
+              <div class="example-row five-up">
+                <strong>ten, two</strong>
+                <strong>can, fan</strong>
+                <strong>finger, fan</strong>
+                <strong>wiggle, wrinkle</strong>
+                <strong>toes, nose</strong>
+              </div>
+              <div style="margin-top:8px">Now repeat the pairs of words. Ask your child to raise a hand if they rhyme.</div>
+            </li>
+          </ol>
+        `,
+        "Beginning to Read": `
+          <ol class="instruction-list">
+            <li>Say, <em>Find and circle the number words. Write the numerals that the words stand for.</em></li>
+            <li>Ask your child to find the words that name parts of the body and to draw a square around each one.</li>
+            <li>Ask your child which stanza (a group of four lines) has more words—the first one or the second one. Then ask which stanza has more syllables or beats—the first one or the second one.</li>
+            <li>Write <em>lip</em> on a sheet of paper. Point out the <em>-ip</em> word family. Together, brainstorm, write, and read other words that rhyme and belong to the <em>-ip</em> word family.</li>
+            <li>Together, choose two or three words from the poem. Add them to your word wall and practice these words daily. Or add them to your child’s word bank (a collection of words on cards, one word per card).</li>
+          </ol>
+        `
+      }
     }
   },
 
