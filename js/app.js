@@ -372,7 +372,7 @@
       <div class="lesson-hero project-read-hero">
         <div class="project-read-hero-copy">
           <h1>Project Read</h1>
-          <p class="project-read-hero-subheader">Unit ${escapeHtml(formatProjectReadUnit(lesson.id))}</p>
+          <p class="project-read-hero-subheader">Unit ${escapeHtml(detail?.unitDisplay || formatProjectReadUnit(lesson.id))}</p>
         </div>
         <button class="btn project-read-finish-button" data-action="finish-project-read">✓ Finish Unit</button>
       </div>
@@ -381,7 +381,7 @@
         ${detail
           ? `
             <div class="project-read-skill-box">
-              <div class="project-read-skill-label">Skill:</div>
+              <div class="project-read-skill-label">${escapeHtml(detail.metaLabel || "Skill:")}</div>
               <div class="project-read-skill-value">${escapeHtml(detail.skill)}</div>
             </div>
 
