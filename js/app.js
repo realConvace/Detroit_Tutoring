@@ -250,9 +250,8 @@
 
     return `
       <div class="lesson-hero fast-start">
-        <span class="lesson-number">Fast Start #${n}</span>
-        <h1>${escapeHtml(title)}</h1>
-        <p>Read the poem, then complete the three activity sections beside it.</p>
+        <h1>Fast Start for Early Readers</h1>
+        <p class="fast-start-hero-subheader">#${n} ${escapeHtml(title)}</p>
       </div>
 
       <div class="fast-start-workspace">
