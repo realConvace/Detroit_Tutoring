@@ -2327,1100 +2327,650 @@ window.TUTORING_CONTENT = {
       unitDisplay: "1",
       metaLabel: "Skill:",
       skill: "ă, t, s, m, b, c, f",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Introduce:  /ă/</div>
-              <div class="project-read-source-line">2. Introduce consonants:  t. s. m. b. c. f</div>
-              <div class="project-read-cue">t – tongue bounces</div>
-              <div class="project-read-cue">s – teeth together, snake</div>
-              <div class="project-read-cue">m – mouth closed</div>
-              <div class="project-read-cue">b – lips together, slight explosion</div>
-              <div class="project-read-cue">c – candy caught in throat</div>
-              <div class="project-read-cue">f – opening pop bottle, fizz</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>at</span>
-              <span>am</span>
-              <span>tab</span>
-              <span>sat</span>
-              <span>tam</span>
-              <span>cab</span>
-              <span>fat</span>
-              <span>Sam</span>
-              <span>bat</span>
-              <span>bam</span>
-              <span>cat</span>
-              <span>mat</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>Sam sat.</div>
-              <div>Tam sat.</div>
-              <div>Tab sat.</div>
-              <div>A fat cat sat.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Introduce:  <strong>/ă/</strong></div>
+<div class="project-read-source-line">2. Introduce consonants:  <strong>t. s. m. b. c. f</strong></div>
+<div class="project-read-cue">t – tongue bounces</div>
+<div class="project-read-cue">s – teeth together, snake</div>
+<div class="project-read-cue">m – mouth closed</div>
+<div class="project-read-cue">b – lips together, slight explosion</div>
+<div class="project-read-cue">c – candy caught in throat</div>
+<div class="project-read-cue">f – opening pop bottle, fizz</div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:3" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item"><strong>at</strong></div><div class="project-read-word-item"><strong>sat</strong></div><div class="project-read-word-item"><strong>fat</strong></div><div class="project-read-word-item"><strong>bat</strong></div><div class="project-read-word-item"><strong>cat</strong></div><div class="project-read-word-item"><strong>mat</strong></div></div><div class="project-read-word-group"><div class="project-read-word-item"><strong>am</strong></div><div class="project-read-word-item"><strong>tam</strong></div><div class="project-read-word-item"><strong>Sam</strong></div><div class="project-read-word-item"><strong>bam</strong></div></div><div class="project-read-word-group"><div class="project-read-word-item"><strong>tab</strong></div><div class="project-read-word-item"><strong>cab</strong></div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>Sam sat.</div>
+<div>Tam sat.</div>
+<div>Tab sat.</div>
+<div>A fat cat sat.</div>
+    </div>
+  </section>
+  </div>`
     },
     "2": {
       unit: "UNIT 2",
       unitDisplay: "2",
       metaLabel: "Skill:",
       skill: "r, h, j, n, p, l",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review ă, t, s, m, b, c, f</div>
-              <div class="project-read-source-line">2. Introduce consonants:</div>
-              <div class="project-read-cue">h – just air</div>
-              <div class="project-read-cue">j - /j/ clipped</div>
-              <div class="project-read-cue">n – tongue on roof of mouth</div>
-              <div class="project-read-cue">p – popping lips open</div>
-              <div class="project-read-cue">l – tongue on roof of mouth</div>
-              <div class="project-read-cue"> r - /ruh/ - said very clipped</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Introduce:	the</div>
-              <div class="project-read-source-line">The is a phonetically irregular word.  These words are called red words (stop words) because they do not have direct sound-symbol relationship.</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>hat</span>
-              <span>fan</span>
-              <span>rat</span>
-              <span>pal</span>
-              <span>has</span>
-              <span>pat</span>
-              <span>man</span>
-              <span>sap</span>
-              <span>ham</span>
-              <span>as</span>
-              <span>lap</span>
-              <span>tan</span>
-              <span>nap</span>
-              <span>jam</span>
-              <span>jab</span>
-              <span>can</span>
-              <span>rap</span>
-              <span>tab</span>
-              <span>ran</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1.  The man sat.</div>
-              <div>2. The rat ran.</div>
-              <div>3. Al has a pal.</div>
-              <div>4. The man has a hat.</div>
-              <div>5. The fat cat has the jam.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, t, s, m, b, c, f</div>
+<div class="project-read-source-line">2. Introduce consonants:</div>
+<div class="project-read-cue">h – just air</div>
+<div class="project-read-cue">j - /j/ clipped</div>
+<div class="project-read-cue">n – tongue on roof of mouth</div>
+<div class="project-read-cue">p – popping lips open</div>
+<div class="project-read-cue">l – tongue on roof of mouth</div>
+<div class="project-read-cue"> r - /ruh/ - said very clipped</div></div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span><strong>the</strong></div>
+<div class="project-read-source-line"><strong>The</strong> is a phonetically irregular word.  These words are called red words (stop words) because they do not have direct sound-symbol relationship.</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:7" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">hat</div><div class="project-read-word-item">pat</div><div class="project-read-word-item">lap</div><div class="project-read-word-item">jab</div><div class="project-read-word-item">tab</div></div><div class="project-read-word-group"><div class="project-read-word-item">fan</div><div class="project-read-word-item">man</div><div class="project-read-word-item">tan</div><div class="project-read-word-item">can</div><div class="project-read-word-item">ran</div></div><div class="project-read-word-group"><div class="project-read-word-item">sap</div><div class="project-read-word-item">rap</div></div><div class="project-read-word-group"><div class="project-read-word-item">rat</div><div class="project-read-word-item">nap</div></div><div class="project-read-word-group"><div class="project-read-word-item">ham</div><div class="project-read-word-item">jam</div></div><div class="project-read-word-group"><div class="project-read-word-item">pal</div><div class="project-read-word-item">as</div></div><div class="project-read-word-group"><div class="project-read-word-item">has</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1.  The man sat.</div>
+<div>2. The rat ran.</div>
+<div>3. Al has a pal.</div>
+<div>4. The man has a hat.</div>
+<div>5. The fat cat has the jam.</div>
+    </div>
+  </section>
+  </div>`
     },
     "3": {
       unit: "UNIT 3",
       unitDisplay: "3",
       metaLabel: "Skill:",
       skill: "g (hard) d, v",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review a, b, c, f, m, s, t, h, j, n, p, l, r</div>
-              <div class="project-read-source-line">2. Introduce consonants:</div>
-              <div class="project-read-cue">d – tongue bounces on roof of mouth, lips open</div>
-              <div class="project-read-cue">v – hang onto some air</div>
-              <div class="project-read-cue">g – (hard sound) the child can feel the bounce in his throat.</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:	the</div>
-              <div class="project-read-source-line">Introduce:  to</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>lad</span>
-              <span>bag</span>
-              <span>vat</span>
-              <span>dad</span>
-              <span>sad</span>
-              <span>lag</span>
-              <span>van</span>
-              <span>gas</span>
-              <span>tag</span>
-              <span>bad</span>
-              <span>mad</span>
-              <span>sag</span>
-              <span>pad</span>
-              <span>had</span>
-              <span>rag</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. Al had jam.</div>
-              <div>2. The van has gas.</div>
-              <div>3. Dad has a cap.</div>
-              <div>4. The cat ran to Pam.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review a, b, c, f, m, s, t, h, j, n, p, l, r</div>
+<div class="project-read-source-line">2. Introduce consonants:</div>
+<div class="project-read-cue">d – tongue bounces on roof of mouth, lips open</div>
+<div class="project-read-cue">v – hang onto some air</div>
+<div class="project-read-cue">g – (hard sound) the child can feel the bounce in his throat.</div></div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span><strong>the</strong></div>
+<div class="project-read-source-line">Introduce:  <strong>to</strong></div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:6" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">lad</div><div class="project-read-word-item">sad</div><div class="project-read-word-item">tag</div><div class="project-read-word-item">pad</div></div><div class="project-read-word-group"><div class="project-read-word-item">bag</div><div class="project-read-word-item">lag</div><div class="project-read-word-item">bad</div><div class="project-read-word-item">had</div></div><div class="project-read-word-group"><div class="project-read-word-item">vat</div><div class="project-read-word-item">mad</div><div class="project-read-word-item">rag</div></div><div class="project-read-word-group"><div class="project-read-word-item">van</div></div><div class="project-read-word-group"><div class="project-read-word-item">sag</div></div><div class="project-read-word-group"><div class="project-read-word-item">dad</div><div class="project-read-word-item">gas</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. Al had jam.</div>
+<div>2. The van has gas.</div>
+<div>3. Dad has a cap.</div>
+<div>4. The cat ran to Pam.</div>
+    </div>
+  </section>
+  </div>`
     },
     "4": {
       unit: "UNIT 4",
       unitDisplay: "4",
       metaLabel: "Skill:",
       skill: "ĭ,  w",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review ă, s, f, m, t, c, h, j, n, p, l, r, g, v</div>
-              <div class="project-read-source-line">2. Introduce:  ĭ, w</div>
-              <div class="project-read-cue">i – igloo, it (put thumb under the chin and feel the bounce.)</div>
-              <div class="project-read-cue">w – no air is felt if hand is held in front of the mouth.</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:	the, to</div>
-              <div class="project-read-source-line">Introduce:	have</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>hit</span>
-              <span>kid</span>
-              <span>pig</span>
-              <span>is</span>
-              <span>wit</span>
-              <span>did</span>
-              <span>big</span>
-              <span>mit</span>
-              <span>lid</span>
-              <span>rig</span>
-              <span>bit</span>
-              <span>tin</span>
-              <span>rim</span>
-              <span>sit</span>
-              <span>fin</span>
-              <span>him</span>
-              <span>it</span>
-              <span>win</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. Jim is mad.</div>
-              <div>2. Tim wins a pin.</div>
-              <div>3. I hit him.</div>
-              <div>4. I did it.</div>
-              <div>5. I have a big bag.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, s, f, m, t, c, h, j, n, p, l, r, g, v</div>
+<div class="project-read-source-line">2. Introduce:  ĭ, w</div>
+<div class="project-read-cue">i – igloo, it (put thumb under the chin and feel the bounce.)</div>
+<div class="project-read-cue">w – no air is felt if hand is held in front of the mouth.</div></div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span>the, to</div>
+<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>have</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">hit</div><div class="project-read-word-item">wit</div><div class="project-read-word-item">mit</div><div class="project-read-word-item">bit</div><div class="project-read-word-item">sit</div><div class="project-read-word-item">it</div></div><div class="project-read-word-group"><div class="project-read-word-item">kid</div><div class="project-read-word-item">did</div><div class="project-read-word-item">lid</div><div class="project-read-word-item">tin</div><div class="project-read-word-item">fin</div></div><div class="project-read-word-group"><div class="project-read-word-item">win</div></div><div class="project-read-word-group"><div class="project-read-word-item">pig</div><div class="project-read-word-item">big</div><div class="project-read-word-item">rig</div><div class="project-read-word-item">rim</div><div class="project-read-word-item">him</div></div><div class="project-read-word-group"><div class="project-read-word-item">is</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. Jim is mad.</div>
+<div>2. Tim wins a pin.</div>
+<div>3. I hit him.</div>
+<div>4. I did it.</div>
+<div>5. I have a big bag.</div>
+    </div>
+  </section>
+  </div>`
     },
     "5": {
       unit: "UNIT 5",
       unitDisplay: "5",
       metaLabel: "Skill:",
       skill: "k, -ck for decoding",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review   ă, ĭ, and consonants</div>
-              <div class="project-read-source-line">Introduce:</div>
-              <div class="project-read-cue">		k – same sound as c</div>
-              <div class="project-read-cue">		-ck – same sound as c and k</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:	the, to, have</div>
-              <div class="project-read-source-line">Introduce:	said</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>cap</span>
-              <span>kick</span>
-              <span>sick</span>
-              <span>cab</span>
-              <span>pack</span>
-              <span>sack</span>
-              <span>can</span>
-              <span>tack</span>
-              <span>pick</span>
-              <span>kin</span>
-              <span>rack</span>
-              <span>kid</span>
-              <span>tick</span>
-              <span>kit</span>
-              <span>back</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. Jack is a sick kid.</div>
-              <div>2. Nick said it to Jack.</div>
-              <div>3. Jim has a back pack.</div>
-              <div>4. I can kick the can.</div>
-              <div>5. The cap has a rip.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review   ă, ĭ, and consonants</div>
+<div class="project-read-source-line">Introduce:</div>
+<div class="project-read-cue"><span class="project-read-tab-gap" aria-hidden="true"></span><span class="project-read-tab-gap" aria-hidden="true"></span>k – same sound as c</div>
+<div class="project-read-cue"><span class="project-read-tab-gap" aria-hidden="true"></span><span class="project-read-tab-gap" aria-hidden="true"></span>-ck – same sound as c and k</div></div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span>the, to, have</div>
+<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>said</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:3" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">cap</div><div class="project-read-word-item">cab</div><div class="project-read-word-item">can</div><div class="project-read-word-item">kin</div><div class="project-read-word-item">kid</div><div class="project-read-word-item">kit</div></div><div class="project-read-word-group"><div class="project-read-word-item">kick</div><div class="project-read-word-item">pack</div><div class="project-read-word-item">tack</div><div class="project-read-word-item">rack</div><div class="project-read-word-item">tick</div><div class="project-read-word-item">back</div></div><div class="project-read-word-group"><div class="project-read-word-item">sick</div><div class="project-read-word-item">sack</div><div class="project-read-word-item">pick</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. Jack is a sick kid.</div>
+<div>2. Nick said it to Jack.</div>
+<div>3. Jim has a back pack.</div>
+<div>4. I can kick the can.</div>
+<div>5. The cap has a rip.</div>
+    </div>
+  </section>
+  </div>`
     },
     "6": {
       unit: "UNIT 6",
       unitDisplay: "6",
       metaLabel: "Skill:",
       skill: "-ck for decoding",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review   ă, ĭ, and consonants</div>
-              <div class="project-read-source-line">2. Formulate the –ck rule:  use –ck at the end of a one vowel sound word and after a short vowel sound.</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD BUILDING</h3>
-            <div class="project-read-word-cloud" aria-label="WORD BUILDING">
-              <span>cab</span>
-              <span>pack</span>
-              <span>pick</span>
-              <span>cap</span>
-              <span>kick</span>
-              <span>lack</span>
-              <span>kit</span>
-              <span>tick</span>
-              <span>back</span>
-              <span>kid</span>
-              <span>tack</span>
-              <span>sack</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:	the, to, have, said</div>
-              <div class="project-read-source-line">Introduce:	of</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review   ă, ĭ, and consonants</div>
+<div class="project-read-source-line">2. Formulate the <strong>–ck rule</strong>:  use –ck at the end of a one vowel sound word and after a short vowel sound.</div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD BUILDING</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:4" aria-label="WORD BUILDING">
+        <div class="project-read-word-group"><div class="project-read-word-item">cab</div><div class="project-read-word-item">cap</div><div class="project-read-word-item">kit</div><div class="project-read-word-item">kid</div></div><div class="project-read-word-group"><div class="project-read-word-item">pack</div><div class="project-read-word-item">kick</div><div class="project-read-word-item">tick</div><div class="project-read-word-item">tack</div></div><div class="project-read-word-group"><div class="project-read-word-item">pick</div><div class="project-read-word-item">lack</div><div class="project-read-word-item">sack</div></div><div class="project-read-word-group"><div class="project-read-word-item">back</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span>the, to, have, said</div>
+<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>of</div>
+    </div>
+  </section>
+  </div>`
     },
     "7": {
       unit: "UNIT 7",
       unitDisplay: "7",
       metaLabel: "Skill:",
       skill: "qu, x, y, z",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review ă, ĭ, consonants and /ck/ for encoding</div>
-              <div class="project-read-source-line">2. Introduce:  qu, /kw/, y, z, x /ks/</div>
-              <div class="project-read-cue">qu - /kw/</div>
-              <div class="project-read-cue">x - /ks/</div>
-              <div class="project-read-cue">y – yellow</div>
-              <div class="project-read-cue">z - zipper</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:	of, the, have, to said</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>quack</span>
-              <span>tax</span>
-              <span>yap</span>
-              <span>will</span>
-              <span>quick</span>
-              <span>fix</span>
-              <span>yip</span>
-              <span>can</span>
-              <span>quit</span>
-              <span>mix</span>
-              <span>zap</span>
-              <span>is</span>
-              <span>ax</span>
-              <span>six</span>
-              <span>zip</span>
-              <span>am</span>
-              <span>sax</span>
-              <span>Max</span>
-              <span>zig-zag</span>
-              <span>wax</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. Can Max win?</div>
-              <div>2. Jack is quick.</div>
-              <div>3. Am I six?</div>
-              <div>4. Did Rags yip at the cat?</div>
-              <div>5. The backpack has a rip.</div>
-              <div>6. Will Dan quit?</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, consonants and /ck/ for encoding</div>
+<div class="project-read-source-line">2. Introduce:  qu, /kw/, y, z, x /ks/</div>
+<div class="project-read-cue">qu - /kw/</div>
+<div class="project-read-cue">x - /ks/</div>
+<div class="project-read-cue">y – yellow</div>
+<div class="project-read-cue">z - zipper</div></div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span>of, the, have, to said</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">quack</div><div class="project-read-word-item">quick</div><div class="project-read-word-item">quit</div><div class="project-read-word-item">ax</div><div class="project-read-word-item">sax</div><div class="project-read-word-item">wax</div></div><div class="project-read-word-group"><div class="project-read-word-item">tax</div><div class="project-read-word-item">fix</div><div class="project-read-word-item">mix</div><div class="project-read-word-item">six</div><div class="project-read-word-item">Max</div></div><div class="project-read-word-group"><div class="project-read-word-item">yap</div><div class="project-read-word-item">yip</div><div class="project-read-word-item">zap</div><div class="project-read-word-item">zip</div></div><div class="project-read-word-group"><div class="project-read-word-item">zig-zag</div></div><div class="project-read-word-group"><div class="project-read-word-item">will</div><div class="project-read-word-item">can</div><div class="project-read-word-item">is</div><div class="project-read-word-item">am</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. Can Max win?</div>
+<div>2. Jack is quick.</div>
+<div>3. Am I six?</div>
+<div>4. Did Rags yip at the cat?</div>
+<div>5. The backpack has a rip.</div>
+<div>6. Will Dan quit?</div>
+    </div>
+  </section>
+  </div>`
     },
     "8": {
       unit: "UNIT  8",
       unitDisplay: "8",
       metaLabel: "Skill:",
       skill: "ŏ",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review ă, ĭ, and consonants</div>
-              <div class="project-read-source-line">Introduce:	ŏ as in octopus</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>dot</span>
-              <span>Bob</span>
-              <span>lock</span>
-              <span>got</span>
-              <span>rob</span>
-              <span>dock</span>
-              <span>hot</span>
-              <span>job</span>
-              <span>rock</span>
-              <span>lot</span>
-              <span>mob</span>
-              <span>sock</span>
-              <span>cot</span>
-              <span>sob</span>
-              <span>Tom</span>
-              <span>pot</span>
-              <span>nod</span>
-              <span>dog</span>
-              <span>not</span>
-              <span>pod</span>
-              <span>log</span>
-              <span>rot</span>
-              <span>rod</span>
-              <span>job</span>
-              <span>tot</span>
-              <span>sod</span>
-              <span>on</span>
-              <span>hop</span>
-              <span>ox</span>
-              <span>mop</span>
-              <span>fox</span>
-              <span>pop</span>
-              <span>box</span>
-              <span>top</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:  of, the, have, to, said</div>
-              <div class="project-read-source-line">Introduce:  was</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. The pot is hot.</div>
-              <div>2. Is the cat sick?</div>
-              <div>3. Mom said the cat is sick.</div>
-              <div>4. Fix the hot rod.</div>
-              <div>5. Tom has a job.</div>
-              <div>6. Was Tom at his job?</div>
-              <div>7. The box has a top</div>
-              <div>8. The dog sat on the dock</div>
-              <div>9. It was not hot.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, and consonants</div>
+<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>ŏ as in octopus</div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">dot</div><div class="project-read-word-item">got</div><div class="project-read-word-item">hot</div><div class="project-read-word-item">lot</div><div class="project-read-word-item">cot</div><div class="project-read-word-item">pot</div><div class="project-read-word-item">not</div><div class="project-read-word-item">rot</div><div class="project-read-word-item">tot</div><div class="project-read-word-item">hop</div><div class="project-read-word-item">mop</div><div class="project-read-word-item">pop</div><div class="project-read-word-item">top</div></div><div class="project-read-word-group"><div class="project-read-word-item">Bob</div><div class="project-read-word-item">rob</div><div class="project-read-word-item">job</div><div class="project-read-word-item">sob</div><div class="project-read-word-item">nod</div><div class="project-read-word-item">pod</div><div class="project-read-word-item">ox</div><div class="project-read-word-item">fox</div><div class="project-read-word-item">box</div></div><div class="project-read-word-group"><div class="project-read-word-item">mob</div><div class="project-read-word-item">rod</div><div class="project-read-word-item">sod</div></div><div class="project-read-word-group"><div class="project-read-word-item">lock</div><div class="project-read-word-item">dock</div><div class="project-read-word-item">rock</div><div class="project-read-word-item">Tom</div><div class="project-read-word-item">dog</div><div class="project-read-word-item">log</div></div><div class="project-read-word-group"><div class="project-read-word-item">sock</div><div class="project-read-word-item">job</div><div class="project-read-word-item">on</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:  of, the, have, to, said</div>
+<div class="project-read-source-line">Introduce:  was</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. The pot is hot.</div>
+<div>2. Is the cat sick?</div>
+<div>3. Mom said the cat is sick.</div>
+<div>4. Fix the hot rod.</div>
+<div>5. Tom has a job.</div>
+<div>6. Was Tom at his job?</div>
+<div>7. The box has a top</div>
+<div>8. The dog sat on the dock</div>
+<div>9. It was not hot.</div>
+    </div>
+  </section>
+  </div>`
     },
     "9": {
       unit: "UNIT  9",
       unitDisplay: "9",
       metaLabel: "Skill:",
       skill: "ss, ll. ff. zz  (place value for encoding)",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review ă, ĭ, ŏ and consonants</div>
-              <div class="project-read-source-line">Introduce spelling generalization.</div>
-              <div class="project-read-source-line">Double s,,l, f, z in most one vowel sound words after a short vowel.</div>
-              <div class="project-read-source-line">Common exceptions:  as, is, has, gas, if</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>kill</span>
-              <span>miss</span>
-              <span>jazz</span>
-              <span>pill</span>
-              <span>kiss</span>
-              <span>fizz</span>
-              <span>bill</span>
-              <span>hiss</span>
-              <span>doll</span>
-              <span>quill</span>
-              <span>pass</span>
-              <span>mill</span>
-              <span>fill</span>
-              <span>bass</span>
-              <span>off</span>
-              <span>Jill</span>
-              <span>mass</span>
-              <span>gill</span>
-              <span>stiff</span>
-              <span>sill</span>
-              <span>muff</span>
-              <span>till</span>
-              <span>whiff</span>
-              <span>will</span>
-              <span>hill</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS:</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:  was, of, the have, to said</div>
-              <div class="project-read-source-line">Introduce:  you</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. Fill the sock.</div>
-              <div>2. Pam has a doll.</div>
-              <div>3. Will the pop fizz?</div>
-              <div>4. The lid is off the box.</div>
-              <div>5. Dad got the bill.</div>
-              <div>6. Kiss the doll.</div>
-              <div>7. Will you miss the dog?</div>
-              <div>8. The sick dog got a pill.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ and consonants</div>
+<div class="project-read-source-line">Introduce spelling generalization.</div>
+<div class="project-read-source-line">Double s,,l, f, z in <strong>most</strong> one vowel sound words after a short vowel.</div>
+<div class="project-read-source-line">Common exceptions:  as, is, has, gas, if</div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:4" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">kill</div><div class="project-read-word-item">pill</div><div class="project-read-word-item">bill</div><div class="project-read-word-item">quill</div><div class="project-read-word-item">fill</div><div class="project-read-word-item">Jill</div><div class="project-read-word-item">gill</div><div class="project-read-word-item">sill</div><div class="project-read-word-item">till</div><div class="project-read-word-item">will</div><div class="project-read-word-item">hill</div></div><div class="project-read-word-group"><div class="project-read-word-item">miss</div><div class="project-read-word-item">kiss</div><div class="project-read-word-item">hiss</div><div class="project-read-word-item">pass</div><div class="project-read-word-item">bass</div><div class="project-read-word-item">mass</div><div class="project-read-word-item">stiff</div><div class="project-read-word-item">muff</div></div><div class="project-read-word-group"><div class="project-read-word-item">whiff</div></div><div class="project-read-word-group"><div class="project-read-word-item">jazz</div><div class="project-read-word-item">fizz</div><div class="project-read-word-item">doll</div><div class="project-read-word-item">mill</div><div class="project-read-word-item">off</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS:</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:  was, of, the have, to said</div>
+<div class="project-read-source-line">Introduce:  you</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. Fill the sock.</div>
+<div>2. Pam has a doll.</div>
+<div>3. Will the pop fizz?</div>
+<div>4. The lid is off the box.</div>
+<div>5. Dad got the bill.</div>
+<div>6. Kiss the doll.</div>
+<div>7. Will you miss the dog?</div>
+<div>8. The sick dog got a pill.</div>
+    </div>
+  </section>
+  </div>`
     },
     "10": {
       unit: "UNIT  10",
       unitDisplay: "10",
       metaLabel: "Skill:",
       skill: "-ng, -nk",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review ă, ĭ, ŏ and consonants</div>
-              <div class="project-read-cue">Introduce:	/-ng/, /-nk/</div>
-              <div class="project-read-source-line">Always attach to a vowel.</div>
-              <div class="project-read-cue">-ang, -ing, -ong, -ank, -ink, -onk</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>sing</span>
-              <span>song</span>
-              <span>bank</span>
-              <span>long</span>
-              <span>ring</span>
-              <span>long</span>
-              <span>pink</span>
-              <span>song</span>
-              <span>honk</span>
-              <span>yank</span>
-              <span>rang</span>
-              <span>rink</span>
-              <span>bank</span>
-              <span>bang</span>
-              <span>sink</span>
-              <span>king</span>
-              <span>tank</span>
-              <span>gang</span>
-              <span>rank</span>
-              <span>wing</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:  was, of, the, have, to, said</div>
-              <div class="project-read-source-line">Introduce:  what</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. A rock will sink.</div>
-              <div>2. Did Jill sing a song?</div>
-              <div>3. Jill sang a song.</div>
-              <div>4. What is it?</div>
-              <div>5. The bank is pink.</div>
-              <div>6. The song is long.</div>
-              <div>7. Jill has a ring.</div>
-              <div>8. Jack will sing.</div>
-              <div>9. I have a long song.</div>
-              <div>10. Dad is at the bank.</div>
-              <div>11. Fill the gas tank in the van.</div>
-              <div>12. Pam has long pink socks.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ and consonants</div>
+<div class="project-read-cue">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>/-ng/, /-nk/</div>
+<div class="project-read-source-line">Always attach to a vowel.</div>
+<div class="project-read-cue">-ang, -ing, -ong, -ank, -ink, -onk</div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">sing</div><div class="project-read-word-item">ring</div><div class="project-read-word-item">yank</div><div class="project-read-word-item">bank</div><div class="project-read-word-item">tank</div></div><div class="project-read-word-group"><div class="project-read-word-item">song</div><div class="project-read-word-item">long</div><div class="project-read-word-item">rang</div><div class="project-read-word-item">bang</div><div class="project-read-word-item">gang</div></div><div class="project-read-word-group"><div class="project-read-word-item">bank</div><div class="project-read-word-item">pink</div><div class="project-read-word-item">rink</div><div class="project-read-word-item">sink</div><div class="project-read-word-item">rank</div></div><div class="project-read-word-group"><div class="project-read-word-item">long</div><div class="project-read-word-item">song</div><div class="project-read-word-item">king</div><div class="project-read-word-item">wing</div></div><div class="project-read-word-group"><div class="project-read-word-item">honk</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:  was, of, the, have, to, said</div>
+<div class="project-read-source-line">Introduce:  what</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. A rock will sink.</div>
+<div>2. Did Jill sing a song?</div>
+<div>3. Jill sang a song.</div>
+<div>4. What is it?</div>
+<div>5. The bank is pink.</div>
+<div>6. The song is long.</div>
+<div>7. Jill has a ring.</div>
+<div>8. Jack will sing.</div>
+<div>9. I have a long song.</div>
+<div>10. Dad is at the bank.</div>
+<div>11. Fill the gas tank in the van.</div>
+<div>12. Pam has long pink socks.</div>
+    </div>
+  </section>
+  </div>`
     },
     "11": {
       unit: "UNIT  11",
       unitDisplay: "11",
       metaLabel: "Skill:",
       skill: "Digraphs wh, ch, th, and sh",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">A digraph is a consonant sound which cannot be represented by any single letter in our alphabet.</div>
-              <div class="project-read-source-line">1. Review ă, ĭ, ŏ and consonants</div>
-              <div class="project-read-source-line">Introduce digraphs through use of H brothers story.</div>
-              <div class="project-read-cue">A. ch brother – Thinks he’s a train and says /ch/.</div>
-              <div class="project-read-cue">B. wh brother – Tries to learn to whistle but only blows out air saying /wh/.</div>
-              <div class="project-read-cue">C. th brother – The naughty brother who sticks out his tongue as he says /th/.</div>
-              <div class="project-read-cue">D. sh brother – The brother who tries to quiet the others by saying /sh/.</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>chill</span>
-              <span>thin</span>
-              <span>ship</span>
-              <span>whip</span>
-              <span>chip</span>
-              <span>thick</span>
-              <span>shot</span>
-              <span>whiff</span>
-              <span>chap</span>
-              <span>think</span>
-              <span>shop</span>
-              <span>which</span>
-              <span>chin</span>
-              <span>thing</span>
-              <span>wish</span>
-              <span>chat</span>
-              <span>thank</span>
-              <span>fish</span>
-              <span>inch</span>
-              <span>than</span>
-              <span>cash</span>
-              <span>pinch</span>
-              <span>that</span>
-              <span>lash</span>
-              <span>rich</span>
-              <span>this</span>
-              <span>dish</span>
-              <span>with</span>
-              <span>dash</span>
-              <span>bath</span>
-              <span>shock</span>
-              <span>math</span>
-              <span>shall</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:  what, you, was, of, the, have, to, said</div>
-              <div class="project-read-source-line">Introduce:  are, put</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. Is Jim with Dad?</div>
-              <div>2. Jim is not with Dad.</div>
-              <div>3. Bass are fish.</div>
-              <div>4. Which is pink?</div>
-              <div>5. That man is rich!</div>
-              <div>6. This is a big ship.</div>
-              <div>7. The van is in the shop.</div>
-              <div>8. A big ship is at the dock.</div>
-              <div>9. I wish I had a cat.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">A digraph is a consonant sound which cannot be represented by any single letter in our alphabet.</div>
+<div class="project-read-source-line">1. Review ă, ĭ, ŏ and consonants</div>
+<div class="project-read-source-line">Introduce digraphs through use of H brothers story.</div>
+<div class="project-read-cue">A. ch brother – Thinks he’s a train and says /ch/.</div>
+<div class="project-read-cue">B. wh brother – Tries to learn to whistle but only blows out air saying /wh/.</div>
+<div class="project-read-cue">C. th brother – The naughty brother who sticks out his tongue as he says /th/.</div>
+<div class="project-read-cue">D. sh brother – The brother who tries to quiet the others by saying /sh/.</div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:7" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">chill</div><div class="project-read-word-item">chip</div><div class="project-read-word-item">chap</div><div class="project-read-word-item">chin</div><div class="project-read-word-item">chat</div><div class="project-read-word-item">inch</div><div class="project-read-word-item">pinch</div><div class="project-read-word-item">rich</div></div><div class="project-read-word-group"><div class="project-read-word-item">that</div></div><div class="project-read-word-group"><div class="project-read-word-item">thin</div><div class="project-read-word-item">thick</div><div class="project-read-word-item">think</div><div class="project-read-word-item">thing</div><div class="project-read-word-item">thank</div><div class="project-read-word-item">than</div><div class="project-read-word-item">this</div></div><div class="project-read-word-group"><div class="project-read-word-item">lash</div><div class="project-read-word-item">with</div><div class="project-read-word-item">bath</div><div class="project-read-word-item">math</div></div><div class="project-read-word-group"><div class="project-read-word-item">ship</div><div class="project-read-word-item">shot</div><div class="project-read-word-item">shop</div><div class="project-read-word-item">wish</div><div class="project-read-word-item">fish</div><div class="project-read-word-item">cash</div><div class="project-read-word-item">dish</div></div><div class="project-read-word-group"><div class="project-read-word-item">dash</div><div class="project-read-word-item">shock</div><div class="project-read-word-item">shall</div></div><div class="project-read-word-group"><div class="project-read-word-item">whip</div><div class="project-read-word-item">whiff</div><div class="project-read-word-item">which</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:  what, you, was, of, the, have, to, said</div>
+<div class="project-read-source-line">Introduce:  are, put</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. Is Jim with Dad?</div>
+<div>2. Jim is not with Dad.</div>
+<div>3. Bass are fish.</div>
+<div>4. Which is pink?</div>
+<div>5. That man is rich!</div>
+<div>6. This is a big ship.</div>
+<div>7. The van is in the shop.</div>
+<div>8. A big ship is at the dock.</div>
+<div>9. I wish I had a cat.</div>
+    </div>
+  </section>
+  </div>`
     },
     "12": {
       unit: "UNIT  12",
       unitDisplay: "12",
       metaLabel: "Skill:",
       skill: "short ĕ",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review ă, ĭ, ŏ</div>
-              <div class="project-read-source-line">2. Introduce:  ĕ</div>
-              <div class="project-read-source-line">Key word: Mr.  Ed.</div>
-              <div class="project-read-source-line">Pull the corners of mouth with two forefingers like the rein of a bridle on a horse.</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>get</span>
-              <span>red</span>
-              <span>shell</span>
-              <span>chess</span>
-              <span>them</span>
-              <span>yet</span>
-              <span>led</span>
-              <span>bell</span>
-              <span>mess</span>
-              <span>then</span>
-              <span>wet</span>
-              <span>fed</span>
-              <span>fell</span>
-              <span>less</span>
-              <span>when</span>
-              <span>let</span>
-              <span>bed</span>
-              <span>well</span>
-              <span>pet</span>
-              <span>beg</span>
-              <span>yell</span>
-              <span>men</span>
-              <span>yes</span>
-              <span>hen</span>
-              <span>web</span>
-              <span>ten</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:  put, are, what, you, was, of, the, have, to, said</div>
-              <div class="project-read-source-line">Introduce:  should, could, would</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. Ring the bell!</div>
-              <div>2. I will tell them.</div>
-              <div>3. Get in the van.</div>
-              <div>4. This deck is a mess!</div>
-              <div>5. Should Dad check the den?</div>
-              <div>6. Jack fed his pet hen.</div>
-              <div>7. Six hens are less than ten hens.</div>
-              <div>8. Jeff could get the net.</div>
-              <div>9. Would you tell Beth?</div>
-            </div>
-          </section>
-        </div>
-      `
-    },
-    "14": {
-      unit: "UNIT  14",
-      unitDisplay: "14",
-      metaLabel: "Concept:",
-      skill: "Vowels have significant value.",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1.  Review ă, ĭ, ŏ, ĕ  consonants , digraphs, initial blends.</div>
-              <div class="project-read-source-line">2.  Technique for introducing /ŭ/</div>
-              <div class="project-read-source-line">A. Key word:  up</div>
-              <div class="project-read-source-line">B. Use the motion of opening an umbrella.</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>up</span>
-              <span>dull</span>
-              <span>us</span>
-              <span>swung</span>
-              <span>but</span>
-              <span>puff</span>
-              <span>such</span>
-              <span>stung</span>
-              <span>bus</span>
-              <span>brush</span>
-              <span>shrub</span>
-              <span>chunk</span>
-              <span>truck</span>
-              <span>run</span>
-              <span>blush</span>
-              <span>flung</span>
-              <span>much</span>
-              <span>fun</span>
-              <span>skull</span>
-              <span>pluck</span>
-              <span>crush</span>
-              <span>bunk</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:  they,  your</div>
-              <div class="project-read-source-line">Introduce:  Mr.  Mrs.</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. Dad got on the bus.</div>
-              <div>2. This is such fun!</div>
-              <div>3. Sit up!</div>
-              <div>4. Fill the truck with gas.</div>
-              <div>5. Brush the mud off the rug.</div>
-              <div>6. Mrs. Black runs with us.</div>
-              <div>7. Mr. Hill has a black truck.</div>
-              <div>8. It is such fun to swim.</div>
-              <div>9. The cat is up on the box.</div>
-              <div>10. This is not much fun.</div>
-              <div>11. I can, but you cannot.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ</div>
+<div class="project-read-source-line">2. Introduce:  ĕ</div>
+<div class="project-read-source-line">Key word: Mr.  Ed.</div>
+<div class="project-read-source-line">Pull the corners of mouth with two forefingers like the rein of a bridle on a horse.</div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:6" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">get</div><div class="project-read-word-item">yet</div><div class="project-read-word-item">wet</div><div class="project-read-word-item">let</div><div class="project-read-word-item">pet</div><div class="project-read-word-item">men</div><div class="project-read-word-item">hen</div><div class="project-read-word-item">ten</div></div><div class="project-read-word-group"><div class="project-read-word-item">red</div><div class="project-read-word-item">led</div><div class="project-read-word-item">fed</div><div class="project-read-word-item">bed</div><div class="project-read-word-item">beg</div><div class="project-read-word-item">yes</div><div class="project-read-word-item">web</div></div><div class="project-read-word-group"><div class="project-read-word-item">well</div><div class="project-read-word-item">yell</div></div><div class="project-read-word-group"><div class="project-read-word-item">shell</div><div class="project-read-word-item">bell</div><div class="project-read-word-item">fell</div></div><div class="project-read-word-group"><div class="project-read-word-item">chess</div><div class="project-read-word-item">mess</div><div class="project-read-word-item">less</div></div><div class="project-read-word-group"><div class="project-read-word-item">them</div><div class="project-read-word-item">then</div><div class="project-read-word-item">when</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:  put, are, what, you, was, of, the, have, to, said</div>
+<div class="project-read-source-line">Introduce:  should, could, would</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. Ring the bell!</div>
+<div>2. I will tell them.</div>
+<div>3. Get in the van.</div>
+<div>4. This deck is a mess!</div>
+<div>5. Should Dad check the den?</div>
+<div>6. Jack fed his pet hen.</div>
+<div>7. Six hens are less than ten hens.</div>
+<div>8. Jeff could get the net.</div>
+<div>9. Would you tell Beth?</div>
+    </div>
+  </section>
+  </div>`
     },
     "13A": {
       unit: "UNIT  13 - A",
       unitDisplay: "13 - A",
       metaLabel: "Concept:",
       skill: "A blend is a consonant combination representing two combined consonant sounds.",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review ă, ĭ, ŏ, ĕ  and consonants</div>
-              <div class="project-read-source-line">Introduce:	blends</div>
-              <div class="project-read-source-line">Teach in groups: 	bl	gl	cl</div>
-              <div class="project-read-source-line">				pl	fl	sl</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>black</span>
-              <span>flag</span>
-              <span>plan</span>
-              <span>block</span>
-              <span>flat</span>
-              <span>plot</span>
-              <span>bless</span>
-              <span>flock</span>
-              <span>bled</span>
-              <span>flap</span>
-              <span>class</span>
-              <span>flash</span>
-              <span>clip</span>
-              <span>sled</span>
-              <span>fled</span>
-              <span>click</span>
-              <span>slack</span>
-              <span>clock</span>
-              <span>slab</span>
-              <span>glad</span>
-              <span>clam</span>
-              <span>slip</span>
-              <span>glass</span>
-              <span>slim</span>
-              <span>glob</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:  could, should, would</div>
-              <div class="project-read-source-line">Introduce:  they</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. They have a flag.</div>
-              <div>2. Your class has a plan.</div>
-              <div>3. This glass has a chip.</div>
-              <div>4. Beth has a black dog.</div>
-              <div>5. Is this your sled?</div>
-              <div>6. I am glad you are with us.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ, ĕ  and consonants</div>
+<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>blends</div>
+<div class="project-read-source-line">Teach in groups:</div>
+<div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
+    <div class="project-read-teaching-group"><div class="project-read-teaching-chip">bl</div><div class="project-read-teaching-chip">pl</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">gl</div><div class="project-read-teaching-chip">fl</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">cl</div><div class="project-read-teaching-chip">sl</div></div>
+  </div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:6" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">black</div><div class="project-read-word-item">block</div><div class="project-read-word-item">bless</div><div class="project-read-word-item">bled</div><div class="project-read-word-item">sled</div><div class="project-read-word-item">slack</div><div class="project-read-word-item">slab</div><div class="project-read-word-item">slip</div><div class="project-read-word-item">slim</div></div><div class="project-read-word-group"><div class="project-read-word-item">flag</div><div class="project-read-word-item">flat</div><div class="project-read-word-item">flock</div></div><div class="project-read-word-group"><div class="project-read-word-item">flap</div><div class="project-read-word-item">fled</div><div class="project-read-word-item">glad</div><div class="project-read-word-item">glass</div><div class="project-read-word-item">glob</div></div><div class="project-read-word-group"><div class="project-read-word-item">plan</div><div class="project-read-word-item">plot</div><div class="project-read-word-item">flash</div></div><div class="project-read-word-group"><div class="project-read-word-item">class</div><div class="project-read-word-item">click</div><div class="project-read-word-item">clock</div><div class="project-read-word-item">clam</div></div><div class="project-read-word-group"><div class="project-read-word-item">clip</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:  could, should, would</div>
+<div class="project-read-source-line">Introduce:  they</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. They have a flag.</div>
+<div>2. Your class has a plan.</div>
+<div>3. This glass has a chip.</div>
+<div>4. Beth has a black dog.</div>
+<div>5. Is this your sled?</div>
+<div>6. I am glad you are with us.</div>
+    </div>
+  </section>
+  </div>`
     },
     "13B": {
       unit: "UNIT  13 - B",
       unitDisplay: "13 - B",
       metaLabel: "Concept:",
       skill: "Initial blends.",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review a, i, o, e</div>
-              <div class="project-read-source-line">Introduce blends:</div>
-              <div class="project-read-source-line">	br		pr		fr</div>
-              <div class="project-read-source-line">	shr		tr		thr</div>
-              <div class="project-read-source-line">	cr		dr		gr</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>bring</span>
-              <span>fresh</span>
-              <span>trip</span>
-              <span>brag</span>
-              <span>frog</span>
-              <span>track</span>
-              <span>brick</span>
-              <span>frock</span>
-              <span>trash</span>
-              <span>brisk</span>
-              <span>frisk</span>
-              <span>trick</span>
-              <span>bran</span>
-              <span>frill</span>
-              <span>trim</span>
-              <span>brim</span>
-              <span>fret</span>
-              <span>trot</span>
-              <span>trap</span>
-              <span>crack</span>
-              <span>dress</span>
-              <span>trod</span>
-              <span>crab</span>
-              <span>drink</span>
-              <span>crop</span>
-              <span>drill</span>
-              <span>grass</span>
-              <span>cross</span>
-              <span>drip</span>
-              <span>grab</span>
-              <span>crash</span>
-              <span>drag</span>
-              <span>trill</span>
-              <span>grit</span>
-              <span>prod</span>
-              <span>shrill</span>
-              <span>grip</span>
-              <span>prim</span>
-              <span>shrank</span>
-              <span>grin</span>
-              <span>prop</span>
-              <span>shrink</span>
-              <span>press</span>
-              <span>thrill</span>
-              <span>throb</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:  could, should, would, they</div>
-              <div class="project-read-source-line">Introduce:  your</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. The chips are fresh.</div>
-              <div>2. Bring Dad a hot drink.</div>
-              <div>3. Did the glass crack?</div>
-              <div>4. Your dress has a pink sash.</div>
-              <div>5. They went on a trip.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review a, i, o, e</div>
+<div class="project-read-source-line">Introduce blends:</div>
+<div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
+    <div class="project-read-teaching-group"><div class="project-read-teaching-chip">br</div><div class="project-read-teaching-chip">shr</div><div class="project-read-teaching-chip">cr</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">pr</div><div class="project-read-teaching-chip">tr</div><div class="project-read-teaching-chip">dr</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">fr</div><div class="project-read-teaching-chip">thr</div><div class="project-read-teaching-chip">gr</div></div>
+  </div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">bring</div><div class="project-read-word-item">brag</div><div class="project-read-word-item">brick</div><div class="project-read-word-item">brisk</div><div class="project-read-word-item">bran</div><div class="project-read-word-item">brim</div><div class="project-read-word-item">crack</div><div class="project-read-word-item">crab</div><div class="project-read-word-item">crop</div><div class="project-read-word-item">cross</div><div class="project-read-word-item">crash</div><div class="project-read-word-item">prod</div><div class="project-read-word-item">prim</div><div class="project-read-word-item">prop</div><div class="project-read-word-item">press</div></div><div class="project-read-word-group"><div class="project-read-word-item">fresh</div><div class="project-read-word-item">frog</div><div class="project-read-word-item">frock</div><div class="project-read-word-item">frisk</div><div class="project-read-word-item">frill</div><div class="project-read-word-item">fret</div><div class="project-read-word-item">dress</div><div class="project-read-word-item">drink</div><div class="project-read-word-item">drill</div><div class="project-read-word-item">drip</div><div class="project-read-word-item">drag</div><div class="project-read-word-item">shrill</div><div class="project-read-word-item">shrank</div><div class="project-read-word-item">shrink</div></div><div class="project-read-word-group"><div class="project-read-word-item">trip</div><div class="project-read-word-item">track</div><div class="project-read-word-item">trash</div><div class="project-read-word-item">trick</div><div class="project-read-word-item">trim</div><div class="project-read-word-item">trod</div><div class="project-read-word-item">grass</div><div class="project-read-word-item">grab</div><div class="project-read-word-item">trill</div><div class="project-read-word-item">grip</div><div class="project-read-word-item">grin</div></div><div class="project-read-word-group"><div class="project-read-word-item">trot</div><div class="project-read-word-item">thrill</div></div><div class="project-read-word-group"><div class="project-read-word-item">trap</div><div class="project-read-word-item">grit</div><div class="project-read-word-item">throb</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:  could, should, would, they</div>
+<div class="project-read-source-line">Introduce:  your</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. The chips are fresh.</div>
+<div>2. Bring Dad a hot drink.</div>
+<div>3. Did the glass crack?</div>
+<div>4. Your dress has a pink sash.</div>
+<div>5. They went on a trip.</div>
+    </div>
+  </section>
+  </div>`
     },
     "13C": {
       unit: "UNIT  13 - C",
       unitDisplay: "13 - C",
       metaLabel: "Concept:",
       skill: "A blend is a consonant combination representing two combined consonant sounds.",
-      bodyHtml: `
-        <div class="project-read-sheet">
-          
-          <section class="project-read-source-block project-read-teaching">
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">1. Review ă, ĭ, ŏ, ĕ  and consonants</div>
-              <div class="project-read-source-line">Introduce:	blends</div>
-              <div class="project-read-source-line">Teach in groups: 	sc		sp		squ</div>
-              <div class="project-read-source-line">			dw		sm		sw</div>
-              <div class="project-read-source-line">			sk		sn		st</div>
-              <div class="project-read-source-line">			tw</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-word-list">
-            <h3>WORD LIST</h3>
-            <div class="project-read-word-cloud" aria-label="WORD LIST">
-              <span>scat</span>
-              <span>skip</span>
-              <span>spill</span>
-              <span>smash</span>
-              <span>skill</span>
-              <span>spin</span>
-              <span>smell</span>
-              <span>stop</span>
-              <span>skim</span>
-              <span>spot</span>
-              <span>smack</span>
-              <span>still</span>
-              <span>skin</span>
-              <span>spell</span>
-              <span>stiff</span>
-              <span>twin</span>
-              <span>step</span>
-              <span>snack</span>
-              <span>swell</span>
-              <span>twig</span>
-              <span>stern</span>
-              <span>snip</span>
-              <span>swim</span>
-              <span>twill</span>
-              <span>stick</span>
-              <span>snag</span>
-              <span>swing</span>
-              <span>twit</span>
-              <span>stack</span>
-              <span>sniff</span>
-              <span>stab</span>
-              <span>snap</span>
-              <span>dwell</span>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-red-words">
-            <h3>RED WORDS</h3>
-            <div class="project-read-source-lines">
-              <div class="project-read-source-line">Review:  they,  your</div>
-            </div>
-          </section>
-
-          <section class="project-read-source-block project-read-sentences">
-            <h3>SENTENCES</h3>
-            <div class="sentence-list">
-              <div>1. Stop that!</div>
-              <div>2. I can swim well.</div>
-              <div>3. The grass smells fresh.</div>
-              <div>4. Can you spell crash?</div>
-              <div>5. They had a snack.</div>
-              <div>6. His skin is tan.</div>
-              <div>7. Stan and Fran are twins.</div>
-            </div>
-          </section>
-        </div>
-      `
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ, ĕ  and consonants</div>
+<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>blends</div>
+<div class="project-read-source-line">Teach in groups:</div>
+<div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
+    <div class="project-read-teaching-group"><div class="project-read-teaching-chip">sc</div><div class="project-read-teaching-chip">dw</div><div class="project-read-teaching-chip">sk</div><div class="project-read-teaching-chip">tw</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">sp</div><div class="project-read-teaching-chip">sm</div><div class="project-read-teaching-chip">sn</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">squ</div><div class="project-read-teaching-chip">sw</div><div class="project-read-teaching-chip">st</div></div>
+  </div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:8" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">scat</div><div class="project-read-word-item">stop</div><div class="project-read-word-item">still</div><div class="project-read-word-item">stiff</div><div class="project-read-word-item">step</div><div class="project-read-word-item">stern</div><div class="project-read-word-item">stick</div><div class="project-read-word-item">stack</div><div class="project-read-word-item">stab</div></div><div class="project-read-word-group"><div class="project-read-word-item">skip</div><div class="project-read-word-item">skim</div><div class="project-read-word-item">skin</div><div class="project-read-word-item">snack</div><div class="project-read-word-item">snip</div><div class="project-read-word-item">snag</div><div class="project-read-word-item">sniff</div><div class="project-read-word-item">snap</div></div><div class="project-read-word-group"><div class="project-read-word-item">skill</div></div><div class="project-read-word-group"><div class="project-read-word-item">spill</div><div class="project-read-word-item">spot</div><div class="project-read-word-item">spell</div><div class="project-read-word-item">swell</div><div class="project-read-word-item">swim</div><div class="project-read-word-item">swing</div><div class="project-read-word-item">dwell</div></div><div class="project-read-word-group"><div class="project-read-word-item">spin</div></div><div class="project-read-word-group"><div class="project-read-word-item">smash</div><div class="project-read-word-item">smack</div><div class="project-read-word-item">twig</div><div class="project-read-word-item">twill</div><div class="project-read-word-item">twit</div></div><div class="project-read-word-group"><div class="project-read-word-item">smell</div></div><div class="project-read-word-group"><div class="project-read-word-item">twin</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:  they,  your</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. Stop that!</div>
+<div>2. I can swim well.</div>
+<div>3. The grass smells fresh.</div>
+<div>4. Can you spell crash?</div>
+<div>5. They had a snack.</div>
+<div>6. His skin is tan.</div>
+<div>7. Stan and Fran are twins.</div>
+    </div>
+  </section>
+  </div>`
+    },
+    "14": {
+      unit: "UNIT  14",
+      unitDisplay: "14",
+      metaLabel: "Concept:",
+      skill: "Vowels have significant value.",
+      bodyHtml: `<div class="project-read-sheet">
+    <section class="project-read-source-block project-read-teaching">
+    <div class="project-read-source-lines"><div class="project-read-source-line">1.  Review ă, ĭ, ŏ, ĕ  consonants , digraphs, initial blends.</div>
+<div class="project-read-source-line">2.  Technique for introducing /ŭ/</div>
+<div class="project-read-source-line">A. Key word:  up</div>
+<div class="project-read-source-line">B. Use the motion of opening an umbrella.</div></div>
+  </section>
+<section class="project-read-source-block project-read-word-list">
+    <h3>WORD LIST</h3>
+    <div class="project-read-word-scroll">
+      <div class="project-read-word-groups" style="--pr-word-group-count:8" aria-label="WORD LIST">
+        <div class="project-read-word-group"><div class="project-read-word-item">up</div><div class="project-read-word-item">but</div><div class="project-read-word-item">bus</div><div class="project-read-word-item">truck</div><div class="project-read-word-item">much</div><div class="project-read-word-item">crush</div></div><div class="project-read-word-group"><div class="project-read-word-item">brush</div><div class="project-read-word-item">run</div><div class="project-read-word-item">fun</div><div class="project-read-word-item">bunk</div></div><div class="project-read-word-group"><div class="project-read-word-item">dull</div><div class="project-read-word-item">puff</div></div><div class="project-read-word-group"><div class="project-read-word-item">shrub</div><div class="project-read-word-item">blush</div><div class="project-read-word-item">skull</div></div><div class="project-read-word-group"><div class="project-read-word-item">us</div><div class="project-read-word-item">such</div></div><div class="project-read-word-group"><div class="project-read-word-item">chunk</div><div class="project-read-word-item">flung</div><div class="project-read-word-item">pluck</div></div><div class="project-read-word-group"><div class="project-read-word-item">stung</div></div><div class="project-read-word-group"><div class="project-read-word-item">swung</div></div>
+      </div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-red-words">
+    <h3>RED WORDS</h3>
+    <div class="project-read-source-lines">
+      <div class="project-read-source-line">Review:  they,  your</div>
+<div class="project-read-source-line">Introduce:  Mr.  Mrs.</div>
+    </div>
+  </section>
+<section class="project-read-source-block project-read-sentences">
+    <h3>SENTENCES</h3>
+    <div class="sentence-list">
+      <div>1. Dad got on the bus.</div>
+<div>2. This is such fun!</div>
+<div>3. Sit up!</div>
+<div>4. Fill the truck with gas.</div>
+<div>5. Brush the mud off the rug.</div>
+<div>6. Mrs. Black runs with us.</div>
+<div>7. Mr. Hill has a black truck.</div>
+<div>8. It is such fun to swim.</div>
+<div>9. The cat is up on the box.</div>
+<div>10. This is not much fun.</div>
+<div>11. I can, but you cannot.</div>
+    </div>
+  </section>
+  </div>`
     }
   }
 };
