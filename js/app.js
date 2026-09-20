@@ -125,11 +125,10 @@
     const percentage = Math.round((done / 3) * 100);
 
     return `
-      <div class="page-heading">
+      <div class="page-heading session-page-heading">
         <div>
-          <p class="eyebrow" style="color:var(--primary)">Session mode</p>
-          <h1>Today's tutoring session</h1>
-          <p>Use the steps in order. Your selections and checkmarks stay saved on this device.</p>
+          <h1>Today's Tutoring Session</h1>
+          <div class="session-heading-line" aria-hidden="true"></div>
         </div>
         <button class="btn btn-muted" data-action="reset-session">Reset session</button>
       </div>
@@ -202,10 +201,6 @@
             </select>
           </div>
 
-          <div class="notice" style="margin-top:18px">
-            <strong>Content fidelity:</strong> curriculum text will be stored separately from the interface
-            so the wording can be imported exactly from the provided source materials.
-          </div>
         </aside>
       </div>
     `;
