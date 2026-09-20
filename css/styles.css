@@ -2005,3 +2005,34 @@ select {
     padding: 10px 12px;
   }
 }
+
+
+/* Refine Project Read word and sentence boxes */
+.word-list-grid > div span {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Box each Project Read sentence */
+.sentence-list {
+  display: grid;
+  gap: 12px;
+}
+
+.sentence-list > div {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  padding: 12px 16px;
+  border: 1px solid #cfe2d5;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 700px) {
+  .sentence-list > div {
+    min-height: 54px;
+    padding: 10px 12px;
+  }
+}
