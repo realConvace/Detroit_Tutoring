@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="260" viewBox="0 0 320 260" role="img" aria-labelledby="title desc">
+  <title id="title">Steaming baked bun</title>
+  <desc id="desc">Child-friendly line drawing of a baked bun on a cloth with steam rising above it.</desc>
+  <g fill="none" stroke="#4a3c33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M132 78 C118 54, 122 34, 140 18" />
+    <path d="M158 82 C144 56, 150 34, 169 12" />
+    <path d="M186 82 C175 60, 179 38, 198 20" />
+    <path d="M92 196 C101 183, 111 176, 124 170 C139 163, 154 159, 167 159 C181 159, 197 163, 211 171 C223 178, 232 187, 240 198" />
+    <path d="M98 201 C96 181, 101 159, 112 142 C125 121, 145 110, 166 110 C188 110, 207 121, 220 142 C232 161, 237 183, 234 202" />
+    <path d="M146 129 C152 124, 159 122, 166 122 C174 122, 181 124, 187 129" />
+    <path d="M150 140 C155 136, 160 134, 166 134 C172 134, 178 136, 183 140" />
+    <path d="M154 152 C158 149, 162 147, 166 147 C171 147, 175 149, 179 152" />
+    <path d="M70 196 C56 180, 44 177, 28 176 C40 188, 43 204, 56 214 C71 226, 93 227, 107 214" />
+    <path d="M250 196 C264 180, 276 177, 292 176 C280 188, 277 204, 264 214 C249 226, 227 227, 213 214" />
+    <path d="M79 202 C91 220, 118 233, 166 236 C217 239, 244 222, 255 202" />
+    <path d="M91 209 C109 194, 129 191, 144 195" />
+    <path d="M186 196 C203 190, 223 193, 242 209" />
+    <circle cx="166" cy="178" r="2.5" fill="#4a3c33" />
+    <circle cx="166" cy="188" r="2.5" fill="#4a3c33" />
+  </g>
+</svg>
