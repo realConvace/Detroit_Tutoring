@@ -2481,7 +2481,7 @@ window.TUTORING_CONTENT = {
       unit: "UNIT 3",
       unitDisplay: "3",
       metaLabel: "Skill:",
-      skill: "g (hard) d, v",
+      skill: "g (hard), d, v",
       bodyHtml: `<div class="project-read-sheet">
 <section class="project-read-source-block project-read-teaching">
     
@@ -2561,7 +2561,7 @@ window.TUTORING_CONTENT = {
       unit: "UNIT 4",
       unitDisplay: "4",
       metaLabel: "Skill:",
-      skill: "ĭ,  w",
+      skill: "ĭ, w",
       bodyHtml: `<div class="project-read-sheet">
 <section class="project-read-source-block project-read-teaching">
     
@@ -2989,7 +2989,7 @@ window.TUTORING_CONTENT = {
       unit: "UNIT  9",
       unitDisplay: "9",
       metaLabel: "Skill:",
-      skill: "ss, ll. ff. zz  (place value for encoding)",
+      skill: "ss, ll, ff, zz (place value for encoding)",
       bodyHtml: `<div class="project-read-sheet">
 <section class="project-read-source-block project-read-teaching">
     
@@ -3184,7 +3184,7 @@ window.TUTORING_CONTENT = {
       unit: "UNIT  11",
       unitDisplay: "11",
       metaLabel: "Skill:",
-      skill: "Digraphs wh, ch, th, and sh",
+      skill: "Digraphs: wh, ch, th, sh",
       bodyHtml: `<div class="project-read-sheet">
 <section class="project-read-source-block project-read-teaching">
     <div class="project-read-teaching-preface">A digraph is a consonant sound which cannot be represented by any single letter in our alphabet.</div>
@@ -3502,7 +3502,7 @@ window.TUTORING_CONTENT = {
       unit: "UNIT  13 - B",
       unitDisplay: "13 - B",
       metaLabel: "Concept:",
-      skill: "Initial blends.",
+      skill: "Initial blends",
       bodyHtml: `<div class="project-read-sheet">
 <section class="project-read-source-block project-read-teaching">
     
