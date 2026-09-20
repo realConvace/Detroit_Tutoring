@@ -146,7 +146,7 @@
                 <p>Read the poem, then complete Looking at Words and Letters, Playing With Sounds, and Beginning to Read.</p>
               </div>
               <div class="step-action">
-                <a class="btn btn-secondary" href="#fast-start/${state.fastStartNumber}/0">Open Fast Start</a>
+                <a class="btn btn-secondary" href="#fast-start/${state.fastStartNumber}">Open Fast Start</a>
               </div>
             </article>
 
@@ -213,7 +213,7 @@
       ${content.fastStart
         .map(
           (title, index) => `
-            <a class="lesson-card" href="#fast-start/${index + 1}/0">
+            <a class="lesson-card" href="#fast-start/${index + 1}">
               <small>Fast Start #${index + 1}</small>
               <h3>${escapeHtml(title)}</h3>
             </a>
@@ -223,20 +223,11 @@
     </div>
   `;
 
-  const fastStartDetail = (number, sectionParam = "0") => {
+  const fastStartDetail = (number) => {
     const n = Number(number);
-    const sectionIndex = Number(sectionParam);
 
     if (!Number.isInteger(n) || n < 1 || n > content.fastStart.length) {
       return fastStartLibrary();
-    }
-
-    if (
-      !Number.isInteger(sectionIndex) ||
-      sectionIndex < 0 ||
-      sectionIndex >= content.fastStartSections.length
-    ) {
-      return fastStartDetail(n, 0);
     }
 
     if (state.fastStartNumber !== n) {
@@ -244,50 +235,65 @@
     }
 
     state.fastStartNumber = n;
-    state.fastStartSection = sectionIndex;
+    state.fastStartSection = 0;
     saveState();
 
     const title = content.fastStart[n - 1];
-    const section = content.fastStartSections[sectionIndex];
-    const isFirstSection = sectionIndex === 0;
-    const isLastSection = sectionIndex === content.fastStartSections.length - 1;
-    const hasNextFastStart = n < content.fastStart.length;
+    const previousFastStart = n > 1 ? n - 1 : null;
+    const nextFastStart = n < content.fastStart.length ? n + 1 : null;
+    const poemSection = content.fastStartSections[0];
+    const activitySections = content.fastStartSections.slice(1);
 
     return `
       <div class="lesson-hero fast-start">
-        <span class="lesson-number">Fast Start #${n} · Part ${sectionIndex + 1} of ${content.fastStartSections.length}</span>
+        <span class="lesson-number">Fast Start #${n}</span>
         <h1>${escapeHtml(title)}</h1>
-        <p>${escapeHtml(section)}</p>
+        <p>Read the poem, then complete the three activity sections beside it.</p>
       </div>
 
-      <div class="section-list">
-        <section class="curriculum-section">
+      <div class="fast-start-workspace">
+        <section class="curriculum-section fast-start-poem">
           <header>
-            <span class="section-index">${sectionIndex + 1}</span>
-            <h2>${escapeHtml(section)}</h2>
+            <span class="section-index">1</span>
+            <h2>${escapeHtml(poemSection)}</h2>
           </header>
-          <div class="curriculum-placeholder">
-            Exact source wording for Fast Start #${n}, ${escapeHtml(section)}, will be inserted here from the provided PDF.
+          <div class="curriculum-placeholder poem-placeholder">
+            Exact source wording for Fast Start #${n}, ${escapeHtml(poemSection)}, will be inserted here from the provided PDF.
             The interface will not paraphrase or rewrite it.
           </div>
         </section>
+
+        <div class="fast-start-activities">
+          ${activitySections
+            .map(
+              (section, index) => `
+                <section class="curriculum-section">
+                  <header>
+                    <span class="section-index">${index + 2}</span>
+                    <h2>${escapeHtml(section)}</h2>
+                  </header>
+                  <div class="curriculum-placeholder">
+                    Exact source wording for Fast Start #${n}, ${escapeHtml(section)}, will be inserted here from the provided PDF.
+                    The interface will not paraphrase or rewrite it.
+                  </div>
+                </section>
+              `
+            )
+            .join("")}
+        </div>
       </div>
 
-      <div class="button-row">
-        ${!isFirstSection
-          ? `<a class="btn btn-muted" href="#fast-start/${n}/${sectionIndex - 1}">← Previous Section</a>`
+      <div class="button-row fast-start-navigation">
+        ${previousFastStart
+          ? `<a class="btn btn-muted" href="#fast-start/${previousFastStart}">← Previous Fast Start</a>`
           : `<a class="btn btn-muted" href="#session">Back to session</a>`
         }
 
-        ${!isLastSection
-          ? `<a class="btn btn-primary" href="#fast-start/${n}/${sectionIndex + 1}">Next Section →</a>`
-          : `
-            <button class="btn btn-success" data-action="finish-fast-start">✓ Finish Fast Start</button>
-            ${hasNextFastStart
-              ? `<a class="btn btn-secondary" href="#fast-start/${n + 1}/0">Next Fast Start →</a>`
-              : ""
-            }
-          `
+        <button class="btn btn-success" data-action="finish-fast-start">✓ Finish Fast Start</button>
+
+        ${nextFastStart
+          ? `<a class="btn btn-primary" href="#fast-start/${nextFastStart}">Next Fast Start →</a>`
+          : ""
         }
       </div>
     `;
@@ -384,7 +390,7 @@
         app.innerHTML = session();
         break;
       case "fast-start":
-        app.innerHTML = param ? fastStartDetail(param, subparam || "0") : fastStartLibrary();
+        app.innerHTML = param ? fastStartDetail(param) : fastStartLibrary();
         break;
       case "project-read":
         app.innerHTML = param ? projectReadDetail(decodeURIComponent(param)) : projectReadLibrary();
