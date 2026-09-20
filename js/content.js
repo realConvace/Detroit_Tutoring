@@ -2329,8 +2329,8 @@ window.TUTORING_CONTENT = {
       skill: "ă, t, s, m, b, c, f",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Introduce:  <strong>/ă/</strong></div>
-<div class="project-read-source-line">2. Introduce consonants:  <strong>t. s. m. b. c. f</strong></div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Introduce:</strong>  /ă/</div>
+<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce consonants:</strong>  t. s. m. b. c. f</div>
 <div class="project-read-cue">t – tongue bounces</div>
 <div class="project-read-cue">s – teeth together, snake</div>
 <div class="project-read-cue">m – mouth closed</div>
@@ -2341,8 +2341,13 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:3" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item"><strong>at</strong></div><div class="project-read-word-item"><strong>sat</strong></div><div class="project-read-word-item"><strong>fat</strong></div><div class="project-read-word-item"><strong>bat</strong></div><div class="project-read-word-item"><strong>cat</strong></div><div class="project-read-word-item"><strong>mat</strong></div></div><div class="project-read-word-group"><div class="project-read-word-item"><strong>am</strong></div><div class="project-read-word-item"><strong>tam</strong></div><div class="project-read-word-item"><strong>Sam</strong></div><div class="project-read-word-item"><strong>bam</strong></div></div><div class="project-read-word-group"><div class="project-read-word-item"><strong>tab</strong></div><div class="project-read-word-item"><strong>cab</strong></div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">at</span><span class="project-read-word-item">am</span><span class="project-read-word-item">tab</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">sat</span><span class="project-read-word-item">tam</span><span class="project-read-word-item">cab</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">fat</span><span class="project-read-word-item">Sam</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">bat</span><span class="project-read-word-item">bam</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">cat</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">mat</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
@@ -2364,8 +2369,8 @@ window.TUTORING_CONTENT = {
       skill: "r, h, j, n, p, l",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, t, s, m, b, c, f</div>
-<div class="project-read-source-line">2. Introduce consonants:</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, t, s, m, b, c, f</div>
+<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce consonants:</strong></div>
 <div class="project-read-cue">h – just air</div>
 <div class="project-read-cue">j - /j/ clipped</div>
 <div class="project-read-cue">n – tongue on roof of mouth</div>
@@ -2376,15 +2381,19 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span><strong>the</strong></div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the</div>
 <div class="project-read-source-line"><strong>The</strong> is a phonetically irregular word.  These words are called red words (stop words) because they do not have direct sound-symbol relationship.</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:7" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">hat</div><div class="project-read-word-item">pat</div><div class="project-read-word-item">lap</div><div class="project-read-word-item">jab</div><div class="project-read-word-item">tab</div></div><div class="project-read-word-group"><div class="project-read-word-item">fan</div><div class="project-read-word-item">man</div><div class="project-read-word-item">tan</div><div class="project-read-word-item">can</div><div class="project-read-word-item">ran</div></div><div class="project-read-word-group"><div class="project-read-word-item">sap</div><div class="project-read-word-item">rap</div></div><div class="project-read-word-group"><div class="project-read-word-item">rat</div><div class="project-read-word-item">nap</div></div><div class="project-read-word-group"><div class="project-read-word-item">ham</div><div class="project-read-word-item">jam</div></div><div class="project-read-word-group"><div class="project-read-word-item">pal</div><div class="project-read-word-item">as</div></div><div class="project-read-word-group"><div class="project-read-word-item">has</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:5" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">hat</span><span class="project-read-word-item">fan</span><span class="project-read-word-item">rat</span><span class="project-read-word-item">pal</span><span class="project-read-word-item">has</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">pat</span><span class="project-read-word-item">man</span><span class="project-read-word-item">sap</span><span class="project-read-word-item">ham</span><span class="project-read-word-item">as</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">lap</span><span class="project-read-word-item">tan</span><span class="project-read-word-item">nap</span><span class="project-read-word-item">jam</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">jab</span><span class="project-read-word-item">can</span><span class="project-read-word-item">rap</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">tab</span><span class="project-read-word-item">ran</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
@@ -2407,8 +2416,8 @@ window.TUTORING_CONTENT = {
       skill: "g (hard) d, v",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review a, b, c, f, m, s, t, h, j, n, p, l, r</div>
-<div class="project-read-source-line">2. Introduce consonants:</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> a, b, c, f, m, s, t, h, j, n, p, l, r</div>
+<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce consonants:</strong></div>
 <div class="project-read-cue">d – tongue bounces on roof of mouth, lips open</div>
 <div class="project-read-cue">v – hang onto some air</div>
 <div class="project-read-cue">g – (hard sound) the child can feel the bounce in his throat.</div></div>
@@ -2416,15 +2425,18 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span><strong>the</strong></div>
-<div class="project-read-source-line">Introduce:  <strong>to</strong></div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  to</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:6" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">lad</div><div class="project-read-word-item">sad</div><div class="project-read-word-item">tag</div><div class="project-read-word-item">pad</div></div><div class="project-read-word-group"><div class="project-read-word-item">bag</div><div class="project-read-word-item">lag</div><div class="project-read-word-item">bad</div><div class="project-read-word-item">had</div></div><div class="project-read-word-group"><div class="project-read-word-item">vat</div><div class="project-read-word-item">mad</div><div class="project-read-word-item">rag</div></div><div class="project-read-word-group"><div class="project-read-word-item">van</div></div><div class="project-read-word-group"><div class="project-read-word-item">sag</div></div><div class="project-read-word-group"><div class="project-read-word-item">dad</div><div class="project-read-word-item">gas</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">lad</span><span class="project-read-word-item">bag</span><span class="project-read-word-item">vat</span><span class="project-read-word-item">dad</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">sad</span><span class="project-read-word-item">lag</span><span class="project-read-word-item">van</span><span class="project-read-word-item">gas</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">tag</span><span class="project-read-word-item">bad</span><span class="project-read-word-item">mad</span><span class="project-read-word-item">sag</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">pad</span><span class="project-read-word-item">had</span><span class="project-read-word-item">rag</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
@@ -2446,23 +2458,28 @@ window.TUTORING_CONTENT = {
       skill: "ĭ,  w",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, s, f, m, t, c, h, j, n, p, l, r, g, v</div>
-<div class="project-read-source-line">2. Introduce:  ĭ, w</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, s, f, m, t, c, h, j, n, p, l, r, g, v</div>
+<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong>  ĭ, w</div>
 <div class="project-read-cue">i – igloo, it (put thumb under the chin and feel the bounce.)</div>
 <div class="project-read-cue">w – no air is felt if hand is held in front of the mouth.</div></div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span>the, to</div>
-<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>have</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the, to</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>have</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">hit</div><div class="project-read-word-item">wit</div><div class="project-read-word-item">mit</div><div class="project-read-word-item">bit</div><div class="project-read-word-item">sit</div><div class="project-read-word-item">it</div></div><div class="project-read-word-group"><div class="project-read-word-item">kid</div><div class="project-read-word-item">did</div><div class="project-read-word-item">lid</div><div class="project-read-word-item">tin</div><div class="project-read-word-item">fin</div></div><div class="project-read-word-group"><div class="project-read-word-item">win</div></div><div class="project-read-word-group"><div class="project-read-word-item">pig</div><div class="project-read-word-item">big</div><div class="project-read-word-item">rig</div><div class="project-read-word-item">rim</div><div class="project-read-word-item">him</div></div><div class="project-read-word-group"><div class="project-read-word-item">is</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">hit</span><span class="project-read-word-item">kid</span><span class="project-read-word-item">pig</span><span class="project-read-word-item">is</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">wit</span><span class="project-read-word-item">did</span><span class="project-read-word-item">big</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">mit</span><span class="project-read-word-item">lid</span><span class="project-read-word-item">rig</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">bit</span><span class="project-read-word-item">tin</span><span class="project-read-word-item">rim</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">sit</span><span class="project-read-word-item">fin</span><span class="project-read-word-item">him</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">it</span><span class="project-read-word-item">win</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
@@ -2485,23 +2502,28 @@ window.TUTORING_CONTENT = {
       skill: "k, -ck for decoding",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review   ă, ĭ, and consonants</div>
-<div class="project-read-source-line">Introduce:</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong>   ă, ĭ, and consonants</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong></div>
 <div class="project-read-cue"><span class="project-read-tab-gap" aria-hidden="true"></span><span class="project-read-tab-gap" aria-hidden="true"></span>k – same sound as c</div>
 <div class="project-read-cue"><span class="project-read-tab-gap" aria-hidden="true"></span><span class="project-read-tab-gap" aria-hidden="true"></span>-ck – same sound as c and k</div></div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span>the, to, have</div>
-<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the, to, have</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>said</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:3" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">cap</div><div class="project-read-word-item">cab</div><div class="project-read-word-item">can</div><div class="project-read-word-item">kin</div><div class="project-read-word-item">kid</div><div class="project-read-word-item">kit</div></div><div class="project-read-word-group"><div class="project-read-word-item">kick</div><div class="project-read-word-item">pack</div><div class="project-read-word-item">tack</div><div class="project-read-word-item">rack</div><div class="project-read-word-item">tick</div><div class="project-read-word-item">back</div></div><div class="project-read-word-group"><div class="project-read-word-item">sick</div><div class="project-read-word-item">sack</div><div class="project-read-word-item">pick</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">cap</span><span class="project-read-word-item">kick</span><span class="project-read-word-item">sick</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">cab</span><span class="project-read-word-item">pack</span><span class="project-read-word-item">sack</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">can</span><span class="project-read-word-item">tack</span><span class="project-read-word-item">pick</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">kin</span><span class="project-read-word-item">rack</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">kid</span><span class="project-read-word-item">tick</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">kit</span><span class="project-read-word-item">back</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
@@ -2524,22 +2546,25 @@ window.TUTORING_CONTENT = {
       skill: "-ck for decoding",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review   ă, ĭ, and consonants</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong>   ă, ĭ, and consonants</div>
 <div class="project-read-source-line">2. Formulate the <strong>–ck rule</strong>:  use –ck at the end of a one vowel sound word and after a short vowel sound.</div></div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD BUILDING</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:4" aria-label="WORD BUILDING">
-        <div class="project-read-word-group"><div class="project-read-word-item">cab</div><div class="project-read-word-item">cap</div><div class="project-read-word-item">kit</div><div class="project-read-word-item">kid</div></div><div class="project-read-word-group"><div class="project-read-word-item">pack</div><div class="project-read-word-item">kick</div><div class="project-read-word-item">tick</div><div class="project-read-word-item">tack</div></div><div class="project-read-word-group"><div class="project-read-word-item">pick</div><div class="project-read-word-item">lack</div><div class="project-read-word-item">sack</div></div><div class="project-read-word-group"><div class="project-read-word-item">back</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD BUILDING">
+        <div class="project-read-word-row"><span class="project-read-word-item">cab</span><span class="project-read-word-item">pack</span><span class="project-read-word-item">pick</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">cap</span><span class="project-read-word-item">kick</span><span class="project-read-word-item">lack</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">kit</span><span class="project-read-word-item">tick</span><span class="project-read-word-item">back</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">kid</span><span class="project-read-word-item">tack</span><span class="project-read-word-item">sack</span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span>the, to, have, said</div>
-<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>of</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>the, to, have, said</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>of</div>
     </div>
   </section>
   </div>`
@@ -2551,8 +2576,8 @@ window.TUTORING_CONTENT = {
       skill: "qu, x, y, z",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, consonants and /ck/ for encoding</div>
-<div class="project-read-source-line">2. Introduce:  qu, /kw/, y, z, x /ks/</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, consonants and /ck/ for encoding</div>
+<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong>  qu, /kw/, y, z, x /ks/</div>
 <div class="project-read-cue">qu - /kw/</div>
 <div class="project-read-cue">x - /ks/</div>
 <div class="project-read-cue">y – yellow</div>
@@ -2561,14 +2586,19 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:<span class="project-read-tab-gap" aria-hidden="true"></span>of, the, have, to said</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>of, the, have, to said</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">quack</div><div class="project-read-word-item">quick</div><div class="project-read-word-item">quit</div><div class="project-read-word-item">ax</div><div class="project-read-word-item">sax</div><div class="project-read-word-item">wax</div></div><div class="project-read-word-group"><div class="project-read-word-item">tax</div><div class="project-read-word-item">fix</div><div class="project-read-word-item">mix</div><div class="project-read-word-item">six</div><div class="project-read-word-item">Max</div></div><div class="project-read-word-group"><div class="project-read-word-item">yap</div><div class="project-read-word-item">yip</div><div class="project-read-word-item">zap</div><div class="project-read-word-item">zip</div></div><div class="project-read-word-group"><div class="project-read-word-item">zig-zag</div></div><div class="project-read-word-group"><div class="project-read-word-item">will</div><div class="project-read-word-item">can</div><div class="project-read-word-item">is</div><div class="project-read-word-item">am</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">quack</span><span class="project-read-word-item">tax</span><span class="project-read-word-item">yap</span><span class="project-read-word-item">will</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">quick</span><span class="project-read-word-item">fix</span><span class="project-read-word-item">yip</span><span class="project-read-word-item">can</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">quit</span><span class="project-read-word-item">mix</span><span class="project-read-word-item">zap</span><span class="project-read-word-item">is</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">ax</span><span class="project-read-word-item">six</span><span class="project-read-word-item">zip</span><span class="project-read-word-item">am</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">sax</span><span class="project-read-word-item">Max</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">zig-zag</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">wax</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
@@ -2592,22 +2622,34 @@ window.TUTORING_CONTENT = {
       skill: "ŏ",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, and consonants</div>
-<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>ŏ as in octopus</div></div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, and consonants</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>ŏ as in octopus</div></div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">dot</div><div class="project-read-word-item">got</div><div class="project-read-word-item">hot</div><div class="project-read-word-item">lot</div><div class="project-read-word-item">cot</div><div class="project-read-word-item">pot</div><div class="project-read-word-item">not</div><div class="project-read-word-item">rot</div><div class="project-read-word-item">tot</div><div class="project-read-word-item">hop</div><div class="project-read-word-item">mop</div><div class="project-read-word-item">pop</div><div class="project-read-word-item">top</div></div><div class="project-read-word-group"><div class="project-read-word-item">Bob</div><div class="project-read-word-item">rob</div><div class="project-read-word-item">job</div><div class="project-read-word-item">sob</div><div class="project-read-word-item">nod</div><div class="project-read-word-item">pod</div><div class="project-read-word-item">ox</div><div class="project-read-word-item">fox</div><div class="project-read-word-item">box</div></div><div class="project-read-word-group"><div class="project-read-word-item">mob</div><div class="project-read-word-item">rod</div><div class="project-read-word-item">sod</div></div><div class="project-read-word-group"><div class="project-read-word-item">lock</div><div class="project-read-word-item">dock</div><div class="project-read-word-item">rock</div><div class="project-read-word-item">Tom</div><div class="project-read-word-item">dog</div><div class="project-read-word-item">log</div></div><div class="project-read-word-group"><div class="project-read-word-item">sock</div><div class="project-read-word-item">job</div><div class="project-read-word-item">on</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">dot</span><span class="project-read-word-item">Bob</span><span class="project-read-word-item">lock</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">got</span><span class="project-read-word-item">rob</span><span class="project-read-word-item">dock</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">hot</span><span class="project-read-word-item">job</span><span class="project-read-word-item">rock</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">lot</span><span class="project-read-word-item">mob</span><span class="project-read-word-item">sock</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">cot</span><span class="project-read-word-item">sob</span><span class="project-read-word-item">Tom</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">pot</span><span class="project-read-word-item">nod</span><span class="project-read-word-item">dog</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">not</span><span class="project-read-word-item">pod</span><span class="project-read-word-item">log</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">rot</span><span class="project-read-word-item">rod</span><span class="project-read-word-item">job</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">tot</span><span class="project-read-word-item">sod</span><span class="project-read-word-item">on</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">hop</span><span class="project-read-word-item">ox</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">mop</span><span class="project-read-word-item">fox</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">pop</span><span class="project-read-word-item">box</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">top</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:  of, the, have, to, said</div>
-<div class="project-read-source-line">Introduce:  was</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  of, the, have, to, said</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  was</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -2633,24 +2675,34 @@ window.TUTORING_CONTENT = {
       skill: "ss, ll. ff. zz  (place value for encoding)",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ and consonants</div>
-<div class="project-read-source-line">Introduce spelling generalization.</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ and consonants</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce</strong> spelling generalization.</div>
 <div class="project-read-source-line">Double s,,l, f, z in <strong>most</strong> one vowel sound words after a short vowel.</div>
 <div class="project-read-source-line">Common exceptions:  as, is, has, gas, if</div></div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:4" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">kill</div><div class="project-read-word-item">pill</div><div class="project-read-word-item">bill</div><div class="project-read-word-item">quill</div><div class="project-read-word-item">fill</div><div class="project-read-word-item">Jill</div><div class="project-read-word-item">gill</div><div class="project-read-word-item">sill</div><div class="project-read-word-item">till</div><div class="project-read-word-item">will</div><div class="project-read-word-item">hill</div></div><div class="project-read-word-group"><div class="project-read-word-item">miss</div><div class="project-read-word-item">kiss</div><div class="project-read-word-item">hiss</div><div class="project-read-word-item">pass</div><div class="project-read-word-item">bass</div><div class="project-read-word-item">mass</div><div class="project-read-word-item">stiff</div><div class="project-read-word-item">muff</div></div><div class="project-read-word-group"><div class="project-read-word-item">whiff</div></div><div class="project-read-word-group"><div class="project-read-word-item">jazz</div><div class="project-read-word-item">fizz</div><div class="project-read-word-item">doll</div><div class="project-read-word-item">mill</div><div class="project-read-word-item">off</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">kill</span><span class="project-read-word-item">miss</span><span class="project-read-word-item">jazz</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">pill</span><span class="project-read-word-item">kiss</span><span class="project-read-word-item">fizz</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">bill</span><span class="project-read-word-item">hiss</span><span class="project-read-word-item">doll</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">quill</span><span class="project-read-word-item">pass</span><span class="project-read-word-item">mill</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">fill</span><span class="project-read-word-item">bass</span><span class="project-read-word-item">off</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">Jill</span><span class="project-read-word-item">mass</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">gill</span><span class="project-read-word-item">stiff</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">sill</span><span class="project-read-word-item">muff</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">till</span><span class="project-read-word-item">whiff</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">will</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">hill</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS:</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:  was, of, the have, to said</div>
-<div class="project-read-source-line">Introduce:  you</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  was, of, the have, to said</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  you</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -2675,7 +2727,7 @@ window.TUTORING_CONTENT = {
       skill: "-ng, -nk",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ and consonants</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ and consonants</div>
 <div class="project-read-cue">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>/-ng/, /-nk/</div>
 <div class="project-read-source-line">Always attach to a vowel.</div>
 <div class="project-read-cue">-ang, -ing, -ong, -ank, -ink, -onk</div></div>
@@ -2683,16 +2735,21 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">sing</div><div class="project-read-word-item">ring</div><div class="project-read-word-item">yank</div><div class="project-read-word-item">bank</div><div class="project-read-word-item">tank</div></div><div class="project-read-word-group"><div class="project-read-word-item">song</div><div class="project-read-word-item">long</div><div class="project-read-word-item">rang</div><div class="project-read-word-item">bang</div><div class="project-read-word-item">gang</div></div><div class="project-read-word-group"><div class="project-read-word-item">bank</div><div class="project-read-word-item">pink</div><div class="project-read-word-item">rink</div><div class="project-read-word-item">sink</div><div class="project-read-word-item">rank</div></div><div class="project-read-word-group"><div class="project-read-word-item">long</div><div class="project-read-word-item">song</div><div class="project-read-word-item">king</div><div class="project-read-word-item">wing</div></div><div class="project-read-word-group"><div class="project-read-word-item">honk</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">sing</span><span class="project-read-word-item">song</span><span class="project-read-word-item">bank</span><span class="project-read-word-item">long</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">ring</span><span class="project-read-word-item">long</span><span class="project-read-word-item">pink</span><span class="project-read-word-item">song</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">honk</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">yank</span><span class="project-read-word-item">rang</span><span class="project-read-word-item">rink</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">bank</span><span class="project-read-word-item">bang</span><span class="project-read-word-item">sink</span><span class="project-read-word-item">king</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">tank</span><span class="project-read-word-item">gang</span><span class="project-read-word-item">rank</span><span class="project-read-word-item">wing</span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:  was, of, the, have, to, said</div>
-<div class="project-read-source-line">Introduce:  what</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  was, of, the, have, to, said</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  what</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -2722,8 +2779,8 @@ window.TUTORING_CONTENT = {
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
     <div class="project-read-source-lines"><div class="project-read-source-line">A digraph is a consonant sound which cannot be represented by any single letter in our alphabet.</div>
-<div class="project-read-source-line">1. Review ă, ĭ, ŏ and consonants</div>
-<div class="project-read-source-line">Introduce digraphs through use of H brothers story.</div>
+<div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ and consonants</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce</strong> digraphs through use of H brothers story.</div>
 <div class="project-read-cue">A. ch brother – Thinks he’s a train and says /ch/.</div>
 <div class="project-read-cue">B. wh brother – Tries to learn to whistle but only blows out air saying /wh/.</div>
 <div class="project-read-cue">C. th brother – The naughty brother who sticks out his tongue as he says /th/.</div>
@@ -2732,16 +2789,26 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:7" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">chill</div><div class="project-read-word-item">chip</div><div class="project-read-word-item">chap</div><div class="project-read-word-item">chin</div><div class="project-read-word-item">chat</div><div class="project-read-word-item">inch</div><div class="project-read-word-item">pinch</div><div class="project-read-word-item">rich</div></div><div class="project-read-word-group"><div class="project-read-word-item">that</div></div><div class="project-read-word-group"><div class="project-read-word-item">thin</div><div class="project-read-word-item">thick</div><div class="project-read-word-item">think</div><div class="project-read-word-item">thing</div><div class="project-read-word-item">thank</div><div class="project-read-word-item">than</div><div class="project-read-word-item">this</div></div><div class="project-read-word-group"><div class="project-read-word-item">lash</div><div class="project-read-word-item">with</div><div class="project-read-word-item">bath</div><div class="project-read-word-item">math</div></div><div class="project-read-word-group"><div class="project-read-word-item">ship</div><div class="project-read-word-item">shot</div><div class="project-read-word-item">shop</div><div class="project-read-word-item">wish</div><div class="project-read-word-item">fish</div><div class="project-read-word-item">cash</div><div class="project-read-word-item">dish</div></div><div class="project-read-word-group"><div class="project-read-word-item">dash</div><div class="project-read-word-item">shock</div><div class="project-read-word-item">shall</div></div><div class="project-read-word-group"><div class="project-read-word-item">whip</div><div class="project-read-word-item">whiff</div><div class="project-read-word-item">which</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">chill</span><span class="project-read-word-item">thin</span><span class="project-read-word-item">ship</span><span class="project-read-word-item">whip</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">chip</span><span class="project-read-word-item">thick</span><span class="project-read-word-item">shot</span><span class="project-read-word-item">whiff</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">chap</span><span class="project-read-word-item">think</span><span class="project-read-word-item">shop</span><span class="project-read-word-item">which</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">chin</span><span class="project-read-word-item">thing</span><span class="project-read-word-item">wish</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">chat</span><span class="project-read-word-item">thank</span><span class="project-read-word-item">fish</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">inch</span><span class="project-read-word-item">than</span><span class="project-read-word-item">cash</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">pinch</span><span class="project-read-word-item">that</span><span class="project-read-word-item">lash</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">rich</span><span class="project-read-word-item">this</span><span class="project-read-word-item">dish</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">with</span><span class="project-read-word-item">dash</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">bath</span><span class="project-read-word-item">shock</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">math</span><span class="project-read-word-item">shall</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:  what, you, was, of, the, have, to, said</div>
-<div class="project-read-source-line">Introduce:  are, put</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  what, you, was, of, the, have, to, said</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  are, put</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -2767,24 +2834,31 @@ window.TUTORING_CONTENT = {
       skill: "short ĕ",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ</div>
-<div class="project-read-source-line">2. Introduce:  ĕ</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ</div>
+<div class="project-read-source-line">2. <strong class="project-read-inline-label">Introduce:</strong>  ĕ</div>
 <div class="project-read-source-line">Key word: Mr.  Ed.</div>
 <div class="project-read-source-line">Pull the corners of mouth with two forefingers like the rein of a bridle on a horse.</div></div>
   </section>
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:6" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">get</div><div class="project-read-word-item">yet</div><div class="project-read-word-item">wet</div><div class="project-read-word-item">let</div><div class="project-read-word-item">pet</div><div class="project-read-word-item">men</div><div class="project-read-word-item">hen</div><div class="project-read-word-item">ten</div></div><div class="project-read-word-group"><div class="project-read-word-item">red</div><div class="project-read-word-item">led</div><div class="project-read-word-item">fed</div><div class="project-read-word-item">bed</div><div class="project-read-word-item">beg</div><div class="project-read-word-item">yes</div><div class="project-read-word-item">web</div></div><div class="project-read-word-group"><div class="project-read-word-item">well</div><div class="project-read-word-item">yell</div></div><div class="project-read-word-group"><div class="project-read-word-item">shell</div><div class="project-read-word-item">bell</div><div class="project-read-word-item">fell</div></div><div class="project-read-word-group"><div class="project-read-word-item">chess</div><div class="project-read-word-item">mess</div><div class="project-read-word-item">less</div></div><div class="project-read-word-group"><div class="project-read-word-item">them</div><div class="project-read-word-item">then</div><div class="project-read-word-item">when</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:5" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">get</span><span class="project-read-word-item">red</span><span class="project-read-word-item">shell</span><span class="project-read-word-item">chess</span><span class="project-read-word-item">them</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">yet</span><span class="project-read-word-item">led</span><span class="project-read-word-item">bell</span><span class="project-read-word-item">mess</span><span class="project-read-word-item">then</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">wet</span><span class="project-read-word-item">fed</span><span class="project-read-word-item">fell</span><span class="project-read-word-item">less</span><span class="project-read-word-item">when</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">let</span><span class="project-read-word-item">bed</span><span class="project-read-word-item">well</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">pet</span><span class="project-read-word-item">beg</span><span class="project-read-word-item">yell</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">men</span><span class="project-read-word-item">yes</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">hen</span><span class="project-read-word-item">web</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">ten</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:  put, are, what, you, was, of, the, have, to, said</div>
-<div class="project-read-source-line">Introduce:  should, could, would</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  put, are, what, you, was, of, the, have, to, said</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  should, could, would</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -2810,8 +2884,8 @@ window.TUTORING_CONTENT = {
       skill: "A blend is a consonant combination representing two combined consonant sounds.",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ, ĕ  and consonants</div>
-<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>blends</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ, ĕ  and consonants</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>blends</div>
 <div class="project-read-source-line">Teach in groups:</div>
 <div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
     <div class="project-read-teaching-group"><div class="project-read-teaching-chip">bl</div><div class="project-read-teaching-chip">pl</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">gl</div><div class="project-read-teaching-chip">fl</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">cl</div><div class="project-read-teaching-chip">sl</div></div>
@@ -2820,16 +2894,25 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:6" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">black</div><div class="project-read-word-item">block</div><div class="project-read-word-item">bless</div><div class="project-read-word-item">bled</div><div class="project-read-word-item">sled</div><div class="project-read-word-item">slack</div><div class="project-read-word-item">slab</div><div class="project-read-word-item">slip</div><div class="project-read-word-item">slim</div></div><div class="project-read-word-group"><div class="project-read-word-item">flag</div><div class="project-read-word-item">flat</div><div class="project-read-word-item">flock</div></div><div class="project-read-word-group"><div class="project-read-word-item">flap</div><div class="project-read-word-item">fled</div><div class="project-read-word-item">glad</div><div class="project-read-word-item">glass</div><div class="project-read-word-item">glob</div></div><div class="project-read-word-group"><div class="project-read-word-item">plan</div><div class="project-read-word-item">plot</div><div class="project-read-word-item">flash</div></div><div class="project-read-word-group"><div class="project-read-word-item">class</div><div class="project-read-word-item">click</div><div class="project-read-word-item">clock</div><div class="project-read-word-item">clam</div></div><div class="project-read-word-group"><div class="project-read-word-item">clip</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">black</span><span class="project-read-word-item">flag</span><span class="project-read-word-item">plan</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">block</span><span class="project-read-word-item">flat</span><span class="project-read-word-item">plot</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">bless</span><span class="project-read-word-item">flock</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">bled</span><span class="project-read-word-item">flap</span><span class="project-read-word-item">class</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">flash</span><span class="project-read-word-item">clip</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">sled</span><span class="project-read-word-item">fled</span><span class="project-read-word-item">click</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">slack</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">clock</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">slab</span><span class="project-read-word-item">glad</span><span class="project-read-word-item">clam</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">slip</span><span class="project-read-word-item">glass</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">slim</span><span class="project-read-word-item">glob</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:  could, should, would</div>
-<div class="project-read-source-line">Introduce:  they</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  could, should, would</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  they</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -2852,8 +2935,8 @@ window.TUTORING_CONTENT = {
       skill: "Initial blends.",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review a, i, o, e</div>
-<div class="project-read-source-line">Introduce blends:</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> a, i, o, e</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce</strong> blends:</div>
 <div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
     <div class="project-read-teaching-group"><div class="project-read-teaching-chip">br</div><div class="project-read-teaching-chip">shr</div><div class="project-read-teaching-chip">cr</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">pr</div><div class="project-read-teaching-chip">tr</div><div class="project-read-teaching-chip">dr</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">fr</div><div class="project-read-teaching-chip">thr</div><div class="project-read-teaching-chip">gr</div></div>
   </div></div>
@@ -2861,16 +2944,33 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:5" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">bring</div><div class="project-read-word-item">brag</div><div class="project-read-word-item">brick</div><div class="project-read-word-item">brisk</div><div class="project-read-word-item">bran</div><div class="project-read-word-item">brim</div><div class="project-read-word-item">crack</div><div class="project-read-word-item">crab</div><div class="project-read-word-item">crop</div><div class="project-read-word-item">cross</div><div class="project-read-word-item">crash</div><div class="project-read-word-item">prod</div><div class="project-read-word-item">prim</div><div class="project-read-word-item">prop</div><div class="project-read-word-item">press</div></div><div class="project-read-word-group"><div class="project-read-word-item">fresh</div><div class="project-read-word-item">frog</div><div class="project-read-word-item">frock</div><div class="project-read-word-item">frisk</div><div class="project-read-word-item">frill</div><div class="project-read-word-item">fret</div><div class="project-read-word-item">dress</div><div class="project-read-word-item">drink</div><div class="project-read-word-item">drill</div><div class="project-read-word-item">drip</div><div class="project-read-word-item">drag</div><div class="project-read-word-item">shrill</div><div class="project-read-word-item">shrank</div><div class="project-read-word-item">shrink</div></div><div class="project-read-word-group"><div class="project-read-word-item">trip</div><div class="project-read-word-item">track</div><div class="project-read-word-item">trash</div><div class="project-read-word-item">trick</div><div class="project-read-word-item">trim</div><div class="project-read-word-item">trod</div><div class="project-read-word-item">grass</div><div class="project-read-word-item">grab</div><div class="project-read-word-item">trill</div><div class="project-read-word-item">grip</div><div class="project-read-word-item">grin</div></div><div class="project-read-word-group"><div class="project-read-word-item">trot</div><div class="project-read-word-item">thrill</div></div><div class="project-read-word-group"><div class="project-read-word-item">trap</div><div class="project-read-word-item">grit</div><div class="project-read-word-item">throb</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:3" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">bring</span><span class="project-read-word-item">fresh</span><span class="project-read-word-item">trip</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">brag</span><span class="project-read-word-item">frog</span><span class="project-read-word-item">track</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">brick</span><span class="project-read-word-item">frock</span><span class="project-read-word-item">trash</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">brisk</span><span class="project-read-word-item">frisk</span><span class="project-read-word-item">trick</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">bran</span><span class="project-read-word-item">frill</span><span class="project-read-word-item">trim</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">brim</span><span class="project-read-word-item">fret</span><span class="project-read-word-item">trot</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">trap</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">crack</span><span class="project-read-word-item">dress</span><span class="project-read-word-item">trod</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">crab</span><span class="project-read-word-item">drink</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">crop</span><span class="project-read-word-item">drill</span><span class="project-read-word-item">grass</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">cross</span><span class="project-read-word-item">drip</span><span class="project-read-word-item">grab</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">crash</span><span class="project-read-word-item">drag</span><span class="project-read-word-item">trill</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">grit</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">prod</span><span class="project-read-word-item">shrill</span><span class="project-read-word-item">grip</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">prim</span><span class="project-read-word-item">shrank</span><span class="project-read-word-item">grin</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">prop</span><span class="project-read-word-item">shrink</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">press</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">thrill</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">throb</span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:  could, should, would, they</div>
-<div class="project-read-source-line">Introduce:  your</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  could, should, would, they</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  your</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -2892,8 +2992,8 @@ window.TUTORING_CONTENT = {
       skill: "A blend is a consonant combination representing two combined consonant sounds.",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1. Review ă, ĭ, ŏ, ĕ  and consonants</div>
-<div class="project-read-source-line">Introduce:<span class="project-read-tab-gap" aria-hidden="true"></span>blends</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1. <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ, ĕ  and consonants</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong><span class="project-read-tab-gap" aria-hidden="true"></span>blends</div>
 <div class="project-read-source-line">Teach in groups:</div>
 <div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
     <div class="project-read-teaching-group"><div class="project-read-teaching-chip">sc</div><div class="project-read-teaching-chip">dw</div><div class="project-read-teaching-chip">sk</div><div class="project-read-teaching-chip">tw</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">sp</div><div class="project-read-teaching-chip">sm</div><div class="project-read-teaching-chip">sn</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">squ</div><div class="project-read-teaching-chip">sw</div><div class="project-read-teaching-chip">st</div></div>
@@ -2902,15 +3002,24 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:8" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">scat</div><div class="project-read-word-item">stop</div><div class="project-read-word-item">still</div><div class="project-read-word-item">stiff</div><div class="project-read-word-item">step</div><div class="project-read-word-item">stern</div><div class="project-read-word-item">stick</div><div class="project-read-word-item">stack</div><div class="project-read-word-item">stab</div></div><div class="project-read-word-group"><div class="project-read-word-item">skip</div><div class="project-read-word-item">skim</div><div class="project-read-word-item">skin</div><div class="project-read-word-item">snack</div><div class="project-read-word-item">snip</div><div class="project-read-word-item">snag</div><div class="project-read-word-item">sniff</div><div class="project-read-word-item">snap</div></div><div class="project-read-word-group"><div class="project-read-word-item">skill</div></div><div class="project-read-word-group"><div class="project-read-word-item">spill</div><div class="project-read-word-item">spot</div><div class="project-read-word-item">spell</div><div class="project-read-word-item">swell</div><div class="project-read-word-item">swim</div><div class="project-read-word-item">swing</div><div class="project-read-word-item">dwell</div></div><div class="project-read-word-group"><div class="project-read-word-item">spin</div></div><div class="project-read-word-group"><div class="project-read-word-item">smash</div><div class="project-read-word-item">smack</div><div class="project-read-word-item">twig</div><div class="project-read-word-item">twill</div><div class="project-read-word-item">twit</div></div><div class="project-read-word-group"><div class="project-read-word-item">smell</div></div><div class="project-read-word-group"><div class="project-read-word-item">twin</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">scat</span><span class="project-read-word-item">skip</span><span class="project-read-word-item">spill</span><span class="project-read-word-item">smash</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">skill</span><span class="project-read-word-item">spin</span><span class="project-read-word-item">smell</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">stop</span><span class="project-read-word-item">skim</span><span class="project-read-word-item">spot</span><span class="project-read-word-item">smack</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">still</span><span class="project-read-word-item">skin</span><span class="project-read-word-item">spell</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">stiff</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-item">twin</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">step</span><span class="project-read-word-item">snack</span><span class="project-read-word-item">swell</span><span class="project-read-word-item">twig</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">stern</span><span class="project-read-word-item">snip</span><span class="project-read-word-item">swim</span><span class="project-read-word-item">twill</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">stick</span><span class="project-read-word-item">snag</span><span class="project-read-word-item">swing</span><span class="project-read-word-item">twit</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">stack</span><span class="project-read-word-item">sniff</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">stab</span><span class="project-read-word-item">snap</span><span class="project-read-word-item">dwell</span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:  they,  your</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  they,  your</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
@@ -2934,7 +3043,7 @@ window.TUTORING_CONTENT = {
       skill: "Vowels have significant value.",
       bodyHtml: `<div class="project-read-sheet">
     <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-source-lines"><div class="project-read-source-line">1.  Review ă, ĭ, ŏ, ĕ  consonants , digraphs, initial blends.</div>
+    <div class="project-read-source-lines"><div class="project-read-source-line">1.  <strong class="project-read-inline-label">Review</strong> ă, ĭ, ŏ, ĕ  consonants , digraphs, initial blends.</div>
 <div class="project-read-source-line">2.  Technique for introducing /ŭ/</div>
 <div class="project-read-source-line">A. Key word:  up</div>
 <div class="project-read-source-line">B. Use the motion of opening an umbrella.</div></div>
@@ -2942,16 +3051,21 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-word-list">
     <h3>WORD LIST</h3>
     <div class="project-read-word-scroll">
-      <div class="project-read-word-groups" style="--pr-word-group-count:8" aria-label="WORD LIST">
-        <div class="project-read-word-group"><div class="project-read-word-item">up</div><div class="project-read-word-item">but</div><div class="project-read-word-item">bus</div><div class="project-read-word-item">truck</div><div class="project-read-word-item">much</div><div class="project-read-word-item">crush</div></div><div class="project-read-word-group"><div class="project-read-word-item">brush</div><div class="project-read-word-item">run</div><div class="project-read-word-item">fun</div><div class="project-read-word-item">bunk</div></div><div class="project-read-word-group"><div class="project-read-word-item">dull</div><div class="project-read-word-item">puff</div></div><div class="project-read-word-group"><div class="project-read-word-item">shrub</div><div class="project-read-word-item">blush</div><div class="project-read-word-item">skull</div></div><div class="project-read-word-group"><div class="project-read-word-item">us</div><div class="project-read-word-item">such</div></div><div class="project-read-word-group"><div class="project-read-word-item">chunk</div><div class="project-read-word-item">flung</div><div class="project-read-word-item">pluck</div></div><div class="project-read-word-group"><div class="project-read-word-item">stung</div></div><div class="project-read-word-group"><div class="project-read-word-item">swung</div></div>
+      <div class="project-read-word-table" style="--pr-word-cols:4" aria-label="WORD LIST">
+        <div class="project-read-word-row"><span class="project-read-word-item">up</span><span class="project-read-word-item">dull</span><span class="project-read-word-item">us</span><span class="project-read-word-item">swung</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">but</span><span class="project-read-word-item">puff</span><span class="project-read-word-item">such</span><span class="project-read-word-item">stung</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">bus</span><span class="project-read-word-item">brush</span><span class="project-read-word-item">shrub</span><span class="project-read-word-item">chunk</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">truck</span><span class="project-read-word-item">run</span><span class="project-read-word-item">blush</span><span class="project-read-word-item">flung</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">much</span><span class="project-read-word-item">fun</span><span class="project-read-word-item">skull</span><span class="project-read-word-item">pluck</span></div>
+        <div class="project-read-word-row"><span class="project-read-word-item">crush</span><span class="project-read-word-item">bunk</span><span class="project-read-word-empty" aria-hidden="true"></span><span class="project-read-word-empty" aria-hidden="true"></span></div>
       </div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
     <h3>RED WORDS</h3>
     <div class="project-read-source-lines">
-      <div class="project-read-source-line">Review:  they,  your</div>
-<div class="project-read-source-line">Introduce:  Mr.  Mrs.</div>
+      <div class="project-read-source-line"><strong class="project-read-inline-label">Review:</strong>  they,  your</div>
+<div class="project-read-source-line"><strong class="project-read-inline-label">Introduce:</strong>  Mr.  Mrs.</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-sentences">
