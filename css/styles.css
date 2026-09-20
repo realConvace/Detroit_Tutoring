@@ -1454,3 +1454,14 @@ select {
     font-size: 1.12rem;
   }
 }
+
+
+/* Fast Start hero title/subtitle */
+.lesson-hero.fast-start .fast-start-hero-subheader {
+  margin: 12px 0 0;
+  max-width: none;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: rgba(255,255,255,.95);
+}
