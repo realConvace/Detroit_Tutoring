@@ -2553,3 +2553,21 @@ select {
     margin-bottom: 30px;
   }
 }
+
+
+/* Reserve enough title space for long/two-line Fast Start poem titles */
+.poem-book-frame {
+  padding-top: 128px;
+}
+
+@media (max-width: 900px) {
+  .poem-book-frame {
+    padding-top: 118px;
+  }
+}
+
+@media (max-width: 560px) {
+  .poem-book-frame {
+    padding-top: 104px;
+  }
+}
