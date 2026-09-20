@@ -1325,3 +1325,132 @@ select {
     font-size: 1.06rem;
   }
 }
+
+
+/* Scrollable Fast Start activity panel matched to poem height */
+.fast-start-activities {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+  padding: 12px 12px 12px 10px;
+  border: 1px solid #cfdede;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .72);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.85);
+  outline: none;
+}
+
+.fast-start-activities:focus-visible {
+  box-shadow: 0 0 0 3px rgba(31, 111, 120, .18), inset 0 1px 0 rgba(255,255,255,.85);
+  border-color: #91bfc3;
+}
+
+.fast-start-activities::-webkit-scrollbar {
+  width: 14px;
+}
+
+.fast-start-activities::-webkit-scrollbar-track {
+  background: #edf4f4;
+  border-radius: 999px;
+  margin: 10px 0;
+}
+
+.fast-start-activities::-webkit-scrollbar-thumb {
+  background: #8db4b8;
+  border: 3px solid #edf4f4;
+  border-radius: 999px;
+}
+
+.fast-start-activities::-webkit-scrollbar-thumb:hover {
+  background: #67979c;
+}
+
+.fast-start-activities {
+  scrollbar-color: #8db4b8 #edf4f4;
+  scrollbar-width: auto;
+}
+
+/* Larger tutor-side reading text */
+.fast-start-activities .curriculum-section {
+  padding: 20px 22px;
+}
+
+.fast-start-activities .curriculum-section h2 {
+  font-size: clamp(1.3rem, 1.38vw, 1.55rem);
+  line-height: 1.24;
+}
+
+.fast-start-activities .curriculum-section .section-index {
+  width: 34px;
+  height: 34px;
+  font-size: .95rem;
+}
+
+.fast-start-activities .source-content,
+.fast-start-activities .curriculum-placeholder {
+  font-size: clamp(1.12rem, 1.16vw, 1.28rem);
+  line-height: 1.64;
+}
+
+.fast-start-activities .instruction-list {
+  padding-left: 1.6rem;
+}
+
+.fast-start-activities .instruction-list > li {
+  margin-bottom: 1.12rem;
+}
+
+.fast-start-activities .example-row {
+  font-size: 1.04em;
+  gap: 10px;
+}
+
+.fast-start-activities .sound-lines {
+  font-size: 1em;
+  line-height: 1.72;
+}
+
+.fast-start-activities .word-sort-grid > div {
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 10px 12px;
+}
+
+@media (max-width: 1180px) and (min-width: 901px) {
+  .fast-start-activities .curriculum-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .fast-start-activities .source-content,
+  .fast-start-activities .curriculum-placeholder {
+    font-size: 1.08rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .fast-start-activities {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    scrollbar-width: auto;
+  }
+
+  .fast-start-activities .curriculum-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .fast-start-activities .source-content,
+  .fast-start-activities .curriculum-placeholder {
+    font-size: 1.12rem;
+  }
+}
