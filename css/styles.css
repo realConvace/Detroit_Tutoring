@@ -1465,3 +1465,42 @@ select {
   line-height: 1.2;
   color: rgba(255,255,255,.95);
 }
+
+
+/* Fast Start finish button in hero */
+.lesson-hero.fast-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.fast-start-hero-copy {
+  min-width: 0;
+}
+
+.fast-start-finish-button {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  padding: 12px 18px;
+  border: 1px solid rgba(255,255,255,.32);
+  background: #e8f5ec;
+  color: #17683d;
+  box-shadow: 0 8px 20px rgba(80, 54, 24, .15);
+  white-space: nowrap;
+}
+
+.fast-start-finish-button:hover {
+  background: #dff0e5;
+}
+
+@media (max-width: 720px) {
+  .lesson-hero.fast-start {
+    flex-direction: column;
+  }
+
+  .fast-start-finish-button {
+    align-self: stretch;
+    width: 100%;
+  }
+}
