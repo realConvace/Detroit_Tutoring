@@ -97,20 +97,20 @@
     <section class="home-grid" aria-label="Tutoring routine">
       <article class="card">
         <div class="icon-chip">1</div>
-        <h2>IRL Book</h2>
-        <p>Read a physical book together for about 5 minutes. There is no website timer.</p>
+        <h2>Book Reading</h2>
+        <p>Spend the first five minutes reading a children's book to students.</p>
       </article>
 
       <article class="card">
         <div class="icon-chip orange">2</div>
-        <h2>Fast Start</h2>
-        <p>Complete one numbered Fast Start lesson: the poem followed by its three activity sections.</p>
+        <h2>Fast Start for Early Readers</h2>
+        <p>Let students read a poem and complete the subsequent three activities.</p>
       </article>
 
       <article class="card">
         <div class="icon-chip purple">3</div>
         <h2>Project Read</h2>
-        <p>Finish the session with the Project Read lesson selected for the student.</p>
+        <p>Engage students with a unit lesson to develop new skills.</p>
       </article>
     </section>
   `;
