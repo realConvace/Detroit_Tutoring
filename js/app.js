@@ -218,6 +218,7 @@
       part: "Part 1",
       title: "Reading Letters",
       prompt: "Ask the student to say the letter.",
+      previousHref: "#assessment",
       nextHref: "#assessment/sounds",
       nextLabel: "Next Part: Letter Sounds →"
     },
@@ -225,6 +226,7 @@
       part: "Part 2",
       title: "Letter Sounds",
       prompt: "Ask the student to say the sound this letter makes.",
+      previousHref: "#assessment/letters",
       nextHref: "#assessment/words",
       nextLabel: "Next Part: Reading Words →"
     },
@@ -232,6 +234,7 @@
       part: "Part 3",
       title: "Reading Words",
       prompt: "Ask the student to say the word.",
+      previousHref: "#assessment/sounds",
       nextHref: "#assessment/poem-1",
       nextLabel: "Next Part: Read Poem 1 →"
     }
@@ -319,7 +322,7 @@
         </div>
 
         <div class="button-row assessment-part-navigation">
-          <a class="btn btn-muted" href="#assessment">← Assessment Home</a>
+          <a class="btn btn-muted" href="${meta.previousHref}">← Previous Section</a>
           <a class="btn btn-primary" href="${meta.nextHref}">${meta.nextLabel}</a>
         </div>
       </section>
