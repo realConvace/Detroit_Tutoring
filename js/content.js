@@ -3032,7 +3032,10 @@ window.TUTORING_CONTENT = {
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
-        <div class="project-read-inline-lead">ss, ll, ff, zz</div>
+        <div class="project-read-inline-lead">-ss, -ll, -ff, -zz</div>
+      </div>
+      <div class="project-read-combination-grid" style="--pr-combination-cols:4">
+        <div class="project-read-combination-chip">-ss</div><div class="project-read-combination-chip">-ll</div><div class="project-read-combination-chip">-ff</div><div class="project-read-combination-chip">-zz</div>
       </div>
       
       <div class="project-read-introduce-details">
@@ -3136,7 +3139,10 @@ window.TUTORING_CONTENT = {
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
-        <div class="project-read-inline-lead">/-ng/, /-nk/</div>
+        <div class="project-read-inline-lead">-ng, -nk</div>
+      </div>
+      <div class="project-read-combination-grid" style="--pr-combination-cols:2">
+        <div class="project-read-combination-chip">-ng</div><div class="project-read-combination-chip">-nk</div>
       </div>
       
       <div class="project-read-introduce-details">
@@ -3236,6 +3242,9 @@ window.TUTORING_CONTENT = {
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
         <div class="project-read-inline-lead">ch, wh, th, sh</div>
+      </div>
+      <div class="project-read-combination-grid" style="--pr-combination-cols:4">
+        <div class="project-read-combination-chip">ch</div><div class="project-read-combination-chip">wh</div><div class="project-read-combination-chip">th</div><div class="project-read-combination-chip">sh</div>
       </div>
       <div class="project-read-intro-note">Introduce digraphs through use of H brothers story.</div>
       <div class="project-read-introduce-details">
@@ -3465,13 +3474,13 @@ window.TUTORING_CONTENT = {
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
-        <div class="project-read-inline-lead">bl, gl, cl, pl, fl, sl</div>
+        <div class="project-read-inline-lead">bl-, gl-, cl-, pl-, fl-, sl-</div>
       </div>
       
       
       <div class="project-read-introduce-details">
         <div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
-          <div class="project-read-teaching-group"><div class="project-read-teaching-chip">bl</div><div class="project-read-teaching-chip">pl</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">gl</div><div class="project-read-teaching-chip">fl</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">cl</div><div class="project-read-teaching-chip">sl</div></div>
+          <div class="project-read-teaching-group"><div class="project-read-teaching-chip">bl-</div><div class="project-read-teaching-chip">pl-</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">gl-</div><div class="project-read-teaching-chip">fl-</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">cl-</div><div class="project-read-teaching-chip">sl-</div></div>
         </div>
       </div>
     </div>
@@ -3565,13 +3574,13 @@ window.TUTORING_CONTENT = {
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
-        <div class="project-read-inline-lead">br, pr, fr, shr, tr, thr, cr, dr, gr</div>
+        <div class="project-read-inline-lead">br-, pr-, fr-, shr-, tr-, thr-, cr-, dr-, gr-</div>
       </div>
       
       
       <div class="project-read-introduce-details">
         <div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
-          <div class="project-read-teaching-group"><div class="project-read-teaching-chip">br</div><div class="project-read-teaching-chip">shr</div><div class="project-read-teaching-chip">cr</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">pr</div><div class="project-read-teaching-chip">tr</div><div class="project-read-teaching-chip">dr</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">fr</div><div class="project-read-teaching-chip">thr</div><div class="project-read-teaching-chip">gr</div></div>
+          <div class="project-read-teaching-group"><div class="project-read-teaching-chip">br-</div><div class="project-read-teaching-chip">shr-</div><div class="project-read-teaching-chip">cr-</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">pr-</div><div class="project-read-teaching-chip">tr-</div><div class="project-read-teaching-chip">dr-</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">fr-</div><div class="project-read-teaching-chip">thr-</div><div class="project-read-teaching-chip">gr-</div></div>
         </div>
       </div>
     </div>
@@ -3688,13 +3697,13 @@ window.TUTORING_CONTENT = {
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
-        <div class="project-read-inline-lead">sc, sp, squ, dw, sm, sw, sk, sn, st, tw</div>
+        <div class="project-read-inline-lead">sc-, sp-, squ-, dw-, sm-, sw-, sk-, sn-, st-, tw-</div>
       </div>
       
       
       <div class="project-read-introduce-details">
         <div class="project-read-teaching-groups" style="--pr-teaching-group-count:3">
-          <div class="project-read-teaching-group"><div class="project-read-teaching-chip">sc</div><div class="project-read-teaching-chip">dw</div><div class="project-read-teaching-chip">sk</div><div class="project-read-teaching-chip">tw</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">sp</div><div class="project-read-teaching-chip">sm</div><div class="project-read-teaching-chip">sn</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">squ</div><div class="project-read-teaching-chip">sw</div><div class="project-read-teaching-chip">st</div></div>
+          <div class="project-read-teaching-group"><div class="project-read-teaching-chip">sc-</div><div class="project-read-teaching-chip">dw-</div><div class="project-read-teaching-chip">sk-</div><div class="project-read-teaching-chip">tw-</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">sp-</div><div class="project-read-teaching-chip">sm-</div><div class="project-read-teaching-chip">sn-</div></div><div class="project-read-teaching-group"><div class="project-read-teaching-chip">squ-</div><div class="project-read-teaching-chip">sw-</div><div class="project-read-teaching-chip">st-</div></div>
         </div>
       </div>
     </div>
