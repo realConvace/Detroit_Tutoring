@@ -4059,3 +4059,15 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Follow-up lines under inline Review/Introduce headers stay fully left aligned */
+.project-read-teaching-subsection--inline-followup > .project-read-teaching-value {
+  margin-left: 0 !important;
+}
+
+@media (max-width: 700px) {
+  .project-read-teaching-subsection--inline-followup > .project-read-teaching-value {
+    margin-left: 0 !important;
+  }
+}
