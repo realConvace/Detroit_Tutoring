@@ -4291,6 +4291,7 @@ select {
 /* Unit 15A: two-column syllabication steps table */
 .project-read-syllabication-section {
   overflow: hidden;
+  padding: 0 !important;
 }
 
 .project-read-syllabication-table-wrap {
