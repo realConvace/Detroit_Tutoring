@@ -4071,3 +4071,31 @@ select {
     margin-left: 0 !important;
   }
 }
+
+
+/* Normalize inline Review/Introduce typography across all Project Read units */
+.project-read-teaching-subsection .project-read-subsection-heading {
+  font-size: clamp(1.62rem, 1.9vw, 1.9rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.08 !important;
+}
+
+.project-read-heading-row--inline .project-read-inline-lead {
+  margin-left: 0 !important;
+  color: #173946;
+  font-family: inherit !important;
+  font-size: clamp(1.34rem, 1.55vw, 1.55rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+  letter-spacing: .015em !important;
+}
+
+@media (max-width: 700px) {
+  .project-read-teaching-subsection .project-read-subsection-heading {
+    font-size: 1.5rem !important;
+  }
+
+  .project-read-heading-row--inline .project-read-inline-lead {
+    font-size: 1.3rem !important;
+  }
+}
