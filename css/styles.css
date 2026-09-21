@@ -3880,3 +3880,39 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Unit 21: align Introduce text sizing and keep Skill details together */
+.project-read-heading-row--inline {
+  align-items: baseline;
+}
+
+.project-read-inline-lead,
+.project-read-heading-row--inline + .project-read-teaching-value,
+.project-read-introduce-subsection .project-read-teaching-value {
+  font-size: clamp(1.4rem, 1.6vw, 1.62rem) !important;
+  line-height: 1.5;
+}
+
+.project-read-skill-subtext {
+  margin-top: 9px;
+  padding-top: 8px;
+  color: #173946;
+  font-size: clamp(1.18rem, 1.34vw, 1.36rem);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+@media (max-width: 700px) {
+  .project-read-inline-lead,
+  .project-read-heading-row--inline + .project-read-teaching-value,
+  .project-read-introduce-subsection .project-read-teaching-value {
+    font-size: 1.3rem !important;
+  }
+
+  .project-read-skill-subtext {
+    margin-top: 7px;
+    padding-top: 6px;
+    font-size: 1.15rem;
+  }
+}
