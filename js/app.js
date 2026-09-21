@@ -515,7 +515,7 @@
     String(word).toLowerCase().replace(/[^a-z]/g, "");
 
   // VCV word lists are practice sets, not word-family sorts.
-  const projectReadPlainLatticeLessons = new Set(["22B"]);
+  const projectReadPlainLatticeLessons = new Set(["22A", "22B"]);
 
   const projectReadSemanticRules = {
     "7": [
