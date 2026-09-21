@@ -4493,3 +4493,18 @@ select {
     font-size: 1.3rem;
   }
 }
+
+
+/* Unit 12: mouth-position instruction sits plainly before Introduce */
+.project-read-unit12-mouth-note {
+  margin: 10px 0 18px;
+  color: #173946;
+  font-size: clamp(1.34rem, 1.55vw, 1.55rem);
+  line-height: 1.55;
+}
+
+@media (max-width: 700px) {
+  .project-read-unit12-mouth-note {
+    font-size: 1.28rem;
+  }
+}
