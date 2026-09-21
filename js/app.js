@@ -386,6 +386,7 @@
               <div class="project-read-skill-box">
                 <div class="project-read-skill-label">${escapeHtml(detail.metaLabel || "Skill:")}</div>
                 <div class="project-read-skill-value">${escapeHtml(detail.skill)}</div>
+                ${detail.skillSubtext ? `<div class="project-read-skill-subtext">${escapeHtml(detail.skillSubtext)}</div>` : ""}
               </div>
             ` : ""}
 
