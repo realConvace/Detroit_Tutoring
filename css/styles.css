@@ -3560,3 +3560,120 @@ select {
     grid-template-columns: repeat(var(--pr-shuffle-cols), minmax(115px, 1fr)) !important;
   }
 }
+
+
+/* Project Read syllable-pattern visuals */
+.project-read-teaching-visual-rows {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.project-read-teaching-visual-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.project-read-teaching-visual-row:not(.project-read-teaching-visual-row--has-diagram) {
+  grid-template-columns: 1fr;
+}
+
+.project-read-teaching-visual-copy {
+  margin: 0 !important;
+}
+
+.project-read-teaching-visual-side {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.project-read-pattern-display {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: .18em;
+  padding: 10px 18px 4px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.45);
+  font-family: "Comic Sans MS", "Segoe Print", "Bradley Hand", cursive;
+  font-size: clamp(2.75rem, 5.4vw, 4.65rem);
+  line-height: .95;
+  letter-spacing: .02em;
+}
+
+.project-read-pattern-cell {
+  display: inline-grid;
+  grid-template-rows: auto 1.15em;
+  justify-items: center;
+  min-width: .72em;
+}
+
+.project-read-pattern-letter {
+  display: inline-block;
+  position: relative;
+  padding: 0 .02em .06em;
+}
+
+.project-read-pattern-letter--underline::after {
+  content: "";
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  bottom: -.02em;
+  height: .065em;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.project-read-pattern-label {
+  align-self: start;
+  min-height: 1em;
+  margin-top: .2em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .34em;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.project-read-pattern-slash {
+  align-self: center;
+  margin: 0 .04em .34em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .66em;
+  line-height: 1;
+}
+
+.project-read-teaching-after-text {
+  margin-top: 18px !important;
+}
+
+@media (max-width: 1000px) {
+  .project-read-teaching-visual-row {
+    grid-template-columns: minmax(0, .9fr) minmax(300px, 1.1fr);
+    gap: 18px;
+  }
+
+  .project-read-pattern-display {
+    font-size: clamp(2.4rem, 6vw, 4rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .project-read-teaching-visual-row,
+  .project-read-teaching-visual-row:not(.project-read-teaching-visual-row--has-diagram) {
+    grid-template-columns: 1fr;
+  }
+
+  .project-read-teaching-visual-side {
+    justify-content: flex-start;
+  }
+
+  .project-read-pattern-display {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: clamp(2.2rem, 11vw, 3.4rem);
+  }
+}
