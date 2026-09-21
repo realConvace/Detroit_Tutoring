@@ -3508,3 +3508,55 @@ select {
     padding-top: 5px;
   }
 }
+
+
+/* Project Read semantic word grouping + shuffled lattice */
+.project-read-word-table--family-layout {
+  align-items: start;
+}
+
+.project-read-word-column--misc {
+  position: relative;
+  padding-left: 18px;
+}
+
+.project-read-word-column--misc::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  bottom: 2px;
+  width: 2px;
+  border-radius: 999px;
+  background: rgba(80, 112, 145, .32);
+}
+
+.project-read-word-table--shuffled {
+  display: grid !important;
+  grid-template-columns: repeat(var(--pr-shuffle-cols), minmax(125px, 1fr)) !important;
+  gap: 12px !important;
+  align-items: stretch;
+}
+
+.project-read-word-table--shuffled .project-read-word-slot {
+  min-height: 58px;
+}
+
+.project-read-word-table--shuffled .project-read-word-item {
+  min-height: 58px;
+}
+
+.project-read-word-table--shuffled .project-read-word-column,
+.project-read-word-table--shuffled .project-read-word-family {
+  display: contents;
+}
+
+@media (max-width: 900px) {
+  .project-read-word-column--misc {
+    padding-left: 14px;
+  }
+
+  .project-read-word-table--shuffled {
+    grid-template-columns: repeat(var(--pr-shuffle-cols), minmax(115px, 1fr)) !important;
+  }
+}
