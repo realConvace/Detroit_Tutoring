@@ -2302,8 +2302,8 @@ window.TUTORING_CONTENT = {
 
   assessment: {
     letters: [
-      "m", "t", "a", "s", "i", "r", "d", "f", "o", "g", "l", "h", "u",
-      "c", "n", "b", "j", "k", "y", "e", "w", "p", "v", "qu", "x", "z"
+      "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
+      "n", "o", "p", "qu", "r", "s", "t", "u", "v", "w", "x", "y", "z"
     ],
     words: [
       "a", "and", "away", "big", "blue", "can", "come", "down", "find", "for"

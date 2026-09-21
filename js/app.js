@@ -29,8 +29,9 @@
   let state = loadState();
   let pendingCelebration = null;
 
-  const celebrationFireworkAudio = new Audio("assets/audio/Firework_twinkle.ogg");
+  const celebrationFireworkAudio = new Audio("assets/audio/Firework_twinkle.mp3");
   celebrationFireworkAudio.preload = "auto";
+  celebrationFireworkAudio.playsInline = true;
   celebrationFireworkAudio.volume = 0.7;
 
   const playCelebrationSound = () => {
@@ -395,7 +396,7 @@
         <div class="button-row assessment-part-navigation">
           <a class="btn btn-muted" href="${isSecond ? "#assessment/poem-1" : "#assessment/words"}">← Previous Part</a>
           ${isSecond
-            ? `<a class="btn btn-success assessment-complete-button" href="#assessment">Finish Assessment</a>`
+            ? `<button class="btn btn-success assessment-complete-button" type="button" data-action="finish-assessment">Finish Assessment</button>`
             : `<a class="btn btn-primary" href="#assessment/poem-2">Next Part: Read Poem Two →</a>`
           }
         </div>
@@ -1493,7 +1494,12 @@
       enhanceProjectReadWordLists();
     }
 
-    if (route === "session" && pendingCelebration) {
+    if (route === "session" && pendingCelebration && pendingCelebration !== "assessment") {
+      pendingCelebration = null;
+      requestAnimationFrame(launchCompletionCelebration);
+    }
+
+    if (route === "assessment" && !param && pendingCelebration === "assessment") {
       pendingCelebration = null;
       requestAnimationFrame(launchCompletionCelebration);
     }
@@ -1718,6 +1724,13 @@
       if (assessmentAnimationBusy) return;
       const deckKey = button.dataset.deck;
       animateAssessmentShuffle(() => resetAssessmentDeck(deckKey));
+      return;
+    }
+
+    if (action === "finish-assessment") {
+      playCelebrationSound();
+      pendingCelebration = "assessment";
+      location.hash = "assessment";
       return;
     }
 
