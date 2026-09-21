@@ -360,6 +360,8 @@
     const nextLesson =
       lessonIndex < content.projectRead.length - 1 ? content.projectRead[lessonIndex + 1] : null;
     const detail = content.projectReadDetails?.[lesson.id] || null;
+    const detailConcept = detail?.concept || (detail?.metaLabel === "Concept:" ? detail?.skill : "");
+    const showSkillBox = Boolean(detail?.skill) && detail?.metaLabel !== "Concept:";
 
     if (state.projectReadId !== lesson.id) {
       state.completed.projectRead = false;
@@ -380,13 +382,23 @@
       <div class="section-list project-read-section-list">
         ${detail
           ? `
-            <div class="project-read-skill-box">
-              <div class="project-read-skill-label">${escapeHtml(detail.metaLabel || "Skill:")}</div>
-              <div class="project-read-skill-value">${escapeHtml(detail.skill)}</div>
-            </div>
+            ${showSkillBox ? `
+              <div class="project-read-skill-box">
+                <div class="project-read-skill-label">${escapeHtml(detail.metaLabel || "Skill:")}</div>
+                <div class="project-read-skill-value">${escapeHtml(detail.skill)}</div>
+              </div>
+            ` : ""}
 
             <section class="curriculum-section project-read-main-content">
               <div class="source-content project-read-content">
+                ${detailConcept ? `
+                  <section class="project-read-source-block project-read-teaching project-read-concept-block">
+                    <div class="project-read-teaching-subsection project-read-concept-subsection">
+                      <div class="project-read-subsection-heading">Concept:</div>
+                      <div class="project-read-teaching-value">${escapeHtml(detailConcept)}</div>
+                    </div>
+                  </section>
+                ` : ""}
                 ${detail.bodyHtml}
               </div>
             </section>
