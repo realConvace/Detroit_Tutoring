@@ -4181,8 +4181,8 @@ select {
 
 .project-read-inline-diagram-copy {
   width: 100%;
-  font-size: clamp(1.35rem, 1.55vw, 1.56rem) !important;
-  line-height: 1.7 !important;
+  font-size: clamp(1.65rem, 1.9vw, 1.9rem) !important;
+  line-height: 1.6 !important;
 }
 
 .project-read-inline-pattern-wrap {
@@ -4217,7 +4217,7 @@ select {
 
 @media (max-width: 760px) {
   .project-read-inline-diagram-copy {
-    font-size: 1.25rem !important;
+    font-size: 1.42rem !important;
   }
 
   .project-read-inline-pattern-wrap {
@@ -4275,6 +4275,19 @@ select {
 }
 
 
+
+/* Unit 15A: enlarge all Technique instruction text without narrowing the rows */
+.project-read-teaching-subsection:has(.project-read-inline-diagram-copy) .project-read-cue {
+  font-size: clamp(1.65rem, 1.9vw, 1.9rem) !important;
+  line-height: 1.55 !important;
+}
+
+@media (max-width: 760px) {
+  .project-read-teaching-subsection:has(.project-read-inline-diagram-copy) .project-read-cue {
+    font-size: 1.42rem !important;
+  }
+}
+
 /* Unit 15A: two-column syllabication steps table */
 .project-read-syllabication-section {
   overflow: hidden;
@@ -4324,11 +4337,11 @@ select {
 }
 
 .project-read-syllabication-table th:first-child {
-  width: 58%;
+  width: 50%;
 }
 
 .project-read-syllabication-table th:last-child {
-  width: 42%;
+  width: 50%;
   text-align: center;
 }
 
