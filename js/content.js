@@ -3809,12 +3809,10 @@ window.TUTORING_CONTENT = {
         <div class="project-read-subsection-heading">Introduce:</div>
         <div class="project-read-inline-lead">ŭ</div>
       </div>
-      
+      <div class="project-read-unit14-umbrella-note">Use the motion of opening an umbrella.</div>
       <div class="project-read-introduce-details">
         <div class="project-read-cue">ŭ – u as in up</div>
-        <div class="project-read-cue">Use the motion of opening an umbrella.</div>
       </div>
-      
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
