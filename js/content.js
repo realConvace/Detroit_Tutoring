@@ -2832,7 +2832,7 @@ window.TUTORING_CONTENT = {
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
-        <div class="project-read-inline-lead">qu, /kw/, y, z, x, /ks/</div>
+        <div class="project-read-inline-lead">qu, y, z, x</div>
       </div>
       
       <div class="project-read-introduce-details">
