@@ -4202,13 +4202,15 @@ select {
 }
 
 .project-read-inline-pattern-wrap .project-read-pattern-cell {
-  grid-template-rows: auto .9em;
-  min-width: .62em;
+  grid-template-rows: auto 1.32em;
+  row-gap: .08em;
+  min-width: .66em;
 }
 
 .project-read-inline-pattern-wrap .project-read-pattern-label {
-  margin-top: .08em;
-  font-size: .32em;
+  margin-top: .12em;
+  font-size: .42em;
+  line-height: 1;
 }
 
 .project-read-inline-pattern-wrap .project-read-pattern-letter--underline::after {
@@ -4349,7 +4351,7 @@ select {
 .project-read-syllabication-step {
   padding: 18px 20px;
   color: #173946;
-  font-size: clamp(1.22rem, 1.42vw, 1.42rem);
+  font-size: clamp(1.42rem, 1.65vw, 1.68rem);
   line-height: 1.5;
   vertical-align: middle;
 }
@@ -4369,13 +4371,15 @@ select {
 }
 
 .project-read-syllabication-example .project-read-pattern-cell {
-  grid-template-rows: auto .95em;
-  min-width: .68em;
+  grid-template-rows: auto 1.34em;
+  row-gap: .08em;
+  min-width: .72em;
 }
 
 .project-read-syllabication-example .project-read-pattern-label {
-  margin-top: .1em;
-  font-size: .31em;
+  margin-top: .12em;
+  font-size: .42em;
+  line-height: 1;
 }
 
 .project-read-syllabication-example .project-read-pattern-slash {
@@ -4393,7 +4397,7 @@ select {
   }
 
   .project-read-syllabication-step {
-    font-size: 1.16rem;
+    font-size: 1.28rem;
   }
 
   .project-read-syllabication-example .project-read-pattern-display {
