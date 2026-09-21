@@ -3698,3 +3698,80 @@ select {
     gap: 10px !important;
   }
 }
+
+
+/* Unit 23-style teaching examples: larger body text + bubbly word chips */
+.project-read-teaching-subsection--examples .project-read-teaching-value {
+  font-size: clamp(1.5rem, 1.75vw, 1.72rem) !important;
+  line-height: 1.55;
+}
+
+.project-read-teaching-examples {
+  margin-top: 30px;
+}
+
+.project-read-examples-heading {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 16px;
+  padding-bottom: 7px;
+  color: #123846;
+  font-size: clamp(1.34rem, 1.55vw, 1.52rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.project-read-examples-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: calc(100% + 8px);
+  height: 2.5px;
+  border-radius: 999px;
+  background: rgba(111, 93, 177, .72);
+}
+
+.project-read-example-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.project-read-example-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 104px;
+  min-height: 54px;
+  padding: 10px 19px;
+  border: 2px solid #c8c3f2;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f7f5ff 0%, #efedff 100%);
+  color: #173946;
+  box-shadow: 0 3px 8px rgba(79, 72, 143, .08);
+  font-size: clamp(1.3rem, 1.5vw, 1.48rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+@media (max-width: 700px) {
+  .project-read-teaching-subsection--examples .project-read-teaching-value {
+    font-size: 1.38rem !important;
+  }
+
+  .project-read-teaching-examples {
+    margin-top: 24px;
+  }
+
+  .project-read-examples-heading {
+    font-size: 1.3rem;
+  }
+
+  .project-read-example-chip {
+    min-width: 88px;
+    min-height: 50px;
+    padding: 9px 15px;
+    font-size: 1.2rem;
+  }
+}
