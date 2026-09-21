@@ -414,6 +414,7 @@
 
   let assessmentAnimationBusy = false;
   let lastAssessmentSectionKey = null;
+  let preserveNextRenderScrollY = null;
 
   const assessmentSectionOrder = [
     "home",
@@ -533,6 +534,7 @@
       .catch(() => {})
       .then(() => {
         update();
+        preserveNextRenderScrollY = window.scrollY;
         render();
 
         requestAnimationFrame(() => {
@@ -597,6 +599,7 @@
       .catch(() => {})
       .then(() => {
         update();
+        preserveNextRenderScrollY = window.scrollY;
         render();
 
         requestAnimationFrame(() => {
@@ -1603,7 +1606,14 @@
     }
 
     app.focus({ preventScroll: true });
-    window.scrollTo({ top: 0, behavior: "instant" });
+
+    if (preserveNextRenderScrollY !== null) {
+      const savedScrollY = preserveNextRenderScrollY;
+      preserveNextRenderScrollY = null;
+      window.scrollTo({ top: savedScrollY, behavior: "instant" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
 
     requestAnimationFrame(() => {
       if (route === "fast-start" && param) {
