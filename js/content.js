@@ -3032,17 +3032,22 @@ window.TUTORING_CONTENT = {
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
-        <div class="project-read-inline-lead">-ss, -ll, -ff, -zz</div>
+        <div class="project-read-inline-lead">spelling generalization.</div>
       </div>
+      <div class="project-read-unit9-rule">Double s, l, f, z in <strong>most</strong> one vowel sound words after a short vowel.</div>
       <div class="project-read-combination-grid" style="--pr-combination-cols:4">
         <div class="project-read-combination-chip">-ss</div><div class="project-read-combination-chip">-ll</div><div class="project-read-combination-chip">-ff</div><div class="project-read-combination-chip">-zz</div>
       </div>
-      
-      <div class="project-read-introduce-details">
-        <div class="project-read-cue">Spelling generalization – Double s, l, f, z in <strong>most</strong> one vowel sound words after a short vowel.</div>
-        <div class="project-read-cue">Common exceptions – as, is, has, gas, if</div>
+      <div class="project-read-teaching-examples project-read-unit9-exceptions">
+        <div class="project-read-examples-heading">Common exceptions:</div>
+        <div class="project-read-unit9-exception-row">
+          <span class="project-read-example-chip project-read-example-chip--introduce">as</span>
+          <span class="project-read-example-chip project-read-example-chip--introduce">is</span>
+          <span class="project-read-example-chip project-read-example-chip--introduce">has</span>
+          <span class="project-read-example-chip project-read-example-chip--introduce">gas</span>
+          <span class="project-read-example-chip project-read-example-chip--introduce">if</span>
+        </div>
       </div>
-      
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">

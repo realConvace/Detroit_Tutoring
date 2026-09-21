@@ -4443,3 +4443,53 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Unit 9: spelling generalization layout and exception bubbles */
+.project-read-unit9-rule {
+  margin-top: 12px;
+  color: #173946;
+  font-size: clamp(1.34rem, 1.55vw, 1.55rem);
+  line-height: 1.55;
+}
+
+.project-read-unit9-exceptions {
+  margin-top: 26px;
+}
+
+.project-read-unit9-exception-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 1100px;
+}
+
+.project-read-unit9-exception-row .project-read-example-chip {
+  width: 100%;
+  min-width: 0;
+  min-height: 68px;
+  padding: 14px 20px;
+  font-size: clamp(1.42rem, 1.62vw, 1.62rem);
+  font-weight: 800;
+}
+
+@media (max-width: 850px) {
+  .project-read-unit9-exception-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .project-read-unit9-rule {
+    font-size: 1.28rem;
+  }
+
+  .project-read-unit9-exception-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-read-unit9-exception-row .project-read-example-chip {
+    min-height: 60px;
+    font-size: 1.3rem;
+  }
+}
