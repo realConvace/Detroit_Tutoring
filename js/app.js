@@ -27,6 +27,224 @@
   };
 
   let state = loadState();
+  let pendingCelebration = null;
+  let celebrationAudioContext = null;
+
+  const ensureCelebrationAudio = () => {
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContextClass) return null;
+
+    if (!celebrationAudioContext || celebrationAudioContext.state === "closed") {
+      celebrationAudioContext = new AudioContextClass();
+    }
+
+    if (celebrationAudioContext.state === "suspended") {
+      celebrationAudioContext.resume().catch(() => {});
+    }
+
+    return celebrationAudioContext;
+  };
+
+  const playCalmFireworkSounds = () => {
+    const audioContext = ensureCelebrationAudio();
+    if (!audioContext) return;
+
+    const scheduleSounds = () => {
+      const startTime = audioContext.currentTime + 0.03;
+      const master = audioContext.createGain();
+      master.gain.setValueAtTime(0.0001, startTime);
+      master.gain.exponentialRampToValueAtTime(0.16, startTime + 0.05);
+      master.gain.exponentialRampToValueAtTime(0.0001, startTime + 1.65);
+      master.connect(audioContext.destination);
+
+      const noiseLength = Math.max(1, Math.floor(audioContext.sampleRate * 0.24));
+      const noiseBuffer = audioContext.createBuffer(1, noiseLength, audioContext.sampleRate);
+      const noiseData = noiseBuffer.getChannelData(0);
+      for (let i = 0; i < noiseLength; i += 1) {
+        const fade = 1 - i / noiseLength;
+        noiseData[i] = (Math.random() * 2 - 1) * fade;
+      }
+
+      [
+        { offset: 0, frequency: 440 },
+        { offset: 0.34, frequency: 554.37 },
+        { offset: 0.7, frequency: 659.25 }
+      ].forEach(({ offset, frequency }) => {
+        const burstTime = startTime + offset;
+
+        const tone = audioContext.createOscillator();
+        const toneGain = audioContext.createGain();
+        tone.type = "sine";
+        tone.frequency.setValueAtTime(frequency, burstTime);
+        tone.frequency.exponentialRampToValueAtTime(frequency * 1.18, burstTime + 0.32);
+        toneGain.gain.setValueAtTime(0.0001, burstTime);
+        toneGain.gain.exponentialRampToValueAtTime(0.12, burstTime + 0.025);
+        toneGain.gain.exponentialRampToValueAtTime(0.0001, burstTime + 0.48);
+        tone.connect(toneGain);
+        toneGain.connect(master);
+        tone.start(burstTime);
+        tone.stop(burstTime + 0.5);
+
+        const airyPop = audioContext.createBufferSource();
+        const popFilter = audioContext.createBiquadFilter();
+        const popGain = audioContext.createGain();
+        airyPop.buffer = noiseBuffer;
+        popFilter.type = "bandpass";
+        popFilter.frequency.setValueAtTime(1500 + offset * 500, burstTime);
+        popFilter.Q.setValueAtTime(0.7, burstTime);
+        popGain.gain.setValueAtTime(0.0001, burstTime);
+        popGain.gain.exponentialRampToValueAtTime(0.045, burstTime + 0.012);
+        popGain.gain.exponentialRampToValueAtTime(0.0001, burstTime + 0.22);
+        airyPop.connect(popFilter);
+        popFilter.connect(popGain);
+        popGain.connect(master);
+        airyPop.start(burstTime);
+        airyPop.stop(burstTime + 0.24);
+      });
+    };
+
+    if (audioContext.state === "suspended") {
+      audioContext.resume().then(scheduleSounds).catch(() => {});
+    } else {
+      scheduleSounds();
+    }
+  };
+
+  const launchCompletionCelebration = () => {
+    document.querySelector(".completion-confetti-canvas")?.remove();
+
+    const canvas = document.createElement("canvas");
+    canvas.className = "completion-confetti-canvas";
+    canvas.setAttribute("aria-hidden", "true");
+    document.body.appendChild(canvas);
+
+    const context = canvas.getContext("2d");
+    if (!context) {
+      canvas.remove();
+      return;
+    }
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    const resizeCanvas = () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = Math.floor(width * pixelRatio);
+      canvas.height = Math.floor(height * pixelRatio);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+    };
+
+    resizeCanvas();
+
+    const colors = ["#1f7a84", "#6f5db1", "#f1a65a", "#e78273", "#78aeb6", "#f2cf66"];
+    const particles = [];
+    const fallingCount = reducedMotion ? 70 : Math.min(240, Math.max(170, Math.round(width / 6)));
+
+    for (let i = 0; i < fallingCount; i += 1) {
+      particles.push({
+        x: Math.random() * width,
+        y: -Math.random() * height * 0.65 - 18,
+        vx: (Math.random() - 0.5) * 1.7,
+        vy: 2.2 + Math.random() * 3.2,
+        gravity: 0.018 + Math.random() * 0.025,
+        size: 6 + Math.random() * 8,
+        rotation: Math.random() * Math.PI,
+        rotationSpeed: (Math.random() - 0.5) * 0.16,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        life: 1,
+        fade: 0.0028 + Math.random() * 0.0018,
+        shape: "confetti"
+      });
+    }
+
+    const burstPoints = reducedMotion
+      ? [[width * 0.5, height * 0.38]]
+      : [
+          [width * 0.18, height * 0.28],
+          [width * 0.5, height * 0.2],
+          [width * 0.82, height * 0.32],
+          [width * 0.36, height * 0.48],
+          [width * 0.68, height * 0.5]
+        ];
+
+    burstPoints.forEach(([originX, originY], burstIndex) => {
+      const burstCount = reducedMotion ? 18 : 34;
+      for (let i = 0; i < burstCount; i += 1) {
+        const angle = (Math.PI * 2 * i) / burstCount + Math.random() * 0.08;
+        const speed = (reducedMotion ? 1.6 : 2.6) + Math.random() * (reducedMotion ? 1.2 : 2.6);
+        particles.push({
+          x: originX,
+          y: originY,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          gravity: 0.02,
+          size: 3.5 + Math.random() * 4.5,
+          rotation: Math.random() * Math.PI,
+          rotationSpeed: 0,
+          color: colors[(i + burstIndex) % colors.length],
+          life: 1,
+          fade: reducedMotion ? 0.016 : 0.009,
+          shape: "spark"
+        });
+      }
+    });
+
+    playCalmFireworkSounds();
+
+    const startedAt = performance.now();
+    const duration = reducedMotion ? 1100 : 3400;
+    let previousTime = startedAt;
+
+    const drawFrame = (now) => {
+      const delta = Math.min(32, now - previousTime) / 16.67;
+      previousTime = now;
+      context.clearRect(0, 0, width, height);
+
+      particles.forEach((particle) => {
+        particle.vy += particle.gravity * delta;
+        particle.x += particle.vx * delta;
+        particle.y += particle.vy * delta;
+        particle.rotation += particle.rotationSpeed * delta;
+        particle.life = Math.max(0, particle.life - particle.fade * delta);
+
+        if (particle.shape === "confetti" && particle.y > height + 30) {
+          particle.y = -20;
+          particle.x = Math.random() * width;
+        }
+
+        context.save();
+        context.globalAlpha = particle.life;
+        context.translate(particle.x, particle.y);
+        context.rotate(particle.rotation);
+        context.fillStyle = particle.color;
+
+        if (particle.shape === "spark") {
+          context.beginPath();
+          context.arc(0, 0, particle.size / 2, 0, Math.PI * 2);
+          context.fill();
+        } else {
+          context.fillRect(-particle.size / 2, -particle.size * 0.34, particle.size, particle.size * 0.68);
+        }
+
+        context.restore();
+      });
+
+      if (now - startedAt < duration) {
+        requestAnimationFrame(drawFrame);
+      } else {
+        canvas.classList.add("completion-confetti-canvas--fade");
+        window.setTimeout(() => canvas.remove(), 420);
+      }
+    };
+
+    window.addEventListener("resize", resizeCanvas, { once: true });
+    requestAnimationFrame(drawFrame);
+  };
 
   const saveState = () => {
     localStorage.setItem("detroitTutoringState", JSON.stringify(state));
@@ -892,6 +1110,11 @@
       enhanceProjectReadWordLists();
     }
 
+    if (route === "session" && pendingCelebration) {
+      pendingCelebration = null;
+      requestAnimationFrame(launchCompletionCelebration);
+    }
+
     app.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: "instant" });
     requestAnimationFrame(syncFastStartActivityHeight);
@@ -1078,19 +1301,40 @@
 
     if (action === "toggle-step") {
       const step = button.dataset.step;
-      state.completed[step] = !state.completed[step];
+      const wasComplete = Boolean(state.completed[step]);
+      state.completed[step] = !wasComplete;
+
+      if (!wasComplete && state.completed[step]) {
+        ensureCelebrationAudio();
+        pendingCelebration = step;
+      }
+
       saveState();
       render();
     }
 
     if (action === "finish-fast-start") {
+      const wasComplete = Boolean(state.completed.fastStart);
       state.completed.fastStart = true;
+
+      if (!wasComplete) {
+        ensureCelebrationAudio();
+        pendingCelebration = "fastStart";
+      }
+
       saveState();
       location.hash = "session";
     }
 
     if (action === "finish-project-read") {
+      const wasComplete = Boolean(state.completed.projectRead);
       state.completed.projectRead = true;
+
+      if (!wasComplete) {
+        ensureCelebrationAudio();
+        pendingCelebration = "projectRead";
+      }
+
       saveState();
       location.hash = "session";
     }
