@@ -475,6 +475,368 @@
     }
   };
 
+  const projectReadEndingKey = (word) => {
+    const normalized = String(word).toLowerCase().replace(/[^a-z]/g, "");
+    if (!normalized) return String(word).toLowerCase();
+
+    const vowels = "aeiou";
+
+    if (normalized.endsWith("y")) {
+      for (let i = normalized.length - 2; i >= 0; i--) {
+        if (vowels.includes(normalized[i])) return normalized.slice(i);
+      }
+      return "y";
+    }
+
+    if (normalized.endsWith("e") && normalized.length > 2) {
+      for (let i = normalized.length - 2; i >= 0; i--) {
+        if (vowels.includes(normalized[i])) return normalized.slice(i);
+      }
+    }
+
+    let lastVowel = -1;
+    for (let i = normalized.length - 1; i >= 0; i--) {
+      if (vowels.includes(normalized[i])) {
+        lastVowel = i;
+        break;
+      }
+    }
+
+    if (lastVowel < 0) return normalized.slice(-2);
+
+    while (lastVowel > 0 && vowels.includes(normalized[lastVowel - 1])) {
+      lastVowel -= 1;
+    }
+
+    return normalized.slice(lastVowel);
+  };
+
+  const normalizeProjectReadWord = (word) =>
+    String(word).toLowerCase().replace(/[^a-z]/g, "");
+
+  const projectReadSemanticRules = {
+    "7": [
+      { key: "qu", test: (word) => /^qu/.test(word) },
+      { key: "x", test: (word) => word.includes("x") },
+      { key: "y", test: (word) => /^y/.test(word) },
+      { key: "z", test: (word) => /^z/.test(word) || word.includes("zigzag") }
+    ],
+    "9": [
+      { key: "ss", test: (word) => word.endsWith("ss") },
+      { key: "ll", test: (word) => word.endsWith("ll") },
+      { key: "ff", test: (word) => word.endsWith("ff") },
+      { key: "zz", test: (word) => word.endsWith("zz") }
+    ],
+    "10": [
+      { key: "ng", test: (word) => word.endsWith("ng") },
+      { key: "nk", test: (word) => word.endsWith("nk") }
+    ],
+    "11": [
+      { key: "wh", test: (word) => word.includes("wh") },
+      { key: "ch", test: (word) => word.includes("ch") },
+      { key: "th", test: (word) => word.includes("th") },
+      { key: "sh", test: (word) => word.includes("sh") }
+    ],
+    "13A": [
+      { key: "bl", test: (word) => word.startsWith("bl") },
+      { key: "gl", test: (word) => word.startsWith("gl") },
+      { key: "cl", test: (word) => word.startsWith("cl") },
+      { key: "pl", test: (word) => word.startsWith("pl") },
+      { key: "fl", test: (word) => word.startsWith("fl") },
+      { key: "sl", test: (word) => word.startsWith("sl") }
+    ],
+    "13B": [
+      { key: "br", test: (word) => word.startsWith("br") },
+      { key: "pr", test: (word) => word.startsWith("pr") },
+      { key: "fr", test: (word) => word.startsWith("fr") },
+      { key: "shr", test: (word) => word.startsWith("shr") },
+      { key: "tr", test: (word) => word.startsWith("tr") },
+      { key: "thr", test: (word) => word.startsWith("thr") },
+      { key: "cr", test: (word) => word.startsWith("cr") },
+      { key: "dr", test: (word) => word.startsWith("dr") },
+      { key: "gr", test: (word) => word.startsWith("gr") }
+    ],
+    "13C": [
+      { key: "sc", test: (word) => word.startsWith("sc") },
+      { key: "sp", test: (word) => word.startsWith("sp") },
+      { key: "squ", test: (word) => word.startsWith("squ") },
+      { key: "dw", test: (word) => word.startsWith("dw") },
+      { key: "sm", test: (word) => word.startsWith("sm") },
+      { key: "sw", test: (word) => word.startsWith("sw") },
+      { key: "sk", test: (word) => word.startsWith("sk") },
+      { key: "sn", test: (word) => word.startsWith("sn") },
+      { key: "st", test: (word) => word.startsWith("st") },
+      { key: "tw", test: (word) => word.startsWith("tw") }
+    ],
+    "16": [
+      { key: "str", test: (word) => word.startsWith("str") },
+      { key: "spl", test: (word) => word.startsWith("spl") },
+      { key: "scr", test: (word) => word.startsWith("scr") },
+      { key: "spr", test: (word) => word.startsWith("spr") }
+    ],
+    "17A": [
+      { key: "st", test: (word) => word.endsWith("st") },
+      { key: "sp", test: (word) => word.endsWith("sp") },
+      { key: "mp", test: (word) => word.endsWith("mp") },
+      { key: "sk", test: (word) => word.endsWith("sk") },
+      { key: "nt", test: (word) => word.endsWith("nt") },
+      { key: "nd", test: (word) => word.endsWith("nd") }
+    ],
+    "17B": [
+      { key: "ld", test: (word) => word.endsWith("ld") },
+      { key: "lp", test: (word) => word.endsWith("lp") },
+      { key: "ct", test: (word) => word.endsWith("ct") },
+      { key: "lk", test: (word) => word.endsWith("lk") },
+      { key: "lt", test: (word) => word.endsWith("lt") },
+      { key: "ft", test: (word) => word.endsWith("ft") },
+      { key: "pt", test: (word) => word.endsWith("pt") }
+    ],
+    "19B": [
+      { key: "er", test: (word) => word.includes("er") },
+      { key: "ir", test: (word) => word.includes("ir") },
+      { key: "ur", test: (word) => word.includes("ur") }
+    ],
+    "20": [
+      { key: "long-e-open", test: (word) => ["me","he","we","she","be"].includes(word) },
+      { key: "long-o-open", test: (word) => ["no","go","so"].includes(word) },
+      { key: "long-i-open", test: (word) => ["hi","i"].includes(word) }
+    ],
+    "21": [
+      { key: "a-e", test: (word) => word.length >= 4 && word.endsWith("e") && word[word.length - 3] === "a" },
+      { key: "i-e", test: (word) => word.length >= 4 && word.endsWith("e") && word[word.length - 3] === "i" },
+      { key: "o-e", test: (word) => word.length >= 4 && word.endsWith("e") && word[word.length - 3] === "o" },
+      { key: "u-e", test: (word) => word.length >= 4 && word.endsWith("e") && word[word.length - 3] === "u" }
+    ],
+    "23": [
+      { key: "y-i", test: (word) => ["my","sky","fry","try","fly","by","shy","why","cry"].includes(word) },
+      { key: "y-e", test: (word) => word.endsWith("y") }
+    ],
+    "24A": [
+      { key: "ai", test: (word) => word.includes("ai") },
+      { key: "ay", test: (word) => word.includes("ay") }
+    ],
+    "24B": [
+      { key: "ee", test: (word) => word.includes("ee") },
+      { key: "ea", test: (word) => word.includes("ea") },
+      { key: "ie", test: (word) => word.includes("ie") },
+      { key: "ey", test: (word) => word.includes("ey") }
+    ],
+    "24D": [
+      { key: "oa", test: (word) => word.includes("oa") },
+      { key: "ow", test: (word) => word.includes("ow") },
+      { key: "oe", test: (word) => word.includes("oe") }
+    ]
+  };
+
+  const splitProjectReadWordsEvenly = (words, parts) => {
+    const chunks = [];
+    let cursor = 0;
+
+    for (let part = 0; part < parts; part++) {
+      const remaining = words.length - cursor;
+      const remainingParts = parts - part;
+      const size = Math.ceil(remaining / remainingParts);
+      chunks.push(words.slice(cursor, cursor + size));
+      cursor += size;
+    }
+
+    return chunks.filter((chunk) => chunk.length);
+  };
+
+  const allocateProjectReadSemanticColumns = (groups, columnCount) => {
+    if (!groups.length) return [];
+    if (groups.length > columnCount) return null;
+
+    const allocations = groups.map(() => 1);
+    let remaining = columnCount - groups.length;
+
+    while (remaining > 0) {
+      let target = 0;
+      let bestNeed = -Infinity;
+
+      groups.forEach((group, index) => {
+        const need = group.words.length / allocations[index];
+        if (need > bestNeed) {
+          bestNeed = need;
+          target = index;
+        }
+      });
+
+      allocations[target] += 1;
+      remaining -= 1;
+    }
+
+    const columns = [];
+    groups.forEach((group, index) => {
+      splitProjectReadWordsEvenly(group.words, allocations[index]).forEach((words) => {
+        columns.push([{ ...group, words, continuation: true }]);
+      });
+    });
+
+    return columns;
+  };
+
+  const packProjectReadGroups = (groups, columnCount) => {
+    const columns = Array.from({ length: Math.max(1, columnCount) }, () => []);
+
+    groups
+      .slice()
+      .sort((a, b) => b.words.length - a.words.length || a.order - b.order)
+      .forEach((group) => {
+        const target = columns
+          .map((column, index) => ({
+            index,
+            load: column.reduce((sum, item) => sum + item.words.length + 0.85, 0)
+          }))
+          .sort((a, b) => a.load - b.load || a.index - b.index)[0].index;
+
+        columns[target].push(group);
+      });
+
+    return columns.filter((column) => column.length);
+  };
+
+  const buildProjectReadDefaultColumns = (items, desiredColumns, lessonId) => {
+    const rules = projectReadSemanticRules[String(lessonId).toUpperCase()] || null;
+    const itemRecords = items.map((item, order) => ({
+      item,
+      word: item.textContent.trim(),
+      normalized: normalizeProjectReadWord(item.textContent),
+      order
+    }));
+
+    let mainGroups = [];
+    let miscItems = [];
+
+    if (rules) {
+      const grouped = new Map(rules.map((rule, index) => [
+        rule.key,
+        { key: rule.key, order: index, words: [] }
+      ]));
+
+      itemRecords.forEach((record) => {
+        const rule = rules.find((candidate) => candidate.test(record.normalized));
+        if (rule) grouped.get(rule.key).words.push(record);
+        else miscItems.push(record);
+      });
+
+      mainGroups = [...grouped.values()].filter((group) => group.words.length);
+    } else {
+      const grouped = new Map();
+
+      itemRecords.forEach((record) => {
+        const key = projectReadEndingKey(record.word);
+        if (!grouped.has(key)) {
+          grouped.set(key, { key, order: record.order, words: [] });
+        }
+        grouped.get(key).words.push(record);
+      });
+
+      const allGroups = [...grouped.values()];
+      mainGroups = allGroups.filter((group) => group.words.length > 1);
+      miscItems = allGroups
+        .filter((group) => group.words.length === 1)
+        .sort((a, b) => a.order - b.order)
+        .flatMap((group) => group.words);
+    }
+
+    const miscNeeded = miscItems.length > 0 && mainGroups.length > 0;
+    const availableMainColumns = Math.max(1, desiredColumns - (miscNeeded ? 1 : 0));
+
+    let mainColumns;
+
+    if (rules && mainGroups.length <= availableMainColumns) {
+      mainColumns = allocateProjectReadSemanticColumns(mainGroups, availableMainColumns);
+    }
+
+    if (!mainColumns) {
+      mainColumns = packProjectReadGroups(mainGroups, availableMainColumns);
+    }
+
+    if (!mainGroups.length) {
+      const chunks = splitProjectReadWordsEvenly(
+        miscItems,
+        Math.min(desiredColumns, Math.max(1, Math.ceil(Math.sqrt(miscItems.length))))
+      );
+      return chunks.map((words, index) => ({
+        misc: index === chunks.length - 1 && chunks.length > 1,
+        groups: [{ key: `misc-${index}`, order: index, words }]
+      }));
+    }
+
+    const columns = mainColumns.map((groups) => ({ misc: false, groups }));
+
+    if (miscNeeded) {
+      columns.push({
+        misc: true,
+        groups: [{ key: "misc", order: Number.MAX_SAFE_INTEGER, words: miscItems }]
+      });
+    }
+
+    return columns;
+  };
+
+  const enhanceProjectReadWordLists = () => {
+    const tables = [...app.querySelectorAll(".project-read-word-table")];
+
+    tables.forEach((table) => {
+      const items = [...table.querySelectorAll(".project-read-word-item")];
+      if (!items.length) return;
+
+      const rawColumns = Number(
+        String(table.style.getPropertyValue("--pr-word-cols")).trim()
+      );
+      const desiredColumns = Number.isFinite(rawColumns) && rawColumns > 0
+        ? rawColumns
+        : Math.min(5, Math.max(2, Math.ceil(Math.sqrt(items.length))));
+
+      const columns = buildProjectReadDefaultColumns(
+        items,
+        desiredColumns,
+        state.projectReadId
+      );
+
+      table.innerHTML = "";
+      table.classList.add("project-read-word-table--family-layout");
+      table.classList.remove("project-read-word-table--shuffled");
+      table.style.setProperty("--pr-word-cols", String(Math.max(1, columns.length)));
+
+      let slotIndex = 0;
+
+      columns.forEach((column, columnIndex) => {
+        const columnEl = document.createElement("div");
+        columnEl.className = `project-read-word-column${column.misc ? " project-read-word-column--misc" : ""}`;
+        columnEl.dataset.wordColumn = String(columnIndex);
+
+        column.groups.forEach((group) => {
+          const familyEl = document.createElement("div");
+          familyEl.className = `project-read-word-family${column.misc ? " project-read-word-family--misc" : ""}`;
+          familyEl.dataset.wordFamily = group.key;
+
+          group.words.forEach((record) => {
+            const slot = document.createElement("div");
+            slot.className = "project-read-word-slot";
+            slot.dataset.wordSlot = String(slotIndex);
+
+            record.item.dataset.defaultSlot = String(slotIndex);
+            record.item.dataset.ending = projectReadEndingKey(record.word);
+            slot.appendChild(record.item);
+            familyEl.appendChild(slot);
+            slotIndex += 1;
+          });
+
+          columnEl.appendChild(familyEl);
+        });
+
+        table.appendChild(columnEl);
+      });
+
+      table._projectReadDefaultHtml = table.innerHTML;
+      table._projectReadDefaultClassName = table.className;
+      table._projectReadDefaultStyle = table.getAttribute("style") || "";
+    });
+  };
+
   const render = () => {
     const raw = location.hash.replace(/^#/, "") || "home";
     const [route, param, subparam] = raw.split("/");
@@ -496,6 +858,10 @@
         setCurrentNav("home");
         app.innerHTML = home();
         break;
+    }
+
+    if (route === "project-read" && param) {
+      enhanceProjectReadWordLists();
     }
 
     app.focus({ preventScroll: true });
@@ -528,10 +894,8 @@
     const table = section?.querySelector(".project-read-word-table");
     if (!section || !table) return null;
 
-    const slots = [...table.querySelectorAll(".project-read-word-slot:not(.project-read-word-slot--empty)")];
-    const items = slots
-      .map(slot => slot.querySelector(".project-read-word-item"))
-      .filter(Boolean);
+    const items = [...table.querySelectorAll(".project-read-word-item")];
+    const slots = [...table.querySelectorAll(".project-read-word-slot")];
 
     return { section, table, slots, items };
   };
@@ -588,7 +952,7 @@
     const context = projectReadWordContext(button);
     if (!context || context.items.length < 2) return;
 
-    const { table, slots, items } = context;
+    const { table, items } = context;
     const shuffled = [...items];
 
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -596,13 +960,47 @@
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
 
-    const unchanged = shuffled.every((item,index) => item === items[index]);
+    const unchanged = shuffled.every((item, index) => item === items[index]);
     if (unchanged && shuffled.length > 1) {
       [shuffled[0], shuffled[1]] = [shuffled[1], shuffled[0]];
     }
 
+    if (!table.classList.contains("project-read-word-table--shuffled")) {
+      if (!table._projectReadDefaultHtml) {
+        table._projectReadDefaultHtml = table.innerHTML;
+        table._projectReadDefaultClassName = table.className;
+        table._projectReadDefaultStyle = table.getAttribute("style") || "";
+      }
+
+      animateProjectReadWordMove(table, items, () => {
+        table.innerHTML = "";
+        table.classList.remove("project-read-word-table--family-layout");
+        table.classList.add("project-read-word-table--shuffled");
+
+        const shuffleColumns = Math.min(
+          7,
+          Math.max(2, Math.ceil(Math.sqrt(shuffled.length)))
+        );
+        table.style.setProperty("--pr-shuffle-cols", String(shuffleColumns));
+
+        shuffled.forEach((item, index) => {
+          const slot = document.createElement("div");
+          slot.className = "project-read-word-slot";
+          slot.dataset.wordSlot = String(index);
+          slot.appendChild(item);
+          table.appendChild(slot);
+        });
+      });
+
+      return;
+    }
+
+    const slots = [...table.querySelectorAll(".project-read-word-slot")];
+
     animateProjectReadWordMove(table, items, () => {
-      shuffled.forEach((item,index) => slots[index].appendChild(item));
+      shuffled.forEach((item, index) => {
+        slots[index]?.appendChild(item);
+      });
     });
   };
 
@@ -610,7 +1008,16 @@
     const context = projectReadWordContext(button);
     if (!context) return;
 
-    const { table, items } = context;
+    const { table } = context;
+
+    if (table._projectReadDefaultHtml) {
+      table.innerHTML = table._projectReadDefaultHtml;
+      table.className = table._projectReadDefaultClassName;
+      table.setAttribute("style", table._projectReadDefaultStyle);
+      return;
+    }
+
+    const items = [...table.querySelectorAll(".project-read-word-item")];
     const allSlots = [...table.querySelectorAll(".project-read-word-slot")];
     const slotByIndex = new Map(
       allSlots.map(slot => [Number(slot.dataset.wordSlot), slot])
