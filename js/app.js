@@ -240,9 +240,7 @@
   const assessmentHome = () => `
     <section class="assessment-home card">
       <div class="assessment-home-copy">
-        <p class="assessment-kicker">Assessment</p>
         <h1>Reading Assessment</h1>
-        <p>Move through the letter, sound, word, and poem-reading sections in order.</p>
         <a class="btn assessment-start-button" href="#assessment/letters">Start test</a>
       </div>
     </section>
@@ -268,7 +266,6 @@
           <div>
             <p class="assessment-kicker">${meta.part}</p>
             <h1>${escapeHtml(meta.title)}</h1>
-            <p>${escapeHtml(meta.prompt)}</p>
           </div>
           <a class="btn btn-muted" href="#assessment">Assessment Home</a>
         </header>
@@ -343,7 +340,6 @@
           <div>
             <p class="assessment-kicker">${isSecond ? "Part 4.5" : "Part 4"}</p>
             <h1>${isSecond ? "Read the Second Poem" : "Read Poem 1"}</h1>
-            <p>Ask the student to read the poem aloud.</p>
           </div>
           <a class="btn btn-muted" href="#assessment">Assessment Home</a>
         </header>
@@ -370,6 +366,129 @@
     if (part === "poem-1") return assessmentPoemPage(1);
     if (part === "poem-2") return assessmentPoemPage(2);
     return assessmentHome();
+  };
+
+  let assessmentAnimationBusy = false;
+
+  const animateAssessmentCardChange = (direction, update) => {
+    const card = app.querySelector(".assessment-pdf-card");
+    if (!card || assessmentAnimationBusy || typeof card.animate !== "function") {
+      update();
+      render();
+      return;
+    }
+
+    assessmentAnimationBusy = true;
+    const distance = direction === "next" ? -110 : 110;
+
+    const outgoing = card.animate(
+      [
+        { transform: "translateX(0) rotate(0deg) scale(1)", opacity: 1 },
+        { transform: `translateX(${distance}px) rotate(${direction === "next" ? -2.5 : 2.5}deg) scale(.97)`, opacity: 0 }
+      ],
+      {
+        duration: 190,
+        easing: "cubic-bezier(.4,0,.7,.2)",
+        fill: "forwards"
+      }
+    );
+
+    outgoing.finished
+      .catch(() => {})
+      .then(() => {
+        update();
+        render();
+
+        requestAnimationFrame(() => {
+          const nextCard = app.querySelector(".assessment-pdf-card");
+          if (!nextCard || typeof nextCard.animate !== "function") {
+            assessmentAnimationBusy = false;
+            return;
+          }
+
+          const incomingDistance = direction === "next" ? 110 : -110;
+          const incoming = nextCard.animate(
+            [
+              {
+                transform: `translateX(${incomingDistance}px) rotate(${direction === "next" ? 2.5 : -2.5}deg) scale(.97)`,
+                opacity: 0
+              },
+              { transform: "translateX(0) rotate(0deg) scale(1)", opacity: 1 }
+            ],
+            {
+              duration: 240,
+              easing: "cubic-bezier(.2,.82,.24,1)",
+              fill: "both"
+            }
+          );
+
+          incoming.finished
+            .catch(() => {})
+            .then(() => {
+              assessmentAnimationBusy = false;
+            });
+        });
+      });
+  };
+
+  const animateAssessmentShuffle = (update) => {
+    const card = app.querySelector(".assessment-pdf-card");
+    if (!card || assessmentAnimationBusy || typeof card.animate !== "function") {
+      update();
+      render();
+      return;
+    }
+
+    assessmentAnimationBusy = true;
+
+    const shuffle = card.animate(
+      [
+        { transform: "translateX(0) rotate(0deg) scale(1)" },
+        { transform: "translateX(-26px) rotate(-3deg) scale(.985)" },
+        { transform: "translateX(30px) rotate(3deg) scale(.98)" },
+        { transform: "translateX(-18px) rotate(-2deg) scale(.985)" },
+        { transform: "translateX(22px) rotate(2deg) scale(.98)" },
+        { transform: "translateX(0) rotate(0deg) scale(.96)", opacity: .72 }
+      ],
+      {
+        duration: 430,
+        easing: "cubic-bezier(.36,.07,.19,.97)",
+        fill: "forwards"
+      }
+    );
+
+    shuffle.finished
+      .catch(() => {})
+      .then(() => {
+        update();
+        render();
+
+        requestAnimationFrame(() => {
+          const nextCard = app.querySelector(".assessment-pdf-card");
+          if (!nextCard || typeof nextCard.animate !== "function") {
+            assessmentAnimationBusy = false;
+            return;
+          }
+
+          const deal = nextCard.animate(
+            [
+              { transform: "translateY(-18px) rotate(-1.5deg) scale(.965)", opacity: 0 },
+              { transform: "translateY(0) rotate(0deg) scale(1)", opacity: 1 }
+            ],
+            {
+              duration: 260,
+              easing: "cubic-bezier(.2,.82,.24,1)",
+              fill: "both"
+            }
+          );
+
+          deal.finished
+            .catch(() => {})
+            .then(() => {
+              assessmentAnimationBusy = false;
+            });
+        });
+      });
   };
 
   const shuffleAssessmentDeck = (deckKey) => {
@@ -1529,26 +1648,33 @@
     if (action === "assessment-prev" || action === "assessment-next") {
       const deckKey = button.dataset.deck;
       const deck = assessmentDecks[deckKey];
-      if (!deck?.length) return;
+      if (!deck?.length || assessmentAnimationBusy) return;
 
       const change = action === "assessment-next" ? 1 : -1;
-      assessmentPositions[deckKey] = Math.min(
-        deck.length - 1,
-        Math.max(0, (assessmentPositions[deckKey] || 0) + change)
+      const current = assessmentPositions[deckKey] || 0;
+      const next = Math.min(deck.length - 1, Math.max(0, current + change));
+      if (next === current) return;
+
+      animateAssessmentCardChange(
+        action === "assessment-next" ? "next" : "prev",
+        () => {
+          assessmentPositions[deckKey] = next;
+        }
       );
-      render();
       return;
     }
 
     if (action === "assessment-shuffle") {
-      shuffleAssessmentDeck(button.dataset.deck);
-      render();
+      if (assessmentAnimationBusy) return;
+      const deckKey = button.dataset.deck;
+      animateAssessmentShuffle(() => shuffleAssessmentDeck(deckKey));
       return;
     }
 
     if (action === "assessment-reset-order") {
-      resetAssessmentDeck(button.dataset.deck);
-      render();
+      if (assessmentAnimationBusy) return;
+      const deckKey = button.dataset.deck;
+      animateAssessmentShuffle(() => resetAssessmentDeck(deckKey));
       return;
     }
 
@@ -1610,6 +1736,8 @@
     const deck = assessmentDecks[part];
     if (!deck?.length) return;
 
+    if (assessmentAnimationBusy) return;
+
     const change = event.key === "ArrowRight" ? 1 : -1;
     const nextIndex = Math.min(
       deck.length - 1,
@@ -1619,8 +1747,12 @@
     if (nextIndex === assessmentPositions[part]) return;
 
     event.preventDefault();
-    assessmentPositions[part] = nextIndex;
-    render();
+    animateAssessmentCardChange(
+      event.key === "ArrowRight" ? "next" : "prev",
+      () => {
+        assessmentPositions[part] = nextIndex;
+      }
+    );
   });
 
   window.addEventListener("hashchange", render);

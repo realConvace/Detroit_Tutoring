@@ -4899,3 +4899,27 @@ select {
     font-size: clamp(1.55rem, 7vw, 2.25rem);
   }
 }
+
+
+/* Assessment motion + simplified headings */
+.assessment-home-copy {
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+}
+
+.assessment-home .assessment-start-button {
+  margin-top: 4px;
+}
+
+.assessment-pdf-card {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .assessment-pdf-card {
+    will-change: auto;
+  }
+}
