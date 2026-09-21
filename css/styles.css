@@ -3351,3 +3351,73 @@ select {
   text-align: left;
   padding-left: 2px;
 }
+
+
+/* Project Read: each teaching header/content group is its own card */
+.project-read-teaching {
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  gap: 14px !important;
+}
+
+.project-read-teaching-subsection {
+  padding: 24px 26px 26px;
+  border: 1.5px solid rgba(43, 124, 135, .18);
+  border-radius: 18px;
+  background: #eaf7f8;
+  box-shadow: 0 5px 15px rgba(55, 92, 102, .05);
+}
+
+.project-read-teaching-preface {
+  margin: 0;
+  padding: 20px 22px;
+  border: 1.5px solid rgba(43, 124, 135, .14);
+  border-radius: 16px;
+  background: #f7fbfc;
+  box-shadow: 0 4px 12px rgba(55, 92, 102, .04);
+}
+
+.project-read-concept-block {
+  margin-bottom: 14px;
+}
+
+.project-read-concept-block .project-read-teaching-subsection {
+  background: #eaf7f8;
+}
+
+/* Keep headers visibly larger than the text beneath them. */
+.project-read-subsection-heading {
+  font-size: clamp(1.62rem, 1.9vw, 1.9rem) !important;
+  line-height: 1.08;
+}
+
+.project-read-teaching-value {
+  margin-top: 15px;
+  font-size: clamp(1.34rem, 1.55vw, 1.55rem) !important;
+  line-height: 1.55;
+}
+
+.project-read-teaching .project-read-cue {
+  font-size: clamp(1.25rem, 1.42vw, 1.44rem) !important;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .project-read-teaching-subsection {
+    padding: 20px;
+  }
+
+  .project-read-subsection-heading {
+    font-size: 1.5rem !important;
+  }
+
+  .project-read-teaching-value {
+    font-size: 1.3rem !important;
+  }
+
+  .project-read-teaching .project-read-cue {
+    font-size: 1.18rem !important;
+  }
+}
