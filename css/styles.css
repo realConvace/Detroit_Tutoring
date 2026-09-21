@@ -3961,3 +3961,15 @@ select {
     font-size: 1.3rem !important;
   }
 }
+
+
+/* Unit 21 open-syllable review bubbles */
+.project-read-review-chip-row {
+  margin-top: 18px;
+}
+
+.project-read-example-chip--review {
+  border-color: #a9cce0;
+  background: linear-gradient(180deg, #f7fbff 0%, #edf7fd 100%);
+  color: #173946;
+}
