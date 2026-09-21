@@ -3185,9 +3185,9 @@ window.TUTORING_CONTENT = {
       unitDisplay: "11",
       metaLabel: "Skill:",
       skill: "Digraphs: wh, ch, th, sh",
+      skillSubtext: "A digraph is a consonant sound which cannot be represented by any single letter in our alphabet.",
       bodyHtml: `<div class="project-read-sheet">
 <section class="project-read-source-block project-read-teaching">
-    <div class="project-read-teaching-preface">A digraph is a consonant sound which cannot be represented by any single letter in our alphabet.</div>
     <div class="project-read-teaching-subsection project-read-review-subsection">
       <div class="project-read-subsection-heading">Review:</div>
       <div class="project-read-teaching-value">ă, ĭ, ŏ and consonants</div>
