@@ -3916,3 +3916,30 @@ select {
     font-size: 1.15rem;
   }
 }
+
+
+/* Unit 21 spacing correction: clear the Introduce underline and match Skill line sizing */
+.project-read-heading-row--inline {
+  column-gap: 20px;
+}
+
+.project-read-inline-lead {
+  margin-left: 2px;
+}
+
+.project-read-skill-subtext {
+  font-size: clamp(1.35rem, 1.6vw, 1.6rem);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .project-read-skill-subtext {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-read-inline-lead {
+    margin-left: 0;
+  }
+}
