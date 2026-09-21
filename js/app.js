@@ -514,6 +514,9 @@
   const normalizeProjectReadWord = (word) =>
     String(word).toLowerCase().replace(/[^a-z]/g, "");
 
+  // VCV word lists are practice sets, not word-family sorts.
+  const projectReadPlainLatticeLessons = new Set(["22B"]);
+
   const projectReadSemanticRules = {
     "7": [
       { key: "qu", test: (word) => /^qu/.test(word) },
@@ -782,6 +785,29 @@
     tables.forEach((table) => {
       const items = [...table.querySelectorAll(".project-read-word-item")];
       if (!items.length) return;
+
+      if (projectReadPlainLatticeLessons.has(String(state.projectReadId).toUpperCase())) {
+        const latticeColumns = Math.max(2, Math.ceil(Math.sqrt(items.length)));
+
+        table.innerHTML = "";
+        table.classList.remove("project-read-word-table--family-layout", "project-read-word-table--shuffled");
+        table.classList.add("project-read-word-table--plain-lattice");
+        table.style.setProperty("--pr-plain-cols", String(latticeColumns));
+
+        items.forEach((item, index) => {
+          const slot = document.createElement("div");
+          slot.className = "project-read-word-slot";
+          slot.dataset.wordSlot = String(index);
+          item.dataset.defaultSlot = String(index);
+          slot.appendChild(item);
+          table.appendChild(slot);
+        });
+
+        table._projectReadDefaultHtml = table.innerHTML;
+        table._projectReadDefaultClassName = table.className;
+        table._projectReadDefaultStyle = table.getAttribute("style") || "";
+        return;
+      }
 
       const rawColumns = Number(
         String(table.style.getPropertyValue("--pr-word-cols")).trim()
