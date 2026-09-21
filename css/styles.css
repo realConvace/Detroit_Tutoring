@@ -3973,3 +3973,30 @@ select {
   background: linear-gradient(180deg, #f7fbff 0%, #edf7fd 100%);
   color: #173946;
 }
+
+
+/* Unit 23 example bubbles: match Unit 21 wide bubble width */
+.project-read-teaching-subsection--examples .project-read-example-chip-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.project-read-teaching-subsection--examples .project-read-example-chip {
+  width: 100%;
+  min-width: 0;
+  min-height: 66px;
+  padding: 14px 20px;
+}
+
+@media (max-width: 900px) {
+  .project-read-teaching-subsection--examples .project-read-example-chip-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .project-read-teaching-subsection--examples .project-read-example-chip-row {
+    grid-template-columns: 1fr;
+  }
+}
