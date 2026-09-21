@@ -3199,3 +3199,113 @@ select {
     justify-content: flex-start;
   }
 }
+
+
+/* Project Read poems: visually distinct reading blocks before word lists */
+.project-read-poem {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 34px 32px;
+  border: 1.5px solid rgba(111, 93, 177, .22);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top left, rgba(111, 93, 177, .10), transparent 34%),
+    linear-gradient(145deg, #fffdf8 0%, #fff9ee 54%, #f8f4ff 100%);
+  box-shadow: 0 10px 26px rgba(68, 78, 112, .09);
+}
+
+.project-read-poem::before,
+.project-read-poem::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid rgba(111, 93, 177, .10);
+  pointer-events: none;
+}
+
+.project-read-poem::before {
+  top: -72px;
+  right: -42px;
+}
+
+.project-read-poem::after {
+  bottom: -82px;
+  left: -36px;
+}
+
+.project-read-poem-heading {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.project-read-poem-label {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #7c68b8;
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .18em;
+}
+
+.project-read-poem-heading h3 {
+  margin: 0;
+  color: #3f3569;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 2.2vw, 2.15rem);
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+
+.project-read-poem-lines {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2px 18px;
+  color: #29303d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.28rem, 1.55vw, 1.52rem);
+  line-height: 1.75;
+  text-align: left;
+}
+
+.project-read-poem-line {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.project-read-poem-ornament {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 4px;
+  color: #b99ad8;
+  font-size: .9rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.project-read-poem-ornament--bottom {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .project-read-poem {
+    padding: 25px 21px 27px;
+  }
+
+  .project-read-poem-lines {
+    width: 100%;
+    padding: 0 4px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+}
