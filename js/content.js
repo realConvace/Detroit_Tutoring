@@ -141,6 +141,8 @@ window.TUTORING_CONTENT = {
     },
     "2": {
       displayTitle: "Itsy Bitsy Spider",
+      clipartPath: "assets/clipart/itsy-bitsy-spider.png",
+      clipartAlt: "Colorful child-friendly clipart of a spider beside a water spout with splashing water and sunshine.",
       poemHtml: `
         <div class="poem-lines" aria-label="Itsy Bitsy Spider poem">
           <div>The itsy bitsy spider</div>
