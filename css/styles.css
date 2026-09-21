@@ -958,8 +958,14 @@ select {
   letter-spacing: -.025em;
 }
 
-.poem-lines > div {
+.poem-lines > div:not(.poem-stanza-gap) {
   margin-bottom: .08em;
+  white-space: nowrap;
+}
+
+.poem-lines > .poem-stanza-gap {
+  height: .55em;
+  margin: 0;
 }
 
 .poem-clipart-wrap {

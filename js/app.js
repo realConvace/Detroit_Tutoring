@@ -583,6 +583,93 @@
     `;
   };
 
+  const FAST_START_STANZA_BREAKS = Object.freeze({
+    3: [4],
+    6: [4, 8],
+    10: [4],
+    15: [4],
+    16: [4],
+    19: [3, 6],
+    23: [4],
+    25: [4],
+    26: [4, 8],
+    27: [2, 4],
+    30: [4, 8, 12],
+    32: [4, 8],
+    35: [2, 4, 8, 10],
+    36: [4, 8],
+    37: [4],
+    38: [4],
+    40: [4],
+    41: [4],
+    42: [4],
+    43: [4, 8, 12],
+    44: [2, 4, 6, 8, 10],
+    47: [4],
+    48: [4, 8],
+    49: [4],
+    50: [4, 8, 12],
+    51: [1, 3, 5, 7, 9],
+    57: [2, 4, 6, 8, 10, 12],
+    58: [2, 8],
+    60: [5]
+  });
+
+  const formatFastStartPoem = (number) => {
+    const poemLines = app.querySelector(".poem-lines");
+    if (!poemLines) return;
+
+    [...poemLines.children]
+      .filter((child) => child.classList.contains("poem-stanza-gap"))
+      .forEach((gap) => gap.remove());
+
+    const lines = [...poemLines.children];
+    const stanzaBreaks = FAST_START_STANZA_BREAKS[Number(number)] || [];
+
+    [...stanzaBreaks]
+      .sort((a, b) => b - a)
+      .forEach((lineNumber) => {
+        const line = lines[lineNumber - 1];
+        if (!line) return;
+
+        const gap = document.createElement("div");
+        gap.className = "poem-stanza-gap";
+        gap.setAttribute("aria-hidden", "true");
+        line.after(gap);
+      });
+
+    poemLines.style.fontSize = "";
+
+    const poemWidth = poemLines.clientWidth;
+    if (!poemWidth) return;
+
+    const textLines = [...poemLines.children].filter(
+      (child) => !child.classList.contains("poem-stanza-gap")
+    );
+
+    let fontSize = parseFloat(getComputedStyle(poemLines).fontSize) || 32;
+    const minimumFontSize = window.matchMedia("(max-width: 560px)").matches ? 15 : 18;
+
+    for (let pass = 0; pass < 4; pass += 1) {
+      const widest = Math.max(
+        poemWidth,
+        ...textLines.map((line) => line.scrollWidth)
+      );
+
+      if (widest <= poemWidth + 1) break;
+
+      const nextSize = Math.max(
+        minimumFontSize,
+        fontSize * (poemWidth / widest) * 0.985
+      );
+
+      if (Math.abs(nextSize - fontSize) < 0.2) break;
+
+      fontSize = nextSize;
+      poemLines.style.fontSize = `${fontSize}px`;
+    }
+  };
+
   let fastStartResizeObserver = null;
 
   const syncFastStartActivityHeight = () => {
@@ -1048,7 +1135,13 @@
 
     app.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: "instant" });
-    requestAnimationFrame(syncFastStartActivityHeight);
+
+    requestAnimationFrame(() => {
+      if (route === "fast-start" && param) {
+        formatFastStartPoem(Number(param));
+      }
+      syncFastStartActivityHeight();
+    });
   };
 
   document.addEventListener("change", (event) => {
