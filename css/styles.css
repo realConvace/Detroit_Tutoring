@@ -4273,3 +4273,116 @@ select {
     font-size: 2.35rem;
   }
 }
+
+
+/* Unit 15A: two-column syllabication steps table */
+.project-read-syllabication-section {
+  overflow: hidden;
+}
+
+.project-read-syllabication-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.project-read-syllabication-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  overflow: hidden;
+  border: 1px solid #c9dfe3;
+  border-radius: 18px;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 4px 14px rgba(52, 89, 100, .06);
+}
+
+.project-read-syllabication-table th,
+.project-read-syllabication-table td {
+  border-right: 1px solid #c9dfe3;
+  border-bottom: 1px solid #d7e7e9;
+}
+
+.project-read-syllabication-table th:last-child,
+.project-read-syllabication-table td:last-child {
+  border-right: 0;
+}
+
+.project-read-syllabication-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.project-read-syllabication-table th {
+  padding: 16px 18px;
+  background: linear-gradient(180deg, #f3f0ff 0%, #ebe7ff 100%);
+  color: #173946;
+  font-size: clamp(1.35rem, 1.58vw, 1.58rem);
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.project-read-syllabication-table th:first-child {
+  width: 58%;
+}
+
+.project-read-syllabication-table th:last-child {
+  width: 42%;
+  text-align: center;
+}
+
+.project-read-syllabication-step {
+  padding: 18px 20px;
+  color: #173946;
+  font-size: clamp(1.22rem, 1.42vw, 1.42rem);
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.project-read-syllabication-example {
+  padding: 10px 18px 6px;
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(248, 251, 252, .72);
+}
+
+.project-read-syllabication-example .project-read-pattern-display {
+  margin: 0 auto;
+  padding: 6px 10px 2px;
+  background: transparent;
+  font-size: clamp(2.55rem, 3.8vw, 3.7rem);
+}
+
+.project-read-syllabication-example .project-read-pattern-cell {
+  grid-template-rows: auto .95em;
+  min-width: .68em;
+}
+
+.project-read-syllabication-example .project-read-pattern-label {
+  margin-top: .1em;
+  font-size: .31em;
+}
+
+.project-read-syllabication-example .project-read-pattern-slash {
+  margin-bottom: .3em;
+  font-size: .72em;
+}
+
+@media (max-width: 760px) {
+  .project-read-syllabication-table {
+    min-width: 680px;
+  }
+
+  .project-read-syllabication-table th {
+    font-size: 1.28rem;
+  }
+
+  .project-read-syllabication-step {
+    font-size: 1.16rem;
+  }
+
+  .project-read-syllabication-example .project-read-pattern-display {
+    font-size: 2.45rem;
+  }
+}
