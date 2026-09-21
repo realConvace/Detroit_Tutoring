@@ -5017,3 +5017,31 @@ select {
     will-change: auto;
   }
 }
+
+
+/* Assessment section-to-section transitions */
+.assessment-page,
+.assessment-home {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.assessment-stage-header,
+.assessment-home-copy,
+.assessment-pdf-card,
+.assessment-story-slide,
+.assessment-toolbar {
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .assessment-page,
+  .assessment-home,
+  .assessment-stage-header,
+  .assessment-home-copy,
+  .assessment-pdf-card,
+  .assessment-story-slide,
+  .assessment-toolbar {
+    transform: none !important;
+  }
+}

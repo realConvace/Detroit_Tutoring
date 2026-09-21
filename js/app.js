@@ -413,6 +413,98 @@
   };
 
   let assessmentAnimationBusy = false;
+  let lastAssessmentSectionKey = null;
+
+  const assessmentSectionOrder = [
+    "home",
+    "letters",
+    "sounds",
+    "words",
+    "poem-1",
+    "poem-2"
+  ];
+
+  const animateAssessmentSectionEntry = (part) => {
+    const nextKey = part || "home";
+    const previousKey = lastAssessmentSectionKey;
+    lastAssessmentSectionKey = nextKey;
+
+    if (!previousKey || previousKey === nextKey) return;
+
+    const page = app.querySelector(".assessment-page, .assessment-home");
+    if (!page || typeof page.animate !== "function") return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const previousIndex = assessmentSectionOrder.indexOf(previousKey);
+    const nextIndex = assessmentSectionOrder.indexOf(nextKey);
+    const direction =
+      previousIndex >= 0 && nextIndex >= 0 && nextIndex < previousIndex ? -1 : 1;
+
+    page.animate(
+      [
+        {
+          opacity: 0,
+          transform: `translateX(${direction * 64}px) scale(.985)`
+        },
+        {
+          opacity: 1,
+          transform: "translateX(0) scale(1)"
+        }
+      ],
+      {
+        duration: 360,
+        easing: "cubic-bezier(.2,.82,.24,1)",
+        fill: "both"
+      }
+    );
+
+    const header = page.querySelector(".assessment-stage-header, .assessment-home-copy");
+    if (header && typeof header.animate === "function") {
+      header.animate(
+        [
+          {
+            opacity: 0,
+            transform: `translateY(14px) translateX(${direction * 16}px)`
+          },
+          {
+            opacity: 1,
+            transform: "translateY(0) translateX(0)"
+          }
+        ],
+        {
+          duration: 420,
+          delay: 65,
+          easing: "cubic-bezier(.2,.82,.24,1)",
+          fill: "both"
+        }
+      );
+    }
+
+    const mainVisual = page.querySelector(
+      ".assessment-pdf-card, .assessment-story-slide, .assessment-toolbar"
+    );
+    if (mainVisual && typeof mainVisual.animate === "function") {
+      mainVisual.animate(
+        [
+          {
+            opacity: 0,
+            transform: `translateX(${direction * 34}px) scale(.975)`
+          },
+          {
+            opacity: 1,
+            transform: "translateX(0) scale(1)"
+          }
+        ],
+        {
+          duration: 430,
+          delay: 95,
+          easing: "cubic-bezier(.16,.84,.24,1)",
+          fill: "both"
+        }
+      );
+    }
+  };
 
   const animateAssessmentCardChange = (direction, update) => {
     const card = app.querySelector(".assessment-pdf-card");
@@ -1492,6 +1584,12 @@
 
     if (route === "project-read" && param) {
       enhanceProjectReadWordLists();
+    }
+
+    if (route === "assessment") {
+      requestAnimationFrame(() => animateAssessmentSectionEntry(param));
+    } else {
+      lastAssessmentSectionKey = null;
     }
 
     if (route === "session" && pendingCelebration && pendingCelebration !== "assessment") {
