@@ -4000,3 +4000,62 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Source-aligned Project Read heading lines and introduced sound bubbles */
+.project-read-teaching-subsection--inline-followup > .project-read-teaching-value {
+  margin-top: 12px;
+  margin-left: 20px;
+  font-size: clamp(1.4rem, 1.6vw, 1.62rem) !important;
+  line-height: 1.5;
+}
+
+.project-read-teaching-subsection--inline-followup .project-read-inline-lead {
+  font-size: clamp(1.4rem, 1.6vw, 1.62rem) !important;
+}
+
+.project-read-section-chip-row {
+  margin-top: 18px;
+}
+
+.project-read-section-chip-row--wide {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.project-read-section-chip-row--wide .project-read-example-chip {
+  width: 100%;
+  min-width: 0;
+  min-height: 66px;
+  padding: 14px 20px;
+}
+
+.project-read-example-chip--introduce {
+  border-color: #c8c3f2;
+  background: linear-gradient(180deg, #f7f5ff 0%, #efedff 100%);
+  color: #173946;
+}
+
+@media (max-width: 900px) {
+  .project-read-section-chip-row--wide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .project-read-teaching-subsection--inline-followup > .project-read-teaching-value,
+  .project-read-teaching-subsection--inline-followup .project-read-inline-lead {
+    font-size: 1.3rem !important;
+  }
+
+  .project-read-teaching-subsection--inline-followup > .project-read-teaching-value {
+    margin-left: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-read-section-chip-row--wide {
+    grid-template-columns: 1fr;
+  }
+}
