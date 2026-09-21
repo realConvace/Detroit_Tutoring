@@ -55,7 +55,7 @@
     return 5;
   };
 
-  const orderIntoColumns = (words, columns) => {
+  const orderIntoColumnGroups = (words, columns) => {
     const groups = new Map();
 
     words.forEach((word, index) => {
@@ -64,20 +64,56 @@
       groups.get(key).words.push(word);
     });
 
-    const sortedGroups = [...groups.values()].sort(
-      (a, b) => b.words.length - a.words.length || a.first - b.first
-    );
+    const families = [...groups.values()];
+    const matched = families
+      .filter((group) => group.words.length > 1)
+      .sort((a, b) => b.words.length - a.words.length || a.first - b.first);
+    const unmatched = families
+      .filter((group) => group.words.length === 1)
+      .sort((a, b) => a.first - b.first)
+      .flatMap((group) => group.words);
 
-    const cols = Array.from({ length: columns }, () => []);
+    const columnGroups = Array.from({ length: columns }, () => []);
+    const reserveMiscColumn = unmatched.length > 0 && matched.length > 0 && columns > 1;
+    const familyColumnCount = reserveMiscColumn ? columns - 1 : columns;
 
-    sortedGroups.forEach((group) => {
-      const target = cols
-        .map((items, index) => ({ index, length: items.length }))
-        .sort((a, b) => a.length - b.length || a.index - b.index)[0].index;
-      cols[target].push(...group.words);
+    const columnLoad = (column) =>
+      column.reduce((total, group) => total + group.words.length + 0.65, 0);
+
+    matched.forEach((group) => {
+      const target = columnGroups
+        .slice(0, familyColumnCount)
+        .map((column, index) => ({ index, load: columnLoad(column) }))
+        .sort((a, b) => a.load - b.load || a.index - b.index)[0].index;
+
+      columnGroups[target].push({ ...group, misc: false });
     });
 
-    return cols;
+    if (unmatched.length) {
+      if (reserveMiscColumn) {
+        columnGroups[columns - 1].push({
+          key: "misc",
+          first: Number.MAX_SAFE_INTEGER,
+          words: unmatched,
+          misc: true
+        });
+      } else {
+        const perColumn = Math.ceil(unmatched.length / columns);
+        for (let col = 0; col < columns; col++) {
+          const slice = unmatched.slice(col * perColumn, (col + 1) * perColumn);
+          if (slice.length) {
+            columnGroups[col].push({
+              key: `misc-${col}`,
+              first: Number.MAX_SAFE_INTEGER,
+              words: slice,
+              misc: true
+            });
+          }
+        }
+      }
+    }
+
+    return columnGroups;
   };
 
   let wordListIndex = 100;
@@ -85,28 +121,30 @@
   const renderWordList = (set) => {
     const words = set.words || [];
     const columns = set.columns || chooseColumns(words.length);
-    const cols = orderIntoColumns(words, columns);
-    const rowCount = Math.max(...cols.map((col) => col.length), 0);
-    const slots = [];
+    const columnGroups = orderIntoColumnGroups(words, columns);
     let localIndex = 0;
+    let slotIndex = 0;
 
-    for (let row = 0; row < rowCount; row++) {
-      for (let col = 0; col < columns; col++) {
-        const word = cols[col][row];
-        const slot = row * columns + col;
+    const columnsHtml = columnGroups.map((groups, columnIndex) => {
+      const groupHtml = groups.map((group) => {
+        const wordHtml = group.words.map((word) => {
+          const slot = slotIndex++;
+          return `<div class="project-read-word-slot" data-word-slot="${slot}"><span class="project-read-word-item" data-default-slot="${slot}" data-word-id="prw-${wordListIndex}-${localIndex++}" data-ending="${escapeHtml(endingKey(word))}">${escapeHtml(word)}</span></div>`;
+        }).join("");
 
-        if (!word) {
-          slots.push(
-            `<div class="project-read-word-slot project-read-word-slot--empty" data-word-slot="${slot}" aria-hidden="true"></div>`
-          );
-          continue;
-        }
+        return `
+          <div class="project-read-word-family${group.misc ? " project-read-word-family--misc" : ""}" data-word-family="${escapeHtml(group.key)}">
+            ${wordHtml}
+          </div>
+        `;
+      }).join("");
 
-        slots.push(
-          `<div class="project-read-word-slot" data-word-slot="${slot}"><span class="project-read-word-item" data-default-slot="${slot}" data-word-id="prw-${wordListIndex}-${localIndex++}" data-ending="${escapeHtml(endingKey(word))}">${escapeHtml(word)}</span></div>`
-        );
-      }
-    }
+      return `
+        <div class="project-read-word-column" data-word-column="${columnIndex}">
+          ${groupHtml}
+        </div>
+      `;
+    }).join("");
 
     wordListIndex += 1;
 
@@ -120,8 +158,8 @@
           </div>
         </div>
         <div class="project-read-word-scroll">
-          <div class="project-read-word-table" style="--pr-word-cols:${columns}" aria-label="${escapeHtml(set.title || "WORD LIST")}">
-            ${slots.join("\n")}
+          <div class="project-read-word-table project-read-word-table--family-layout" style="--pr-word-cols:${columns}" aria-label="${escapeHtml(set.title || "WORD LIST")}">
+            ${columnsHtml}
           </div>
         </div>
       </section>
