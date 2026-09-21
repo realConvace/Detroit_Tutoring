@@ -3427,3 +3427,84 @@ select {
 .project-read-concept-block {
   margin-bottom: 0 !important;
 }
+
+
+/* Project Read word-family layout: keep endings together and separate families visibly */
+.project-read-word-table--family-layout {
+  display: grid;
+  grid-template-columns: repeat(var(--pr-word-cols), minmax(150px, 1fr));
+  align-items: start;
+  gap: 16px;
+}
+
+.project-read-word-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+.project-read-word-family {
+  display: grid;
+  gap: 10px;
+}
+
+.project-read-word-family + .project-read-word-family {
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.project-read-word-family--misc {
+  gap: 10px;
+}
+
+.project-read-word-table--family-layout .project-read-word-slot {
+  min-height: 58px;
+}
+
+.project-read-word-table--family-layout .project-read-word-item {
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+}
+
+/* Let shorter family columns use available vertical space more evenly. */
+.project-read-word-column:not(:last-child) {
+  justify-content: flex-start;
+}
+
+/* Reserve the far-right column for unmatched/singleton words when possible. */
+.project-read-word-column:last-child .project-read-word-family--misc {
+  padding-left: 2px;
+}
+
+@media (min-width: 900px) {
+  .project-read-word-table--family-layout {
+    gap: 20px;
+  }
+
+  .project-read-word-column {
+    gap: 20px;
+  }
+
+  .project-read-word-family + .project-read-word-family {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-read-word-table--family-layout {
+    grid-template-columns: repeat(var(--pr-word-cols), minmax(125px, 1fr));
+    gap: 12px;
+  }
+
+  .project-read-word-column {
+    gap: 14px;
+  }
+
+  .project-read-word-family + .project-read-word-family {
+    margin-top: 5px;
+    padding-top: 5px;
+  }
+}
