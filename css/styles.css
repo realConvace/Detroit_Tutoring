@@ -4172,3 +4172,59 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Unit 15A: embed marked fresh/rabbit examples directly inside the Technique sentences */
+.project-read-teaching-visual-row--inline-diagram {
+  display: block !important;
+}
+
+.project-read-inline-diagram-copy {
+  width: 100%;
+  font-size: clamp(1.35rem, 1.55vw, 1.56rem) !important;
+  line-height: 1.7 !important;
+}
+
+.project-read-inline-pattern-wrap {
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 0 .45rem;
+}
+
+.project-read-inline-pattern-wrap .project-read-pattern-display {
+  display: inline-flex;
+  padding: 2px 5px 0;
+  background: transparent;
+  border-radius: 0;
+  font-size: clamp(2.75rem, 3.8vw, 3.8rem);
+  line-height: .9;
+  vertical-align: middle;
+}
+
+.project-read-inline-pattern-wrap .project-read-pattern-cell {
+  grid-template-rows: auto .9em;
+  min-width: .62em;
+}
+
+.project-read-inline-pattern-wrap .project-read-pattern-label {
+  margin-top: .08em;
+  font-size: .32em;
+}
+
+.project-read-inline-pattern-wrap .project-read-pattern-letter--underline::after {
+  bottom: -.01em;
+}
+
+@media (max-width: 760px) {
+  .project-read-inline-diagram-copy {
+    font-size: 1.25rem !important;
+  }
+
+  .project-read-inline-pattern-wrap {
+    margin: .25rem .25rem;
+  }
+
+  .project-read-inline-pattern-wrap .project-read-pattern-display {
+    font-size: clamp(2.1rem, 9vw, 3rem);
+  }
+}
