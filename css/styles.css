@@ -4228,3 +4228,48 @@ select {
     font-size: clamp(2.1rem, 9vw, 3rem);
   }
 }
+
+
+/* Unit 15A: keep fresh/rabbit diagrams left-aligned and sequential on one line */
+.project-read-teaching-visual-row--inline-diagram {
+  width: 100%;
+}
+
+.project-read-inline-diagram-copy {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+  gap: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+  overflow-x: auto;
+  padding-left: 17px !important;
+  padding-right: 17px !important;
+}
+
+.project-read-inline-diagram-copy > span {
+  flex: 0 0 auto;
+}
+
+.project-read-inline-pattern-wrap {
+  margin: 0 .35rem !important;
+  flex: 0 0 auto;
+}
+
+.project-read-inline-pattern-wrap .project-read-pattern-display {
+  font-size: clamp(2.55rem, 3.35vw, 3.45rem);
+}
+
+@media (max-width: 760px) {
+  .project-read-inline-diagram-copy {
+    white-space: nowrap !important;
+    overflow-x: auto;
+  }
+
+  .project-read-inline-pattern-wrap .project-read-pattern-display {
+    font-size: 2.35rem;
+  }
+}
