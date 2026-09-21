@@ -4099,3 +4099,39 @@ select {
     font-size: 1.3rem !important;
   }
 }
+
+
+/* Unit 15B-style syllable examples shown below Practice text */
+.project-read-teaching-diagram-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.project-read-teaching-diagram-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 170px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.42);
+}
+
+.project-read-teaching-diagram-card .project-read-pattern-display {
+  background: transparent;
+  padding: 6px 8px 2px;
+}
+
+@media (max-width: 760px) {
+  .project-read-teaching-diagram-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project-read-teaching-diagram-card {
+    justify-content: flex-start;
+    min-height: 140px;
+  }
+}
