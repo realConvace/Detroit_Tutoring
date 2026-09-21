@@ -70,37 +70,29 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  min-height: 46px;
+  padding: 10px 16px;
+  border: 1px solid #c8dddd;
+  border-radius: 14px;
+  background: rgba(255,255,255,.88);
+  color: var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(38, 77, 84, .07);
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 850;
+  line-height: 1.15;
+  transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
 }
 
-.brand-mark {
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-  display: grid;
-  place-items: center;
-  background: var(--primary);
-  color: white;
-  font-weight: 900;
-  letter-spacing: -.04em;
-  box-shadow: 0 8px 22px rgba(31, 111, 120, .22);
+.brand:hover {
+  background: var(--primary-soft);
+  box-shadow: 0 6px 16px rgba(38, 77, 84, .11);
+  transform: translateY(-1px);
 }
 
-.brand strong,
-.brand small {
-  display: block;
-}
-
-.brand strong {
-  font-size: 1.03rem;
-}
-
-.brand small {
-  margin-top: 1px;
-  color: var(--muted);
-  font-size: .8rem;
-  font-weight: 650;
+.brand:focus-visible {
+  outline: 3px solid rgba(31, 111, 120, .24);
+  outline-offset: 2px;
 }
 
 .top-nav {
