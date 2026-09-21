@@ -2300,6 +2300,16 @@ window.TUTORING_CONTENT = {
 
   },
 
+  assessment: {
+    letters: [
+      "m", "t", "a", "s", "i", "r", "d", "f", "o", "g", "l", "h", "u",
+      "c", "n", "b", "j", "k", "y", "e", "w", "p", "v", "qu", "x", "z"
+    ],
+    words: [
+      "a", "and", "away", "big", "blue", "can", "come", "down", "find", "for"
+    ]
+  },
+
   projectRead: [
     { id: "1", label: "Lesson 1" },
     { id: "2", label: "Lesson 2" },

@@ -195,6 +195,206 @@
 
   const completedCount = () => Object.values(state.completed).filter(Boolean).length;
 
+  const assessmentOriginalDecks = {
+    letters: [...(content.assessment?.letters || [])],
+    sounds: [...(content.assessment?.letters || [])],
+    words: [...(content.assessment?.words || [])]
+  };
+
+  const assessmentDecks = {
+    letters: [...assessmentOriginalDecks.letters],
+    sounds: [...assessmentOriginalDecks.sounds],
+    words: [...assessmentOriginalDecks.words]
+  };
+
+  const assessmentPositions = {
+    letters: 0,
+    sounds: 0,
+    words: 0
+  };
+
+  const assessmentDeckMeta = {
+    letters: {
+      part: "Part 1",
+      title: "Reading Letters",
+      prompt: "Ask the student to say the letter.",
+      nextHref: "#assessment/sounds",
+      nextLabel: "Next Part: Letter Sounds →"
+    },
+    sounds: {
+      part: "Part 2",
+      title: "Letter Sounds",
+      prompt: "Ask the student to say the sound this letter makes.",
+      nextHref: "#assessment/words",
+      nextLabel: "Next Part: Reading Words →"
+    },
+    words: {
+      part: "Part 3",
+      title: "Reading Words",
+      prompt: "Ask the student to say the word.",
+      nextHref: "#assessment/poem-1",
+      nextLabel: "Next Part: Read Poem 1 →"
+    }
+  };
+
+  const assessmentHome = () => `
+    <section class="assessment-home card">
+      <div class="assessment-home-copy">
+        <p class="assessment-kicker">Assessment</p>
+        <h1>Reading Assessment</h1>
+        <p>Move through the letter, sound, word, and poem-reading sections in order.</p>
+        <a class="btn assessment-start-button" href="#assessment/letters">Start test</a>
+      </div>
+    </section>
+  `;
+
+  const assessmentDeckPage = (deckKey) => {
+    const deck = assessmentDecks[deckKey] || [];
+    const meta = assessmentDeckMeta[deckKey];
+    if (!meta || !deck.length) return assessmentHome();
+
+    const currentIndex = Math.min(
+      Math.max(assessmentPositions[deckKey] || 0, 0),
+      Math.max(deck.length - 1, 0)
+    );
+    assessmentPositions[deckKey] = currentIndex;
+
+    const value = deck[currentIndex] || "";
+    const isWord = deckKey === "words";
+
+    return `
+      <section class="assessment-page">
+        <header class="assessment-stage-header">
+          <div>
+            <p class="assessment-kicker">${meta.part}</p>
+            <h1>${escapeHtml(meta.title)}</h1>
+            <p>${escapeHtml(meta.prompt)}</p>
+          </div>
+          <a class="btn btn-muted" href="#assessment">Assessment Home</a>
+        </header>
+
+        <div class="assessment-toolbar" aria-label="${escapeHtml(meta.title)} deck controls">
+          <div class="assessment-order-controls">
+            <button class="btn btn-secondary" data-action="assessment-shuffle" data-deck="${deckKey}">Shuffle</button>
+            <button class="btn btn-muted" data-action="assessment-reset-order" data-deck="${deckKey}">Reset Order</button>
+          </div>
+          <div class="assessment-card-count">Card ${currentIndex + 1} of ${deck.length}</div>
+        </div>
+
+        <div class="assessment-deck-layout">
+          <button
+            class="assessment-arrow"
+            type="button"
+            aria-label="Previous card"
+            data-action="assessment-prev"
+            data-deck="${deckKey}"
+            ${currentIndex === 0 ? "disabled" : ""}
+          >←</button>
+
+          <div class="assessment-pdf-card ${isWord ? "assessment-pdf-card--word" : "assessment-pdf-card--letter"}">
+            <div class="assessment-sky-ribbons" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="assessment-flashcard-value ${isWord ? "assessment-flashcard-word" : "assessment-flashcard-letter"}">
+              ${escapeHtml(value)}
+            </div>
+
+            <div class="assessment-hills" aria-hidden="true">
+              <span class="assessment-hill assessment-hill--back"></span>
+              <span class="assessment-hill assessment-hill--middle"></span>
+              <span class="assessment-hill assessment-hill--front"></span>
+            </div>
+          </div>
+
+          <button
+            class="assessment-arrow"
+            type="button"
+            aria-label="Next card"
+            data-action="assessment-next"
+            data-deck="${deckKey}"
+            ${currentIndex === deck.length - 1 ? "disabled" : ""}
+          >→</button>
+        </div>
+
+        <div class="assessment-deck-mobile-nav" aria-hidden="true">
+          <span>Use the left and right arrows to move through the deck.</span>
+        </div>
+
+        <div class="button-row assessment-part-navigation">
+          <a class="btn btn-muted" href="#assessment">← Assessment Home</a>
+          <a class="btn btn-primary" href="${meta.nextHref}">${meta.nextLabel}</a>
+        </div>
+      </section>
+    `;
+  };
+
+  const assessmentPoemPage = (poemNumber) => {
+    const number = Number(poemNumber);
+    const detail = content.fastStartDetails?.[String(number)];
+    const title = detail?.displayTitle || content.fastStart?.[number - 1] || `Poem ${number}`;
+    const isSecond = number === 2;
+
+    if (!detail?.poemHtml || ![1, 2].includes(number)) return assessmentHome();
+
+    return `
+      <section class="assessment-page assessment-poem-page">
+        <header class="assessment-stage-header">
+          <div>
+            <p class="assessment-kicker">${isSecond ? "Part 4.5" : "Part 4"}</p>
+            <h1>${isSecond ? "Read the Second Poem" : "Read Poem 1"}</h1>
+            <p>Ask the student to read the poem aloud.</p>
+          </div>
+          <a class="btn btn-muted" href="#assessment">Assessment Home</a>
+        </header>
+
+        <div class="assessment-poem-card">
+          <div class="assessment-poem-title">${escapeHtml(title)}</div>
+          <div class="assessment-poem-content">${detail.poemHtml}</div>
+        </div>
+
+        <div class="button-row assessment-part-navigation">
+          <a class="btn btn-muted" href="${isSecond ? "#assessment/poem-1" : "#assessment/words"}">← Previous Part</a>
+          ${isSecond
+            ? `<a class="btn btn-success assessment-complete-button" href="#assessment">Finish Assessment</a>`
+            : `<a class="btn btn-primary" href="#assessment/poem-2">Next Part: Read Poem 2 →</a>`
+          }
+        </div>
+      </section>
+    `;
+  };
+
+  const assessmentPage = (part) => {
+    if (!part) return assessmentHome();
+    if (["letters", "sounds", "words"].includes(part)) return assessmentDeckPage(part);
+    if (part === "poem-1") return assessmentPoemPage(1);
+    if (part === "poem-2") return assessmentPoemPage(2);
+    return assessmentHome();
+  };
+
+  const shuffleAssessmentDeck = (deckKey) => {
+    const deck = assessmentDecks[deckKey];
+    if (!deck || deck.length < 2) return;
+
+    for (let i = deck.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [deck[i], deck[j]] = [deck[j], deck[i]];
+    }
+
+    const original = assessmentOriginalDecks[deckKey];
+    if (deck.every((value, index) => value === original[index])) {
+      [deck[0], deck[1]] = [deck[1], deck[0]];
+    }
+
+    assessmentPositions[deckKey] = 0;
+  };
+
+  const resetAssessmentDeck = (deckKey) => {
+    if (!assessmentOriginalDecks[deckKey]) return;
+    assessmentDecks[deckKey] = [...assessmentOriginalDecks[deckKey]];
+    assessmentPositions[deckKey] = 0;
+  };
+
   const formatProjectReadUnit = (id) => {
     const match = String(id).match(/^(\d+)([A-Za-z]*)$/);
     if (!match) return String(id);
@@ -1117,6 +1317,9 @@
       case "project-read":
         app.innerHTML = param ? projectReadDetail(decodeURIComponent(param)) : projectReadLibrary();
         break;
+      case "assessment":
+        app.innerHTML = assessmentPage(param);
+        break;
       case "home":
       default:
         setCurrentNav("home");
@@ -1323,6 +1526,32 @@
       return;
     }
 
+    if (action === "assessment-prev" || action === "assessment-next") {
+      const deckKey = button.dataset.deck;
+      const deck = assessmentDecks[deckKey];
+      if (!deck?.length) return;
+
+      const change = action === "assessment-next" ? 1 : -1;
+      assessmentPositions[deckKey] = Math.min(
+        deck.length - 1,
+        Math.max(0, (assessmentPositions[deckKey] || 0) + change)
+      );
+      render();
+      return;
+    }
+
+    if (action === "assessment-shuffle") {
+      shuffleAssessmentDeck(button.dataset.deck);
+      render();
+      return;
+    }
+
+    if (action === "assessment-reset-order") {
+      resetAssessmentDeck(button.dataset.deck);
+      render();
+      return;
+    }
+
     if (action === "toggle-step") {
       const step = button.dataset.step;
       const wasComplete = Boolean(state.completed[step]);
@@ -1369,6 +1598,29 @@
       saveState();
       render();
     }
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+
+    const raw = location.hash.replace(/^#/, "");
+    const [route, part] = raw.split("/");
+    if (route !== "assessment" || !["letters", "sounds", "words"].includes(part)) return;
+
+    const deck = assessmentDecks[part];
+    if (!deck?.length) return;
+
+    const change = event.key === "ArrowRight" ? 1 : -1;
+    const nextIndex = Math.min(
+      deck.length - 1,
+      Math.max(0, (assessmentPositions[part] || 0) + change)
+    );
+
+    if (nextIndex === assessmentPositions[part]) return;
+
+    event.preventDefault();
+    assessmentPositions[part] = nextIndex;
+    render();
   });
 
   window.addEventListener("hashchange", render);
