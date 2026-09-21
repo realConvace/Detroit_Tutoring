@@ -3370,10 +3370,10 @@ window.TUTORING_CONTENT = {
         <div class="project-read-subsection-heading">Introduce:</div>
         <div class="project-read-inline-lead">ĕ</div>
       </div>
+      <div class="project-read-unit12-mouth-note">Pull the corners of mouth with two forefingers like the rein of a bridle on a horse.</div>
       <div class="project-read-introduce-details">
         <div class="project-read-cue">ĕ – like Mr. Ed.</div>
       </div>
-      <div class="project-read-unit12-mouth-note">Pull the corners of mouth with two forefingers like the rein of a bridle on a horse.</div>
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
