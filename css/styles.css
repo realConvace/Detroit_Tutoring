@@ -3775,3 +3775,53 @@ select {
     font-size: 1.2rem;
   }
 }
+
+
+/* Project Read word-transformation examples + Story Technique */
+.project-read-story-technique-subsection .project-read-subsection-heading::after {
+  background: #8c6f32;
+}
+
+.project-read-transform-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.project-read-transform-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 10px 18px;
+  border: 2px solid #c9c5ee;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #faf9ff 0%, #f1efff 100%);
+  color: #173946;
+  box-shadow: 0 3px 8px rgba(79, 72, 143, .08);
+  font-size: clamp(1.32rem, 1.5vw, 1.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.project-read-teaching-subsection--transforms .project-read-teaching-value {
+  font-size: clamp(1.4rem, 1.6vw, 1.62rem) !important;
+}
+
+.project-read-story-technique-subsection .project-read-teaching-value {
+  font-size: clamp(1.4rem, 1.6vw, 1.62rem) !important;
+}
+
+@media (max-width: 700px) {
+  .project-read-transform-chip {
+    min-height: 50px;
+    padding: 9px 14px;
+    font-size: 1.2rem;
+  }
+
+  .project-read-teaching-subsection--transforms .project-read-teaching-value,
+  .project-read-story-technique-subsection .project-read-teaching-value {
+    font-size: 1.3rem !important;
+  }
+}
