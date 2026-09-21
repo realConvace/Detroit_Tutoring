@@ -72,8 +72,6 @@ window.TUTORING_CONTENT = {
   fastStartDetails: {
     "1": {
       displayTitle: "Pat-a-Cake",
-      clipartPath: "assets/clipart/pat-a-cake-bread.svg",
-      clipartAlt: "Child-friendly line drawing of a steaming baked bun.",
       poemHtml: `
         <div class="poem-lines" aria-label="Pat-a-Cake poem">
           <div>Pat-a-cake, pat-a-cake,</div>
@@ -141,8 +139,6 @@ window.TUTORING_CONTENT = {
     },
     "2": {
       displayTitle: "Itsy Bitsy Spider",
-      clipartPath: "assets/clipart/itsy-bitsy-spider.png",
-      clipartAlt: "Colorful child-friendly clipart of a spider beside a water spout with splashing water and sunshine.",
       poemHtml: `
         <div class="poem-lines" aria-label="Itsy Bitsy Spider poem">
           <div>The itsy bitsy spider</div>
