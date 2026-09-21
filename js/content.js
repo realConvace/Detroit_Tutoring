@@ -2332,8 +2332,10 @@ window.TUTORING_CONTENT = {
     
     
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">/ă/, t, s, m, b, c, f</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">/ă/, t, s, m, b, c, f</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">t – tongue bounces</div>
@@ -2398,12 +2400,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, t, s, m, b, c, f</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, t, s, m, b, c, f</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">h, j, n, p, l, r</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">h, j, n, p, l, r</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">h – just air</div>
@@ -2486,12 +2492,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, b, c, f, m, s, t, h, j, n, p, l, r</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, b, c, f, m, s, t, h, j, n, p, l, r</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">d, v, g</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">d, v, g</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">d – tongue bounces on roof of mouth, lips open</div>
@@ -2566,12 +2576,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, s, f, m, t, c, h, j, n, p, l, r, g, v</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, s, f, m, t, c, h, j, n, p, l, r, g, v</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">ĭ, w</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">ĭ, w</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">ĭ – i as in igloo, it (put thumb under the chin and feel the bounce.)</div>
@@ -2654,12 +2668,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, and consonants</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, and consonants</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">k, -ck</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">k, -ck</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">k – same sound as c</div>
@@ -2736,12 +2754,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, and consonants</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, and consonants</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">-ck</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">-ck</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue"><strong>–ck rule</strong> – use –ck at the end of a one vowel sound word and after a short vowel sound.</div>
@@ -2802,12 +2824,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, consonants and /ck/ for encoding</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, consonants and /ck/ for encoding</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">qu, /kw/, y, z, x, /ks/</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">qu, /kw/, y, z, x, /ks/</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">qu – /kw/</div>
@@ -2888,12 +2914,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, and consonants</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, and consonants</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">ŏ</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">ŏ</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">ŏ – o as in octopus</div>
@@ -2994,12 +3024,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, ŏ and consonants</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, ŏ and consonants</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">ss, ll, ff, zz</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">ss, ll, ff, zz</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">Spelling generalization – Double s, l, f, z in <strong>most</strong> one vowel sound words after a short vowel.</div>
@@ -3094,12 +3128,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, ŏ and consonants</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, ŏ and consonants</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">/-ng/, /-nk/</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">/-ng/, /-nk/</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">/-ng/, /-nk/ – Always attach to a vowel.</div>
@@ -3189,12 +3227,16 @@ window.TUTORING_CONTENT = {
       bodyHtml: `<div class="project-read-sheet">
 <section class="project-read-source-block project-read-teaching">
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, ŏ and consonants</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, ŏ and consonants</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">ch, wh, th, sh</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">ch, wh, th, sh</div>
+      </div>
       <div class="project-read-intro-note">Introduce digraphs through use of H brothers story.</div>
       <div class="project-read-introduce-details">
         <div class="project-read-cue">A. ch brother – Thinks he’s a train and says /ch/.</div>
@@ -3303,12 +3345,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, ŏ</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, ŏ</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">ĕ</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">ĕ</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">ĕ – Key word: Mr. Ed.</div>
@@ -3411,12 +3457,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, ŏ, ĕ and consonants</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, ŏ, ĕ and consonants</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">bl, gl, cl, pl, fl, sl</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">bl, gl, cl, pl, fl, sl</div>
+      </div>
       
       
       <div class="project-read-introduce-details">
@@ -3507,12 +3557,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, ŏ, ĕ</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, ŏ, ĕ</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">br, pr, fr, shr, tr, thr, cr, dr, gr</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">br, pr, fr, shr, tr, thr, cr, dr, gr</div>
+      </div>
       
       
       <div class="project-read-introduce-details">
@@ -3626,12 +3680,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, ŏ, ĕ and consonants</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, ŏ, ĕ and consonants</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">sc, sp, squ, dw, sm, sw, sk, sn, st, tw</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">sc, sp, squ, dw, sm, sw, sk, sn, st, tw</div>
+      </div>
       
       
       <div class="project-read-introduce-details">
@@ -3728,12 +3786,16 @@ window.TUTORING_CONTENT = {
 <section class="project-read-source-block project-read-teaching">
     
     <div class="project-read-teaching-subsection project-read-review-subsection">
-      <div class="project-read-subsection-heading">Review:</div>
-      <div class="project-read-teaching-value">ă, ĭ, ŏ, ĕ, consonants, digraphs, initial blends</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Review:</div>
+        <div class="project-read-inline-lead">ă, ĭ, ŏ, ĕ, consonants, digraphs, initial blends</div>
+      </div>
     </div>
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
-      <div class="project-read-subsection-heading">Introduce:</div>
-      <div class="project-read-teaching-value">ŭ</div>
+      <div class="project-read-heading-row project-read-heading-row--inline">
+        <div class="project-read-subsection-heading">Introduce:</div>
+        <div class="project-read-inline-lead">ŭ</div>
+      </div>
       
       <div class="project-read-introduce-details">
         <div class="project-read-cue">ŭ – u as in up</div>
