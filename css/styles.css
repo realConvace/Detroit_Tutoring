@@ -3943,3 +3943,21 @@ select {
     margin-left: 0;
   }
 }
+
+
+/* Unit 21 Skill lines must use identical typography */
+.project-read-skill-value,
+.project-read-skill-subtext {
+  font-family: inherit !important;
+  font-size: clamp(1.35rem, 1.6vw, 1.6rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  letter-spacing: .01em !important;
+}
+
+@media (max-width: 900px) {
+  .project-read-skill-value,
+  .project-read-skill-subtext {
+    font-size: 1.3rem !important;
+  }
+}
