@@ -3139,17 +3139,22 @@ window.TUTORING_CONTENT = {
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
-        <div class="project-read-inline-lead">-ng, -nk</div>
+        <div class="project-read-inline-lead">/-ng/, /-nk/ – Always attach to a vowel.</div>
       </div>
       <div class="project-read-combination-grid" style="--pr-combination-cols:2">
         <div class="project-read-combination-chip">-ng</div><div class="project-read-combination-chip">-nk</div>
       </div>
-      
-      <div class="project-read-introduce-details">
-        <div class="project-read-cue">/-ng/, /-nk/ – Always attach to a vowel.</div>
-        <div class="project-read-cue">-ang, -ing, -ong, -ank, -ink, -onk</div>
+      <div class="project-read-teaching-examples project-read-unit10-examples">
+        <div class="project-read-examples-heading">Examples:</div>
+        <div class="project-read-unit10-example-row">
+          <span class="project-read-example-chip project-read-example-chip--introduce">-ang</span>
+          <span class="project-read-example-chip project-read-example-chip--introduce">-ing</span>
+          <span class="project-read-example-chip project-read-example-chip--introduce">-ong</span>
+          <span class="project-read-example-chip project-read-example-chip--introduce">-ank</span>
+          <span class="project-read-example-chip project-read-example-chip--introduce">-ink</span>
+          <span class="project-read-example-chip project-read-example-chip--introduce">-onk</span>
+        </div>
       </div>
-      
     </div>
   </section>
 <section class="project-read-source-block project-read-red-words">
