@@ -3825,3 +3825,58 @@ select {
     font-size: 1.3rem !important;
   }
 }
+
+
+/* Unit 21 inline introduce lead + wide Story Technique transformation bubbles */
+.project-read-heading-row--inline {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 6px;
+}
+
+.project-read-heading-row--inline .project-read-subsection-heading {
+  margin-bottom: 0;
+}
+
+.project-read-inline-lead {
+  color: #173946;
+  font-size: clamp(1.18rem, 1.32vw, 1.34rem);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.project-read-transform-chip-row--wide {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.project-read-transform-chip-row--wide .project-read-transform-chip {
+  width: 100%;
+  min-height: 66px;
+  padding: 14px 20px;
+  font-size: clamp(1.3rem, 1.46vw, 1.48rem);
+}
+
+@media (max-width: 900px) {
+  .project-read-transform-chip-row--wide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .project-read-heading-row--inline {
+    display: block;
+  }
+
+  .project-read-heading-row--inline .project-read-subsection-heading {
+    margin-bottom: 10px;
+  }
+
+  .project-read-transform-chip-row--wide {
+    grid-template-columns: 1fr;
+  }
+}
