@@ -3309,3 +3309,45 @@ select {
     line-height: 1.7;
   }
 }
+
+
+/* Project Read structured teaching refinements */
+.project-read-concept-block {
+  margin-bottom: 20px;
+}
+
+.project-read-concept-subsection .project-read-subsection-heading::after {
+  background: #2b7c87;
+}
+
+.project-read-direct-teach-subsection .project-read-subsection-heading::after {
+  background: #b9783b;
+}
+
+.project-read-generic-subsection .project-read-subsection-heading::after {
+  background: #587b91;
+}
+
+.project-read-teaching-value + .project-read-teaching-value {
+  margin-top: 8px;
+}
+
+/* Poems read like poems: left-aligned, continuous lines, no per-line boxes */
+.project-read-poem-heading {
+  text-align: left;
+}
+
+.project-read-poem-lines {
+  width: 100%;
+  max-width: 780px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+
+.project-read-poem-ornament {
+  text-align: left;
+  padding-left: 2px;
+}
