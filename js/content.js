@@ -3241,12 +3241,8 @@ window.TUTORING_CONTENT = {
     <div class="project-read-teaching-subsection project-read-introduce-subsection">
       <div class="project-read-heading-row project-read-heading-row--inline">
         <div class="project-read-subsection-heading">Introduce:</div>
-        <div class="project-read-inline-lead">ch, wh, th, sh</div>
+        <div class="project-read-inline-lead">digraphs through use of H brothers story.</div>
       </div>
-      <div class="project-read-combination-grid" style="--pr-combination-cols:4">
-        <div class="project-read-combination-chip">ch</div><div class="project-read-combination-chip">wh</div><div class="project-read-combination-chip">th</div><div class="project-read-combination-chip">sh</div>
-      </div>
-      <div class="project-read-intro-note">Introduce digraphs through use of H brothers story.</div>
       <div class="project-read-introduce-details">
         <div class="project-read-cue">A. ch brother – Thinks he’s a train and says /ch/.</div>
         <div class="project-read-cue">B. wh brother – Tries to learn to whistle but only blows out air saying /wh/.</div>
