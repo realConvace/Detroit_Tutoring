@@ -236,7 +236,7 @@
       prompt: "Ask the student to say the word.",
       previousHref: "#assessment/sounds",
       nextHref: "#assessment/poem-1",
-      nextLabel: "Next Part: Read Poem 1 →"
+      nextLabel: "Next Part: Read Poem One →"
     }
   };
 
@@ -329,34 +329,74 @@
     `;
   };
 
+  const assessmentStories = {
+    1: {
+      storyLabel: "Story A",
+      title: "The Play Car",
+      lines: [
+        "“See my play car,” said Tom.",
+        "“It can go fast.”",
+        "Ann said, “It’s a big car.”",
+        "“Yes,” said Tom.",
+        "“Would you like a ride?”"
+      ]
+    },
+    2: {
+      storyLabel: "Story B",
+      title: "Our Bus Ride",
+      lines: [
+        "It was time to go to the farm.",
+        "“Get in the bus,” said Mrs. Brown.",
+        "“We are ready to go now.”",
+        "The children climbed in the bus.",
+        "And away went the bus.",
+        "It was a good day for a ride."
+      ]
+    }
+  };
+
   const assessmentPoemPage = (poemNumber) => {
     const number = Number(poemNumber);
-    const detail = content.fastStartDetails?.[String(number)];
-    const title = detail?.displayTitle || content.fastStart?.[number - 1] || `Poem ${number}`;
+    const story = assessmentStories[number];
     const isSecond = number === 2;
 
-    if (!detail?.poemHtml || ![1, 2].includes(number)) return assessmentHome();
+    if (!story || ![1, 2].includes(number)) return assessmentHome();
 
     return `
       <section class="assessment-page assessment-poem-page">
         <header class="assessment-stage-header">
           <div>
             <p class="assessment-kicker">${isSecond ? "Part 4.5" : "Part 4"}</p>
-            <h1>${isSecond ? "Read the Second Poem" : "Read Poem 1"}</h1>
+            <h1>${isSecond ? "Read Poem Two" : "Read Poem One"}</h1>
           </div>
           <a class="btn btn-muted" href="#assessment">Assessment Home</a>
         </header>
 
-        <div class="assessment-poem-card">
-          <div class="assessment-poem-title">${escapeHtml(title)}</div>
-          <div class="assessment-poem-content">${detail.poemHtml}</div>
+        <div class="assessment-story-slide">
+          <div class="assessment-story-sky" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="assessment-story-content">
+            <div class="assessment-story-label">${escapeHtml(story.storyLabel)}</div>
+            <div class="assessment-story-title">${escapeHtml(story.title)}</div>
+            <div class="assessment-story-lines">
+              ${story.lines.map((line) => `<div>${escapeHtml(line)}</div>`).join("")}
+            </div>
+          </div>
+
+          <div class="assessment-story-hills" aria-hidden="true">
+            <span class="assessment-story-hill assessment-story-hill--back"></span>
+            <span class="assessment-story-hill assessment-story-hill--middle"></span>
+            <span class="assessment-story-hill assessment-story-hill--front"></span>
+          </div>
         </div>
 
         <div class="button-row assessment-part-navigation">
           <a class="btn btn-muted" href="${isSecond ? "#assessment/poem-1" : "#assessment/words"}">← Previous Part</a>
           ${isSecond
             ? `<a class="btn btn-success assessment-complete-button" href="#assessment">Finish Assessment</a>`
-            : `<a class="btn btn-primary" href="#assessment/poem-2">Next Part: Read Poem 2 →</a>`
+            : `<a class="btn btn-primary" href="#assessment/poem-2">Next Part: Read Poem Two →</a>`
           }
         </div>
       </section>
