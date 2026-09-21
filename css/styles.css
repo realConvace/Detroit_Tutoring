@@ -3677,3 +3677,24 @@ select {
     font-size: clamp(2.2rem, 11vw, 3.4rem);
   }
 }
+
+
+/* VCV lessons: word lists are neutral square lattices, not grouped families. */
+.project-read-word-table--plain-lattice {
+  display: grid !important;
+  grid-template-columns: repeat(var(--pr-plain-cols), minmax(125px, 1fr)) !important;
+  gap: 12px !important;
+  align-items: stretch;
+}
+
+.project-read-word-table--plain-lattice .project-read-word-slot,
+.project-read-word-table--plain-lattice .project-read-word-item {
+  min-height: 58px;
+}
+
+@media (max-width: 700px) {
+  .project-read-word-table--plain-lattice {
+    grid-template-columns: repeat(var(--pr-plain-cols), minmax(115px, 1fr)) !important;
+    gap: 10px !important;
+  }
+}
