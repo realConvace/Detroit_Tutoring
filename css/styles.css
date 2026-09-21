@@ -3421,3 +3421,9 @@ select {
     font-size: 1.18rem !important;
   }
 }
+
+
+/* Keep Concept spacing consistent with the other Project Read cards. */
+.project-read-concept-block {
+  margin-bottom: 0 !important;
+}
