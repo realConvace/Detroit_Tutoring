@@ -92,7 +92,7 @@
     form?.addEventListener("submit", (event) => {
       event.preventDefault();
 
-      if ((input?.value || "").trim().toUpperCase() === FAST_START_PASSWORD) {
+      if ((input?.value || "").trim() === FAST_START_PASSWORD) {
         fastStartUnlockedForVisit = true;
         removeFastStartPasswordGate();
         app.focus({ preventScroll: true });
