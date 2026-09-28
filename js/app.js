@@ -29,6 +29,89 @@
   let state = loadState();
   let pendingCelebration = null;
 
+  const FAST_START_PASSWORD = "WSU";
+  let fastStartUnlockedForVisit = false;
+
+  const removeFastStartPasswordGate = () => {
+    document.querySelector(".fast-start-password-overlay")?.remove();
+    app.classList.remove("fast-start-password-locked");
+  };
+
+  const showFastStartPasswordGate = () => {
+    if (fastStartUnlockedForVisit) {
+      removeFastStartPasswordGate();
+      return;
+    }
+
+    removeFastStartPasswordGate();
+    app.classList.add("fast-start-password-locked");
+
+    const overlay = document.createElement("div");
+    overlay.className = "fast-start-password-overlay";
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.setAttribute("aria-labelledby", "fast-start-password-title");
+
+    overlay.innerHTML = `
+      <div class="fast-start-password-dialog">
+        <div class="fast-start-password-icon" aria-hidden="true">🔒</div>
+        <h2 id="fast-start-password-title">Fast Start Locked</h2>
+        <p>Enter the password to open Fast Start for Early Readers.</p>
+
+        <form class="fast-start-password-form">
+          <label for="fast-start-password-input">Password</label>
+          <input
+            id="fast-start-password-input"
+            class="fast-start-password-input"
+            type="password"
+            autocomplete="current-password"
+            autocapitalize="characters"
+            spellcheck="false"
+            aria-describedby="fast-start-password-error"
+          >
+          <div
+            id="fast-start-password-error"
+            class="fast-start-password-error"
+            role="alert"
+            aria-live="polite"
+          ></div>
+
+          <button class="btn btn-primary fast-start-password-submit" type="submit">
+            Unlock Fast Start
+          </button>
+        </form>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    const form = overlay.querySelector(".fast-start-password-form");
+    const input = overlay.querySelector(".fast-start-password-input");
+    const error = overlay.querySelector(".fast-start-password-error");
+
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if ((input?.value || "").trim().toUpperCase() === FAST_START_PASSWORD) {
+        fastStartUnlockedForVisit = true;
+        removeFastStartPasswordGate();
+        app.focus({ preventScroll: true });
+        return;
+      }
+
+      if (error) {
+        error.textContent = "Incorrect password. Try again.";
+      }
+
+      input?.classList.remove("fast-start-password-input--error");
+      void input?.offsetWidth;
+      input?.classList.add("fast-start-password-input--error");
+      input?.select();
+    });
+
+    requestAnimationFrame(() => input?.focus({ preventScroll: true }));
+  };
+
   const celebrationFireworkAudio = new Audio("assets/audio/Firework_twinkle.mp3");
   celebrationFireworkAudio.preload = "auto";
   celebrationFireworkAudio.playsInline = true;
@@ -1565,6 +1648,11 @@
 
     setCurrentNav(route);
 
+    if (route !== "fast-start") {
+      fastStartUnlockedForVisit = false;
+      removeFastStartPasswordGate();
+    }
+
     switch (route) {
       case "session":
         app.innerHTML = session();
@@ -1619,7 +1707,12 @@
       if (route === "fast-start" && param) {
         formatFastStartPoem(Number(param));
       }
+
       syncFastStartActivityHeight();
+
+      if (route === "fast-start" && !fastStartUnlockedForVisit) {
+        showFastStartPasswordGate();
+      }
     });
   };
 

@@ -5045,3 +5045,133 @@ select {
     transform: none !important;
   }
 }
+
+
+/* Fast Start password gate */
+.fast-start-password-locked {
+  user-select: none;
+}
+
+.fast-start-password-locked > * {
+  filter: blur(8px);
+  opacity: .72;
+  pointer-events: none;
+  transition: filter .2s ease, opacity .2s ease;
+}
+
+.fast-start-password-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 12000;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: rgba(20, 44, 49, .18);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.fast-start-password-dialog {
+  width: min(430px, 100%);
+  padding: 30px;
+  border: 1px solid #d8e7e6;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .98);
+  box-shadow: 0 26px 70px rgba(22, 46, 51, .24);
+  color: var(--ink);
+}
+
+.fast-start-password-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 14px;
+  border-radius: 16px;
+  background: var(--primary-soft);
+  font-size: 1.55rem;
+}
+
+.fast-start-password-dialog h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 4vw, 2.15rem);
+  letter-spacing: -.025em;
+}
+
+.fast-start-password-dialog > p {
+  margin: 9px 0 22px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.fast-start-password-form {
+  display: grid;
+  gap: 10px;
+}
+
+.fast-start-password-form label {
+  font-weight: 850;
+}
+
+.fast-start-password-input {
+  width: 100%;
+  min-height: 52px;
+  padding: 11px 14px;
+  border: 2px solid #c9dddd;
+  border-radius: 13px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+
+.fast-start-password-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(31, 111, 120, .14);
+}
+
+.fast-start-password-input--error {
+  border-color: #b74f48;
+  animation: fast-start-password-shake .28s ease;
+}
+
+.fast-start-password-error {
+  min-height: 1.25em;
+  color: #a13f39;
+  font-size: .9rem;
+  font-weight: 750;
+}
+
+.fast-start-password-submit {
+  width: 100%;
+  margin-top: 4px;
+}
+
+@keyframes fast-start-password-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-7px); }
+  75% { transform: translateX(7px); }
+}
+
+@media (max-width: 560px) {
+  .fast-start-password-overlay {
+    padding: 16px;
+  }
+
+  .fast-start-password-dialog {
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+
+  .fast-start-password-input {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fast-start-password-input--error {
+    animation: none;
+  }
+}
