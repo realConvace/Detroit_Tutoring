@@ -2306,7 +2306,9 @@ window.TUTORING_CONTENT = {
       "n", "o", "p", "qu", "r", "s", "t", "u", "v", "w", "x", "y", "z"
     ],
     words: [
-      "a", "and", "away", "big", "blue", "can", "come", "down", "find", "for"
+      "in", "make", "my", "red", "said", "little", "jump", "is", "I", "help",
+      "it", "funny", "here", "down", "go", "blue", "away", "a", "come", "find",
+      "and", "for", "big", "can", "look", "not", "me", "play", "run", "one"
     ]
   },
 
