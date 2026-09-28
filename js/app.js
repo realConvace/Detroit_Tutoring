@@ -309,6 +309,10 @@
     words: 0
   };
 
+  const alphabetOriginalDeck = [...assessmentOriginalDecks.letters];
+  let alphabetDeck = [...alphabetOriginalDeck];
+  let alphabetPosition = 0;
+
   const assessmentDeckMeta = {
     letters: {
       part: "Part 1",
@@ -344,6 +348,71 @@
       </div>
     </section>
   `;
+
+  const alphabetPage = () => {
+    const deck = alphabetDeck;
+    if (!deck.length) return "";
+
+    const currentIndex = Math.min(
+      Math.max(alphabetPosition || 0, 0),
+      Math.max(deck.length - 1, 0)
+    );
+    alphabetPosition = currentIndex;
+
+    const value = deck[currentIndex] || "";
+
+    return `
+      <section class="assessment-page">
+        <header class="assessment-stage-header">
+          <div>
+            <h1>Reading Letters</h1>
+          </div>
+        </header>
+
+        <div class="assessment-toolbar" aria-label="Reading Letters deck controls">
+          <div class="assessment-order-controls">
+            <button class="btn btn-secondary" data-action="alphabet-shuffle">Shuffle</button>
+            <button class="btn btn-muted" data-action="alphabet-reset-order">Reset Order</button>
+          </div>
+          <div class="assessment-card-count">Card ${currentIndex + 1} of ${deck.length}</div>
+        </div>
+
+        <div class="assessment-deck-layout">
+          <button
+            class="assessment-arrow"
+            type="button"
+            aria-label="Previous card"
+            data-action="alphabet-prev"
+            ${currentIndex === 0 ? "disabled" : ""}
+          >←</button>
+
+          <div class="assessment-pdf-card assessment-pdf-card--letter">
+            <div class="assessment-sky-ribbons" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="assessment-flashcard-value assessment-flashcard-letter">
+              ${escapeHtml(value)}
+            </div>
+
+            <div class="assessment-hills" aria-hidden="true">
+              <span class="assessment-hill assessment-hill--back"></span>
+              <span class="assessment-hill assessment-hill--middle"></span>
+              <span class="assessment-hill assessment-hill--front"></span>
+            </div>
+          </div>
+
+          <button
+            class="assessment-arrow"
+            type="button"
+            aria-label="Next card"
+            data-action="alphabet-next"
+            ${currentIndex === deck.length - 1 ? "disabled" : ""}
+          >→</button>
+        </div>
+      </section>
+    `;
+  };
 
   const assessmentDeckPage = (deckKey) => {
     const deck = assessmentDecks[deckKey] || [];
@@ -1679,6 +1748,9 @@
       case "assessment":
         app.innerHTML = assessmentPage(param);
         break;
+      case "alphabet":
+        app.innerHTML = alphabetPage();
+        break;
       case "home":
       default:
         setCurrentNav("home");
@@ -1908,6 +1980,53 @@
       return;
     }
 
+    if (action === "alphabet-prev" || action === "alphabet-next") {
+      if (!alphabetDeck.length || assessmentAnimationBusy) return;
+
+      const change = action === "alphabet-next" ? 1 : -1;
+      const next = Math.min(
+        alphabetDeck.length - 1,
+        Math.max(0, alphabetPosition + change)
+      );
+      if (next === alphabetPosition) return;
+
+      animateAssessmentCardChange(
+        action === "alphabet-next" ? "next" : "prev",
+        () => {
+          alphabetPosition = next;
+        }
+      );
+      return;
+    }
+
+    if (action === "alphabet-shuffle") {
+      if (assessmentAnimationBusy || alphabetDeck.length < 2) return;
+
+      animateAssessmentShuffle(() => {
+        for (let i = alphabetDeck.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [alphabetDeck[i], alphabetDeck[j]] = [alphabetDeck[j], alphabetDeck[i]];
+        }
+
+        if (alphabetDeck.every((value, index) => value === alphabetOriginalDeck[index])) {
+          [alphabetDeck[0], alphabetDeck[1]] = [alphabetDeck[1], alphabetDeck[0]];
+        }
+
+        alphabetPosition = 0;
+      });
+      return;
+    }
+
+    if (action === "alphabet-reset-order") {
+      if (assessmentAnimationBusy) return;
+
+      animateAssessmentShuffle(() => {
+        alphabetDeck = [...alphabetOriginalDeck];
+        alphabetPosition = 0;
+      });
+      return;
+    }
+
     if (action === "assessment-prev" || action === "assessment-next") {
       const deckKey = button.dataset.deck;
       const deck = assessmentDecks[deckKey];
@@ -2001,6 +2120,28 @@
 
     const raw = location.hash.replace(/^#/, "");
     const [route, part] = raw.split("/");
+
+    if (route === "alphabet") {
+      if (!alphabetDeck.length || assessmentAnimationBusy) return;
+
+      const change = event.key === "ArrowRight" ? 1 : -1;
+      const nextIndex = Math.min(
+        alphabetDeck.length - 1,
+        Math.max(0, alphabetPosition + change)
+      );
+
+      if (nextIndex === alphabetPosition) return;
+
+      event.preventDefault();
+      animateAssessmentCardChange(
+        event.key === "ArrowRight" ? "next" : "prev",
+        () => {
+          alphabetPosition = nextIndex;
+        }
+      );
+      return;
+    }
+
     if (route !== "assessment" || !["letters", "sounds", "words"].includes(part)) return;
 
     const deck = assessmentDecks[part];
