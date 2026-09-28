@@ -5144,9 +5144,20 @@ select {
   font-weight: 750;
 }
 
+.fast-start-password-actions {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.35fr);
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.fast-start-password-back,
 .fast-start-password-submit {
   width: 100%;
-  margin-top: 4px;
+}
+
+.fast-start-password-submit {
+  margin-top: 0;
 }
 
 @keyframes fast-start-password-shake {
@@ -5167,6 +5178,10 @@ select {
 
   .fast-start-password-input {
     font-size: 16px;
+  }
+
+  .fast-start-password-actions {
+    grid-template-columns: 1fr;
   }
 }
 

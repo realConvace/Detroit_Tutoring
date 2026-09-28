@@ -31,6 +31,7 @@
 
   const FAST_START_PASSWORD = "WSU";
   let fastStartUnlockedForVisit = false;
+  let fastStartReturnHash = "#home";
 
   const removeFastStartPasswordGate = () => {
     document.querySelector(".fast-start-password-overlay")?.remove();
@@ -76,9 +77,14 @@
             aria-live="polite"
           ></div>
 
-          <button class="btn btn-primary fast-start-password-submit" type="submit">
-            Unlock Fast Start
-          </button>
+          <div class="fast-start-password-actions">
+            <button class="btn btn-muted fast-start-password-back" type="button">
+              ← Back
+            </button>
+            <button class="btn btn-primary fast-start-password-submit" type="submit">
+              Unlock Fast Start
+            </button>
+          </div>
         </form>
       </div>
     `;
@@ -88,6 +94,12 @@
     const form = overlay.querySelector(".fast-start-password-form");
     const input = overlay.querySelector(".fast-start-password-input");
     const error = overlay.querySelector(".fast-start-password-error");
+    const backButton = overlay.querySelector(".fast-start-password-back");
+
+    backButton?.addEventListener("click", () => {
+      removeFastStartPasswordGate();
+      location.hash = fastStartReturnHash || "#home";
+    });
 
     form?.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -1649,6 +1661,7 @@
     setCurrentNav(route);
 
     if (route !== "fast-start") {
+      fastStartReturnHash = location.hash || "#home";
       fastStartUnlockedForVisit = false;
       removeFastStartPasswordGate();
     }
